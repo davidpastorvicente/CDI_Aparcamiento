@@ -32,6 +32,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
+        jLabel3 = new javax.swing.JLabel();
         iMinerva = new javax.swing.JLabel();
         iVilla = new javax.swing.JLabel();
         iAmma = new javax.swing.JLabel();
@@ -80,6 +81,9 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         materialPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/escala.png"))); // NOI18N
+        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
 
         iMinerva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
         iMinerva.setName("1"); // NOI18N
@@ -258,7 +262,7 @@ public class Principal extends javax.swing.JFrame {
         materialPanel1.add(Amma, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 370, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel26.setText("C/ Ladera de los almendros, 8  -  (1,3 km)");
+        jLabel26.setText("C/ de los almendros, 8  -  (1,3 km)");
         materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 390, -1, -1));
 
         AmmaArea.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -269,7 +273,12 @@ public class Principal extends javax.swing.JFrame {
                 AmmaAreaMouseExited(evt);
             }
         });
-        materialPanel1.add(AmmaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, 320, 100));
+        AmmaArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AmmaAreaActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(AmmaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, 290, 100));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
 
@@ -360,6 +369,10 @@ public class Principal extends javax.swing.JFrame {
         iAmma.setBorder(javax.swing.BorderFactory.createEmptyBorder());        // TODO add your handling code here:
     }//GEN-LAST:event_AmmaAreaMouseExited
 
+    private void AmmaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AmmaAreaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AmmaAreaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -419,6 +432,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;

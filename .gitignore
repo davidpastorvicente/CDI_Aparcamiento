@@ -1,7 +1,7 @@
 #java specific
 *.class
 
-#netbeans ignore personal stuff
+#netbeans ignore personal
 nbproject/
 
 ## generic files to ignore
