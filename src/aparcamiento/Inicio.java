@@ -6,6 +6,7 @@
 package aparcamiento;
 
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 
 /**
  *
@@ -138,6 +139,12 @@ public class Inicio extends javax.swing.JFrame {
             incorLabel.setText("¡Usuario incorrecto! Vuelva a intentarlo.");
             jPanel2.add(incorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
             this.pack();
+        }
+        else {
+            this.setVisible(false);
+            JFrame prin= new Principal();
+            prin.setLocationRelativeTo(null);
+            prin.setVisible(true);
         }
             // TODO add your handling code here:
     }//GEN-LAST:event_inicButtonActionPerformed
