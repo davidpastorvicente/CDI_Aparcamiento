@@ -37,7 +37,6 @@ public class Inicio extends javax.swing.JFrame {
         UserLabel = new javax.swing.JLabel();
         inicButton = new de.craften.ui.swingmaterial.MaterialButton();
         regButton = new de.craften.ui.swingmaterial.MaterialButton();
-        materialIconButton1 = new de.craften.ui.swingmaterial.MaterialIconButton();
         userField = new de.craften.ui.swingmaterial.MaterialTextField();
         pwdLabel = new javax.swing.JLabel();
         pwdField = new de.craften.ui.swingmaterial.MaterialPasswordField();
@@ -86,9 +85,6 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel2.add(regButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 150, 60));
-
-        materialIconButton1.setText("materialIconButton1");
-        jPanel2.add(materialIconButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, -1, -1));
 
         userField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jPanel2.add(userField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 170, 60));
@@ -161,7 +157,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private de.craften.ui.swingmaterial.MaterialIconButton materialIconButton1;
     private de.craften.ui.swingmaterial.MaterialIconButton materialIconButton2;
     private javax.swing.JLabel noCButton;
     private de.craften.ui.swingmaterial.MaterialPasswordField pwdField;

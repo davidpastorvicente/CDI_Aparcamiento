@@ -5,6 +5,8 @@
  */
 package aparcamiento;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author david
@@ -17,6 +19,8 @@ public class Registro extends javax.swing.JDialog {
     public Registro(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        elecPago.addItem("Tarjeta bancaria");
+        elecPago.addItem("PayPal");
     }
 
     /**
@@ -28,117 +32,268 @@ public class Registro extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         materialTextField1 = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        materialTextField2 = new de.craften.ui.swingmaterial.MaterialTextField();
+        jLabel3 = new javax.swing.JLabel();
+        materialTextField3 = new de.craften.ui.swingmaterial.MaterialTextField();
+        jLabel4 = new javax.swing.JLabel();
+        materialTextField4 = new de.craften.ui.swingmaterial.MaterialTextField();
         materialPanel2 = new de.craften.ui.swingmaterial.MaterialPanel();
+        materialTextField5 = new de.craften.ui.swingmaterial.MaterialTextField();
+        elecPago = new de.craften.ui.swingmaterial.MaterialComboBox();
+        CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        materialTextField6 = new de.craften.ui.swingmaterial.MaterialTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        materialTextField7 = new de.craften.ui.swingmaterial.MaterialTextField();
+        jLabel9 = new javax.swing.JLabel();
+        materialTextField8 = new de.craften.ui.swingmaterial.MaterialTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 153, 153));
+        setForeground(new java.awt.Color(0, 153, 153));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setForeground(new java.awt.Color(0, 153, 153));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        materialPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         materialTextField1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        materialPanel1.add(materialTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 10, 140, 69));
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel1.setText("Nombre:");
+        materialPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 46, 101, 33));
 
-        javax.swing.GroupLayout materialPanel1Layout = new javax.swing.GroupLayout(materialPanel1);
-        materialPanel1.setLayout(materialPanel1Layout);
-        materialPanel1Layout.setHorizontalGroup(
-            materialPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(materialPanel1Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(materialTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
-        materialPanel1Layout.setVerticalGroup(
-            materialPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(materialPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(materialPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(materialTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(176, Short.MAX_VALUE))
-        );
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel2.setText("Apellidos:");
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 121, 101, 33));
 
-        javax.swing.GroupLayout materialPanel2Layout = new javax.swing.GroupLayout(materialPanel2);
-        materialPanel2.setLayout(materialPanel2Layout);
-        materialPanel2Layout.setHorizontalGroup(
-            materialPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 304, Short.MAX_VALUE)
-        );
-        materialPanel2Layout.setVerticalGroup(
-            materialPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        materialTextField2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        materialPanel1.add(materialTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 85, 140, 69));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(materialPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(materialPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(materialPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(materialPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
+        jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel3.setText("Correo:");
+        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 196, 101, 33));
+
+        materialTextField3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        materialPanel1.add(materialTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 160, 200, 69));
+
+        jLabel4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel4.setText("Móvil:");
+        materialPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 271, 101, 33));
+
+        materialTextField4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        materialPanel1.add(materialTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(159, 235, 140, 69));
+
+        jPanel1.add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 400, 340));
+
+        materialPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        materialPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        materialTextField5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        materialTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialTextField5ActionPerformed(evt);
+            }
+        });
+        materialPanel2.add(materialTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 139, 20, 70));
+
+        elecPago.setAccent(new java.awt.Color(0, 153, 153));
+        elecPago.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                elecPagoActionPerformed(evt);
+            }
+        });
+        materialPanel2.add(elecPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 180, 50));
+
+        CancelarButton.setBackground(new java.awt.Color(255, 51, 51));
+        CancelarButton.setText("Cancelar");
+        CancelarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CancelarButtonActionPerformed(evt);
+            }
+        });
+        materialPanel2.add(CancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 140, 70));
+
+        aceptarButton.setBackground(new java.awt.Color(51, 204, 0));
+        aceptarButton.setText("Aceptar");
+        aceptarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aceptarButtonActionPerformed(evt);
+            }
+        });
+        materialPanel2.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 140, 70));
+
+        jLabel5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel5.setText("caducidad:");
+        materialPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 70, 30));
+
+        jLabel6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel6.setText("Número de tarjeta:");
+        materialPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 130, 33));
+
+        materialTextField6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        materialPanel2.add(materialTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 90, 170, 60));
+
+        jLabel7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel7.setText("CVV/CVC:");
+        materialPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 70, 33));
+
+        jLabel8.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel8.setText("/");
+        materialPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, 10, 30));
+
+        materialTextField7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        materialTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialTextField7ActionPerformed(evt);
+            }
+        });
+        materialPanel2.add(materialTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 139, 40, 70));
+
+        jLabel9.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel9.setText("Fecha de");
+        materialPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 60, 30));
+
+        materialTextField8.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        materialTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialTextField8ActionPerformed(evt);
+            }
+        });
+        materialPanel2.add(materialTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 139, 20, 70));
+
+        jPanel1.add(materialPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, 400, 340));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void elecPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_elecPagoActionPerformed
+        String opc = (String) elecPago.getSelectedItem();// TODO add your handling code here:
+        if (opc.equals("Tarjeta bancaria")) {
+            materialTextField5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            materialPanel2.add(materialTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 139, 20, 70));
+
+            jLabel5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            jLabel5.setText("caducidad:");
+            materialPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 70, 30));
+
+            jLabel6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            jLabel6.setText("Número de tarjeta:");
+            materialPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 130, 33));
+
+            materialTextField6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            materialPanel2.add(materialTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 90, 170, 60));
+
+            jLabel7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            jLabel7.setText("CVV/CVC:");
+            materialPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 70, 33));
+
+            jLabel8.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            jLabel8.setText("/");
+            materialPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 180, 10, 30));
+
+            materialTextField7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            materialPanel2.add(materialTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 139, 40, 70));
+
+            jLabel9.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            jLabel9.setText("Fecha de");
+            materialPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 60, 30));
+
+            materialTextField8.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            materialPanel2.add(materialTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 139, 20, 70));
+            materialPanel2.revalidate();
+            materialPanel2.repaint();
+            materialPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+            materialPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+            pack();
+        }
+        if (opc.contains("PayPal")) {
+
+            materialPanel2.remove(jLabel5);
+            materialPanel2.remove(jLabel6);
+            materialPanel2.remove(jLabel7);
+            materialPanel2.remove(jLabel8);
+            materialPanel2.remove(materialTextField5);
+            materialPanel2.remove(materialTextField6);
+            materialPanel2.remove(materialTextField7);
+            materialPanel2.remove(materialTextField8);
+            materialPanel2.remove(jLabel9);
+            
+            jLabel6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            jLabel6.setText("Número de cuenta:");
+            materialPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 130, 33));
+
+            materialTextField6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+            materialPanel2.add(materialTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 90, 170, 60));
+
+            materialPanel2.revalidate();
+            materialPanel2.repaint();
+            materialPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+            materialPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+            pack();
+
+        }
+    }//GEN-LAST:event_elecPagoActionPerformed
+
+    private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
+        this.setVisible(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_CancelarButtonActionPerformed
+
+    private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
+        //transferirDatos        // TODO add your handling code here:
+    }//GEN-LAST:event_aceptarButtonActionPerformed
+
+    private void materialTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialTextField7ActionPerformed
+
+    private void materialTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialTextField8ActionPerformed
+
+    private void materialTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialTextField5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Registro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Registro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Registro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Registro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the dialog */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                Registro dialog = new Registro(new javax.swing.JFrame(), true);
-                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
-                    @Override
-                    public void windowClosing(java.awt.event.WindowEvent e) {
-                        System.exit(0);
-                    }
-                });
-                dialog.setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
+    private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
+    private de.craften.ui.swingmaterial.MaterialComboBox elecPago;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel2;
     private de.craften.ui.swingmaterial.MaterialTextField materialTextField1;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField2;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField3;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField4;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField5;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField6;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField7;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField8;
     // End of variables declaration//GEN-END:variables
 }
