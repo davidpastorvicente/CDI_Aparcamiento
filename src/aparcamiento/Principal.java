@@ -5,6 +5,9 @@
  */
 package aparcamiento;
 
+import aparcamiento.parkings.*;
+import javax.swing.JFrame;
+
 /**
  *
  * @author david
@@ -88,6 +91,9 @@ public class Principal extends javax.swing.JFrame {
         iMinerva.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
         iMinerva.setName("1"); // NOI18N
         iMinerva.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                iMinervaMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 iMinervaMouseEntered(evt);
             }
@@ -100,6 +106,9 @@ public class Principal extends javax.swing.JFrame {
         iVilla.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
         iVilla.setName("3"); // NOI18N
         iVilla.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                iVillaMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 iVillaMouseEntered(evt);
             }
@@ -112,6 +121,9 @@ public class Principal extends javax.swing.JFrame {
         iAmma.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
         iAmma.setName("5"); // NOI18N
         iAmma.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                iAmmaMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 iAmmaMouseEntered(evt);
             }
@@ -124,6 +136,9 @@ public class Principal extends javax.swing.JFrame {
         iRosa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
         iRosa.setName("4"); // NOI18N
         iRosa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                iRosaMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 iRosaMouseEntered(evt);
             }
@@ -136,6 +151,9 @@ public class Principal extends javax.swing.JFrame {
         iURJC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
         iURJC.setName("2"); // NOI18N
         iURJC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                iURJCMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 iURJCMouseEntered(evt);
             }
@@ -202,6 +220,11 @@ public class Principal extends javax.swing.JFrame {
                 URJCAreaMouseExited(evt);
             }
         });
+        URJCArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                URJCAreaActionPerformed(evt);
+            }
+        });
         materialPanel1.add(URJCArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 100, 290, 100));
 
         jLabel12.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
@@ -227,6 +250,11 @@ public class Principal extends javax.swing.JFrame {
                 VilllaAreaMouseExited(evt);
             }
         });
+        VilllaArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VilllaAreaActionPerformed(evt);
+            }
+        });
         materialPanel1.add(VilllaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 180, 290, 100));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
@@ -250,6 +278,11 @@ public class Principal extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 RosaAreaMouseExited(evt);
+            }
+        });
+        RosaArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RosaAreaActionPerformed(evt);
             }
         });
         materialPanel1.add(RosaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, 290, 100));
@@ -339,10 +372,6 @@ public class Principal extends javax.swing.JFrame {
         iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        // TODO add your handling code here:
     }//GEN-LAST:event_MinervaAreaMouseEntered
 
-    private void MinervaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinervaAreaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MinervaAreaActionPerformed
-
     private void URJCAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_URJCAreaMouseEntered
         iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        // TODO add your handling code here:
     }//GEN-LAST:event_URJCAreaMouseEntered
@@ -380,8 +409,75 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_AmmaAreaMouseExited
 
     private void AmmaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AmmaAreaActionPerformed
-        // TODO add your handling code here:
+        JFrame min= new Amma();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);
     }//GEN-LAST:event_AmmaAreaActionPerformed
+
+    private void MinervaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinervaAreaActionPerformed
+        JFrame min= new Minerva();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);  
+    }//GEN-LAST:event_MinervaAreaActionPerformed
+
+    private void iMinervaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseClicked
+        this.setVisible(false);
+        JFrame min= new Minerva();        // TODO add your handling code here:
+        min.setVisible(true);
+        min.setLocationRelativeTo(null);        
+    }//GEN-LAST:event_iMinervaMouseClicked
+
+    private void URJCAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_URJCAreaActionPerformed
+        JFrame min= new URJC();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);  
+    }//GEN-LAST:event_URJCAreaActionPerformed
+
+    private void iURJCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseClicked
+        JFrame min= new URJC();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);  
+    }//GEN-LAST:event_iURJCMouseClicked
+
+    private void VilllaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VilllaAreaActionPerformed
+        JFrame min= new Villa();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);  
+    }//GEN-LAST:event_VilllaAreaActionPerformed
+
+    private void iVillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseClicked
+        JFrame min= new Villa();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);  
+    }//GEN-LAST:event_iVillaMouseClicked
+
+    private void RosaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RosaAreaActionPerformed
+        JFrame min= new Rosa();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);  
+    }//GEN-LAST:event_RosaAreaActionPerformed
+
+    private void iRosaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseClicked
+        JFrame min= new Rosa();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);
+    }//GEN-LAST:event_iRosaMouseClicked
+
+    private void iAmmaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseClicked
+        JFrame min= new Amma();        // TODO add your handling code here:
+        min.setVisible(true);
+        this.setVisible(false);
+        min.setLocationRelativeTo(null);        // TODO add your handling code here:
+    }//GEN-LAST:event_iAmmaMouseClicked
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Amma;
     private de.craften.ui.swingmaterial.MaterialButton AmmaArea;
