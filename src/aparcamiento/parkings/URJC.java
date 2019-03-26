@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aparcamiento;
+package aparcamiento.parkings;
 
 /**
  *
  * @author david
  */
-public class Principal extends javax.swing.JFrame {
+public class URJC extends javax.swing.JFrame {
 
     /**
      * Creates new form Principal
      */
-    public Principal() {
+    public URJC() {
         initComponents();
 
     }
