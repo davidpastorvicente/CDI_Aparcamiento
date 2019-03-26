@@ -150,8 +150,8 @@ public class Principal extends javax.swing.JFrame {
         materialPanel1.add(mapa, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 21, 599, 438));
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel2.setText("_________________________________________");
-        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 90, -1, -1));
+        jLabel2.setText("_____________________________");
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 90, 220, -1));
 
         p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
         materialPanel1.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, -1));
@@ -180,7 +180,7 @@ public class Principal extends javax.swing.JFrame {
         materialPanel1.add(MinervaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 20, 290, 100));
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel7.setText("_________________________________________");
+        jLabel7.setText("_____________________________");
         materialPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 170, -1, -1));
 
         URJC.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
@@ -205,7 +205,7 @@ public class Principal extends javax.swing.JFrame {
         materialPanel1.add(URJCArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 100, 290, 100));
 
         jLabel12.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel12.setText("_________________________________________");
+        jLabel12.setText("_____________________________");
         materialPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 250, -1, -1));
 
         p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
@@ -230,7 +230,7 @@ public class Principal extends javax.swing.JFrame {
         materialPanel1.add(VilllaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 180, 290, 100));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel17.setText("_________________________________________");
+        jLabel17.setText("_____________________________");
         materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, -1, -1));
 
         p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
