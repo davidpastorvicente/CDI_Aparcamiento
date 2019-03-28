@@ -176,7 +176,7 @@ public class Registro extends javax.swing.JDialog {
                 tarjetaButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(tarjetaButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
+        jPanel3.add(tarjetaButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, -1, -1));
 
         paypalButton.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         paypalButton.setText("PayPal");
@@ -185,7 +185,7 @@ public class Registro extends javax.swing.JDialog {
                 paypalButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(paypalButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, -1));
+        jPanel3.add(paypalButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, -1, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, 370, -1));
 
