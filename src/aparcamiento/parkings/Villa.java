@@ -37,6 +37,13 @@ public class Villa extends javax.swing.JFrame {
         materialButton11 = new de.craften.ui.swingmaterial.MaterialButton();
         materialButton12 = new de.craften.ui.swingmaterial.MaterialButton();
         materialButton8 = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -103,6 +110,34 @@ public class Villa extends javax.swing.JFrame {
         });
         materialPanel1.add(materialButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, -1, 50));
 
+        jLabel10.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel10.setText("Precio/hora:     X  €");
+        materialPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel11.setText("Número de baños:    X    (x adaptados)");
+        materialPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel12.setText("Acceso a ascensor:    SI/NO");
+        materialPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 240, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel13.setText("( x  movilidad reducida, x  familiar, x motos y  x coches )");
+        materialPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel14.setText("Número de plazas:      X ");
+        materialPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, -1, 30));
+
+        jLabel4.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel4.setText("Localización:   C/Villablanca,30");
+        materialPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel15.setText("Distancia en metros:   978");
+        materialPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, -1));
+
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
@@ -157,8 +192,15 @@ public class Villa extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

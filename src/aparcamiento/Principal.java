@@ -302,7 +302,7 @@ public class Principal extends javax.swing.JFrame {
         materialPanel1.add(Amma, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 370, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel26.setText("C/ de los almendros, 8  -  (1,3 km)");
+        jLabel26.setText("C/ de los Almendros, 8  -  (1,3 km)");
         materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 390, -1, -1));
 
         AmmaArea.addMouseListener(new java.awt.event.MouseAdapter() {

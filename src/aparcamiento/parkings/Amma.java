@@ -93,15 +93,15 @@ public class Amma extends javax.swing.JFrame {
         materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel4.setText("Localización:   C/Minerva,27");
+        jLabel4.setText("Localización:   C/de los Almendros,8");
         materialPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel5.setText("Número de plazas:      X  ( x  movilidad reducida, x  familiar, ");
+        jLabel5.setText("Número de plazas:      X ");
         materialPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, -1, 30));
 
         jLabel6.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel6.setText(" x motos y  x coches )");
+        jLabel6.setText("( x  movilidad reducida, x  familiar, x motos y  x coches )");
         materialPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N

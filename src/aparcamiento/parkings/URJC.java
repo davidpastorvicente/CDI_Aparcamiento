@@ -46,6 +46,13 @@ public class URJC extends javax.swing.JFrame {
         materialButton11 = new de.craften.ui.swingmaterial.MaterialButton();
         materialButton12 = new de.craften.ui.swingmaterial.MaterialButton();
         materialButton8 = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -103,7 +110,7 @@ public class URJC extends javax.swing.JFrame {
                 materialButton5ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, -1, 50));
+        materialPanel1.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, -1, 50));
 
         materialButton7.setText("Planta 0");
         materialButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -135,7 +142,7 @@ public class URJC extends javax.swing.JFrame {
                 materialButton12ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, -1, 50));
+        materialPanel1.add(materialButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 50));
 
         materialButton8.setText("Planta 4");
         materialButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -143,7 +150,35 @@ public class URJC extends javax.swing.JFrame {
                 materialButton8ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, -1, 50));
+        materialPanel1.add(materialButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, 50));
+
+        jLabel10.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel10.setText("Precio/hora:     X  €");
+        materialPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel11.setText("Número de baños:    X    (x adaptados)");
+        materialPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel12.setText("Acceso a ascensor:    SI/NO");
+        materialPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 240, -1, -1));
+
+        jLabel13.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel13.setText("( x  movilidad reducida, x  familiar, x motos y  x coches )");
+        materialPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, -1));
+
+        jLabel14.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel14.setText("Número de plazas:      X ");
+        materialPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, -1, 30));
+
+        jLabel15.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel15.setText("Localización:   C/San Cipriano,10");
+        materialPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, -1, -1));
+
+        jLabel16.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel16.setText("Distancia en metros:   745");
+        materialPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, -1));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
 
@@ -176,6 +211,13 @@ public class URJC extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
