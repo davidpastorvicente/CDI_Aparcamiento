@@ -32,6 +32,12 @@ public class Villa extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
+        jLabel2 = new javax.swing.JLabel();
+        materialButton7 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton10 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton11 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton12 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton8 = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,15 +56,86 @@ public class Villa extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         materialPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel2.setText("Seleccione la planta :");
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 180, 30));
+
+        materialButton7.setText("Planta 0");
+        materialButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton7ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, 50));
+
+        materialButton10.setText("Planta 1");
+        materialButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton10ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, 50));
+
+        materialButton11.setText("Planta 2");
+        materialButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton11ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, 50));
+
+        materialButton12.setText("Planta 3");
+        materialButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton12ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, -1, 50));
+
+        materialButton8.setText("Planta 4");
+        materialButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton8ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, -1, 50));
+
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void materialButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton7ActionPerformed
+
+    private void materialButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton10ActionPerformed
+
+    private void materialButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton11ActionPerformed
+
+    private void materialButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton12ActionPerformed
+
+    private void materialButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton8ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton10;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton11;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton12;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton7;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton8;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     // End of variables declaration//GEN-END:variables
 }

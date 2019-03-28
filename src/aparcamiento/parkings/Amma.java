@@ -32,6 +32,17 @@ public class Amma extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
+        jLabel2 = new javax.swing.JLabel();
+        materialButton5 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton3 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton6 = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,15 +61,95 @@ public class Amma extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         materialPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
+
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel2.setText("Seleccione la planta :");
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 180, 30));
+
+        materialButton5.setText("Planta 0");
+        materialButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton5ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, 50));
+
+        materialButton3.setText("Planta 1");
+        materialButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton3ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, -1, 50));
+
+        materialButton6.setText("Planta 2");
+        materialButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton6ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 90, -1, 50));
+
+        jLabel3.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel3.setText("Distancia en metros:   1300");
+        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel4.setText("Localización:   C/Minerva,27");
+        materialPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel5.setText("Número de plazas:      X  ( x  movilidad reducida, x  familiar, ");
+        materialPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, -1, 30));
+
+        jLabel6.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel6.setText(" x motos y  x coches )");
+        materialPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel7.setText("Acceso a ascensor:    SI/NO");
+        materialPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 240, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel8.setText("Número de baños:    X    (x adaptados)");
+        materialPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel9.setText("Precio/hora:     X  €");
+        materialPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, -1, -1));
+
+        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void materialButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton5ActionPerformed
+
+    private void materialButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton3ActionPerformed
+
+    private void materialButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton6ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton3;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton5;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton6;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     // End of variables declaration//GEN-END:variables
 }
