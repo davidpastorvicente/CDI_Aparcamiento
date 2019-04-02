@@ -13,7 +13,8 @@ import javax.swing.JFrame;
  * @author david
  */
 public class Inicio extends javax.swing.JFrame {
-
+    public static String usuario;
+    public static String passwd;
     /**
      * Creates new form inicio
      */
@@ -133,7 +134,7 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_pwdFieldActionPerformed
 
     private void inicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicButtonActionPerformed
-        if(!(userField.getText().equals("David") && pwdField.getText().equals("Hola"))) {
+        if(!(userField.getText().equals(usuario) && pwdField.getText().equals(passwd))) {
             incorLabel.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
             incorLabel.setForeground(new java.awt.Color(153, 0, 0));
             incorLabel.setText("¡Usuario incorrecto! Vuelva a intentarlo.");

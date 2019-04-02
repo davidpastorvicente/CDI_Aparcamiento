@@ -6,6 +6,7 @@
 package aparcamiento;
 
 import java.awt.Dimension;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -36,14 +37,14 @@ public class Registro extends javax.swing.JDialog {
         pagoOpc = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        materialTextField1 = new de.craften.ui.swingmaterial.MaterialTextField();
+        nombre = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        materialTextField2 = new de.craften.ui.swingmaterial.MaterialTextField();
+        apell = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel3 = new javax.swing.JLabel();
-        materialTextField3 = new de.craften.ui.swingmaterial.MaterialTextField();
+        email = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel4 = new javax.swing.JLabel();
-        materialTextField4 = new de.craften.ui.swingmaterial.MaterialTextField();
+        movil = new de.craften.ui.swingmaterial.MaterialTextField();
         jPanel3 = new javax.swing.JPanel();
         materialTextField5 = new de.craften.ui.swingmaterial.MaterialTextField();
         CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
@@ -74,8 +75,8 @@ public class Registro extends javax.swing.JDialog {
         jPanel2.setMinimumSize(new java.awt.Dimension(340, 290));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        materialTextField1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(materialTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 140, 69));
+        nombre.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jPanel2.add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 140, 69));
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel1.setText("Nombre:");
@@ -85,22 +86,22 @@ public class Registro extends javax.swing.JDialog {
         jLabel2.setText("Apellidos:");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 101, 33));
 
-        materialTextField2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(materialTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 140, 69));
+        apell.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jPanel2.add(apell, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 140, 69));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel3.setText("Correo:");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 101, 33));
 
-        materialTextField3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(materialTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 200, 69));
+        email.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 200, 69));
 
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel4.setText("Móvil:");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 101, 33));
 
-        materialTextField4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(materialTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 140, 69));
+        movil.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jPanel2.add(movil, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 140, 69));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 310));
 
@@ -219,6 +220,12 @@ public class Registro extends javax.swing.JDialog {
     }//GEN-LAST:event_CancelarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
+        Inicio.usuario= nombre.getText() + "-UPM";
+        Inicio.passwd= "CDI2019";
+        Confirm c= new Confirm(null, true);
+        c.setLocationRelativeTo(null);
+        c.setVisible(true);
+        this.setVisible(false);
         //transferirDatos        // TODO add your handling code here:
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
@@ -318,6 +325,8 @@ public class Registro extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
+    private de.craften.ui.swingmaterial.MaterialTextField apell;
+    private de.craften.ui.swingmaterial.MaterialTextField email;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -333,14 +342,12 @@ public class Registro extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private de.craften.ui.swingmaterial.MaterialTextField materialTextField1;
-    private de.craften.ui.swingmaterial.MaterialTextField materialTextField2;
-    private de.craften.ui.swingmaterial.MaterialTextField materialTextField3;
-    private de.craften.ui.swingmaterial.MaterialTextField materialTextField4;
     private de.craften.ui.swingmaterial.MaterialTextField materialTextField5;
     private de.craften.ui.swingmaterial.MaterialTextField materialTextField6;
     private de.craften.ui.swingmaterial.MaterialTextField materialTextField7;
     private de.craften.ui.swingmaterial.MaterialTextField materialTextField8;
+    private de.craften.ui.swingmaterial.MaterialTextField movil;
+    private de.craften.ui.swingmaterial.MaterialTextField nombre;
     private javax.swing.ButtonGroup pagoOpc;
     private de.craften.ui.swingmaterial.MaterialButton paypalButton;
     private de.craften.ui.swingmaterial.MaterialButton tarjetaButton;

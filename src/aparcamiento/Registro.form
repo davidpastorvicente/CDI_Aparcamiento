@@ -70,7 +70,7 @@
             <Property name="useNullLayout" type="boolean" value="false"/>
           </Layout>
           <SubComponents>
-            <Component class="de.craften.ui.swingmaterial.MaterialTextField" name="materialTextField1">
+            <Component class="de.craften.ui.swingmaterial.MaterialTextField" name="nombre">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Roboto" size="14" style="0"/>
@@ -108,7 +108,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="de.craften.ui.swingmaterial.MaterialTextField" name="materialTextField2">
+            <Component class="de.craften.ui.swingmaterial.MaterialTextField" name="apell">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Roboto" size="14" style="0"/>
@@ -133,7 +133,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="de.craften.ui.swingmaterial.MaterialTextField" name="materialTextField3">
+            <Component class="de.craften.ui.swingmaterial.MaterialTextField" name="email">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Roboto" size="14" style="0"/>
@@ -158,7 +158,7 @@
                 </Constraint>
               </Constraints>
             </Component>
-            <Component class="de.craften.ui.swingmaterial.MaterialTextField" name="materialTextField4">
+            <Component class="de.craften.ui.swingmaterial.MaterialTextField" name="movil">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Roboto" size="14" style="0"/>

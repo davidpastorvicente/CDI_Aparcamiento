@@ -40,12 +40,6 @@ public class URJC extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
-        materialButton5 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton7 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton10 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton11 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton12 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton8 = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -53,6 +47,12 @@ public class URJC extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        materialButton9 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton13 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton14 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton15 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton16 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton17 = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -104,54 +104,6 @@ public class URJC extends javax.swing.JFrame {
         jLabel2.setText("Seleccione la planta :");
         materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 180, 30));
 
-        materialButton5.setText("Planta 5");
-        materialButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton5ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, -1, 50));
-
-        materialButton7.setText("Planta 0");
-        materialButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton7ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, 50));
-
-        materialButton10.setText("Planta 1");
-        materialButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton10ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, 50));
-
-        materialButton11.setText("Planta 2");
-        materialButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton11ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, 50));
-
-        materialButton12.setText("Planta 3");
-        materialButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton12ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 50));
-
-        materialButton8.setText("Planta 4");
-        materialButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton8ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, 50));
-
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel10.setText("Precio/hora:     X  €");
         materialPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, -1, -1));
@@ -180,34 +132,88 @@ public class URJC extends javax.swing.JFrame {
         jLabel16.setText("Distancia en metros:   745");
         materialPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, -1));
 
+        materialButton9.setBackground(new java.awt.Color(204, 204, 204));
+        materialButton9.setText("Planta 1");
+        materialButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton9ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 120, 60));
+
+        materialButton13.setBackground(new java.awt.Color(204, 204, 204));
+        materialButton13.setText("Planta 2");
+        materialButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton13ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
+
+        materialButton14.setBackground(new java.awt.Color(204, 204, 204));
+        materialButton14.setText("Planta 3");
+        materialButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton14ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 120, 60));
+
+        materialButton15.setBackground(new java.awt.Color(204, 204, 204));
+        materialButton15.setText("Planta 4");
+        materialButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton15ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 120, 60));
+
+        materialButton16.setBackground(new java.awt.Color(204, 204, 204));
+        materialButton16.setText("Planta 5");
+        materialButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton16ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 120, 60));
+
+        materialButton17.setBackground(new java.awt.Color(204, 204, 204));
+        materialButton17.setText("Planta 0");
+        materialButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton17ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 120, 60));
+
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void materialButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton5ActionPerformed
+    private void materialButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton5ActionPerformed
+    }//GEN-LAST:event_materialButton9ActionPerformed
 
-    private void materialButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton7ActionPerformed
+    private void materialButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton13ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton7ActionPerformed
+    }//GEN-LAST:event_materialButton13ActionPerformed
 
-    private void materialButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton10ActionPerformed
+    private void materialButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton14ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton10ActionPerformed
+    }//GEN-LAST:event_materialButton14ActionPerformed
 
-    private void materialButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton11ActionPerformed
+    private void materialButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton15ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton11ActionPerformed
+    }//GEN-LAST:event_materialButton15ActionPerformed
 
-    private void materialButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton12ActionPerformed
+    private void materialButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton16ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton12ActionPerformed
+    }//GEN-LAST:event_materialButton16ActionPerformed
 
-    private void materialButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton8ActionPerformed
+    private void materialButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton17ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton8ActionPerformed
+    }//GEN-LAST:event_materialButton17ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
@@ -228,12 +234,12 @@ public class URJC extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton10;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton11;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton12;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton5;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton7;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton8;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton13;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton14;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton15;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton16;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton17;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton9;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     // End of variables declaration//GEN-END:variables
 }
