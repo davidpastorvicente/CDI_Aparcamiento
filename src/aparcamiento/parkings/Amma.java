@@ -33,15 +33,32 @@ public class Amma extends javax.swing.JFrame {
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
         materialButton5 = new de.craften.ui.swingmaterial.MaterialButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         materialButton7 = new de.craften.ui.swingmaterial.MaterialButton();
         materialButton8 = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
         jPanel1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -74,34 +91,6 @@ public class Amma extends javax.swing.JFrame {
         });
         materialPanel1.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 120, 60));
 
-        jLabel3.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel3.setText("Distancia en metros:   1300");
-        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel4.setText("Localización:   C/de los Almendros,8");
-        materialPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel5.setText("Número de plazas:      X ");
-        materialPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, -1, 30));
-
-        jLabel6.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel6.setText("( x  movilidad reducida, x  familiar, x motos y  x coches )");
-        materialPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 190, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel7.setText("Acceso a ascensor:    SI/NO");
-        materialPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 240, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel8.setText("Número de baños:    X    (x adaptados)");
-        materialPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 290, -1, -1));
-
-        jLabel9.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel9.setText("Precio/hora:     X  €");
-        materialPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, -1, -1));
-
         materialButton7.setBackground(new java.awt.Color(204, 204, 204));
         materialButton7.setText("Planta 2");
         materialButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -119,6 +108,95 @@ public class Amma extends javax.swing.JFrame {
             }
         });
         materialPanel1.add(materialButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 120, 60));
+
+        jLabel3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel3.setText("                 Precio");
+        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 380, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel17.setText("(2 adaptados)");
+        materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, 80, 20));
+
+        jLabel18.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel18.setText("9");
+        materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 200, -1, -1));
+
+        jLabel19.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel19.setText("                         Motos");
+        materialPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 260, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel20.setText("            Ascensor");
+        materialPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel21.setText("                 Baños");
+        materialPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel22.setText("   Plazas totales");
+        materialPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel23.setText("                       Coches");
+        materialPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel24.setText("Movilidad reducida");
+        materialPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel25.setText("                 Familiares");
+        materialPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel26.setText("      Localización");
+        materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel27.setText("            Distancia");
+        materialPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 90, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel28.setText("1300 m.");
+        materialPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel29.setText("0,65 €/hora");
+        materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 380, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel30.setText("6");
+        materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 260, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel31.setText("42");
+        materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 170, -1, -1));
+
+        jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel32.setText("3");
+        materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 230, -1, -1));
+
+        jLabel33.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel33.setText("60");
+        materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, -1, -1));
+
+        jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel34.setText("SÍ");
+        materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 300, -1, -1));
+
+        jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel35.setText("3");
+        materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, -1, -1));
+
+        jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel36.setText("C/ de los Almendros, 8");
+        materialPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 50, 140, -1));
+        materialPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, 270, 10));
+
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 40, 20, 370));
+        materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 160, 270, 10));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
@@ -154,16 +232,33 @@ public class Amma extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
     private de.craften.ui.swingmaterial.MaterialButton materialButton5;
     private de.craften.ui.swingmaterial.MaterialButton materialButton7;
     private de.craften.ui.swingmaterial.MaterialButton materialButton8;
