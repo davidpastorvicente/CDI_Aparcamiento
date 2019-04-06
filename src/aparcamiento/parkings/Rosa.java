@@ -5,6 +5,9 @@
  */
 package aparcamiento.parkings;
 
+import aparcamiento.Principal;
+import javax.swing.JFrame;
+
 /**
  *
  * @author david
@@ -66,6 +69,7 @@ public class Rosa extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -190,7 +194,7 @@ public class Rosa extends javax.swing.JFrame {
         materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 300, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel35.setText("3");
+        jLabel35.setText("2");
         materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -226,8 +230,15 @@ public class Rosa extends javax.swing.JFrame {
         jLabel8.setText("y aceite");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logout.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -246,7 +257,15 @@ public class Rosa extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_materialButton16ActionPerformed
 
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        this.setVisible(false);
+        /*JFrame prin= new Principal();
+        prin.setLocationRelativeTo(null);
+        prin.setVisible(true);*/
+    }//GEN-LAST:event_atrasActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private de.craften.ui.swingmaterial.MaterialButton atras;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;

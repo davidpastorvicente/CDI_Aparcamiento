@@ -59,9 +59,11 @@ public class Amma extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
+        materialButton9 = new de.craften.ui.swingmaterial.MaterialButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -92,13 +94,13 @@ public class Amma extends javax.swing.JFrame {
         materialPanel1.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 120, 60));
 
         materialButton7.setBackground(new java.awt.Color(204, 204, 204));
-        materialButton7.setText("Planta 2");
+        materialButton7.setText("Planta 3");
         materialButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 materialButton7ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
+        materialPanel1.add(materialButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 120, 60));
 
         materialButton8.setBackground(new java.awt.Color(204, 204, 204));
         materialButton8.setText("Planta 0");
@@ -198,6 +200,15 @@ public class Amma extends javax.swing.JFrame {
         materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 40, 20, 370));
         materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 160, 270, 10));
 
+        materialButton9.setBackground(new java.awt.Color(204, 204, 204));
+        materialButton9.setText("Planta 2");
+        materialButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton9ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(materialButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
+
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
@@ -205,11 +216,18 @@ public class Amma extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
-        jLabel10.setText("Gasolinera");
+        jLabel10.setText(" Gasolinera");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logout.png"))); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -228,7 +246,16 @@ public class Amma extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_materialButton8ActionPerformed
 
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_atrasActionPerformed
+
+    private void materialButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton9ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private de.craften.ui.swingmaterial.MaterialButton atras;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel16;
@@ -262,6 +289,7 @@ public class Amma extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton materialButton5;
     private de.craften.ui.swingmaterial.MaterialButton materialButton7;
     private de.craften.ui.swingmaterial.MaterialButton materialButton8;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton9;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     // End of variables declaration//GEN-END:variables
 }

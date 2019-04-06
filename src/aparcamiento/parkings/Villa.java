@@ -5,6 +5,7 @@
  */
 package aparcamiento.parkings;
 
+
 /**
  *
  * @author david
@@ -66,6 +67,7 @@ public class Villa extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -118,7 +120,7 @@ public class Villa extends javax.swing.JFrame {
         materialPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel17.setText("(2 adaptados)");
+        jLabel17.setText("(1 adaptados)");
         materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 340, 80, 20));
 
         jLabel18.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
@@ -186,11 +188,11 @@ public class Villa extends javax.swing.JFrame {
         materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 130, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel34.setText("SÍ");
+        jLabel34.setText("NO");
         materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 300, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel35.setText("3");
+        jLabel35.setText("2");
         materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -209,7 +211,7 @@ public class Villa extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
-        jLabel3.setText("Gasolinera");
+        jLabel3.setText(" Gasolinera");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/presion (1).png"))); // NOI18N
@@ -226,8 +228,15 @@ public class Villa extends javax.swing.JFrame {
         jLabel8.setText("y aceite");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logout.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -246,7 +255,12 @@ public class Villa extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_materialButton19ActionPerformed
 
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_atrasActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private de.craften.ui.swingmaterial.MaterialButton atras;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;

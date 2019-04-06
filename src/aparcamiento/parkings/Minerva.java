@@ -64,6 +64,7 @@ public class Minerva extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -197,7 +198,7 @@ public class Minerva extends javax.swing.JFrame {
         materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 300, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel35.setText("3");
+        jLabel35.setText("4");
         materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -216,7 +217,7 @@ public class Minerva extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
-        jLabel3.setText("Gasolinera");
+        jLabel3.setText(" Gasolinera");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
@@ -224,8 +225,15 @@ public class Minerva extends javax.swing.JFrame {
         jLabel4.setText(" Lavadero");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logout.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -248,7 +256,12 @@ public class Minerva extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_materialButton14ActionPerformed
 
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_atrasActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private de.craften.ui.swingmaterial.MaterialButton atras;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel17;

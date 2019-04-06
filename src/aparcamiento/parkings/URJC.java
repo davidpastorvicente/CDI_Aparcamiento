@@ -38,6 +38,7 @@ public class URJC extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
         materialButton9 = new de.craften.ui.swingmaterial.MaterialButton();
@@ -111,8 +112,15 @@ public class URJC extends javax.swing.JFrame {
         jLabel8.setText("y aceite");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logout.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -181,7 +189,7 @@ public class URJC extends javax.swing.JFrame {
         materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, -1, -1));
 
         jLabel18.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel18.setText("(2 adaptados)");
+        jLabel18.setText("(4 adaptados)");
         materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 340, 80, 20));
 
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
@@ -253,7 +261,7 @@ public class URJC extends javax.swing.JFrame {
         materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 300, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel36.setText("3");
+        jLabel36.setText("5");
         materialPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, -1, -1));
 
         jLabel37.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -294,7 +302,12 @@ public class URJC extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_materialButton17ActionPerformed
 
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_atrasActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private de.craften.ui.swingmaterial.MaterialButton atras;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;

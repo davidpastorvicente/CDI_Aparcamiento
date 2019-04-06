@@ -21,6 +21,8 @@ public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         this.setLocation(360, 140);
         incorLabel = new javax.swing.JLabel();
+        usuario="admin";
+        passwd="1234";
         initComponents();
     }
 

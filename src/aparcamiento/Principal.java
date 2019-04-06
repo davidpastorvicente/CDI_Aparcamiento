@@ -35,6 +35,8 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel3 = new javax.swing.JLabel();
         iMinerva = new javax.swing.JLabel();
@@ -87,6 +89,16 @@ public class Principal extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("¡Bienvenido!");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logout.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -418,19 +430,19 @@ public class Principal extends javax.swing.JFrame {
     private void AmmaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AmmaAreaActionPerformed
         JFrame min= new Amma();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);
     }//GEN-LAST:event_AmmaAreaActionPerformed
 
     private void MinervaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinervaAreaActionPerformed
         JFrame min= new Minerva();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_MinervaAreaActionPerformed
 
     private void iMinervaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseClicked
-        this.setVisible(false);
+        //this.setVisible(false);
         JFrame min= new Minerva();        // TODO add your handling code here:
         min.setVisible(true);
         min.setLocationRelativeTo(null);        
@@ -439,51 +451,55 @@ public class Principal extends javax.swing.JFrame {
     private void URJCAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_URJCAreaActionPerformed
         JFrame min= new URJC();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_URJCAreaActionPerformed
 
     private void iURJCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseClicked
         JFrame min= new URJC();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_iURJCMouseClicked
 
     private void VilllaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VilllaAreaActionPerformed
         JFrame min= new Villa();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_VilllaAreaActionPerformed
 
     private void iVillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseClicked
         JFrame min= new Villa();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_iVillaMouseClicked
 
     private void RosaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RosaAreaActionPerformed
         JFrame min= new Rosa();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_RosaAreaActionPerformed
 
     private void iRosaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseClicked
         JFrame min= new Rosa();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);
     }//GEN-LAST:event_iRosaMouseClicked
 
     private void iAmmaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseClicked
         JFrame min= new Amma();        // TODO add your handling code here:
         min.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
         min.setLocationRelativeTo(null);        // TODO add your handling code here:
     }//GEN-LAST:event_iAmmaMouseClicked
+
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_atrasActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Amma;
@@ -496,6 +512,7 @@ public class Principal extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton URJCArea;
     private javax.swing.JLabel Villa;
     private de.craften.ui.swingmaterial.MaterialButton VilllaArea;
+    private de.craften.ui.swingmaterial.MaterialButton atras;
     private javax.swing.JLabel iAmma;
     private javax.swing.JLabel iMinerva;
     private javax.swing.JLabel iRosa;
@@ -513,6 +530,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel mapa;
