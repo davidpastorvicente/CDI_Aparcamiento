@@ -11,12 +11,12 @@ import java.awt.Color;
  *
  * @author jorge
  */
-public class Presion extends javax.swing.JDialog {
+public class Combustible extends javax.swing.JDialog {
 
     /**
      * Creates new form Co
      */
-    public Presion(java.awt.Frame parent, boolean modal) {
+    public Combustible(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -47,11 +47,12 @@ public class Presion extends javax.swing.JDialog {
         dieselButton = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel8 = new javax.swing.JLabel();
         efitecButton = new de.craften.ui.swingmaterial.MaterialButton();
-        precio = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
         CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        precio = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        precio1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 153));
@@ -164,14 +165,6 @@ public class Presion extends javax.swing.JDialog {
         });
         jPanel2.add(efitecButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 200, 70));
 
-        precio.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        precio.setText("1,232 €/litro");
-        jPanel2.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, -1, -1));
-
-        jLabel10.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel10.setText("Precio de la gasolina");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, -1, -1));
-
         aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
         aceptarButton.setText("Aceptar");
         aceptarButton.addActionListener(new java.awt.event.ActionListener() {
@@ -190,9 +183,21 @@ public class Presion extends javax.swing.JDialog {
         });
         jPanel2.add(CancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, 140, 70));
 
+        precio.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        precio.setText("-");
+        jPanel2.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 50, -1));
+
         jLabel11.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel11.setText("seleccionada:");
         jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel10.setText("Precio de la gasolina");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, -1, -1));
+
+        precio1.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        precio1.setText("€/litro");
+        jPanel2.add(precio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, -1, -1));
 
         jPanel1.add(jPanel2);
 
@@ -222,6 +227,7 @@ public class Presion extends javax.swing.JDialog {
         gasolina95button.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
         efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        precio.setText("1,232");
     }//GEN-LAST:event_gasolina95buttonActionPerformed
 
     private void gasolina98buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolina98buttonActionPerformed
@@ -233,6 +239,7 @@ public class Presion extends javax.swing.JDialog {
         gasolina98button.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
         efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        precio.setText("1,317");
         
     }//GEN-LAST:event_gasolina98buttonActionPerformed
 
@@ -245,6 +252,7 @@ public class Presion extends javax.swing.JDialog {
         dieselButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
         efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        precio.setText("1,023");
     }//GEN-LAST:event_dieselButtonActionPerformed
 
     private void efitecButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_efitecButtonActionPerformed
@@ -256,7 +264,16 @@ public class Presion extends javax.swing.JDialog {
         efitecButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         gasolina98button.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
         gasolina98button.setFont(new java.awt.Font("Roboto", 0, 14));
+        precio.setText("1,115");
     }//GEN-LAST:event_efitecButtonActionPerformed
+
+    private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
+        //transferirDatos        // TODO add your handling code here:
+    }//GEN-LAST:event_aceptarButtonActionPerformed
+
+    private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
+        this.setVisible(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_CancelarButtonActionPerformed
 
     private void eurosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eurosButtonActionPerformed
         eurosButton.setBackground(new java.awt.Color(204,153,0));        // TODO add your handling code here:
@@ -271,14 +288,6 @@ public class Presion extends javax.swing.JDialog {
             evt.consume();
         }
     }//GEN-LAST:event_materialTextField1KeyTyped
-
-    private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        //transferirDatos        // TODO add your handling code here:
-    }//GEN-LAST:event_aceptarButtonActionPerformed
-
-    private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
-        this.setVisible(false);        // TODO add your handling code here:
-    }//GEN-LAST:event_CancelarButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -297,22 +306,14 @@ public class Presion extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Presion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Combustible.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Presion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Combustible.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Presion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Combustible.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Presion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Combustible.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -325,7 +326,7 @@ public class Presion extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Presion dialog = new Presion(new javax.swing.JFrame(), true);
+                Combustible dialog = new Combustible(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -360,5 +361,6 @@ public class Presion extends javax.swing.JDialog {
     private de.craften.ui.swingmaterial.MaterialButton litrosButton;
     private de.craften.ui.swingmaterial.MaterialTextField materialTextField1;
     private javax.swing.JLabel precio;
+    private javax.swing.JLabel precio1;
     // End of variables declaration//GEN-END:variables
 }

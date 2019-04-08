@@ -6,6 +6,7 @@
 package aparcamiento.servicios;
 
 import java.awt.Color;
+
 /**
  *
  * @author jorge
@@ -17,6 +18,7 @@ public class Lavadero extends javax.swing.JDialog {
      */
     public Lavadero(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+        aux1=true; aux2=true;
         initComponents();
     }
 
@@ -31,85 +33,173 @@ public class Lavadero extends javax.swing.JDialog {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        ruedasButton = new de.craften.ui.swingmaterial.MaterialButton();
+        aceiteButton = new de.craften.ui.swingmaterial.MaterialButton();
+        aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel5 = new javax.swing.JLabel();
         materialTextField2 = new de.craften.ui.swingmaterial.MaterialTextField();
+        jLabel6 = new javax.swing.JLabel();
         materialTextField3 = new de.craften.ui.swingmaterial.MaterialTextField();
         materialButton1 = new de.craften.ui.swingmaterial.MaterialButton();
-        jLabel3 = new javax.swing.JLabel();
-        materialButton2 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton3 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton4 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton5 = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 153));
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel2.setPreferredSize(new java.awt.Dimension(506, 300));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel1.setText("Introduzca los kilometros realizados desde el último cambio de aceite:");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 21, -1, -1));
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel2.setText("Servicios a usar:");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 220, -1));
 
-        jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel2.setText("Introduzca el valor marcado por el odómetro:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 98, -1, -1));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/oil.png"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, -1, -1));
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/car.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 30, -1));
+
+        ruedasButton.setBackground(new java.awt.Color(255, 204, 0));
+        ruedasButton.setBorder(null);
+        ruedasButton.setText("          RUEDAS");
+        ruedasButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        ruedasButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ruedasButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(ruedasButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 160, 70));
+
+        aceiteButton.setBackground(new java.awt.Color(255, 204, 0));
+        aceiteButton.setText("          ACEITE");
+        aceiteButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        aceiteButton.setName(""); // NOI18N
+        aceiteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aceiteButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(aceiteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 160, 70));
+
+        aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
+        aceptarButton.setText("Aceptar");
+        aceptarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aceptarButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, 140, 70));
+
+        CancelarButton.setBackground(new java.awt.Color(255, 51, 51));
+        CancelarButton.setText("Cancelar");
+        CancelarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CancelarButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(CancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, 140, 70));
+
+        jLabel5.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel5.setText("Kilómetros desde el último cambio de aceite:");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 370, -1));
+
+        materialTextField2.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         materialTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 materialTextField2ActionPerformed(evt);
             }
         });
-        jPanel2.add(materialTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 72, 54, 55));
-        jPanel2.add(materialTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 8, 59, 42));
+        materialTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                materialTextField2KeyTyped(evt);
+            }
+        });
+        jPanel2.add(materialTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 60, 70));
+
+        jLabel6.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel6.setText("Valor marcado por el odómetro:");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 260, -1));
+
+        materialTextField3.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        materialTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialTextField3ActionPerformed(evt);
+            }
+        });
+        materialTextField3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                materialTextField3KeyTyped(evt);
+            }
+        });
+        jPanel2.add(materialTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 60, 70));
 
         materialButton1.setBackground(new java.awt.Color(0, 204, 204));
         materialButton1.setText("Analizar");
-        jPanel2.add(materialButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 140, 70));
+        jPanel2.add(materialButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 130, 70));
 
-        jLabel3.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel3.setText("Selecciona los servicios a usar: ");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 194, -1, -1));
+        jPanel1.add(jPanel2);
 
-        materialButton2.setBackground(new java.awt.Color(255, 204, 0));
-        materialButton2.setText("RUEDAS");
-        materialButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(materialButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 140, 70));
-
-        materialButton3.setBackground(new java.awt.Color(255, 204, 0));
-        materialButton3.setText("Aceite");
-        jPanel2.add(materialButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 140, 70));
-
-        materialButton4.setBackground(new java.awt.Color(255, 51, 51));
-        materialButton4.setText("Cancelar");
-        jPanel2.add(materialButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 140, 70));
-
-        materialButton5.setBackground(new java.awt.Color(0, 102, 0));
-        materialButton5.setText("ACEPTAR");
-        jPanel2.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 140, 70));
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 510, 290));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 2, 530, 310));
+        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ruedasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ruedasButtonActionPerformed
+        if(aux1) {
+            ruedasButton.setBackground(new java.awt.Color(204,153,0));        // TODO add your handling code here:
+            ruedasButton.setFont(new java.awt.Font("Roboto Medium", 1, 15));
+            ruedasButton.setForeground(Color.WHITE);
+            aux1=false;
+        }
+        else {
+            ruedasButton.setBackground(new java.awt.Color(255, 204,0));        // TODO add your handling code here:
+            ruedasButton.setFont(new java.awt.Font("Roboto", 0, 14));
+            aux1=true;
+        }       
+    }//GEN-LAST:event_ruedasButtonActionPerformed
+
+    private void aceiteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceiteButtonActionPerformed
+        if(aux2) {
+            aceiteButton.setBackground(new java.awt.Color(204,153,0));        // TODO add your handling code here:
+            aceiteButton.setFont(new java.awt.Font("Roboto Medium", 1, 15));
+            aceiteButton.setForeground(Color.WHITE);
+            aux2=false;
+        }
+        else {
+            aceiteButton.setBackground(new java.awt.Color(255, 204,0));        // TODO add your handling code here:
+            aceiteButton.setFont(new java.awt.Font("Roboto", 0, 14));
+            aux2=true;
+        }  
+    }//GEN-LAST:event_aceiteButtonActionPerformed
+
+    private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
+        //transferirDatos        // TODO add your handling code here:
+    }//GEN-LAST:event_aceptarButtonActionPerformed
+
+    private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
+        this.setVisible(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_CancelarButtonActionPerformed
 
     private void materialTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_materialTextField2ActionPerformed
 
-    private void materialButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton2ActionPerformed
+    private void materialTextField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_materialTextField2KeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton2ActionPerformed
+    }//GEN-LAST:event_materialTextField2KeyTyped
+
+    private void materialTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialTextField3ActionPerformed
+
+    private void materialTextField3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_materialTextField3KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialTextField3KeyTyped
 
     /**
      * @param args the command line arguments
@@ -140,6 +230,18 @@ public class Lavadero extends javax.swing.JDialog {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -155,19 +257,21 @@ public class Lavadero extends javax.swing.JDialog {
             }
         });
     }
-
+    private boolean aux1, aux2;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
+    private de.craften.ui.swingmaterial.MaterialButton aceiteButton;
+    private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private de.craften.ui.swingmaterial.MaterialButton materialButton1;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton2;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton3;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton4;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton5;
     private de.craften.ui.swingmaterial.MaterialTextField materialTextField2;
     private de.craften.ui.swingmaterial.MaterialTextField materialTextField3;
+    private de.craften.ui.swingmaterial.MaterialButton ruedasButton;
     // End of variables declaration//GEN-END:variables
 }
