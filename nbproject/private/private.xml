@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/Principal.java</file>
-            <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/Inicio.java</file>
-            <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/Registro.java</file>
-            <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/Main.java</file>
+            <file>file:/home/jorge/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/Confirm.java</file>
+            <file>file:/home/jorge/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/servicios/Lavadero.java</file>
+            <file>file:/home/jorge/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/servicios/CombustibleVilla.java</file>
+            <file>file:/home/jorge/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/servicios/Presion.java</file>
         </group>
     </open-files>
 </project-private>

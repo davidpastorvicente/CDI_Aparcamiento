@@ -11,12 +11,12 @@ import java.awt.Color;
  *
  * @author jorge
  */
-public class Combustible extends javax.swing.JDialog {
+public class Combustible1 extends javax.swing.JDialog {
 
     /**
      * Creates new form Co
      */
-    public Combustible(java.awt.Frame parent, boolean modal) {
+    public Combustible1(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -59,6 +59,7 @@ public class Combustible extends javax.swing.JDialog {
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel2.setPreferredSize(new java.awt.Dimension(506, 300));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
@@ -98,6 +99,11 @@ public class Combustible extends javax.swing.JDialog {
         materialTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 materialTextField1ActionPerformed(evt);
+            }
+        });
+        materialTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                materialTextField1KeyTyped(evt);
             }
         });
         jPanel2.add(materialTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 30, 70));
@@ -178,7 +184,7 @@ public class Combustible extends javax.swing.JDialog {
         jLabel10.setText("Precio de la gasolina");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 510, 290));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 506, 288));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -8, 540, 320));
 
@@ -258,6 +264,12 @@ public class Combustible extends javax.swing.JDialog {
         materialButton5.setForeground(Color.WHITE);
     }//GEN-LAST:event_materialButton5ActionPerformed
 
+    private void materialTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_materialTextField1KeyTyped
+        if(materialTextField1.getText().length()>=2){
+            evt.consume();
+        }
+    }//GEN-LAST:event_materialTextField1KeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -275,21 +287,23 @@ public class Combustible extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Combustible.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Combustible1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Combustible.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Combustible1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Combustible.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Combustible1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Combustible.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Combustible1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Combustible dialog = new Combustible(new javax.swing.JFrame(), true);
+                Combustible1 dialog = new Combustible1(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

@@ -5,6 +5,7 @@
  */
 package aparcamiento.servicios;
 
+import java.awt.Color;
 /**
  *
  * @author jorge
@@ -30,6 +31,16 @@ public class Lavadero extends javax.swing.JDialog {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        materialTextField2 = new de.craften.ui.swingmaterial.MaterialTextField();
+        materialTextField3 = new de.craften.ui.swingmaterial.MaterialTextField();
+        materialButton1 = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel3 = new javax.swing.JLabel();
+        materialButton2 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton3 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton4 = new de.craften.ui.swingmaterial.MaterialButton();
+        materialButton5 = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 153));
@@ -38,23 +49,67 @@ public class Lavadero extends javax.swing.JDialog {
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 510, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 290, Short.MAX_VALUE)
-        );
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 510, 290));
+        jLabel1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel1.setText("Introduzca los kilometros realizados desde el último cambio de aceite:");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 21, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -8, 590, 330));
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel2.setText("Introduzca el valor marcado por el odómetro:");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 98, -1, -1));
+
+        materialTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(materialTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 72, 54, 55));
+        jPanel2.add(materialTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 8, 59, 42));
+
+        materialButton1.setBackground(new java.awt.Color(0, 204, 204));
+        materialButton1.setText("Analizar");
+        jPanel2.add(materialButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 140, 70));
+
+        jLabel3.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel3.setText("Selecciona los servicios a usar: ");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 194, -1, -1));
+
+        materialButton2.setBackground(new java.awt.Color(255, 204, 0));
+        materialButton2.setText("RUEDAS");
+        materialButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(materialButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 140, 70));
+
+        materialButton3.setBackground(new java.awt.Color(255, 204, 0));
+        materialButton3.setText("Aceite");
+        jPanel2.add(materialButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 140, 70));
+
+        materialButton4.setBackground(new java.awt.Color(255, 51, 51));
+        materialButton4.setText("Cancelar");
+        jPanel2.add(materialButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 140, 70));
+
+        materialButton5.setBackground(new java.awt.Color(0, 102, 0));
+        materialButton5.setText("ACEPTAR");
+        jPanel2.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 140, 70));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 510, 290));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 2, 530, 310));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void materialTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialTextField2ActionPerformed
+
+    private void materialButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_materialButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -102,7 +157,17 @@ public class Lavadero extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton1;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton2;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton3;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton4;
+    private de.craften.ui.swingmaterial.MaterialButton materialButton5;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField2;
+    private de.craften.ui.swingmaterial.MaterialTextField materialTextField3;
     // End of variables declaration//GEN-END:variables
 }
