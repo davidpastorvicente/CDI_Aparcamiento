@@ -63,6 +63,8 @@ public class Amma extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         materialButton9 = new de.craften.ui.swingmaterial.MaterialButton();
+        jButton2 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -70,6 +72,7 @@ public class Amma extends javax.swing.JFrame {
         gasolineraButton = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFocusable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
@@ -213,6 +216,19 @@ public class Amma extends javax.swing.JFrame {
         });
         materialPanel1.add(materialButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ReservadoMinus.png"))); // NOI18N
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 132, 53, 70));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Danuko\\Downloads\\Webp.net-resizeimage.png")); // NOI18N
+        materialPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 480, 330));
+
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
@@ -273,9 +289,14 @@ public class Amma extends javax.swing.JFrame {
         gasolina.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_gasolineraButtonActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel16;
@@ -301,6 +322,7 @@ public class Amma extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
