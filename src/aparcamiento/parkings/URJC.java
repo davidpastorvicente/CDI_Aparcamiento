@@ -5,6 +5,8 @@
  */
 package aparcamiento.parkings;
 
+import aparcamiento.servicios.*;
+import javax.swing.JDialog;
 /**
  *
  * @author david
@@ -39,6 +41,9 @@ public class URJC extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         atras = new de.craften.ui.swingmaterial.MaterialButton();
+        gasolineraButton = new de.craften.ui.swingmaterial.MaterialButton();
+        lavaderoButton = new de.craften.ui.swingmaterial.MaterialButton();
+        nivelButton = new de.craften.ui.swingmaterial.MaterialButton();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
         materialButton9 = new de.craften.ui.swingmaterial.MaterialButton();
@@ -122,6 +127,30 @@ public class URJC extends javax.swing.JFrame {
         });
         jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
+        gasolineraButton.setBackground(new java.awt.Color(0, 160, 160));
+        gasolineraButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gasolineraButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(gasolineraButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
+
+        lavaderoButton.setBackground(new java.awt.Color(0, 160, 160));
+        lavaderoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lavaderoButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(lavaderoButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 220, 100));
+
+        nivelButton.setBackground(new java.awt.Color(0, 160, 160));
+        nivelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nivelButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(nivelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 220, 110));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         materialPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -193,7 +222,7 @@ public class URJC extends javax.swing.JFrame {
         materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 340, 80, 20));
 
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel19.setText("9");
+        jLabel19.setText("18");
         materialPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 200, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -241,19 +270,19 @@ public class URJC extends javax.swing.JFrame {
         materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 380, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel31.setText("6");
+        jLabel31.setText("24");
         materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 260, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel32.setText("42");
+        jLabel32.setText("150");
         materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel33.setText("3");
+        jLabel33.setText("12");
         materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 230, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel34.setText("60");
+        jLabel34.setText("204");
         materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 130, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
@@ -273,7 +302,7 @@ public class URJC extends javax.swing.JFrame {
         materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 20, 370));
         materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 270, 10));
 
-        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
+        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -306,8 +335,30 @@ public class URJC extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_atrasActionPerformed
 
+    private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
+        JDialog gasolina= new Combustible(this, true);
+        gasolina.setLocationRelativeTo(null);
+        gasolina.setTitle("Surtidor de gasolina");
+        gasolina.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_gasolineraButtonActionPerformed
+
+    private void lavaderoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lavaderoButtonActionPerformed
+        JDialog lav= new Lavadero(this, true);
+        lav.setLocationRelativeTo(null);
+        lav.setTitle("Lavadero de vehículos");
+        lav.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_lavaderoButtonActionPerformed
+
+    private void nivelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelButtonActionPerformed
+        JDialog niv= new Presion(this, true);
+        niv.setLocationRelativeTo(null);
+        niv.setTitle("Medidor de aceite y aire");
+        niv.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_nivelButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
+    private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -343,6 +394,7 @@ public class URJC extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private de.craften.ui.swingmaterial.MaterialButton lavaderoButton;
     private de.craften.ui.swingmaterial.MaterialButton materialButton13;
     private de.craften.ui.swingmaterial.MaterialButton materialButton14;
     private de.craften.ui.swingmaterial.MaterialButton materialButton15;
@@ -350,5 +402,6 @@ public class URJC extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton materialButton17;
     private de.craften.ui.swingmaterial.MaterialButton materialButton9;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
+    private de.craften.ui.swingmaterial.MaterialButton nivelButton;
     // End of variables declaration//GEN-END:variables
 }

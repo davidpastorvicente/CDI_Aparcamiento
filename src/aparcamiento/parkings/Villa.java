@@ -5,7 +5,8 @@
  */
 package aparcamiento.parkings;
 
-
+import aparcamiento.servicios.*;
+import javax.swing.JDialog;
 /**
  *
  * @author david
@@ -68,6 +69,8 @@ public class Villa extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         atras = new de.craften.ui.swingmaterial.MaterialButton();
+        gasolineraButton = new de.craften.ui.swingmaterial.MaterialButton();
+        nivelButton = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -172,15 +175,15 @@ public class Villa extends javax.swing.JFrame {
         materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 380, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel30.setText("6");
+        jLabel30.setText("12");
         materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 260, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel31.setText("42");
+        jLabel31.setText("33");
         materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel32.setText("3");
+        jLabel32.setText("6");
         materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 230, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
@@ -204,7 +207,7 @@ public class Villa extends javax.swing.JFrame {
         materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 20, 370));
         materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 270, 10));
 
-        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
+        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -238,6 +241,22 @@ public class Villa extends javax.swing.JFrame {
         });
         jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
+        gasolineraButton.setBackground(new java.awt.Color(0, 160, 160));
+        gasolineraButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gasolineraButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(gasolineraButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
+
+        nivelButton.setBackground(new java.awt.Color(0, 160, 160));
+        nivelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nivelButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(nivelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 220, 110));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         pack();
@@ -259,8 +278,23 @@ public class Villa extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_atrasActionPerformed
 
+    private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
+        JDialog gasolina= new Combustible(this, true);
+        gasolina.setLocationRelativeTo(null);
+        gasolina.setTitle("Surtidor de gasolina");
+        gasolina.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_gasolineraButtonActionPerformed
+
+    private void nivelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelButtonActionPerformed
+        JDialog niv= new Presion(this, true);
+        niv.setLocationRelativeTo(null);
+        niv.setTitle("Medidor de aceite y aire");
+        niv.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_nivelButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
+    private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -299,5 +333,6 @@ public class Villa extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton materialButton18;
     private de.craften.ui.swingmaterial.MaterialButton materialButton19;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
+    private de.craften.ui.swingmaterial.MaterialButton nivelButton;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,6 +5,9 @@
  */
 package aparcamiento.parkings;
 
+import aparcamiento.servicios.*;
+import javax.swing.JDialog;
+
 /**
  *
  * @author david
@@ -64,6 +67,7 @@ public class Amma extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         atras = new de.craften.ui.swingmaterial.MaterialButton();
+        gasolineraButton = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -120,7 +124,7 @@ public class Amma extends javax.swing.JFrame {
         materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, 80, 20));
 
         jLabel18.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel18.setText("9");
+        jLabel18.setText("24");
         materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 200, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -168,19 +172,19 @@ public class Amma extends javax.swing.JFrame {
         materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 380, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel30.setText("6");
+        jLabel30.setText("24");
         materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 260, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel31.setText("42");
+        jLabel31.setText("72");
         materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 170, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel32.setText("3");
+        jLabel32.setText("12");
         materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 230, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel33.setText("60");
+        jLabel33.setText("132");
         materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
@@ -229,6 +233,14 @@ public class Amma extends javax.swing.JFrame {
         });
         jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
 
+        gasolineraButton.setBackground(new java.awt.Color(0, 160, 160));
+        gasolineraButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gasolineraButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(gasolineraButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         pack();
@@ -254,8 +266,16 @@ public class Amma extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_materialButton9ActionPerformed
 
+    private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
+        JDialog gasolina= new Combustible(this, true);
+        gasolina.setLocationRelativeTo(null);
+        gasolina.setTitle("Surtidor de gasolina");
+        gasolina.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_gasolineraButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
+    private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel16;

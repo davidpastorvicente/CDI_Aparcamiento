@@ -38,7 +38,7 @@ public class Combustible extends javax.swing.JDialog {
         jLabel3 = new javax.swing.JLabel();
         litrosButton = new de.craften.ui.swingmaterial.MaterialButton();
         eurosButton = new de.craften.ui.swingmaterial.MaterialButton();
-        materialTextField1 = new de.craften.ui.swingmaterial.MaterialTextField();
+        cantidad = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel5 = new javax.swing.JLabel();
         gasolina95button = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel7 = new javax.swing.JLabel();
@@ -51,8 +51,9 @@ public class Combustible extends javax.swing.JDialog {
         CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         precio = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        total = new javax.swing.JLabel();
         precio1 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 153));
@@ -98,18 +99,18 @@ public class Combustible extends javax.swing.JDialog {
         });
         jPanel2.add(eurosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 160, 70));
 
-        materialTextField1.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        materialTextField1.addActionListener(new java.awt.event.ActionListener() {
+        cantidad.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        cantidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialTextField1ActionPerformed(evt);
+                cantidadActionPerformed(evt);
             }
         });
-        materialTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+        cantidad.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                materialTextField1KeyTyped(evt);
+                cantidadKeyTyped(evt);
             }
         });
-        jPanel2.add(materialTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 30, 70));
+        jPanel2.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 30, 70));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/600px-WV-95.svg.png"))); // NOI18N
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
@@ -191,13 +192,17 @@ public class Combustible extends javax.swing.JDialog {
         jLabel11.setText("seleccionada:");
         jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel10.setText("Precio de la gasolina");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, -1, -1));
+        total.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        total.setText("El total a pagar es:");
+        jPanel2.add(total, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, -1, -1));
 
         precio1.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         precio1.setText("€/litro");
         jPanel2.add(precio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel12.setText("Precio de la gasolina");
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, -1, -1));
 
         jPanel1.add(jPanel2);
 
@@ -206,9 +211,9 @@ public class Combustible extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void materialTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField1ActionPerformed
+    private void cantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialTextField1ActionPerformed
+    }//GEN-LAST:event_cantidadActionPerformed
 
     private void litrosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_litrosButtonActionPerformed
         litrosButton.setBackground(new java.awt.Color(204,153,0));        // TODO add your handling code here:
@@ -216,6 +221,7 @@ public class Combustible extends javax.swing.JDialog {
         eurosButton.setBackground(new java.awt.Color(255, 204,0));        // TODO add your handling code here:
         eurosButton.setFont(new java.awt.Font("Roboto", 0, 14));
         litrosButton.setForeground(Color.WHITE);
+        //total.setText("El total a pagar es" + cantidad.getText(). *Double.toString(price) + " euros");
     }//GEN-LAST:event_litrosButtonActionPerformed
 
     private void gasolina95buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolina95buttonActionPerformed
@@ -227,7 +233,8 @@ public class Combustible extends javax.swing.JDialog {
         gasolina95button.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
         efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
-        precio.setText("1,232");
+        price=1.232;
+        precio.setText(Double.toString(price));
     }//GEN-LAST:event_gasolina95buttonActionPerformed
 
     private void gasolina98buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolina98buttonActionPerformed
@@ -239,7 +246,8 @@ public class Combustible extends javax.swing.JDialog {
         gasolina98button.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
         efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
-        precio.setText("1,317");
+        price=1.317;
+        precio.setText(Double.toString(price));
         
     }//GEN-LAST:event_gasolina98buttonActionPerformed
 
@@ -252,7 +260,8 @@ public class Combustible extends javax.swing.JDialog {
         dieselButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
         efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
-        precio.setText("1,023");
+        price=1.023;
+        precio.setText(Double.toString(price));
     }//GEN-LAST:event_dieselButtonActionPerformed
 
     private void efitecButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_efitecButtonActionPerformed
@@ -264,7 +273,8 @@ public class Combustible extends javax.swing.JDialog {
         efitecButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         gasolina98button.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
         gasolina98button.setFont(new java.awt.Font("Roboto", 0, 14));
-        precio.setText("1,115");
+        price=1.115;
+        precio.setText(Double.toString(price));
     }//GEN-LAST:event_efitecButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
@@ -283,11 +293,11 @@ public class Combustible extends javax.swing.JDialog {
         eurosButton.setForeground(Color.WHITE);
     }//GEN-LAST:event_eurosButtonActionPerformed
 
-    private void materialTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_materialTextField1KeyTyped
-        if(materialTextField1.getText().length()>=2){
+    private void cantidadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cantidadKeyTyped
+        if(cantidad.getText().length()>=2){
             evt.consume();
         }
-    }//GEN-LAST:event_materialTextField1KeyTyped
+    }//GEN-LAST:event_cantidadKeyTyped
 
     /**
      * @param args the command line arguments
@@ -338,17 +348,19 @@ public class Combustible extends javax.swing.JDialog {
         });
     }
 
+    private double price;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
+    private de.craften.ui.swingmaterial.MaterialTextField cantidad;
     private de.craften.ui.swingmaterial.MaterialButton dieselButton;
     private de.craften.ui.swingmaterial.MaterialButton efitecButton;
     private de.craften.ui.swingmaterial.MaterialButton eurosButton;
     private de.craften.ui.swingmaterial.MaterialButton gasolina95button;
     private de.craften.ui.swingmaterial.MaterialButton gasolina98button;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -359,8 +371,8 @@ public class Combustible extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private de.craften.ui.swingmaterial.MaterialButton litrosButton;
-    private de.craften.ui.swingmaterial.MaterialTextField materialTextField1;
     private javax.swing.JLabel precio;
     private javax.swing.JLabel precio1;
+    private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
 }

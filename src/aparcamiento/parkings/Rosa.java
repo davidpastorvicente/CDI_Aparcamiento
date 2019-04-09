@@ -6,6 +6,8 @@
 package aparcamiento.parkings;
 
 import aparcamiento.Principal;
+import aparcamiento.servicios.*;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 
 /**
@@ -70,6 +72,8 @@ public class Rosa extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         atras = new de.craften.ui.swingmaterial.MaterialButton();
+        nivelButton = new de.craften.ui.swingmaterial.MaterialButton();
+        lavaderoButton = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -174,15 +178,15 @@ public class Rosa extends javax.swing.JFrame {
         materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 380, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel30.setText("6");
+        jLabel30.setText("12");
         materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 260, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel31.setText("42");
+        jLabel31.setText("33");
         materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel32.setText("3");
+        jLabel32.setText("6");
         materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 230, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
@@ -206,7 +210,7 @@ public class Rosa extends javax.swing.JFrame {
         materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 20, 370));
         materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 270, 10));
 
-        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
+        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -217,18 +221,18 @@ public class Rosa extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/presion (1).png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/aceite (1) (1).png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel7.setText("Nivel de aire");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel8.setText("y aceite");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, -1, -1));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
@@ -239,6 +243,22 @@ public class Rosa extends javax.swing.JFrame {
             }
         });
         jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
+
+        nivelButton.setBackground(new java.awt.Color(0, 160, 160));
+        nivelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nivelButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(nivelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 220, 110));
+
+        lavaderoButton.setBackground(new java.awt.Color(0, 160, 160));
+        lavaderoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lavaderoButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(lavaderoButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -263,6 +283,20 @@ public class Rosa extends javax.swing.JFrame {
         prin.setLocationRelativeTo(null);
         prin.setVisible(true);*/
     }//GEN-LAST:event_atrasActionPerformed
+
+    private void nivelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelButtonActionPerformed
+        JDialog niv= new Presion(this, true);
+        niv.setLocationRelativeTo(null);
+        niv.setTitle("Medidor de aceite y aire");
+        niv.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_nivelButtonActionPerformed
+
+    private void lavaderoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lavaderoButtonActionPerformed
+        JDialog lav= new Lavadero(this, true);
+        lav.setLocationRelativeTo(null);
+        lav.setTitle("Lavadero de vehículos");
+        lav.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_lavaderoButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
@@ -300,9 +334,11 @@ public class Rosa extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private de.craften.ui.swingmaterial.MaterialButton lavaderoButton;
     private de.craften.ui.swingmaterial.MaterialButton materialButton13;
     private de.craften.ui.swingmaterial.MaterialButton materialButton16;
     private de.craften.ui.swingmaterial.MaterialButton materialButton9;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
+    private de.craften.ui.swingmaterial.MaterialButton nivelButton;
     // End of variables declaration//GEN-END:variables
 }
