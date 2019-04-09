@@ -5,7 +5,6 @@
  */
 package aparcamiento.servicios;
 
-import java.awt.Color;
 
 /**
  *
@@ -18,7 +17,6 @@ public class Presion extends javax.swing.JDialog {
      */
     public Presion(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
-        aux1=true; aux2=true;
         initComponents();
     }
 
@@ -33,18 +31,27 @@ public class Presion extends javax.swing.JDialog {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         ruedasButton = new de.craften.ui.swingmaterial.MaterialButton();
-        aceiteButton = new de.craften.ui.swingmaterial.MaterialButton();
         aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
         CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
-        jLabel5 = new javax.swing.JLabel();
-        materialTextField2 = new de.craften.ui.swingmaterial.MaterialTextField();
+        kms = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel6 = new javax.swing.JLabel();
-        materialTextField3 = new de.craften.ui.swingmaterial.MaterialTextField();
+        bar = new de.craften.ui.swingmaterial.MaterialTextField();
         materialButton1 = new de.craften.ui.swingmaterial.MaterialButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel5 = new javax.swing.JLabel();
+        hinchaRuedas = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        aceiteButton = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        cambioAceite = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 153));
@@ -54,37 +61,22 @@ public class Presion extends javax.swing.JDialog {
         jPanel2.setPreferredSize(new java.awt.Dimension(506, 300));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel2.setText("Servicios a usar:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 220, -1));
-
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/oil.png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, -1, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/car.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 30, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 30, -1));
 
         ruedasButton.setBackground(new java.awt.Color(255, 204, 0));
         ruedasButton.setBorder(null);
-        ruedasButton.setText("          RUEDAS");
+        ruedasButton.setText("         hinchado de neúmaticos");
         ruedasButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         ruedasButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ruedasButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(ruedasButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 160, 70));
-
-        aceiteButton.setBackground(new java.awt.Color(255, 204, 0));
-        aceiteButton.setText("          ACEITE");
-        aceiteButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        aceiteButton.setName(""); // NOI18N
-        aceiteButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                aceiteButtonActionPerformed(evt);
-            }
-        });
-        jPanel2.add(aceiteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 160, 70));
+        jPanel2.add(ruedasButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, 280, 70));
 
         aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
         aceptarButton.setText("Aceptar");
@@ -104,43 +96,97 @@ public class Presion extends javax.swing.JDialog {
         });
         jPanel2.add(CancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, 140, 70));
 
-        jLabel5.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel5.setText("Kilómetros desde el último cambio de aceite:");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 370, -1));
-
-        materialTextField2.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        materialTextField2.addActionListener(new java.awt.event.ActionListener() {
+        kms.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        kms.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialTextField2ActionPerformed(evt);
+                kmsActionPerformed(evt);
             }
         });
-        materialTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+        kms.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                materialTextField2KeyTyped(evt);
+                kmsKeyTyped(evt);
             }
         });
-        jPanel2.add(materialTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 60, 70));
+        jPanel2.add(kms, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 50, 60));
 
-        jLabel6.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel6.setText("Valor marcado por el odómetro:");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 260, -1));
+        jLabel6.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel6.setText("Si desea usar alguna de las siguientes funciones, introduzca los campos indicados:");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 460, -1));
 
-        materialTextField3.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        materialTextField3.addActionListener(new java.awt.event.ActionListener() {
+        bar.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        bar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialTextField3ActionPerformed(evt);
+                barActionPerformed(evt);
             }
         });
-        materialTextField3.addKeyListener(new java.awt.event.KeyAdapter() {
+        bar.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                materialTextField3KeyTyped(evt);
+                barKeyTyped(evt);
             }
         });
-        jPanel2.add(materialTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 60, 70));
+        jPanel2.add(bar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, 30, 60));
 
         materialButton1.setBackground(new java.awt.Color(0, 204, 204));
         materialButton1.setText("Analizar");
-        jPanel2.add(materialButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 130, 70));
+        materialButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                materialButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(materialButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 130, 70));
+
+        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 20, 140));
+
+        jLabel5.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel5.setText("bares");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 50, -1));
+
+        hinchaRuedas.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jPanel2.add(hinchaRuedas, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 240, 20));
+
+        jLabel9.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel9.setText("Número de bares");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 170, -1));
+
+        jLabel11.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel11.setText("kms.");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 50, -1));
+
+        aceiteButton.setBackground(new java.awt.Color(255, 204, 0));
+        aceiteButton.setBorder(null);
+        aceiteButton.setText("         cambio de aceite");
+        aceiteButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        aceiteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aceiteButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(aceiteButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 220, 70));
+
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel12.setText("Número de kilómetros");
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 170, -1));
+
+        jLabel13.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel13.setText("Resultado:");
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 100, -1));
+
+        cambioAceite.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        cambioAceite.setText("      ____");
+        jPanel2.add(cambioAceite, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 240, -1));
+
+        jLabel7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel7.setText("marcado por el odómetro:");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 170, -1));
+
+        jLabel14.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel14.setText("marcado por el manómetro:");
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 180, -1));
+
+        jLabel15.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel15.setText("Servicio gratuito");
+        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 90, 20));
 
         jPanel1.add(jPanel2);
 
@@ -150,56 +196,55 @@ public class Presion extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ruedasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ruedasButtonActionPerformed
-        if(aux1) {
-            ruedasButton.setBackground(new java.awt.Color(204,153,0));        // TODO add your handling code here:
-            ruedasButton.setFont(new java.awt.Font("Roboto Medium", 1, 15));
-            ruedasButton.setForeground(Color.WHITE);
-            aux1=false;
-        }
-        else {
-            ruedasButton.setBackground(new java.awt.Color(255, 204,0));        // TODO add your handling code here:
-            ruedasButton.setFont(new java.awt.Font("Roboto", 0, 14));
-            aux1=true;
-        }       
+  
     }//GEN-LAST:event_ruedasButtonActionPerformed
 
-    private void aceiteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceiteButtonActionPerformed
-        if(aux2) {
-            aceiteButton.setBackground(new java.awt.Color(204,153,0));        // TODO add your handling code here:
-            aceiteButton.setFont(new java.awt.Font("Roboto Medium", 1, 15));
-            aceiteButton.setForeground(Color.WHITE);
-            aux2=false;
-        }
-        else {
-            aceiteButton.setBackground(new java.awt.Color(255, 204,0));        // TODO add your handling code here:
-            aceiteButton.setFont(new java.awt.Font("Roboto", 0, 14));
-            aux2=true;
-        }  
-    }//GEN-LAST:event_aceiteButtonActionPerformed
-
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        //transferirDatos        // TODO add your handling code here:
+        this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
         this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_CancelarButtonActionPerformed
 
-    private void materialTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField2ActionPerformed
+    private void kmsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kmsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialTextField2ActionPerformed
+    }//GEN-LAST:event_kmsActionPerformed
 
-    private void materialTextField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_materialTextField2KeyTyped
+    private void kmsKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kmsKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialTextField2KeyTyped
+    }//GEN-LAST:event_kmsKeyTyped
 
-    private void materialTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialTextField3ActionPerformed
+    private void barActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_barActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialTextField3ActionPerformed
+    }//GEN-LAST:event_barActionPerformed
 
-    private void materialTextField3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_materialTextField3KeyTyped
+    private void barKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_barKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_materialTextField3KeyTyped
+    }//GEN-LAST:event_barKeyTyped
+
+    private void aceiteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceiteButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_aceiteButtonActionPerformed
+
+    private void materialButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton1ActionPerformed
+        if(!bar.getText().equals("")) {
+            cambioAceite.setText("");
+            if(Double.parseDouble(bar.getText()) > 2.1d || Double.parseDouble(bar.getText()) < 1.8d)
+                hinchaRuedas.setText("- Es preciso hinchar los neumáticos");
+            else
+                hinchaRuedas.setText("- No es preciso hinchar los neumáticos");
+        }
+        else hinchaRuedas.setText("");
+           
+        if(!kms.getText().equals("")) {
+            if(Double.parseDouble(kms.getText()) > 5000)
+                cambioAceite.setText("- Es preciso cambiar el aceite");
+            else
+                cambioAceite.setText("- No es preciso cambiar el aceite");
+        }
+        else cambioAceite.setText("");
+    }//GEN-LAST:event_materialButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -305,21 +350,30 @@ public class Presion extends javax.swing.JDialog {
             }
         });
     }
-    private boolean aux1, aux2;
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceiteButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
-    private javax.swing.JLabel jLabel2;
+    private de.craften.ui.swingmaterial.MaterialTextField bar;
+    private javax.swing.JLabel cambioAceite;
+    private javax.swing.JLabel hinchaRuedas;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JSeparator jSeparator1;
+    private de.craften.ui.swingmaterial.MaterialTextField kms;
     private de.craften.ui.swingmaterial.MaterialButton materialButton1;
-    private de.craften.ui.swingmaterial.MaterialTextField materialTextField2;
-    private de.craften.ui.swingmaterial.MaterialTextField materialTextField3;
     private de.craften.ui.swingmaterial.MaterialButton ruedasButton;
     // End of variables declaration//GEN-END:variables
 }

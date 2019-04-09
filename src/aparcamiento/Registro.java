@@ -187,7 +187,7 @@ public class Registro extends javax.swing.JDialog {
 
         tarjetaButton.setBackground(new java.awt.Color(204, 204, 204));
         tarjetaButton.setText("          Tarjeta bancaria");
-        tarjetaButton.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        tarjetaButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         tarjetaButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tarjetaButtonActionPerformed(evt);
@@ -221,7 +221,9 @@ public class Registro extends javax.swing.JDialog {
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
         Inicio.usuario= nombre.getText() + "-UPM";
-        Inicio.passwd= "CDI2019";
+        Inicio.passwd= "cdi2019";
+        Inicio.name= nombre.getText();
+        Inicio.email= email.getText();
         Confirm c= new Confirm(null, true);
         c.setLocationRelativeTo(null);
         c.setVisible(true);
@@ -243,7 +245,7 @@ public class Registro extends javax.swing.JDialog {
 
     private void tarjetaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tarjetaButtonActionPerformed
                 // TODO add your handling code here:
-        tarjetaButton.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        tarjetaButton.setFont(new java.awt.Font("Roboto Medium", 1, 14)); // NOI18N
         paypalButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         
         jLabel6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -294,7 +296,7 @@ public class Registro extends javax.swing.JDialog {
     private void paypalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paypalButtonActionPerformed
         // TODO add your handling code here:
         tarjetaButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        paypalButton.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        paypalButton.setFont(new java.awt.Font("Roboto Medium", 1, 14)); // NOI18N
         
         jPanel3.remove(jLabel5);
         //jPanel3.remove(jLabel6);
@@ -321,7 +323,6 @@ public class Registro extends javax.swing.JDialog {
     /**
      * @param args the command line arguments
      */
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;

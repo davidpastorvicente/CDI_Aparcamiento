@@ -46,7 +46,7 @@ public class Confirm extends javax.swing.JDialog {
 
         aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
         aceptarButton.setText("Aceptar");
-        aceptarButton.setFont(new java.awt.Font("Roboto Medium", 0, 12)); // NOI18N
+        aceptarButton.setFont(new java.awt.Font("Roboto Medium", 1, 12)); // NOI18N
         aceptarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aceptarButtonActionPerformed(evt);

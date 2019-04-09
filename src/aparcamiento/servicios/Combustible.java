@@ -71,13 +71,13 @@ public class Combustible extends javax.swing.JDialog {
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel2.setText("3. Seleccione el modo:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 200, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 200, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/drop.png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/euro.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 30, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 30, -1));
 
         litrosButton.setBackground(new java.awt.Color(255, 204, 0));
         litrosButton.setBorder(null);
@@ -88,7 +88,7 @@ public class Combustible extends javax.swing.JDialog {
                 litrosButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(litrosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 160, 70));
+        jPanel2.add(litrosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 140, 70));
 
         eurosButton.setBackground(new java.awt.Color(255, 204, 0));
         eurosButton.setText("          EUROS");
@@ -99,7 +99,7 @@ public class Combustible extends javax.swing.JDialog {
                 eurosButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(eurosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 160, 70));
+        jPanel2.add(eurosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 140, 70));
 
         cantidad.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         cantidad.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +112,7 @@ public class Combustible extends javax.swing.JDialog {
                 cantidadKeyTyped(evt);
             }
         });
-        jPanel2.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, 30, 60));
+        jPanel2.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 30, 60));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/600px-WV-95.svg.png"))); // NOI18N
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
@@ -192,7 +192,7 @@ public class Combustible extends javax.swing.JDialog {
 
         jLabel11.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel11.setText("seleccionada:");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 50, -1, -1));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 60, -1, -1));
 
         precio1.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         precio1.setText("€/litro");
@@ -200,11 +200,11 @@ public class Combustible extends javax.swing.JDialog {
 
         jLabel12.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel12.setText("Precio de la gasolina");
-        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, -1, -1));
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 40, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel14.setText("El total a pagar es:");
-        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 120, -1));
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 120, -1));
 
         euros.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         euros.setText("0,00 € (0,00 litros)");
@@ -212,7 +212,7 @@ public class Combustible extends javax.swing.JDialog {
 
         jLabel9.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel9.setText("2. Introduzca la cantidad:");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 200, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 200, -1));
 
         jPanel1.add(jPanel2);
 
@@ -227,7 +227,7 @@ public class Combustible extends javax.swing.JDialog {
 
     private void litrosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_litrosButtonActionPerformed
         litrosButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
-        litrosButton.setFont(new java.awt.Font("Roboto Medium", 1, 15));
+        litrosButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         eurosButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
         eurosButton.setFont(new java.awt.Font("Roboto", 0, 14));
         litrosButton.setForeground(Color.WHITE);
@@ -294,11 +294,12 @@ public class Combustible extends javax.swing.JDialog {
 
     private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
         this.setVisible(false);        // TODO add your handling code here:
+        totalCombustible=null;
     }//GEN-LAST:event_CancelarButtonActionPerformed
 
     private void eurosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eurosButtonActionPerformed
         eurosButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
-        eurosButton.setFont(new java.awt.Font("Roboto Medium", 1, 15));
+        eurosButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
         litrosButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
         litrosButton.setFont(new java.awt.Font("Roboto", 0, 14));
         eurosButton.setForeground(Color.WHITE);

@@ -13,14 +13,15 @@ import javax.swing.JFrame;
  * @author david
  */
 public class Inicio extends javax.swing.JFrame {
-    public static String usuario;
-    public static String passwd;
+    public static String usuario, passwd, name, email;
     /**
      * Creates new form inicio
      */
     public Inicio() {
         this.setLocation(360, 140);
         incorLabel = new javax.swing.JLabel();
+        name="Administrador";
+        email="admin@upm.es";
         usuario="admin";
         passwd="1234";
         initComponents();
