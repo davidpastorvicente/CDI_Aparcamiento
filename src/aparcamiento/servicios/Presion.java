@@ -212,7 +212,7 @@ public class Presion extends javax.swing.JDialog {
     }//GEN-LAST:event_kmsActionPerformed
 
     private void kmsKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kmsKeyTyped
-        // TODO add your handling code here:
+        if(kms.getText().length() >= 6) evt.consume();
     }//GEN-LAST:event_kmsKeyTyped
 
     private void barActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_barActionPerformed
@@ -220,7 +220,7 @@ public class Presion extends javax.swing.JDialog {
     }//GEN-LAST:event_barActionPerformed
 
     private void barKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_barKeyTyped
-        // TODO add your handling code here:
+        if(bar.getText().length() >= 3) evt.consume();
     }//GEN-LAST:event_barKeyTyped
 
     private void aceiteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceiteButtonActionPerformed

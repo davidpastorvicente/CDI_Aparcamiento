@@ -18,12 +18,44 @@ public class Amma extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Amma() {
-        estado= new int[33];
-        estado[0]=1;
-        estado[1]=1;
-        estado[2]=1;
+        lib = new boolean[33];
+        for (int i = 0; i < 33; i++) {
+            lib[i] = true;
+        }
         initComponents();
+    }
 
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Amma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Amma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Amma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Amma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Amma().setVisible(true);
+            }
+        });
     }
 
     /**
@@ -39,9 +71,10 @@ public class Amma extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
-        materialButton5 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton7 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton8 = new de.craften.ui.swingmaterial.MaterialButton();
+        planta0 = new de.craften.ui.swingmaterial.MaterialButton();
+        planta1 = new de.craften.ui.swingmaterial.MaterialButton();
+        planta2 = new de.craften.ui.swingmaterial.MaterialButton();
+        planta3 = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -66,10 +99,17 @@ public class Amma extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        materialButton9 = new de.craften.ui.swingmaterial.MaterialButton();
         p3 = new javax.swing.JButton();
         p2 = new javax.swing.JButton();
         p1 = new javax.swing.JButton();
+        p4 = new javax.swing.JButton();
+        p10 = new javax.swing.JButton();
+        p14 = new javax.swing.JButton();
+        p13 = new javax.swing.JButton();
+        p12 = new javax.swing.JButton();
+        p15 = new javax.swing.JButton();
+        p16 = new javax.swing.JButton();
+        p17 = new javax.swing.JButton();
         parking = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
@@ -95,168 +135,283 @@ public class Amma extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel2.setText("Seleccione la planta :");
-        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 180, 30));
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
 
-        materialButton5.setBackground(new java.awt.Color(204, 204, 204));
-        materialButton5.setText("Planta 1");
-        materialButton5.addActionListener(new java.awt.event.ActionListener() {
+        planta0.setBackground(new java.awt.Color(102, 102, 102));
+        planta0.setText("Planta 0");
+        planta0.setFont(new java.awt.Font("Roboto Medium", 1, 14)); // NOI18N
+        planta0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton5ActionPerformed(evt);
+                planta0ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 120, 60));
+        materialPanel1.add(planta0, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 120, 60));
 
-        materialButton7.setBackground(new java.awt.Color(204, 204, 204));
-        materialButton7.setText("Planta 3");
-        materialButton7.addActionListener(new java.awt.event.ActionListener() {
+        planta1.setBackground(new java.awt.Color(204, 204, 204));
+        planta1.setText("Planta 1");
+        planta1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        planta1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton7ActionPerformed(evt);
+                planta1ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 120, 60));
+        materialPanel1.add(planta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 120, 60));
 
-        materialButton8.setBackground(new java.awt.Color(204, 204, 204));
-        materialButton8.setText("Planta 0");
-        materialButton8.addActionListener(new java.awt.event.ActionListener() {
+        planta2.setBackground(new java.awt.Color(204, 204, 204));
+        planta2.setText("Planta 2");
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        planta2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton8ActionPerformed(evt);
+                planta2ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 120, 60));
+        materialPanel1.add(planta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 120, 60));
+
+        planta3.setBackground(new java.awt.Color(204, 204, 204));
+        planta3.setText("Planta 3");
+        planta3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        planta3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planta3ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(planta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 120, 60));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel3.setText("                 Precio");
-        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 380, -1, -1));
+        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel17.setText("(2 adaptados)");
-        materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, 80, 20));
+        materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, 80, 20));
 
         jLabel18.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel18.setText("24");
-        materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 200, -1, -1));
+        materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 200, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel19.setText("                         Motos");
-        materialPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 260, -1, -1));
+        materialPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel20.setText("            Ascensor");
-        materialPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, -1, -1));
+        materialPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel21.setText("                 Baños");
-        materialPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, -1, -1));
+        materialPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel22.setText("   Plazas totales");
-        materialPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, -1, -1));
+        materialPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 130, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel23.setText("                       Coches");
-        materialPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 170, -1, -1));
+        materialPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel24.setText("Movilidad reducida");
-        materialPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));
+        materialPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, -1, -1));
 
         jLabel25.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel25.setText("                 Familiares");
-        materialPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, -1, -1));
+        materialPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel26.setText("      Localización");
-        materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, -1));
+        materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 50, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel27.setText("            Distancia");
-        materialPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 90, -1, -1));
+        materialPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, -1, -1));
 
         jLabel28.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel28.setText("1300 m.");
-        materialPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 90, -1, -1));
+        materialPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 90, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel29.setText("0,65 €/hora");
-        materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 380, -1, -1));
+        materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 380, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel30.setText("24");
-        materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 260, -1, -1));
+        materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 260, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel31.setText("72");
-        materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 170, -1, -1));
+        materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 170, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel32.setText("12");
-        materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 230, -1, -1));
+        materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 230, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel33.setText("132");
-        materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 130, -1, -1));
+        materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 130, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel34.setText("SÍ");
-        materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 300, -1, -1));
+        materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 300, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel35.setText("3");
-        materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, -1, -1));
+        materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 340, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel36.setText("C/ de los Almendros, 8");
-        materialPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 50, 140, -1));
-        materialPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, 270, 10));
+        materialPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 50, 140, -1));
+        materialPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 40, 20, 370));
-        materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 160, 270, 10));
-
-        materialButton9.setBackground(new java.awt.Color(204, 204, 204));
-        materialButton9.setText("Planta 2");
-        materialButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton9ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
+        materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 40, 20, 370));
+        materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 270, 10));
 
         p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p3.setMnemonic(2);
+        p3.setToolTipText("Libre");
         p3.setBorderPainted(false);
         p3.setContentAreaFilled(false);
         p3.setName("3"); // NOI18N
         p3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p2ccionBoton(evt);
+                accion(evt);
             }
         });
-        materialPanel1.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 130, 53, 70));
+        materialPanel1.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 112, 53, 70));
 
         p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p2.setMnemonic(2);
+        p2.setToolTipText("Libre");
         p2.setBorderPainted(false);
         p2.setContentAreaFilled(false);
         p2.setName("2"); // NOI18N
         p2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p2ccionBoton(evt);
+                accion(evt);
             }
         });
-        materialPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 130, 53, 70));
+        materialPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 112, 53, 70));
 
         p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p1.setMnemonic(2);
+        p1.setToolTipText("Libre");
         p1.setBorderPainted(false);
         p1.setContentAreaFilled(false);
         p1.setName("1"); // NOI18N
         p1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p2ccionBoton(evt);
+                accion(evt);
             }
         });
-        materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 130, 53, 70));
+        materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 112, 53, 70));
+
+        p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p4.setMnemonic(0);
+        p4.setToolTipText("Libre");
+        p4.setBorderPainted(false);
+        p4.setContentAreaFilled(false);
+        p4.setName("4"); // NOI18N
+        p4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 112, 43, 70));
+
+        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
+        p10.setMnemonic(1);
+        p10.setToolTipText("Libre");
+        p10.setBorderPainted(false);
+        p10.setContentAreaFilled(false);
+        p10.setName("10"); // NOI18N
+        p10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 112, 43, 35));
+
+        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
+        p14.setMnemonic(2);
+        p14.setToolTipText("Ocupado");
+        p14.setBorderPainted(false);
+        p14.setContentAreaFilled(false);
+        p14.setName("14"); // NOI18N
+        p14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p14, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 241, 53, 70));
+
+        p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p13.setMnemonic(2);
+        p13.setToolTipText("Libre");
+        p13.setBorderPainted(false);
+        p13.setContentAreaFilled(false);
+        p13.setName("13"); // NOI18N
+        p13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 241, 53, 70));
+
+        p12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p12.setMnemonic(2);
+        p12.setToolTipText("Libre");
+        p12.setBorderPainted(false);
+        p12.setContentAreaFilled(false);
+        p12.setName("12"); // NOI18N
+        p12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p12, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 241, 53, 70));
+
+        p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p15.setMnemonic(2);
+        p15.setToolTipText("Libre");
+        p15.setBorderPainted(false);
+        p15.setContentAreaFilled(false);
+        p15.setName("12"); // NOI18N
+        p15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 372, 53, 70));
+
+        p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p16.setMnemonic(2);
+        p16.setToolTipText("Libre");
+        p16.setBorderPainted(false);
+        p16.setContentAreaFilled(false);
+        p16.setName("13"); // NOI18N
+        p16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p16, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 372, 53, 70));
+
+        p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p17.setMnemonic(2);
+        p17.setToolTipText("Libre");
+        p17.setBorderPainted(false);
+        p17.setContentAreaFilled(false);
+        p17.setName("14"); // NOI18N
+        p17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p17, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 372, 53, 70));
 
         parking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pmediano.png"))); // NOI18N
-        materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, -1, -1));
+        parking.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
@@ -291,53 +446,111 @@ public class Amma extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void materialButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton5ActionPerformed
-
-    private void materialButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton7ActionPerformed
-
-    private void materialButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton8ActionPerformed
-
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_atrasActionPerformed
 
-    private void materialButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton9ActionPerformed
-
     private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
-        JDialog gasolina= new Combustible(this, true);
+        JDialog gasolina = new Combustible(this, true);
         gasolina.setLocationRelativeTo(null);
         gasolina.setTitle("Surtidor de gasolina");
-        gasolina.setVisible(true);// TODO add your handling code here:
+        gasolina.setVisible(true);
     }//GEN-LAST:event_gasolineraButtonActionPerformed
-    
 
-    private void p2ccionBoton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p2ccionBoton
-       javax.swing.JButton aux= (javax.swing.JButton)evt.getSource();
-       int i= Integer.parseInt(aux.getName());
-        if(estado[i-1]==1) {
-            if(sel!=null) {
-                sel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
-                estado[Integer.parseInt(sel.getName())-1]=1;
+
+    private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
+        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
+        if (!aux.getToolTipText().equals("Ocupado")) {
+            int i = Integer.parseInt(aux.getName());
+            if (lib[i - 1]) {
+                if (sel != null) {
+                    libre(sel);
+                    lib[Integer.parseInt(sel.getName()) - 1] = true;
+                }
+                reservado(aux);
+                lib[i - 1] = false;
+                sel = aux;
+            } else {
+                libre(aux);
+                lib[i - 1] = true;
+                sel = null;
             }
-            aux.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
-            estado[i-1]=2;
-            sel=aux;
         }
-        else if (estado[i-1]==2) {
-            aux.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
-            estado[i-1]=1;
-        }
-    }//GEN-LAST:event_p2ccionBoton
+    }//GEN-LAST:event_accion
 
-    private int[] estado;
+    private void planta0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta0ActionPerformed
+        planta0.setBackground(new java.awt.Color(102, 102, 102));
+        planta0.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+        planta1.setBackground(new java.awt.Color(204, 204, 204));
+        planta1.setFont(new java.awt.Font("Roboto", 0, 14));
+        planta2.setBackground(new java.awt.Color(204, 204, 204));
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14));        
+        planta3.setBackground(new java.awt.Color(204, 204, 204));
+        planta3.setFont(new java.awt.Font("Roboto", 0, 14));
+    }//GEN-LAST:event_planta0ActionPerformed
+
+    private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
+        planta1.setBackground(new java.awt.Color(102, 102, 102));
+        planta1.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+        planta0.setBackground(new java.awt.Color(204, 204, 204));
+        planta0.setFont(new java.awt.Font("Roboto", 0, 14));
+        planta2.setBackground(new java.awt.Color(204, 204, 204));
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14));        
+        planta3.setBackground(new java.awt.Color(204, 204, 204));
+        planta3.setFont(new java.awt.Font("Roboto", 0, 14));
+    }//GEN-LAST:event_planta1ActionPerformed
+
+    private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
+        planta2.setBackground(new java.awt.Color(102, 102, 102));
+        planta2.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+        planta1.setBackground(new java.awt.Color(204, 204, 204));
+        planta1.setFont(new java.awt.Font("Roboto", 0, 14));
+        planta0.setBackground(new java.awt.Color(204, 204, 204));
+        planta0.setFont(new java.awt.Font("Roboto", 0, 14));        
+        planta3.setBackground(new java.awt.Color(204, 204, 204));
+        planta3.setFont(new java.awt.Font("Roboto", 0, 14));
+    }//GEN-LAST:event_planta2ActionPerformed
+
+    private void planta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta3ActionPerformed
+        planta3.setBackground(new java.awt.Color(102, 102, 102));
+        planta3.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+        planta1.setBackground(new java.awt.Color(204, 204, 204));
+        planta1.setFont(new java.awt.Font("Roboto", 0, 14));
+        planta2.setBackground(new java.awt.Color(204, 204, 204));
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14));        
+        planta0.setBackground(new java.awt.Color(204, 204, 204));
+        planta0.setFont(new java.awt.Font("Roboto", 0, 14));
+    }//GEN-LAST:event_planta3ActionPerformed
+
+    private void libre(javax.swing.JButton but) {
+        switch(but.getMnemonic()) {
+            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); break;
+            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); break;
+            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); break;
+        }
+        but.setToolTipText("Libre");
+    }
+    
+    private void ocupado(javax.swing.JButton but) {
+        switch(but.getMnemonic()) {
+            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); break;
+            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); break;
+            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); break;
+        }
+        but.setToolTipText("Ocupado");
+    }
+    
+    private void reservado(javax.swing.JButton but) {
+        System.out.print(but.getMnemonic());
+        switch(but.getMnemonic()) {
+            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png"))); break;
+            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png"))); break;
+            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png"))); break;
+        }
+        but.setToolTipText("Reservado");
+    }
+    
+    private boolean[] lib;
     private javax.swing.JButton sel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
@@ -372,14 +585,22 @@ public class Amma extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton5;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton7;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton8;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton9;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     private javax.swing.JButton p1;
+    private javax.swing.JButton p10;
+    private javax.swing.JButton p12;
+    private javax.swing.JButton p13;
+    private javax.swing.JButton p14;
+    private javax.swing.JButton p15;
+    private javax.swing.JButton p16;
+    private javax.swing.JButton p17;
     private javax.swing.JButton p2;
     private javax.swing.JButton p3;
+    private javax.swing.JButton p4;
     private javax.swing.JLabel parking;
+    private de.craften.ui.swingmaterial.MaterialButton planta0;
+    private de.craften.ui.swingmaterial.MaterialButton planta1;
+    private de.craften.ui.swingmaterial.MaterialButton planta2;
+    private de.craften.ui.swingmaterial.MaterialButton planta3;
     // End of variables declaration//GEN-END:variables
 }

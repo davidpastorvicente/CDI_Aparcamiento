@@ -18,7 +18,9 @@ public class Lavadero extends javax.swing.JDialog {
      */
     public Lavadero(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
-        aux1=true; aux2=true; aux3=true;
+        aux1 = true;
+        aux2 = true;
+        aux3 = true;
         initComponents();
     }
 
@@ -229,11 +231,11 @@ public class Lavadero extends javax.swing.JDialog {
             abrillButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
             abrillButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
             abrillButton.setForeground(Color.WHITE);
-            price+=0.15;
+            price += 0.15;
         } else {
             abrillButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
             abrillButton.setFont(new java.awt.Font("Roboto", 0, 14));
-            price-=0.15;
+            price -= 0.15;
         }
         euros.setText(String.format("%.2f", price) + " €");
         aux1 = !aux1;
@@ -249,6 +251,15 @@ public class Lavadero extends javax.swing.JDialog {
         price = 1;
         precio.setText("1,00");
         euros.setText("1,00 €");
+        abrillButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        abrillButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux1=true;
+        encerButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        encerButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux2=true;
+        emberButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        emberButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux3=true;
     }//GEN-LAST:event_interiorButtonActionPerformed
 
     private void exteriorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exteriorButtonActionPerformed
@@ -261,6 +272,15 @@ public class Lavadero extends javax.swing.JDialog {
         price = 1.50;
         precio.setText("1,50");
         euros.setText("1,50 €");
+        abrillButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        abrillButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux1=true;
+        encerButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        encerButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux2=true;
+        emberButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        emberButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux3=true;
 
     }//GEN-LAST:event_exteriorButtonActionPerformed
 
@@ -274,10 +294,19 @@ public class Lavadero extends javax.swing.JDialog {
         price = 1.9;
         precio.setText("1,90");
         euros.setText("1,90 €");
+        abrillButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        abrillButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux1=true;
+        encerButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        encerButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux2=true;
+        emberButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+        emberButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        aux3=true;
     }//GEN-LAST:event_ambosButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        totalLavadero= euros.getText();
+        totalLavadero = euros.getText();
         this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
@@ -290,11 +319,11 @@ public class Lavadero extends javax.swing.JDialog {
             encerButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
             encerButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
             encerButton.setForeground(Color.WHITE);
-            price+=0.20;
+            price += 0.20;
         } else {
             encerButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
             encerButton.setFont(new java.awt.Font("Roboto", 0, 14));
-            price-=0.20;
+            price -= 0.20;
         }
         euros.setText(String.format("%.2f", price) + " €");
         aux2 = !aux2;
@@ -305,17 +334,17 @@ public class Lavadero extends javax.swing.JDialog {
             emberButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
             emberButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
             emberButton.setForeground(Color.WHITE);
-            price+=0.10;
+            price += 0.10;
 
         } else {
             emberButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
             emberButton.setFont(new java.awt.Font("Roboto", 0, 14));
-            price-=0.10;
+            price -= 0.10;
         }
         euros.setText(String.format("%.2f", price) + " €");
         aux3 = !aux3;
     }//GEN-LAST:event_emberButtonActionPerformed
-    
+
     /**
      * @param args the command line arguments
      */

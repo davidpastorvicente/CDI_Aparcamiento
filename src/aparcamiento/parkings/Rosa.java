@@ -90,9 +90,9 @@ public class Rosa extends javax.swing.JFrame {
 
         materialPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel2.setText("Seleccione la planta :");
-        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 180, 30));
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
 
         materialButton9.setBackground(new java.awt.Color(204, 204, 204));
         materialButton9.setText("Planta 1");
@@ -101,7 +101,7 @@ public class Rosa extends javax.swing.JFrame {
                 materialButton9ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 120, 60));
+        materialPanel1.add(materialButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 120, 60));
 
         materialButton13.setBackground(new java.awt.Color(204, 204, 204));
         materialButton13.setText("Planta 2");
@@ -110,7 +110,7 @@ public class Rosa extends javax.swing.JFrame {
                 materialButton13ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
+        materialPanel1.add(materialButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 120, 60));
 
         materialButton16.setBackground(new java.awt.Color(204, 204, 204));
         materialButton16.setText("Planta 0");
@@ -119,7 +119,7 @@ public class Rosa extends javax.swing.JFrame {
                 materialButton16ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 120, 60));
+        materialPanel1.add(materialButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 120, 60));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel3.setText("                 Precio");

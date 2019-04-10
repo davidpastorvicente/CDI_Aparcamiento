@@ -89,7 +89,7 @@ public class Villa extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel2.setText("Seleccione la planta :");
-        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 180, 30));
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
 
         materialButton17.setBackground(new java.awt.Color(204, 204, 204));
         materialButton17.setText("Planta 2");
@@ -98,7 +98,7 @@ public class Villa extends javax.swing.JFrame {
                 materialButton17ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
+        materialPanel1.add(materialButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 120, 60));
 
         materialButton18.setBackground(new java.awt.Color(204, 204, 204));
         materialButton18.setText("Planta 0");
@@ -107,7 +107,7 @@ public class Villa extends javax.swing.JFrame {
                 materialButton18ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 120, 60));
+        materialPanel1.add(materialButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 120, 60));
 
         materialButton19.setBackground(new java.awt.Color(204, 204, 204));
         materialButton19.setText("Planta 1");
@@ -116,7 +116,7 @@ public class Villa extends javax.swing.JFrame {
                 materialButton19ActionPerformed(evt);
             }
         });
-        materialPanel1.add(materialButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 120, 60));
+        materialPanel1.add(materialButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 120, 60));
 
         jLabel16.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel16.setText("                 Precio");

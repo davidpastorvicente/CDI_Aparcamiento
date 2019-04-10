@@ -308,9 +308,7 @@ public class Combustible extends javax.swing.JDialog {
     }//GEN-LAST:event_eurosButtonActionPerformed
     
     private void cantidadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cantidadKeyTyped
-        if (cantidad.getText().length() >= 2) {
-            evt.consume();
-        }
+        if(cantidad.getText().length() >= 2) evt.consume();
     }//GEN-LAST:event_cantidadKeyTyped
 
     /**
