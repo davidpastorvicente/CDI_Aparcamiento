@@ -64,7 +64,6 @@ public class Amma extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         materialButton9 = new de.craften.ui.swingmaterial.MaterialButton();
         jButton2 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -216,7 +215,7 @@ public class Amma extends javax.swing.JFrame {
         });
         materialPanel1.add(materialButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ReservadoMinus.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -225,9 +224,6 @@ public class Amma extends javax.swing.JFrame {
             }
         });
         materialPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 132, 53, 70));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Danuko\\Downloads\\Webp.net-resizeimage.png")); // NOI18N
-        materialPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 480, 330));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
@@ -322,7 +318,6 @@ public class Amma extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
