@@ -18,6 +18,10 @@ public class Amma extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Amma() {
+        estado= new int[33];
+        estado[0]=1;
+        estado[1]=1;
+        estado[2]=1;
         initComponents();
 
     }
@@ -63,7 +67,10 @@ public class Amma extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         materialButton9 = new de.craften.ui.swingmaterial.MaterialButton();
-        jButton2 = new javax.swing.JButton();
+        p3 = new javax.swing.JButton();
+        p2 = new javax.swing.JButton();
+        p1 = new javax.swing.JButton();
+        parking = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -215,15 +222,41 @@ public class Amma extends javax.swing.JFrame {
         });
         materialPanel1.add(materialButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 120, 60));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p3.setBorderPainted(false);
+        p3.setContentAreaFilled(false);
+        p3.setName("3"); // NOI18N
+        p3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                p2ccionBoton(evt);
             }
         });
-        materialPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 132, 53, 70));
+        materialPanel1.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 130, 53, 70));
+
+        p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p2.setBorderPainted(false);
+        p2.setContentAreaFilled(false);
+        p2.setName("2"); // NOI18N
+        p2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                p2ccionBoton(evt);
+            }
+        });
+        materialPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 130, 53, 70));
+
+        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p1.setBorderPainted(false);
+        p1.setContentAreaFilled(false);
+        p1.setName("1"); // NOI18N
+        p1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                p2ccionBoton(evt);
+            }
+        });
+        materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 130, 53, 70));
+
+        parking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pmediano.png"))); // NOI18N
+        materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, -1, -1));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
@@ -284,15 +317,31 @@ public class Amma extends javax.swing.JFrame {
         gasolina.setTitle("Surtidor de gasolina");
         gasolina.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_gasolineraButtonActionPerformed
+    
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void p2ccionBoton(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p2ccionBoton
+       javax.swing.JButton aux= (javax.swing.JButton)evt.getSource();
+       int i= Integer.parseInt(aux.getName());
+        if(estado[i-1]==1) {
+            if(sel!=null) {
+                sel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+                estado[Integer.parseInt(sel.getName())-1]=1;
+            }
+            aux.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
+            estado[i-1]=2;
+            sel=aux;
+        }
+        else if (estado[i-1]==2) {
+            aux.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+            estado[i-1]=1;
+        }
+    }//GEN-LAST:event_p2ccionBoton
 
+    private int[] estado;
+    private javax.swing.JButton sel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel16;
@@ -328,5 +377,9 @@ public class Amma extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton materialButton8;
     private de.craften.ui.swingmaterial.MaterialButton materialButton9;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
+    private javax.swing.JButton p1;
+    private javax.swing.JButton p2;
+    private javax.swing.JButton p3;
+    private javax.swing.JLabel parking;
     // End of variables declaration//GEN-END:variables
 }
