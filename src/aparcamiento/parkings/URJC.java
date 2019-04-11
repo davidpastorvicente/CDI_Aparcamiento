@@ -76,7 +76,28 @@ public class URJC extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
+        p1 = new javax.swing.JButton();
+        p2 = new javax.swing.JButton();
+        p3 = new javax.swing.JButton();
+        p4 = new javax.swing.JButton();
+        p5 = new javax.swing.JButton();
+        p6 = new javax.swing.JButton();
+        p7 = new javax.swing.JButton();
+        p8 = new javax.swing.JButton();
+        p9 = new javax.swing.JButton();
+        p10 = new javax.swing.JButton();
+        p11 = new javax.swing.JButton();
+        p12 = new javax.swing.JButton();
+        p23 = new javax.swing.JButton();
         parking = new javax.swing.JLabel();
+        p13 = new javax.swing.JButton();
+        p14 = new javax.swing.JButton();
+        p15 = new javax.swing.JButton();
+        p16 = new javax.swing.JButton();
+        p17 = new javax.swing.JButton();
+        p18 = new javax.swing.JButton();
+        p19 = new javax.swing.JButton();
+        p20 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -303,9 +324,282 @@ public class URJC extends javax.swing.JFrame {
         materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 20, 370));
         materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 270, 10));
 
+        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p1.setMnemonic(2);
+        p1.setToolTipText("Libre");
+        p1.setBorderPainted(false);
+        p1.setContentAreaFilled(false);
+        p1.setName("1"); // NOI18N
+        p1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 112, 53, 70));
+
+        p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p2.setMnemonic(2);
+        p2.setToolTipText("Libre");
+        p2.setBorderPainted(false);
+        p2.setContentAreaFilled(false);
+        p2.setName("2"); // NOI18N
+        p2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 112, 53, 70));
+
+        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p3.setMnemonic(2);
+        p3.setToolTipText("Libre");
+        p3.setBorderPainted(false);
+        p3.setContentAreaFilled(false);
+        p3.setName("3"); // NOI18N
+        p3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 112, 53, 70));
+
+        p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p4.setMnemonic(0);
+        p4.setToolTipText("Libre");
+        p4.setBorderPainted(false);
+        p4.setContentAreaFilled(false);
+        p4.setName("4"); // NOI18N
+        p4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(264, 112, 43, 70));
+
+        p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p5.setMnemonic(0);
+        p5.setToolTipText("Libre");
+        p5.setBorderPainted(false);
+        p5.setContentAreaFilled(false);
+        p5.setName("5"); // NOI18N
+        p5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 112, 43, 70));
+
+        p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p6.setMnemonic(0);
+        p6.setToolTipText("Libre");
+        p6.setBorderPainted(false);
+        p6.setContentAreaFilled(false);
+        p6.setName("6"); // NOI18N
+        p6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p6, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 112, 43, 70));
+
+        p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p7.setMnemonic(0);
+        p7.setToolTipText("Libre");
+        p7.setBorderPainted(false);
+        p7.setContentAreaFilled(false);
+        p7.setName("7"); // NOI18N
+        p7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 112, 43, 70));
+
+        p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p8.setMnemonic(0);
+        p8.setToolTipText("Libre");
+        p8.setBorderPainted(false);
+        p8.setContentAreaFilled(false);
+        p8.setName("8"); // NOI18N
+        p8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p8, new org.netbeans.lib.awtextra.AbsoluteConstraints(432, 112, 43, 70));
+
+        p9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p9.setMnemonic(0);
+        p9.setToolTipText("Libre");
+        p9.setBorderPainted(false);
+        p9.setContentAreaFilled(false);
+        p9.setName("9"); // NOI18N
+        p9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(474, 112, 43, 70));
+
+        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p10.setMnemonic(0);
+        p10.setToolTipText("Libre");
+        p10.setBorderPainted(false);
+        p10.setContentAreaFilled(false);
+        p10.setName("10"); // NOI18N
+        p10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 112, 43, 70));
+
+        p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p11.setMnemonic(2);
+        p11.setToolTipText("Libre");
+        p11.setBorderPainted(false);
+        p11.setContentAreaFilled(false);
+        p11.setName("11"); // NOI18N
+        p11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 241, 53, 70));
+
+        p12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p12.setMnemonic(0);
+        p12.setToolTipText("Libre");
+        p12.setBorderPainted(false);
+        p12.setContentAreaFilled(false);
+        p12.setName("12"); // NOI18N
+        p12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p12, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
+
+        p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p23.setMnemonic(2);
+        p23.setToolTipText("Libre");
+        p23.setBorderPainted(false);
+        p23.setContentAreaFilled(false);
+        p23.setName("23"); // NOI18N
+        p23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p23, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 373, 53, 70));
+
         parking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pgrande.png"))); // NOI18N
         parking.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
+
+        p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p13.setMnemonic(0);
+        p13.setToolTipText("Libre");
+        p13.setBorderPainted(false);
+        p13.setContentAreaFilled(false);
+        p13.setName("13"); // NOI18N
+        p13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
+
+        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p14.setMnemonic(0);
+        p14.setToolTipText("Libre");
+        p14.setBorderPainted(false);
+        p14.setContentAreaFilled(false);
+        p14.setName("14"); // NOI18N
+        p14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p14, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
+
+        p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p15.setMnemonic(0);
+        p15.setToolTipText("Libre");
+        p15.setBorderPainted(false);
+        p15.setContentAreaFilled(false);
+        p15.setName("15"); // NOI18N
+        p15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
+
+        p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p16.setMnemonic(0);
+        p16.setToolTipText("Libre");
+        p16.setBorderPainted(false);
+        p16.setContentAreaFilled(false);
+        p16.setName("16"); // NOI18N
+        p16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p16, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
+
+        p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p17.setMnemonic(0);
+        p17.setToolTipText("Libre");
+        p17.setBorderPainted(false);
+        p17.setContentAreaFilled(false);
+        p17.setName("17"); // NOI18N
+        p17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p17, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
+
+        p18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p18.setMnemonic(0);
+        p18.setToolTipText("Libre");
+        p18.setBorderPainted(false);
+        p18.setContentAreaFilled(false);
+        p18.setName("18"); // NOI18N
+        p18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p18, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
+
+        p19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p19.setMnemonic(0);
+        p19.setToolTipText("Libre");
+        p19.setBorderPainted(false);
+        p19.setContentAreaFilled(false);
+        p19.setName("19"); // NOI18N
+        p19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p19, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
+
+        p20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p20.setMnemonic(0);
+        p20.setToolTipText("Libre");
+        p20.setBorderPainted(false);
+        p20.setContentAreaFilled(false);
+        p20.setName("20"); // NOI18N
+        p20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accion(evt);
+            }
+        });
+        materialPanel1.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 241, 43, 70));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
@@ -361,6 +655,10 @@ public class URJC extends javax.swing.JFrame {
         niv.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_nivelButtonActionPerformed
 
+    private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
+        // TODO add your handling code here:
+    }//GEN-LAST:event_accion
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
@@ -408,6 +706,27 @@ public class URJC extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton materialButton9;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     private de.craften.ui.swingmaterial.MaterialButton nivelButton;
+    private javax.swing.JButton p1;
+    private javax.swing.JButton p10;
+    private javax.swing.JButton p11;
+    private javax.swing.JButton p12;
+    private javax.swing.JButton p13;
+    private javax.swing.JButton p14;
+    private javax.swing.JButton p15;
+    private javax.swing.JButton p16;
+    private javax.swing.JButton p17;
+    private javax.swing.JButton p18;
+    private javax.swing.JButton p19;
+    private javax.swing.JButton p2;
+    private javax.swing.JButton p20;
+    private javax.swing.JButton p23;
+    private javax.swing.JButton p3;
+    private javax.swing.JButton p4;
+    private javax.swing.JButton p5;
+    private javax.swing.JButton p6;
+    private javax.swing.JButton p7;
+    private javax.swing.JButton p8;
+    private javax.swing.JButton p9;
     private javax.swing.JLabel parking;
     // End of variables declaration//GEN-END:variables
 }
