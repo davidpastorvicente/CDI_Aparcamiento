@@ -226,13 +226,15 @@ public class Combustible extends javax.swing.JDialog {
     }//GEN-LAST:event_cantidadActionPerformed
 
     private void litrosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_litrosButtonActionPerformed
-        litrosButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
-        litrosButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
-        eurosButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
-        eurosButton.setFont(new java.awt.Font("Roboto", 0, 14));
-        litrosButton.setForeground(Color.WHITE);
-        totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
-        euros.setText(totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText())) + " litros)");
+        if (!cantidad.getText().equals("")) {
+            litrosButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
+            litrosButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+            eurosButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+            eurosButton.setFont(new java.awt.Font("Roboto", 0, 14));
+            litrosButton.setForeground(Color.WHITE);
+            totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
+            euros.setText(totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText())) + " litros)");
+        }
     }//GEN-LAST:event_litrosButtonActionPerformed
 
     private void gasolina95buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolina95buttonActionPerformed
@@ -294,21 +296,25 @@ public class Combustible extends javax.swing.JDialog {
 
     private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
         this.setVisible(false);        // TODO add your handling code here:
-        totalCombustible=null;
+        totalCombustible = null;
     }//GEN-LAST:event_CancelarButtonActionPerformed
 
     private void eurosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eurosButtonActionPerformed
-        eurosButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
-        eurosButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
-        litrosButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
-        litrosButton.setFont(new java.awt.Font("Roboto", 0, 14));
-        eurosButton.setForeground(Color.WHITE);
-        totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
-        euros.setText(totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText()) / price) + " litros)");
+        if (!cantidad.getText().equals("")) {
+            eurosButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
+            eurosButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+            litrosButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
+            litrosButton.setFont(new java.awt.Font("Roboto", 0, 14));
+            eurosButton.setForeground(Color.WHITE);
+            totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
+            euros.setText(totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText()) / price) + " litros)");
+        }
     }//GEN-LAST:event_eurosButtonActionPerformed
-    
+
     private void cantidadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cantidadKeyTyped
-        if(cantidad.getText().length() >= 2) evt.consume();
+        if (cantidad.getText().length() >= 2) {
+            evt.consume();
+        }
     }//GEN-LAST:event_cantidadKeyTyped
 
     /**
