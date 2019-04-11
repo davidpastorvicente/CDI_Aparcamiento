@@ -76,6 +76,7 @@ public class URJC extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
+        parking = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -302,6 +303,10 @@ public class URJC extends javax.swing.JFrame {
         materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 20, 370));
         materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 270, 10));
 
+        parking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pgrande.png"))); // NOI18N
+        parking.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
+
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         pack();
@@ -403,5 +408,6 @@ public class URJC extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton materialButton9;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     private de.craften.ui.swingmaterial.MaterialButton nivelButton;
+    private javax.swing.JLabel parking;
     // End of variables declaration//GEN-END:variables
 }
