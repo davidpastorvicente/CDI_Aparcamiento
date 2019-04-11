@@ -17,8 +17,9 @@ public class URJC extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public URJC() {
+        lib = new boolean[34];
+        for (int i = 0; i < 34; i++) lib[i] = true;
         initComponents();
-
     }
 
     /**
@@ -838,9 +839,54 @@ public class URJC extends javax.swing.JFrame {
     }//GEN-LAST:event_nivelButtonActionPerformed
 
     private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
-        // TODO add your handling code here:
+        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
+        if (!aux.getToolTipText().equals("Ocupado")) {
+            int i = Integer.parseInt(aux.getName());
+            if (lib[i - 1]) {
+                if (sel != null) {
+                    libre(sel);
+                    lib[Integer.parseInt(sel.getName()) - 1] = true;
+                }
+                reservado(aux);
+                lib[i - 1] = false;
+                sel = aux;
+            } else {
+                libre(aux);
+                lib[i - 1] = true;
+                sel = null;
+            }
+        }
     }//GEN-LAST:event_accion
 
+    private void libre(javax.swing.JButton but) {
+        switch(but.getMnemonic()) {
+            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); break;
+            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); break;
+            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); break;
+        }
+        but.setToolTipText("Libre");
+    }
+    
+    private void ocupado(javax.swing.JButton but) {
+        switch(but.getMnemonic()) {
+            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); break;
+            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); break;
+            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); break;
+        }
+        but.setToolTipText("Ocupado");
+    }
+    
+    private void reservado(javax.swing.JButton but) {
+        switch(but.getMnemonic()) {
+            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png"))); break;
+            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png"))); break;
+            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png"))); break;
+        }
+        but.setToolTipText("Reservado");
+    }
+    
+    private boolean[] lib;
+    private javax.swing.JButton sel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;

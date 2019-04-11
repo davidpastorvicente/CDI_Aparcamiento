@@ -19,9 +19,7 @@ public class Amma extends javax.swing.JFrame {
      */
     public Amma() {
         lib = new boolean[33];
-        for (int i = 0; i < 33; i++) {
-            lib[i] = true;
-        }
+        for (int i = 0; i < 33; i++) lib[i] = true;
         initComponents();
     }
 
@@ -849,7 +847,6 @@ public class Amma extends javax.swing.JFrame {
     }
     
     private void reservado(javax.swing.JButton but) {
-        System.out.print(but.getMnemonic());
         switch(but.getMnemonic()) {
             case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png"))); break;
             case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png"))); break;
