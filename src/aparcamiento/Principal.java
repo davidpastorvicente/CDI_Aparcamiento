@@ -109,7 +109,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("¡Bienvenido!");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));

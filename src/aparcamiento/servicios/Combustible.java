@@ -102,11 +102,6 @@ public class Combustible extends javax.swing.JDialog {
         jPanel2.add(eurosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 140, 70));
 
         cantidad.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        cantidad.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cantidadActionPerformed(evt);
-            }
-        });
         cantidad.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 cantidadKeyTyped(evt);
@@ -220,10 +215,6 @@ public class Combustible extends javax.swing.JDialog {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void cantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cantidadActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cantidadActionPerformed
 
     private void litrosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_litrosButtonActionPerformed
         if (!cantidad.getText().equals("")) {

@@ -37,7 +37,8 @@ public class Inicio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        materialIconButton2 = new de.craften.ui.swingmaterial.MaterialIconButton();
+        jLabel9 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
         jPanel2 = new javax.swing.JPanel();
         UserLabel = new javax.swing.JLabel();
         inicButton = new de.craften.ui.swingmaterial.MaterialButton();
@@ -53,25 +54,26 @@ public class Inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        materialIconButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/baseline_exit_to_app_black_36dp.png"))); // NOI18N
-        materialIconButton2.setText("materialIconButton2");
-        materialIconButton2.setToolTipText("Salir");
-        materialIconButton2.addActionListener(new java.awt.event.ActionListener() {
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logout.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exit(evt);
+                atrasActionPerformed(evt);
             }
         });
-        jPanel1.add(materialIconButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 60, 50));
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 90, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 93, 391));
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         UserLabel.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        UserLabel.setForeground(new java.awt.Color(255, 255, 255));
         UserLabel.setText("Usuario:");
         jPanel2.add(UserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
 
@@ -81,7 +83,7 @@ public class Inicio extends javax.swing.JFrame {
                 inicButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(inicButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, 150, 60));
+        jPanel2.add(inicButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 150, 60));
 
         regButton.setText("¡Regístrate!");
         regButton.addActionListener(new java.awt.event.ActionListener() {
@@ -91,13 +93,17 @@ public class Inicio extends javax.swing.JFrame {
         });
         jPanel2.add(regButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 150, 60));
 
+        userField.setForeground(new java.awt.Color(255, 255, 255));
+        userField.setAccent(new java.awt.Color(255, 255, 255));
         userField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jPanel2.add(userField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 170, 60));
 
         pwdLabel.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        pwdLabel.setForeground(new java.awt.Color(255, 255, 255));
         pwdLabel.setText("Contraseña:");
-        jPanel2.add(pwdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
+        jPanel2.add(pwdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
+        pwdField.setForeground(new java.awt.Color(255, 255, 255));
         pwdField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         pwdField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,9 +112,10 @@ public class Inicio extends javax.swing.JFrame {
         });
         jPanel2.add(pwdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 170, 60));
 
-        noCButton.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        noCButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        noCButton.setForeground(new java.awt.Color(255, 255, 255));
         noCButton.setText("¿No tienes cuenta?");
-        jPanel2.add(noCButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, -1, -1));
+        jPanel2.add(noCButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, -1, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(99, 120, 496, 271));
 
@@ -120,17 +127,13 @@ public class Inicio extends javax.swing.JFrame {
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 400, -1));
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel2.setText("Gestión de parking públicos de la comunidad de Madrid");
+        jLabel2.setText("Gestión de parking públicos de la Comunidad de Madrid");
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(99, 0, 496, 114));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void exit(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exit
-        System.exit(0);       // TODO add your handling code here:
-    }//GEN-LAST:event_exit
 
     private void pwdFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwdFieldActionPerformed
         // TODO add your handling code here:
@@ -158,17 +161,22 @@ public class Inicio extends javax.swing.JFrame {
         reg.setLocationRelativeTo(null);        
         reg.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_regButtonActionPerformed
+
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_atrasActionPerformed
     
     private javax.swing.JLabel incorLabel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel UserLabel;
+    private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton inicButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private de.craften.ui.swingmaterial.MaterialIconButton materialIconButton2;
     private javax.swing.JLabel noCButton;
     private de.craften.ui.swingmaterial.MaterialPasswordField pwdField;
     private javax.swing.JLabel pwdLabel;
