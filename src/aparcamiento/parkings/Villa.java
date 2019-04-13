@@ -35,9 +35,6 @@ public class Villa extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
-        materialButton17 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton18 = new de.craften.ui.swingmaterial.MaterialButton();
-        materialButton19 = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -62,6 +59,9 @@ public class Villa extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
+        planta0 = new de.craften.ui.swingmaterial.MaterialButton();
+        planta1 = new de.craften.ui.swingmaterial.MaterialButton();
+        planta2 = new de.craften.ui.swingmaterial.MaterialButton();
         p1 = new javax.swing.JButton();
         p2 = new javax.swing.JButton();
         p3 = new javax.swing.JButton();
@@ -112,33 +112,6 @@ public class Villa extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel2.setText("Seleccione la planta :");
         materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
-
-        materialButton17.setBackground(new java.awt.Color(204, 204, 204));
-        materialButton17.setText("Planta 2");
-        materialButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton17ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 120, 60));
-
-        materialButton18.setBackground(new java.awt.Color(204, 204, 204));
-        materialButton18.setText("Planta 0");
-        materialButton18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton18ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 120, 60));
-
-        materialButton19.setBackground(new java.awt.Color(204, 204, 204));
-        materialButton19.setText("Planta 1");
-        materialButton19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                materialButton19ActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(materialButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 120, 60));
 
         jLabel16.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel16.setText("                 Precio");
@@ -229,6 +202,36 @@ public class Villa extends javax.swing.JFrame {
         materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 20, 370));
         materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 160, 270, 10));
 
+        planta0.setBackground(new java.awt.Color(102, 102, 102));
+        planta0.setText("Planta 0");
+        planta0.setFont(new java.awt.Font("Roboto Medium", 1, 14)); // NOI18N
+        planta0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planta0ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(planta0, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 120, 60));
+
+        planta1.setBackground(new java.awt.Color(204, 204, 204));
+        planta1.setText("Planta 1");
+        planta1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        planta1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planta1ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(planta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 120, 60));
+
+        planta2.setBackground(new java.awt.Color(204, 204, 204));
+        planta2.setText("Planta 2");
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        planta2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planta2ActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(planta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 120, 60));
+
         p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
         p1.setMnemonic(2);
         p1.setToolTipText("Libre");
@@ -237,7 +240,7 @@ public class Villa extends javax.swing.JFrame {
         p1.setName("1"); // NOI18N
         p1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p1accion(evt);
+                accion(evt);
             }
         });
         materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 146, 66, 83));
@@ -344,7 +347,7 @@ public class Villa extends javax.swing.JFrame {
                 p9accion(evt);
             }
         });
-        materialPanel1.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 144, 54, 44));
+        materialPanel1.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 145, 54, 44));
 
         p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos2.png"))); // NOI18N
         p10.setMnemonic(1);
@@ -357,7 +360,7 @@ public class Villa extends javax.swing.JFrame {
                 p10accion(evt);
             }
         });
-        materialPanel1.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 188, 54, 44));
+        materialPanel1.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 186, 54, 44));
 
         p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
         p11.setMnemonic(2);
@@ -474,7 +477,7 @@ public class Villa extends javax.swing.JFrame {
                 p19accion(evt);
             }
         });
-        materialPanel1.add(p19, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 292, 54, 44));
+        materialPanel1.add(p19, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 294, 54, 44));
 
         p20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos2.png"))); // NOI18N
         p20.setMnemonic(1);
@@ -487,7 +490,7 @@ public class Villa extends javax.swing.JFrame {
                 p20accion(evt);
             }
         });
-        materialPanel1.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 336, 54, 44));
+        materialPanel1.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 335, 54, 44));
 
         parking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ppequeño.png"))); // NOI18N
         materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 580, 280));
@@ -503,10 +506,10 @@ public class Villa extends javax.swing.JFrame {
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/presion (1).png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 130, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/aceite (1) (1).png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 155, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel7.setText("Nivel de aire");
@@ -547,18 +550,6 @@ public class Villa extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void materialButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton17ActionPerformed
-
-    private void materialButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton18ActionPerformed
-
-    private void materialButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_materialButton19ActionPerformed
-
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_atrasActionPerformed
@@ -577,7 +568,34 @@ public class Villa extends javax.swing.JFrame {
         niv.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_nivelButtonActionPerformed
 
-    private void p1accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p1accion
+    private void planta0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta0ActionPerformed
+        planta0.setBackground(new java.awt.Color(102, 102, 102));
+        planta0.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+        planta1.setBackground(new java.awt.Color(204, 204, 204));
+        planta1.setFont(new java.awt.Font("Roboto", 0, 14));
+        planta2.setBackground(new java.awt.Color(204, 204, 204));
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14));
+    }//GEN-LAST:event_planta0ActionPerformed
+
+    private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
+        planta1.setBackground(new java.awt.Color(102, 102, 102));
+        planta1.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+        planta0.setBackground(new java.awt.Color(204, 204, 204));
+        planta0.setFont(new java.awt.Font("Roboto", 0, 14));
+        planta2.setBackground(new java.awt.Color(204, 204, 204));
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14));
+    }//GEN-LAST:event_planta1ActionPerformed
+
+    private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
+        planta2.setBackground(new java.awt.Color(102, 102, 102));
+        planta2.setFont(new java.awt.Font("Roboto Medium", 1, 14));
+        planta1.setBackground(new java.awt.Color(204, 204, 204));
+        planta1.setFont(new java.awt.Font("Roboto", 0, 14));
+        planta0.setBackground(new java.awt.Color(204, 204, 204));
+        planta0.setFont(new java.awt.Font("Roboto", 0, 14));
+    }//GEN-LAST:event_planta2ActionPerformed
+
+    private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
         javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
         if (!aux.getToolTipText().equals("Ocupado")) {
             int i = Integer.parseInt(aux.getName());
@@ -595,7 +613,7 @@ public class Villa extends javax.swing.JFrame {
                 sel = null;
             }
         }
-    }//GEN-LAST:event_p1accion
+    }//GEN-LAST:event_accion
 
     private void p2accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p2accion
         javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
@@ -1043,9 +1061,6 @@ public class Villa extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton17;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton18;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton19;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     private de.craften.ui.swingmaterial.MaterialButton nivelButton;
     private javax.swing.JButton p1;
@@ -1069,5 +1084,8 @@ public class Villa extends javax.swing.JFrame {
     private javax.swing.JButton p8;
     private javax.swing.JButton p9;
     private javax.swing.JLabel parking;
+    private de.craften.ui.swingmaterial.MaterialButton planta0;
+    private de.craften.ui.swingmaterial.MaterialButton planta1;
+    private de.craften.ui.swingmaterial.MaterialButton planta2;
     // End of variables declaration//GEN-END:variables
 }

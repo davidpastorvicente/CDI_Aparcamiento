@@ -104,6 +104,7 @@ public class Inicio extends javax.swing.JFrame {
         jPanel2.add(pwdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
         pwdField.setForeground(new java.awt.Color(255, 255, 255));
+        pwdField.setAccent(new java.awt.Color(255, 255, 255));
         pwdField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         pwdField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

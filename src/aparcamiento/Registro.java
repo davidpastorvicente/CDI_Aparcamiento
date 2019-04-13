@@ -131,6 +131,11 @@ public class Registro extends javax.swing.JDialog {
 
         cadAnio.setAccent(new java.awt.Color(0, 153, 153));
         cadAnio.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        cadAnio.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                cadAnioKeyTyped(evt);
+            }
+        });
         jPanel3.add(cadAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 20, 70));
 
         numTarjeta.setAccent(new java.awt.Color(0, 153, 153));
@@ -139,10 +144,20 @@ public class Registro extends javax.swing.JDialog {
 
         CVC.setAccent(new java.awt.Color(0, 153, 153));
         CVC.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel3.add(CVC, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 40, 70));
+        CVC.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                CVCKeyPressed(evt);
+            }
+        });
+        jPanel3.add(CVC, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 30, 70));
 
         cadMes.setAccent(new java.awt.Color(0, 153, 153));
         cadMes.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        cadMes.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                cadMesKeyTyped(evt);
+            }
+        });
         jPanel3.add(cadMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 20, 70));
 
         CancelarButton.setBackground(new java.awt.Color(255, 51, 51));
@@ -343,6 +358,24 @@ public class Registro extends javax.swing.JDialog {
     private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_emailActionPerformed
+
+    private void CVCKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CVCKeyPressed
+        if (CVC.getText().length() >= 3) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_CVCKeyPressed
+
+    private void cadMesKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cadMesKeyTyped
+        if (movil.getText().length() >= 2) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_cadMesKeyTyped
+
+    private void cadAnioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cadAnioKeyTyped
+        if (movil.getText().length() >= 9) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_cadAnioKeyTyped
 
     /**
      * @param args the command line arguments

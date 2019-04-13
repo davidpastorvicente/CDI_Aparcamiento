@@ -287,7 +287,7 @@ public class Minerva extends javax.swing.JFrame {
         p1.setName("1"); // NOI18N
         p1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p1accion(evt);
+                accion(evt);
             }
         });
         materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 112, 53, 70));
@@ -834,7 +834,7 @@ public class Minerva extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_p2accion
 
-    private void p1accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p1accion
+    private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
         javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
         if (!aux.getToolTipText().equals("Ocupado")) {
             int i = Integer.parseInt(aux.getName());
@@ -852,7 +852,7 @@ public class Minerva extends javax.swing.JFrame {
                 sel = null;
             }
         }
-    }//GEN-LAST:event_p1accion
+    }//GEN-LAST:event_accion
 
     private void p4accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p4accion
         javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
