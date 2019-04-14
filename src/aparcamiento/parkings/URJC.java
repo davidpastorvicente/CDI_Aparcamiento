@@ -147,7 +147,7 @@ public class URJC extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel7.setText("Nivel de aire");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 220, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel8.setText("y aceite");
@@ -197,92 +197,92 @@ public class URJC extends javax.swing.JFrame {
 
         jLabel17.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel17.setText("                 Precio");
-        materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, -1, -1));
+        materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, -1, -1));
 
         jLabel18.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel18.setText("(4 adaptados)");
-        materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 340, 80, 20));
+        materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 340, 80, 20));
 
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel19.setText("18");
-        materialPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 200, -1, -1));
+        materialPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 200, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel20.setText("                         Motos");
-        materialPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 260, -1, -1));
+        materialPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel21.setText("            Ascensor");
-        materialPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 300, -1, -1));
+        materialPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel22.setText("                 Baños");
-        materialPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 340, -1, -1));
+        materialPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 340, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel23.setText("   Plazas totales");
-        materialPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, -1, -1));
+        materialPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 130, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel24.setText("                       Coches");
-        materialPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 170, -1, -1));
+        materialPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, -1, -1));
 
         jLabel25.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel25.setText("Movilidad reducida");
-        materialPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 200, -1, -1));
+        materialPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel26.setText("                 Familiares");
-        materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, -1, -1));
+        materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel27.setText("      Localización");
-        materialPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 50, -1, -1));
+        materialPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, -1, -1));
 
         jLabel28.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel28.setText("            Distancia");
-        materialPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 90, -1, -1));
+        materialPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel29.setText("745 m.");
-        materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 90, -1, -1));
+        materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 90, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel30.setText("0,86 €/hora");
-        materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 380, -1, -1));
+        materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 380, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel31.setText("24");
-        materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 260, -1, -1));
+        materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 260, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel32.setText("150");
-        materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, -1, -1));
+        materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 170, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel33.setText("12");
-        materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 230, -1, -1));
+        materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 230, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel34.setText("204");
-        materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 130, -1, -1));
+        materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 130, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel35.setText("SÍ");
-        materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 300, -1, -1));
+        materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 300, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel36.setText("5");
-        materialPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 340, -1, -1));
+        materialPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 340, -1, -1));
 
         jLabel37.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel37.setText("C/ San Cipriano, 10");
-        materialPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 50, 120, -1));
-        materialPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 290, 270, 10));
+        materialPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 50, 120, -1));
+        materialPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 290, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 40, 20, 370));
-        materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 270, 10));
+        materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 20, 370));
+        materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 160, 270, 10));
 
         p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p1.setMnemonic(2);

@@ -243,7 +243,7 @@ public class Villa extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 146, 66, 83));
+        materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 146, 67, 83));
 
         p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
         p2.setMnemonic(2);
@@ -256,7 +256,7 @@ public class Villa extends javax.swing.JFrame {
                 p2accion(evt);
             }
         });
-        materialPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 146, 66, 83));
+        materialPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 146, 67, 83));
 
         p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
         p3.setMnemonic(2);
@@ -269,7 +269,7 @@ public class Villa extends javax.swing.JFrame {
                 p3accion(evt);
             }
         });
-        materialPanel1.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(196, 146, 66, 83));
+        materialPanel1.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 146, 67, 83));
 
         p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
         p4.setMnemonic(0);
@@ -373,7 +373,7 @@ public class Villa extends javax.swing.JFrame {
                 p11accion(evt);
             }
         });
-        materialPanel1.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 295, 66, 83));
+        materialPanel1.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 295, 67, 83));
 
         p12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
         p12.setMnemonic(2);
@@ -386,7 +386,7 @@ public class Villa extends javax.swing.JFrame {
                 p12accion(evt);
             }
         });
-        materialPanel1.add(p12, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 295, 66, 83));
+        materialPanel1.add(p12, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 295, 67, 83));
 
         p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
         p13.setMnemonic(0);
@@ -399,7 +399,7 @@ public class Villa extends javax.swing.JFrame {
                 p13accion(evt);
             }
         });
-        materialPanel1.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 295, 54, 83));
+        materialPanel1.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 295, 54, 83));
 
         p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
         p14.setMnemonic(0);
@@ -492,8 +492,10 @@ public class Villa extends javax.swing.JFrame {
         });
         materialPanel1.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 335, 54, 44));
 
+        parking.setForeground(new java.awt.Color(255, 255, 255));
         parking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ppequeño.png"))); // NOI18N
-        materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 580, 280));
+        parking.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 140, 577, 240));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
@@ -513,7 +515,7 @@ public class Villa extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel7.setText("Nivel de aire");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 130, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel8.setText("y aceite");

@@ -72,7 +72,7 @@ public class Inicio extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        UserLabel.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        UserLabel.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         UserLabel.setForeground(new java.awt.Color(255, 255, 255));
         UserLabel.setText("Usuario:");
         jPanel2.add(UserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
@@ -83,7 +83,7 @@ public class Inicio extends javax.swing.JFrame {
                 inicButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(inicButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 150, 60));
+        jPanel2.add(inicButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 155, 65));
 
         regButton.setText("¡Regístrate!");
         regButton.addActionListener(new java.awt.event.ActionListener() {
@@ -91,20 +91,20 @@ public class Inicio extends javax.swing.JFrame {
                 regButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(regButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 150, 60));
+        jPanel2.add(regButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 155, 65));
 
         userField.setForeground(new java.awt.Color(255, 255, 255));
-        userField.setAccent(new java.awt.Color(255, 255, 255));
+        userField.setAccent(new java.awt.Color(0, 153, 153));
         userField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jPanel2.add(userField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 170, 60));
 
-        pwdLabel.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        pwdLabel.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         pwdLabel.setForeground(new java.awt.Color(255, 255, 255));
         pwdLabel.setText("Contraseña:");
         jPanel2.add(pwdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
         pwdField.setForeground(new java.awt.Color(255, 255, 255));
-        pwdField.setAccent(new java.awt.Color(255, 255, 255));
+        pwdField.setAccent(new java.awt.Color(0, 153, 153));
         pwdField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         pwdField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
