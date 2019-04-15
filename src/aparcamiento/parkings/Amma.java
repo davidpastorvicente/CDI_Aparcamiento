@@ -18,9 +18,13 @@ public class Amma extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Amma() {
+
         lib = new boolean[33];
-        for (int i = 0; i < 33; i++) lib[i] = true;
+        for (int i = 0; i < 33; i++) {
+            lib[i] = true;
+        }
         initComponents();
+        aux = materialPanel1;
     }
 
     /**
@@ -724,10 +728,11 @@ public class Amma extends javax.swing.JFrame {
     }//GEN-LAST:event_atrasActionPerformed
 
     private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
-        JDialog gasolina = new Combustible(this, true);
-        gasolina.setLocationRelativeTo(null);
-        gasolina.setTitle("Surtidor de gasolina");
-        gasolina.setVisible(true);
+        Gasolinera g = new Gasolinera();
+        getContentPane().remove(aux);
+        aux = g.getPanel();
+        getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
+        pack();
     }//GEN-LAST:event_gasolineraButtonActionPerformed
 
 
@@ -757,7 +762,7 @@ public class Amma extends javax.swing.JFrame {
         planta1.setBackground(new java.awt.Color(204, 204, 204));
         planta1.setFont(new java.awt.Font("Roboto", 0, 14));
         planta2.setBackground(new java.awt.Color(204, 204, 204));
-        planta2.setFont(new java.awt.Font("Roboto", 0, 14));        
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setFont(new java.awt.Font("Roboto", 0, 14));
     }//GEN-LAST:event_planta0ActionPerformed
@@ -768,7 +773,7 @@ public class Amma extends javax.swing.JFrame {
         planta0.setBackground(new java.awt.Color(204, 204, 204));
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
         planta2.setBackground(new java.awt.Color(204, 204, 204));
-        planta2.setFont(new java.awt.Font("Roboto", 0, 14));        
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setFont(new java.awt.Font("Roboto", 0, 14));
     }//GEN-LAST:event_planta1ActionPerformed
@@ -779,7 +784,7 @@ public class Amma extends javax.swing.JFrame {
         planta1.setBackground(new java.awt.Color(204, 204, 204));
         planta1.setFont(new java.awt.Font("Roboto", 0, 14));
         planta0.setBackground(new java.awt.Color(204, 204, 204));
-        planta0.setFont(new java.awt.Font("Roboto", 0, 14));        
+        planta0.setFont(new java.awt.Font("Roboto", 0, 14));
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setFont(new java.awt.Font("Roboto", 0, 14));
     }//GEN-LAST:event_planta2ActionPerformed
@@ -790,40 +795,59 @@ public class Amma extends javax.swing.JFrame {
         planta1.setBackground(new java.awt.Color(204, 204, 204));
         planta1.setFont(new java.awt.Font("Roboto", 0, 14));
         planta2.setBackground(new java.awt.Color(204, 204, 204));
-        planta2.setFont(new java.awt.Font("Roboto", 0, 14));        
+        planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         planta0.setBackground(new java.awt.Color(204, 204, 204));
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
     }//GEN-LAST:event_planta3ActionPerformed
 
     private void libre(javax.swing.JButton but) {
-        switch(but.getMnemonic()) {
-            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); break;
-            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); break;
-            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); break;
+        switch (but.getMnemonic()) {
+            case 0:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png")));
+                break;
+            case 1:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png")));
+                break;
+            case 2:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+                break;
         }
         but.setToolTipText("Libre");
     }
-    
+
     private void ocupado(javax.swing.JButton but) {
-        switch(but.getMnemonic()) {
-            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); break;
-            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); break;
-            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); break;
+        switch (but.getMnemonic()) {
+            case 0:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png")));
+                break;
+            case 1:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png")));
+                break;
+            case 2:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
+                break;
         }
         but.setToolTipText("Ocupado");
     }
-    
+
     private void reservado(javax.swing.JButton but) {
-        switch(but.getMnemonic()) {
-            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png"))); break;
-            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png"))); break;
-            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png"))); break;
+        switch (but.getMnemonic()) {
+            case 0:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png")));
+                break;
+            case 1:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png")));
+                break;
+            case 2:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
+                break;
         }
         but.setToolTipText("Reservado");
     }
-    
+
     private boolean[] lib;
     private javax.swing.JButton sel;
+    private de.craften.ui.swingmaterial.MaterialPanel aux;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;

@@ -7,6 +7,7 @@ package aparcamiento.parkings;
 
 import aparcamiento.servicios.*;
 import javax.swing.JDialog;
+
 /**
  *
  * @author david
@@ -18,8 +19,11 @@ public class URJC extends javax.swing.JFrame {
      */
     public URJC() {
         lib = new boolean[34];
-        for (int i = 0; i < 34; i++) lib[i] = true;
+        for (int i = 0; i < 34; i++) {
+            lib[i] = true;
+        }
         initComponents();
+        aux = materialPanel1;
     }
 
     /**
@@ -800,24 +804,27 @@ public class URJC extends javax.swing.JFrame {
     }//GEN-LAST:event_atrasActionPerformed
 
     private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
-        JDialog gasolina= new Combustible(this, true);
-        gasolina.setLocationRelativeTo(null);
-        gasolina.setTitle("Surtidor de gasolina");
-        gasolina.setVisible(true);// TODO add your handling code here:
+        Gasolinera g = new Gasolinera();
+        getContentPane().remove(aux);
+        aux = g.getPanel();
+        getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
+        pack();
     }//GEN-LAST:event_gasolineraButtonActionPerformed
 
     private void lavaderoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lavaderoButtonActionPerformed
-        JDialog lav= new Lavadero(this, true);
-        lav.setLocationRelativeTo(null);
-        lav.setTitle("Lavadero de vehículos");
-        lav.setVisible(true);// TODO add your handling code here:
+        Lavadero g = new Lavadero();
+        getContentPane().remove(aux);
+        aux = g.getPanel();
+        getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
+        pack();
     }//GEN-LAST:event_lavaderoButtonActionPerformed
 
     private void nivelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelButtonActionPerformed
-        JDialog niv= new Presion(this, true);
-        niv.setLocationRelativeTo(null);
-        niv.setTitle("Medidor de aceite y aire");
-        niv.setVisible(true);// TODO add your handling code here:
+        Nivel g = new Nivel();
+        getContentPane().remove(aux);
+        aux = g.getPanel();
+        getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
+        pack();
     }//GEN-LAST:event_nivelButtonActionPerformed
 
     private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
@@ -931,34 +938,53 @@ public class URJC extends javax.swing.JFrame {
     }//GEN-LAST:event_planta5ActionPerformed
 
     private void libre(javax.swing.JButton but) {
-        switch(but.getMnemonic()) {
-            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); break;
-            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); break;
-            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); break;
+        switch (but.getMnemonic()) {
+            case 0:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png")));
+                break;
+            case 1:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png")));
+                break;
+            case 2:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+                break;
         }
         but.setToolTipText("Libre");
     }
-    
+
     private void ocupado(javax.swing.JButton but) {
-        switch(but.getMnemonic()) {
-            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); break;
-            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); break;
-            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); break;
+        switch (but.getMnemonic()) {
+            case 0:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png")));
+                break;
+            case 1:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png")));
+                break;
+            case 2:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
+                break;
         }
         but.setToolTipText("Ocupado");
     }
-    
+
     private void reservado(javax.swing.JButton but) {
-        switch(but.getMnemonic()) {
-            case 0: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png"))); break;
-            case 1: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png"))); break;
-            case 2: but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png"))); break;
+        switch (but.getMnemonic()) {
+            case 0:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png")));
+                break;
+            case 1:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png")));
+                break;
+            case 2:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
+                break;
         }
         but.setToolTipText("Reservado");
     }
-    
+
     private boolean[] lib;
     private javax.swing.JButton sel;
+    private de.craften.ui.swingmaterial.MaterialPanel aux;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;

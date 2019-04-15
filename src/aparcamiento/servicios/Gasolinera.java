@@ -48,13 +48,14 @@ public class Gasolinera extends javax.swing.JFrame {
         aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
         CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         precio = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         precio1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         euros = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        materialButton1 = new de.craften.ui.swingmaterial.MaterialButton();
+        calcular = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(960, 490));
@@ -63,39 +64,39 @@ public class Gasolinera extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel1.setText("1. Elija el tipo de combustible:");
-        materialPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, 32));
+        materialPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, 32));
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel2.setText("2. Seleccione el modo:");
-        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 200, -1));
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 200, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/drop.png"))); // NOI18N
-        materialPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
+        materialPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 298, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/euro.png"))); // NOI18N
-        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 30, -1));
+        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 298, 30, -1));
 
         litrosButton.setBackground(new java.awt.Color(255, 204, 0));
         litrosButton.setBorder(null);
-        litrosButton.setText("          LITROS");
-        litrosButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        litrosButton.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        litrosButton.setLabel("      LITROS");
         litrosButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 litrosButtonActionPerformed(evt);
             }
         });
-        materialPanel1.add(litrosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 150, 70));
+        materialPanel1.add(litrosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 170, 70));
 
         eurosButton.setBackground(new java.awt.Color(255, 204, 0));
-        eurosButton.setText("          EUROS");
-        eurosButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        eurosButton.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        eurosButton.setLabel("      EUROS");
         eurosButton.setName(""); // NOI18N
         eurosButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eurosButtonActionPerformed(evt);
             }
         });
-        materialPanel1.add(eurosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 150, 70));
+        materialPanel1.add(eurosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 170, 70));
 
         cantidad.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         cantidad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -103,64 +104,65 @@ public class Gasolinera extends javax.swing.JFrame {
                 cantidadKeyTyped(evt);
             }
         });
-        materialPanel1.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 30, 60));
+        materialPanel1.add(cantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 30, 60));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/600px-WV-95.svg.png"))); // NOI18N
-        materialPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 108, -1, -1));
+        materialPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 158, -1, -1));
 
         gasolina95button.setBackground(new java.awt.Color(0, 204, 204));
         gasolina95button.setBorder(null);
-        gasolina95button.setText("          Gasolina 95");
-        gasolina95button.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        gasolina95button.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        gasolina95button.setLabel("      Gasolina 95");
         gasolina95button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 gasolina95buttonActionPerformed(evt);
             }
         });
-        materialPanel1.add(gasolina95button, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 200, 70));
+        materialPanel1.add(gasolina95button, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 210, 70));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/240px-WV-98.svg.png"))); // NOI18N
-        materialPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 108, -1, -1));
+        materialPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 158, -1, -1));
 
         gasolina98button.setBackground(new java.awt.Color(0, 204, 204));
         gasolina98button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/240px-WV-98.svg.png"))); // NOI18N
-        gasolina98button.setText("          Gasolina 98");
-        gasolina98button.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        gasolina98button.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        gasolina98button.setLabel("      Gasolina 98");
         gasolina98button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 gasolina98buttonActionPerformed(evt);
             }
         });
-        materialPanel1.add(gasolina98button, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 200, 70));
+        materialPanel1.add(gasolina98button, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 210, 70));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/combustible.png"))); // NOI18N
-        materialPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 108, -1, -1));
+        materialPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 158, -1, -1));
 
         dieselButton.setBackground(new java.awt.Color(0, 204, 204));
-        dieselButton.setText("          Diésel normal");
-        dieselButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        dieselButton.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        dieselButton.setLabel("      Diésel normal");
         dieselButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dieselButtonActionPerformed(evt);
             }
         });
-        materialPanel1.add(dieselButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 210, 70));
+        materialPanel1.add(dieselButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 140, 230, 70));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/diesel.png"))); // NOI18N
-        materialPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 108, 30, -1));
+        materialPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 158, 30, -1));
 
         efitecButton.setBackground(new java.awt.Color(0, 204, 204));
-        efitecButton.setText("          Diésel Efitec");
-        efitecButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        efitecButton.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        efitecButton.setLabel("      Diésel Efitec");
         efitecButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 efitecButtonActionPerformed(evt);
             }
         });
-        materialPanel1.add(efitecButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 90, 210, 70));
+        materialPanel1.add(efitecButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 140, 220, 70));
 
         aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
         aceptarButton.setText("Aceptar");
+        aceptarButton.setEnabled(false);
         aceptarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aceptarButtonActionPerformed(evt);
@@ -179,36 +181,47 @@ public class Gasolinera extends javax.swing.JFrame {
 
         precio.setFont(new java.awt.Font("Roboto", 0, 20)); // NOI18N
         precio.setText("-");
-        materialPanel1.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 200, 50, -1));
-
-        jLabel11.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel11.setText("seleccionada:");
-        materialPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 170, -1, -1));
+        materialPanel1.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 210, 50, -1));
 
         precio1.setFont(new java.awt.Font("Roboto", 0, 20)); // NOI18N
         precio1.setText("€/litro");
-        materialPanel1.add(precio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, -1, -1));
+        materialPanel1.add(precio1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 210, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel12.setText("Precio de la gasolina");
-        materialPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 150, -1, -1));
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel12.setText("Precio de la gasolina seleccionada:");
+        materialPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 215, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel14.setText("El total a pagar es:");
-        materialPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 290, 150, -1));
+        materialPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, 150, -1));
 
         euros.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
-        euros.setText("0,00 € (0,00 litros)");
-        materialPanel1.add(euros, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 320, 240, -1));
+        euros.setText(" 00,00 € (00,00 litros)");
+        euros.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        materialPanel1.add(euros, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 235, 50));
 
         jLabel9.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel9.setText("3. Introduzca la cantidad:");
-        materialPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 200, -1));
+        materialPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, 200, -1));
 
-        materialButton1.setBackground(new java.awt.Color(204, 0, 102));
-        materialButton1.setText("Calcular coste");
-        materialButton1.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
-        materialPanel1.add(materialButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 230, 80));
+        calcular.setBackground(new java.awt.Color(204, 0, 102));
+        calcular.setText("Calcular coste");
+        calcular.setFont(new java.awt.Font("Roboto Medium", 1, 16)); // NOI18N
+        calcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calcularActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 220, 70));
+
+        jLabel10.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
+        jLabel10.setText(" Surtidor de combustible");
+        jLabel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        materialPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 275, 50));
+
+        jLabel11.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
+        materialPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 30, -1, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -235,62 +248,62 @@ public class Gasolinera extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
-        this.setVisible(false);        // TODO add your handling code here:
+        this.setVisible(false);
         totalCombustible = null;
     }//GEN-LAST:event_CancelarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        this.setVisible(false);        // TODO add your handling code here:
+        this.setVisible(false);
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void efitecButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_efitecButtonActionPerformed
-        gasolina95button.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        gasolina95button.setFont(new java.awt.Font("Roboto", 0, 14));
-        dieselButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        dieselButton.setFont(new java.awt.Font("Roboto", 0, 14));
-        efitecButton.setBackground(new java.awt.Color(0, 153, 153));        // TODO add your handling code here:
-        efitecButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
-        gasolina98button.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        gasolina98button.setFont(new java.awt.Font("Roboto", 0, 14));
+        gasolina95button.setBackground(new java.awt.Color(0, 204, 204));
+        gasolina95button.setFont(new java.awt.Font("Roboto", 0, 16));
+        dieselButton.setBackground(new java.awt.Color(0, 204, 204));
+        dieselButton.setFont(new java.awt.Font("Roboto", 0, 16));
+        efitecButton.setBackground(new java.awt.Color(0, 153, 153));
+        efitecButton.setFont(new java.awt.Font("Roboto Medium", 1, 16));
+        gasolina98button.setBackground(new java.awt.Color(0, 204, 204));
+        gasolina98button.setFont(new java.awt.Font("Roboto", 0, 16));
         price = 1.115;
         precio.setText("1,115");
     }//GEN-LAST:event_efitecButtonActionPerformed
 
     private void dieselButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dieselButtonActionPerformed
-        gasolina95button.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        gasolina95button.setFont(new java.awt.Font("Roboto", 0, 14));
-        gasolina98button.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        gasolina98button.setFont(new java.awt.Font("Roboto", 0, 14));
-        dieselButton.setBackground(new java.awt.Color(0, 153, 153));        // TODO add your handling code here:
-        dieselButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
-        efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        gasolina95button.setBackground(new java.awt.Color(0, 204, 204));
+        gasolina95button.setFont(new java.awt.Font("Roboto", 0, 16));
+        gasolina98button.setBackground(new java.awt.Color(0, 204, 204));
+        gasolina98button.setFont(new java.awt.Font("Roboto", 0, 16));
+        dieselButton.setBackground(new java.awt.Color(0, 153, 153));
+        dieselButton.setFont(new java.awt.Font("Roboto Medium", 1, 16));
+        efitecButton.setBackground(new java.awt.Color(0, 204, 204));
+        efitecButton.setFont(new java.awt.Font("Roboto", 0, 16));
         price = 1.023;
         precio.setText("1,023");
     }//GEN-LAST:event_dieselButtonActionPerformed
 
     private void gasolina98buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolina98buttonActionPerformed
-        gasolina95button.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        gasolina95button.setFont(new java.awt.Font("Roboto", 0, 14));
-        dieselButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        dieselButton.setFont(new java.awt.Font("Roboto", 0, 14));
-        gasolina98button.setBackground(new java.awt.Color(0, 153, 153));        // TODO add your handling code here:
-        gasolina98button.setFont(new java.awt.Font("Roboto Medium", 1, 14));
-        efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        gasolina95button.setBackground(new java.awt.Color(0, 204, 204));
+        gasolina95button.setFont(new java.awt.Font("Roboto", 0, 16));
+        dieselButton.setBackground(new java.awt.Color(0, 204, 204));
+        dieselButton.setFont(new java.awt.Font("Roboto", 0, 16));
+        gasolina98button.setBackground(new java.awt.Color(0, 153, 153));
+        gasolina98button.setFont(new java.awt.Font("Roboto Medium", 1, 16));
+        efitecButton.setBackground(new java.awt.Color(0, 204, 204));
+        efitecButton.setFont(new java.awt.Font("Roboto", 0, 16));
         price = 1.317;
         precio.setText("1,317");
     }//GEN-LAST:event_gasolina98buttonActionPerformed
 
     private void gasolina95buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolina95buttonActionPerformed
-        gasolina98button.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        gasolina98button.setFont(new java.awt.Font("Roboto", 0, 14));
-        dieselButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        dieselButton.setFont(new java.awt.Font("Roboto", 0, 14));
-        gasolina95button.setBackground(new java.awt.Color(0, 153, 153));        // TODO add your handling code here:
-        gasolina95button.setFont(new java.awt.Font("Roboto Medium", 1, 14));
-        efitecButton.setBackground(new java.awt.Color(0, 204, 204));        // TODO add your handling code here:
-        efitecButton.setFont(new java.awt.Font("Roboto", 0, 14));
+        gasolina98button.setBackground(new java.awt.Color(0, 204, 204));
+        gasolina98button.setFont(new java.awt.Font("Roboto", 0, 16));
+        dieselButton.setBackground(new java.awt.Color(0, 204, 204));
+        dieselButton.setFont(new java.awt.Font("Roboto", 0, 16));
+        gasolina95button.setBackground(new java.awt.Color(0, 153, 153));
+        gasolina95button.setFont(new java.awt.Font("Roboto Medium", 1, 16));
+        efitecButton.setBackground(new java.awt.Color(0, 204, 204));
+        efitecButton.setFont(new java.awt.Font("Roboto", 0, 16));
         price = 1.232;
         precio.setText("1,232");
     }//GEN-LAST:event_gasolina95buttonActionPerformed
@@ -302,28 +315,37 @@ public class Gasolinera extends javax.swing.JFrame {
     }//GEN-LAST:event_cantidadKeyTyped
 
     private void eurosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eurosButtonActionPerformed
-        if (!cantidad.getText().equals("")) {
-            eurosButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
-            eurosButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
-            litrosButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
-            litrosButton.setFont(new java.awt.Font("Roboto", 0, 14));
-            eurosButton.setForeground(Color.WHITE);
-            totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
-            euros.setText(totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText()) / price) + " litros)");
-        }
+        eurosButton.setBackground(new java.awt.Color(204, 153, 0));
+        eurosButton.setFont(new java.awt.Font("Roboto Medium", 1, 16));
+        litrosButton.setBackground(new java.awt.Color(255, 204, 0));
+        litrosButton.setFont(new java.awt.Font("Roboto", 0, 16));
+        eurosButton.setForeground(Color.WHITE);
+        opc = 1;
+
     }//GEN-LAST:event_eurosButtonActionPerformed
 
     private void litrosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_litrosButtonActionPerformed
-        if (!cantidad.getText().equals("")) {
-            litrosButton.setBackground(new java.awt.Color(204, 153, 0));        // TODO add your handling code here:
-            litrosButton.setFont(new java.awt.Font("Roboto Medium", 1, 14));
-            eurosButton.setBackground(new java.awt.Color(255, 204, 0));        // TODO add your handling code here:
-            eurosButton.setFont(new java.awt.Font("Roboto", 0, 14));
-            litrosButton.setForeground(Color.WHITE);
-            totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
-            euros.setText(totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText())) + " litros)");
-        }
+        litrosButton.setBackground(new java.awt.Color(204, 153, 0));
+        litrosButton.setFont(new java.awt.Font("Roboto Medium", 1, 16));
+        eurosButton.setBackground(new java.awt.Color(255, 204, 0));
+        eurosButton.setFont(new java.awt.Font("Roboto", 0, 16));
+        litrosButton.setForeground(Color.WHITE);
+        opc = 0;
+
     }//GEN-LAST:event_litrosButtonActionPerformed
+
+    private void calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcularActionPerformed
+        if (!cantidad.getText().equals("")) {
+            if (opc == 0) {
+                totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
+                euros.setText(" " + totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText())) + " litros)");
+            } else if (opc == 1) {
+                totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
+                euros.setText(" " + totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText()) / price) + " litros)");
+            }
+            aceptarButton.setEnabled(true);
+        }
+    }//GEN-LAST:event_calcularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -361,11 +383,17 @@ public class Gasolinera extends javax.swing.JFrame {
         });
     }
     
+    public de.craften.ui.swingmaterial.MaterialPanel getPanel() {
+        return materialPanel1;
+    }
+
     private static String totalCombustible;
     private double price;
+    private int opc;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
+    private de.craften.ui.swingmaterial.MaterialButton calcular;
     private de.craften.ui.swingmaterial.MaterialTextField cantidad;
     private de.craften.ui.swingmaterial.MaterialButton dieselButton;
     private de.craften.ui.swingmaterial.MaterialButton efitecButton;
@@ -374,6 +402,7 @@ public class Gasolinera extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton gasolina95button;
     private de.craften.ui.swingmaterial.MaterialButton gasolina98button;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel14;
@@ -386,7 +415,6 @@ public class Gasolinera extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private de.craften.ui.swingmaterial.MaterialButton litrosButton;
-    private de.craften.ui.swingmaterial.MaterialButton materialButton1;
     private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     private javax.swing.JLabel precio;
     private javax.swing.JLabel precio1;
