@@ -341,9 +341,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 112, 53, 70));
 
-        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p3.setMnemonic(2);
-        p3.setToolTipText("Libre");
+        p3.setToolTipText("Ocupado");
         p3.setBorderPainted(false);
         p3.setContentAreaFilled(false);
         p3.setName("3"); // NOI18N
@@ -380,9 +380,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 112, 43, 70));
 
-        p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p6.setMnemonic(0);
-        p6.setToolTipText("Libre");
+        p6.setToolTipText("Ocupado");
         p6.setBorderPainted(false);
         p6.setContentAreaFilled(false);
         p6.setName("6"); // NOI18N
@@ -406,9 +406,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 112, 43, 70));
 
-        p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p8.setMnemonic(0);
-        p8.setToolTipText("Libre");
+        p8.setToolTipText("Ocupado");
         p8.setBorderPainted(false);
         p8.setContentAreaFilled(false);
         p8.setName("8"); // NOI18N
@@ -432,9 +432,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(474, 112, 43, 70));
 
-        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p10.setMnemonic(0);
-        p10.setToolTipText("Libre");
+        p10.setToolTipText("Ocupado");
         p10.setBorderPainted(false);
         p10.setContentAreaFilled(false);
         p10.setName("10"); // NOI18N
@@ -445,9 +445,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 112, 43, 70));
 
-        p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p11.setMnemonic(2);
-        p11.setToolTipText("Libre");
+        p11.setToolTipText("Ocupado");
         p11.setBorderPainted(false);
         p11.setContentAreaFilled(false);
         p11.setName("11"); // NOI18N
@@ -484,9 +484,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(198, 241, 43, 70));
 
-        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p14.setMnemonic(0);
-        p14.setToolTipText("Libre");
+        p14.setToolTipText("Ocupado");
         p14.setBorderPainted(false);
         p14.setContentAreaFilled(false);
         p14.setName("14"); // NOI18N
@@ -523,9 +523,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p16, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 241, 43, 70));
 
-        p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p17.setMnemonic(0);
-        p17.setToolTipText("Libre");
+        p17.setToolTipText("Ocupado");
         p17.setBorderPainted(false);
         p17.setContentAreaFilled(false);
         p17.setName("17"); // NOI18N
@@ -536,9 +536,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p17, new org.netbeans.lib.awtextra.AbsoluteConstraints(366, 241, 43, 70));
 
-        p18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p18.setMnemonic(0);
-        p18.setToolTipText("Libre");
+        p18.setToolTipText("Ocupado");
         p18.setBorderPainted(false);
         p18.setContentAreaFilled(false);
         p18.setName("18"); // NOI18N
@@ -588,9 +588,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p21, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 241, 43, 35));
 
-        p22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
+        p22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); // NOI18N
         p22.setMnemonic(1);
-        p22.setToolTipText("Libre");
+        p22.setToolTipText("Ocupado");
         p22.setBorderPainted(false);
         p22.setContentAreaFilled(false);
         p22.setName("22"); // NOI18N
@@ -653,9 +653,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p26, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 373, 43, 70));
 
-        p27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p27.setMnemonic(0);
-        p27.setToolTipText("Libre");
+        p27.setToolTipText("Ocupado");
         p27.setBorderPainted(false);
         p27.setContentAreaFilled(false);
         p27.setName("27"); // NOI18N
@@ -666,9 +666,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p27, new org.netbeans.lib.awtextra.AbsoluteConstraints(282, 373, 43, 70));
 
-        p28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p28.setMnemonic(0);
-        p28.setToolTipText("Libre");
+        p28.setToolTipText("Ocupado");
         p28.setBorderPainted(false);
         p28.setContentAreaFilled(false);
         p28.setName("28"); // NOI18N
@@ -679,9 +679,9 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(p28, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 373, 43, 70));
 
-        p29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p29.setMnemonic(0);
-        p29.setToolTipText("Libre");
+        p29.setToolTipText("Ocupado");
         p29.setBorderPainted(false);
         p29.setContentAreaFilled(false);
         p29.setName("29"); // NOI18N
@@ -1039,33 +1039,33 @@ public class URJC extends javax.swing.JFrame {
         planta5.setFont(new java.awt.Font("Roboto", 0, 14));
         libre(p1);
         libre(p2);
-        libre(p3);
+        ocupado(p3);
         libre(p4);
         libre(p5);
-        libre(p6);
+        ocupado(p6);
         libre(p7);
-        libre(p8);
+        ocupado(p8);
         libre(p9);
-        libre(p10);
-        libre(p11);
+        ocupado(p10);
+        ocupado(p11);
         libre(p12);
         libre(p13);
-        libre(p14);
+        ocupado(p14);
         libre(p15);
         libre(p16);
-        libre(p17);
-        libre(p18);
+        ocupado(p17);
+        ocupado(p18);
         libre(p19);
         libre(p20);
         libre(p21);
-        libre(p22);
+        ocupado(p22);
         libre(p23);
         libre(p24);
         libre(p25);
         libre(p26);
-        libre(p27);
-        libre(p28);
-        libre(p29);
+        ocupado(p27);
+        ocupado(p28);
+        ocupado(p29);
         libre(p30);
         libre(p31);
         libre(p32);
@@ -1086,40 +1086,40 @@ public class URJC extends javax.swing.JFrame {
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
         planta5.setBackground(new java.awt.Color(204, 204, 204));
         planta5.setFont(new java.awt.Font("Roboto", 0, 14));
-        libre(p1);
+        ocupado(p1);
         libre(p2);
         libre(p3);
         libre(p4);
         libre(p5);
         libre(p6);
         libre(p7);
-        libre(p8);
-        libre(p9);
-        libre(p10);
+        ocupado(p8);
+        ocupado(p9);
+        ocupado(p10);
         libre(p11);
         libre(p12);
         libre(p13);
         libre(p14);
         libre(p15);
         libre(p16);
-        libre(p17);
-        libre(p18);
-        libre(p19);
+        ocupado(p17);
+        ocupado(p18);
+        ocupado(p19);
         libre(p20);
         libre(p21);
         libre(p22);
         libre(p23);
         libre(p24);
-        libre(p25);
-        libre(p26);
+        ocupado(p25);
+        ocupado(p26);
         libre(p27);
         libre(p28);
-        libre(p29);
+        ocupado(p29);
         libre(p30);
         libre(p31);
-        libre(p32);
+        ocupado(p32);
         libre(p33);
-        libre(p34);
+        ocupado(p34);
     }//GEN-LAST:event_planta4ActionPerformed
 
     private void planta5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta5ActionPerformed

@@ -289,9 +289,9 @@ public class Minerva extends javax.swing.JFrame {
         });
         plazas.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 112, 53, 70));
 
-        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p1.setMnemonic(2);
-        p1.setToolTipText("Libre");
+        p1.setToolTipText("Ocupado");
         p1.setBorderPainted(false);
         p1.setContentAreaFilled(false);
         p1.setName("1"); // NOI18N
@@ -380,9 +380,9 @@ public class Minerva extends javax.swing.JFrame {
         });
         plazas.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 112, 43, 70));
 
-        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
+        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); // NOI18N
         p10.setMnemonic(1);
-        p10.setToolTipText("Libre");
+        p10.setToolTipText("Ocupado");
         p10.setBorderPainted(false);
         p10.setContentAreaFilled(false);
         p10.setName("10"); // NOI18N
@@ -458,9 +458,9 @@ public class Minerva extends javax.swing.JFrame {
         });
         plazas.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 241, 43, 70));
 
-        p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p16.setMnemonic(0);
-        p16.setToolTipText("Libre");
+        p16.setToolTipText("Ocupado");
         p16.setBorderPainted(false);
         p16.setContentAreaFilled(false);
         p16.setName("16"); // NOI18N
@@ -471,9 +471,9 @@ public class Minerva extends javax.swing.JFrame {
         });
         plazas.add(p16, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 241, 43, 70));
 
-        p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p17.setMnemonic(0);
-        p17.setToolTipText("Libre");
+        p17.setToolTipText("Ocupado");
         p17.setBorderPainted(false);
         p17.setContentAreaFilled(false);
         p17.setName("17"); // NOI18N
@@ -575,9 +575,9 @@ public class Minerva extends javax.swing.JFrame {
         });
         plazas.add(p24, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 373, 53, 70));
 
-        p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p25.setMnemonic(2);
-        p25.setToolTipText("Libre");
+        p25.setToolTipText("Ocupado");
         p25.setBorderPainted(false);
         p25.setContentAreaFilled(false);
         p25.setName("25"); // NOI18N
@@ -666,9 +666,9 @@ public class Minerva extends javax.swing.JFrame {
         });
         plazas.add(p31, new org.netbeans.lib.awtextra.AbsoluteConstraints(491, 373, 43, 70));
 
-        p32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
+        p32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); // NOI18N
         p32.setMnemonic(1);
-        p32.setToolTipText("Libre");
+        p32.setToolTipText("Ocupado");
         p32.setBorderPainted(false);
         p32.setContentAreaFilled(false);
         p32.setName("32"); // NOI18N
@@ -679,9 +679,9 @@ public class Minerva extends javax.swing.JFrame {
         });
         plazas.add(p32, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 373, 43, 35));
 
-        p33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
+        p33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); // NOI18N
         p33.setMnemonic(1);
-        p33.setToolTipText("Libre");
+        p33.setToolTipText("Ocupado");
         p33.setBorderPainted(false);
         p33.setContentAreaFilled(false);
         p33.setName("33"); // NOI18N
@@ -793,7 +793,7 @@ public class Minerva extends javax.swing.JFrame {
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setFont(new java.awt.Font("Roboto", 0, 14));
-        libre(p1);
+        ocupado(p1);
         libre(p2);
         libre(p3);
         libre(p4);
@@ -802,14 +802,14 @@ public class Minerva extends javax.swing.JFrame {
         libre(p7);
         libre(p8);
         libre(p9);
-        libre(p10);
+        ocupado(p10);
         libre(p11);
         libre(p12);
         libre(p13);
         ocupado(p14);
         libre(p15);
-        libre(p16);
-        libre(p17);
+        ocupado(p16);
+        ocupado(p17);
         libre(p18);
         libre(p19);
         libre(p20);
@@ -817,15 +817,15 @@ public class Minerva extends javax.swing.JFrame {
         libre(p22);
         libre(p23);
         libre(p24);
-        libre(p25);
+        ocupado(p25);
         libre(p26);
         libre(p27);
         libre(p28);
         libre(p29);
         libre(p30);
         libre(p31);
-        libre(p32);
-        libre(p33);
+        ocupado(p32);
+        ocupado(p33);
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed

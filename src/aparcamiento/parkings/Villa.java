@@ -254,9 +254,9 @@ public class Villa extends javax.swing.JFrame {
         });
         plazas.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 146, 67, 83));
 
-        p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
+        p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus2.png"))); // NOI18N
         p2.setMnemonic(2);
-        p2.setToolTipText("Libre");
+        p2.setToolTipText("Ocupado");
         p2.setBorderPainted(false);
         p2.setContentAreaFilled(false);
         p2.setName("2"); // NOI18N
@@ -267,9 +267,9 @@ public class Villa extends javax.swing.JFrame {
         });
         plazas.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 146, 67, 83));
 
-        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
+        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus2.png"))); // NOI18N
         p3.setMnemonic(2);
-        p3.setToolTipText("Libre");
+        p3.setToolTipText("Ocupado");
         p3.setBorderPainted(false);
         p3.setContentAreaFilled(false);
         p3.setName("3"); // NOI18N
@@ -306,9 +306,9 @@ public class Villa extends javax.swing.JFrame {
         });
         plazas.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(367, 146, 54, 83));
 
-        p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
+        p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png"))); // NOI18N
         p6.setMnemonic(0);
-        p6.setToolTipText("Libre");
+        p6.setToolTipText("Ocupado");
         p6.setBorderPainted(false);
         p6.setContentAreaFilled(false);
         p6.setName("6"); // NOI18N
@@ -319,9 +319,9 @@ public class Villa extends javax.swing.JFrame {
         });
         plazas.add(p6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 146, 54, 83));
 
-        p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
+        p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png"))); // NOI18N
         p7.setMnemonic(0);
-        p7.setToolTipText("Libre");
+        p7.setToolTipText("Ocupado");
         p7.setBorderPainted(false);
         p7.setContentAreaFilled(false);
         p7.setName("7"); // NOI18N
@@ -358,9 +358,9 @@ public class Villa extends javax.swing.JFrame {
         });
         plazas.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 145, 54, 44));
 
-        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos2.png"))); // NOI18N
+        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos2.png"))); // NOI18N
         p10.setMnemonic(1);
-        p10.setToolTipText("Libre");
+        p10.setToolTipText("Ocupado");
         p10.setBorderPainted(false);
         p10.setContentAreaFilled(false);
         p10.setName("10"); // NOI18N
@@ -410,9 +410,9 @@ public class Villa extends javax.swing.JFrame {
         });
         plazas.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 295, 54, 83));
 
-        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
+        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png"))); // NOI18N
         p14.setMnemonic(0);
-        p14.setToolTipText("Libre");
+        p14.setToolTipText("Ocupado");
         p14.setBorderPainted(false);
         p14.setContentAreaFilled(false);
         p14.setName("14"); // NOI18N
@@ -423,9 +423,9 @@ public class Villa extends javax.swing.JFrame {
         });
         plazas.add(p14, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 295, 54, 83));
 
-        p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
+        p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png"))); // NOI18N
         p15.setMnemonic(0);
-        p15.setToolTipText("Libre");
+        p15.setToolTipText("Ocupado");
         p15.setBorderPainted(false);
         p15.setContentAreaFilled(false);
         p15.setName("15"); // NOI18N
@@ -611,20 +611,20 @@ public class Villa extends javax.swing.JFrame {
         planta2.setBackground(new java.awt.Color(204, 204, 204));
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         libre(p1);
-        libre(p2);
-        libre(p3);
+        ocupado(p2);
+        ocupado(p3);
         libre(p4);
         libre(p5);
-        libre(p6);
-        libre(p7);
+        ocupado(p6);
+        ocupado(p7);
         libre(p8);
         libre(p9);
-        libre(p10);
+        ocupado(p10);
         libre(p11);
         libre(p12);
         libre(p13);
-        libre(p14);
-        libre(p15);
+        ocupado(p14);
+        ocupado(p15);
         libre(p16);
         libre(p17);
         libre(p18);

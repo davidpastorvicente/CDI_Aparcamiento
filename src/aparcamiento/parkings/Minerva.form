@@ -503,12 +503,12 @@
         <Component class="javax.swing.JButton" name="p1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/resources/libreMinus.png"/>
+              <Image iconType="3" name="/resources/ocupadoMinus.png"/>
             </Property>
             <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="2" type="code"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Libre"/>
+            <Property name="toolTipText" type="java.lang.String" value="Ocupado"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="name" type="java.lang.String" value="1" noResource="true"/>
@@ -657,12 +657,12 @@
         <Component class="javax.swing.JButton" name="p10">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/resources/libreMotos.png"/>
+              <Image iconType="3" name="/resources/ocupadoMotos.png"/>
             </Property>
             <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="1" type="code"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Libre"/>
+            <Property name="toolTipText" type="java.lang.String" value="Ocupado"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="name" type="java.lang.String" value="10" noResource="true"/>
@@ -789,12 +789,12 @@
         <Component class="javax.swing.JButton" name="p16">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/resources/libreCoche.png"/>
+              <Image iconType="3" name="/resources/ocupadoCoche.png"/>
             </Property>
             <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="0" type="code"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Libre"/>
+            <Property name="toolTipText" type="java.lang.String" value="Ocupado"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="name" type="java.lang.String" value="16" noResource="true"/>
@@ -811,12 +811,12 @@
         <Component class="javax.swing.JButton" name="p17">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/resources/libreCoche.png"/>
+              <Image iconType="3" name="/resources/ocupadoCoche.png"/>
             </Property>
             <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="0" type="code"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Libre"/>
+            <Property name="toolTipText" type="java.lang.String" value="Ocupado"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="name" type="java.lang.String" value="17" noResource="true"/>
@@ -987,12 +987,12 @@
         <Component class="javax.swing.JButton" name="p25">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/resources/libreMinus.png"/>
+              <Image iconType="3" name="/resources/ocupadoMinus.png"/>
             </Property>
             <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="2" type="code"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Libre"/>
+            <Property name="toolTipText" type="java.lang.String" value="Ocupado"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="name" type="java.lang.String" value="25" noResource="true"/>
@@ -1141,12 +1141,12 @@
         <Component class="javax.swing.JButton" name="p32">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/resources/libreMotos.png"/>
+              <Image iconType="3" name="/resources/ocupadoMotos.png"/>
             </Property>
             <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="1" type="code"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Libre"/>
+            <Property name="toolTipText" type="java.lang.String" value="Ocupado"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="name" type="java.lang.String" value="32" noResource="true"/>
@@ -1163,12 +1163,12 @@
         <Component class="javax.swing.JButton" name="p33">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/resources/libreMotos.png"/>
+              <Image iconType="3" name="/resources/ocupadoMotos.png"/>
             </Property>
             <Property name="mnemonic" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="1" type="code"/>
             </Property>
-            <Property name="toolTipText" type="java.lang.String" value="Libre"/>
+            <Property name="toolTipText" type="java.lang.String" value="Ocupado"/>
             <Property name="borderPainted" type="boolean" value="false"/>
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="name" type="java.lang.String" value="33" noResource="true"/>

@@ -227,9 +227,9 @@ public class Rosa extends javax.swing.JFrame {
         });
         plazas.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 146, 67, 83));
 
-        p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
+        p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus2.png"))); // NOI18N
         p2.setMnemonic(2);
-        p2.setToolTipText("Libre");
+        p2.setToolTipText("Ocupado");
         p2.setBorderPainted(false);
         p2.setContentAreaFilled(false);
         p2.setName("2"); // NOI18N
@@ -240,9 +240,9 @@ public class Rosa extends javax.swing.JFrame {
         });
         plazas.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 146, 67, 83));
 
-        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
+        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus2.png"))); // NOI18N
         p3.setMnemonic(2);
-        p3.setToolTipText("Libre");
+        p3.setToolTipText("Ocupado");
         p3.setBorderPainted(false);
         p3.setContentAreaFilled(false);
         p3.setName("3"); // NOI18N
@@ -305,9 +305,9 @@ public class Rosa extends javax.swing.JFrame {
         });
         plazas.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 146, 54, 83));
 
-        p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
+        p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png"))); // NOI18N
         p8.setMnemonic(0);
-        p8.setToolTipText("Libre");
+        p8.setToolTipText("Ocupado");
         p8.setBorderPainted(false);
         p8.setContentAreaFilled(false);
         p8.setName("8"); // NOI18N
@@ -331,9 +331,9 @@ public class Rosa extends javax.swing.JFrame {
         });
         plazas.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 145, 54, 44));
 
-        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos2.png"))); // NOI18N
+        p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos2.png"))); // NOI18N
         p10.setMnemonic(1);
-        p10.setToolTipText("Libre");
+        p10.setToolTipText("Ocupado");
         p10.setBorderPainted(false);
         p10.setContentAreaFilled(false);
         p10.setName("10"); // NOI18N
@@ -383,9 +383,9 @@ public class Rosa extends javax.swing.JFrame {
         });
         plazas.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 295, 54, 83));
 
-        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
+        p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png"))); // NOI18N
         p14.setMnemonic(0);
-        p14.setToolTipText("Libre");
+        p14.setToolTipText("Ocupado");
         p14.setBorderPainted(false);
         p14.setContentAreaFilled(false);
         p14.setName("14"); // NOI18N
@@ -409,9 +409,9 @@ public class Rosa extends javax.swing.JFrame {
         });
         plazas.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(367, 295, 54, 83));
 
-        p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png"))); // NOI18N
+        p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png"))); // NOI18N
         p16.setMnemonic(0);
-        p16.setToolTipText("Libre");
+        p16.setToolTipText("Ocupado");
         p16.setBorderPainted(false);
         p16.setContentAreaFilled(false);
         p16.setName("16"); // NOI18N
@@ -636,21 +636,21 @@ public class Rosa extends javax.swing.JFrame {
         planta2.setBackground(new java.awt.Color(204, 204, 204));
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         libre(p1);
-        libre(p2);
-        libre(p3);
+        ocupado(p2);
+        ocupado(p3);
         libre(p4);
         libre(p5);
         libre(p6);
         libre(p7);
-        libre(p8);
+        ocupado(p8);
         libre(p9);
-        libre(p10);
+        ocupado(p10);
         libre(p11);
         libre(p12);
         libre(p13);
-        libre(p14);
+        ocupado(p14);
         libre(p15);
-        libre(p16);
+        ocupado(p16);
         libre(p17);
         libre(p18);
         libre(p19);

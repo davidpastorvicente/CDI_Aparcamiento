@@ -261,9 +261,9 @@ public class Amma extends javax.swing.JFrame {
         plazas.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 40, 20, 370));
         plazas.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 270, 10));
 
-        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p3.setMnemonic(2);
-        p3.setToolTipText("Libre");
+        p3.setToolTipText("Ocupado");
         p3.setBorderPainted(false);
         p3.setContentAreaFilled(false);
         p3.setName("3"); // NOI18N
@@ -287,9 +287,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 112, 53, 70));
 
-        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p1.setMnemonic(2);
-        p1.setToolTipText("Libre");
+        p1.setToolTipText("Ocupado");
         p1.setBorderPainted(false);
         p1.setContentAreaFilled(false);
         p1.setName("1"); // NOI18N
@@ -313,9 +313,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 112, 43, 70));
 
-        p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p5.setMnemonic(0);
-        p5.setToolTipText("Libre");
+        p5.setToolTipText("Ocupado");
         p5.setBorderPainted(false);
         p5.setContentAreaFilled(false);
         p5.setName("5"); // NOI18N
@@ -326,9 +326,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 112, 43, 70));
 
-        p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p6.setMnemonic(0);
-        p6.setToolTipText("Libre");
+        p6.setToolTipText("Ocupado");
         p6.setBorderPainted(false);
         p6.setContentAreaFilled(false);
         p6.setName("6"); // NOI18N
@@ -339,9 +339,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p6, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 112, 43, 70));
 
-        p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p7.setMnemonic(0);
-        p7.setToolTipText("Libre");
+        p7.setToolTipText("Ocupado");
         p7.setBorderPainted(false);
         p7.setContentAreaFilled(false);
         p7.setName("7"); // NOI18N
@@ -495,9 +495,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p18, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 241, 43, 70));
 
-        p19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p19.setMnemonic(0);
-        p19.setToolTipText("Libre");
+        p19.setToolTipText("Ocupado");
         p19.setBorderPainted(false);
         p19.setContentAreaFilled(false);
         p19.setName("19"); // NOI18N
@@ -508,9 +508,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p19, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 241, 43, 70));
 
-        p20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p20.setMnemonic(0);
-        p20.setToolTipText("Libre");
+        p20.setToolTipText("Ocupado");
         p20.setBorderPainted(false);
         p20.setContentAreaFilled(false);
         p20.setName("20"); // NOI18N
@@ -534,9 +534,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p21, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 241, 43, 35));
 
-        p22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
+        p22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png"))); // NOI18N
         p22.setMnemonic(1);
-        p22.setToolTipText("Libre");
+        p22.setToolTipText("Ocupado");
         p22.setBorderPainted(false);
         p22.setContentAreaFilled(false);
         p22.setName("22"); // NOI18N
@@ -547,9 +547,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p22, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 276, 43, 35));
 
-        p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p23.setMnemonic(2);
-        p23.setToolTipText("Libre");
+        p23.setToolTipText("Ocupado");
         p23.setBorderPainted(false);
         p23.setContentAreaFilled(false);
         p23.setName("23"); // NOI18N
@@ -560,9 +560,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p23, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 373, 53, 70));
 
-        p24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p24.setMnemonic(2);
-        p24.setToolTipText("Libre");
+        p24.setToolTipText("Ocupado");
         p24.setBorderPainted(false);
         p24.setContentAreaFilled(false);
         p24.setName("24"); // NOI18N
@@ -573,9 +573,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p24, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 373, 53, 70));
 
-        p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
+        p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p25.setMnemonic(2);
-        p25.setToolTipText("Libre");
+        p25.setToolTipText("Ocupado");
         p25.setBorderPainted(false);
         p25.setContentAreaFilled(false);
         p25.setName("25"); // NOI18N
@@ -586,9 +586,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p25, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 373, 53, 70));
 
-        p26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p26.setMnemonic(0);
-        p26.setToolTipText("Libre");
+        p26.setToolTipText("Ocupado");
         p26.setBorderPainted(false);
         p26.setContentAreaFilled(false);
         p26.setName("26"); // NOI18N
@@ -599,9 +599,9 @@ public class Amma extends javax.swing.JFrame {
         });
         plazas.add(p26, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 373, 43, 70));
 
-        p27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
+        p27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png"))); // NOI18N
         p27.setMnemonic(0);
-        p27.setToolTipText("Libre");
+        p27.setToolTipText("Ocupado");
         p27.setBorderPainted(false);
         p27.setContentAreaFilled(false);
         p27.setName("27"); // NOI18N
@@ -790,13 +790,13 @@ public class Amma extends javax.swing.JFrame {
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setFont(new java.awt.Font("Roboto", 0, 14));
-        libre(p1);
+        ocupado(p1);
         libre(p2);
-        libre(p3);
+        ocupado(p3);
         libre(p4);
-        libre(p5);
-        libre(p6);
-        libre(p7);
+        ocupado(p5);
+        ocupado(p6);
+        ocupado(p7);
         libre(p8);
         libre(p9);
         libre(p10);
@@ -808,15 +808,15 @@ public class Amma extends javax.swing.JFrame {
         libre(p16);
         libre(p17);
         libre(p18);
-        libre(p19);
-        libre(p20);
+        ocupado(p19);
+        ocupado(p20);
         libre(p21);
-        libre(p22);
-        libre(p23);
-        libre(p24);
-        libre(p25);
-        libre(p26);
-        libre(p27);
+        ocupado(p22);
+        ocupado(p23);
+        ocupado(p24);
+        ocupado(p25);
+        ocupado(p26);
+        ocupado(p27);
         libre(p28);
         libre(p29);
         libre(p30);
