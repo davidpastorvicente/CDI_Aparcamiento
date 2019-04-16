@@ -18,13 +18,13 @@ public class Amma extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Amma() {
-
+        gas = new Gasolinera().getPanel();
         lib = new boolean[33];
         for (int i = 0; i < 33; i++) {
             lib[i] = true;
         }
         initComponents();
-        aux = materialPanel1;
+        aux = plazas;
     }
 
     /**
@@ -38,7 +38,7 @@ public class Amma extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
+        plazas = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
         planta0 = new de.craften.ui.swingmaterial.MaterialButton();
         planta1 = new de.craften.ui.swingmaterial.MaterialButton();
@@ -107,6 +107,10 @@ public class Amma extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         atras = new de.craften.ui.swingmaterial.MaterialButton();
         gasolineraButton = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        plazasButton = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFocusable(false);
@@ -122,11 +126,11 @@ public class Amma extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 100));
 
-        materialPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        plazas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel2.setText("Seleccione la planta :");
-        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
+        plazas.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
 
         planta0.setBackground(new java.awt.Color(102, 102, 102));
         planta0.setText("Planta 0");
@@ -136,7 +140,7 @@ public class Amma extends javax.swing.JFrame {
                 planta0ActionPerformed(evt);
             }
         });
-        materialPanel1.add(planta0, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 120, 60));
+        plazas.add(planta0, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 120, 60));
 
         planta1.setBackground(new java.awt.Color(204, 204, 204));
         planta1.setText("Planta 1");
@@ -146,7 +150,7 @@ public class Amma extends javax.swing.JFrame {
                 planta1ActionPerformed(evt);
             }
         });
-        materialPanel1.add(planta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 120, 60));
+        plazas.add(planta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 120, 60));
 
         planta2.setBackground(new java.awt.Color(204, 204, 204));
         planta2.setText("Planta 2");
@@ -156,7 +160,7 @@ public class Amma extends javax.swing.JFrame {
                 planta2ActionPerformed(evt);
             }
         });
-        materialPanel1.add(planta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 120, 60));
+        plazas.add(planta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 120, 60));
 
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setText("Planta 3");
@@ -166,96 +170,96 @@ public class Amma extends javax.swing.JFrame {
                 planta3ActionPerformed(evt);
             }
         });
-        materialPanel1.add(planta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 120, 60));
+        plazas.add(planta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 120, 60));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel3.setText("                 Precio");
-        materialPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, -1));
+        plazas.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel17.setText("(2 adaptados)");
-        materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, 80, 20));
+        plazas.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, 80, 20));
 
         jLabel18.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel18.setText("24");
-        materialPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 200, -1, -1));
+        plazas.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 200, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel19.setText("                         Motos");
-        materialPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, -1, -1));
+        plazas.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel20.setText("            Ascensor");
-        materialPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, -1, -1));
+        plazas.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel21.setText("                 Baños");
-        materialPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, -1, -1));
+        plazas.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel22.setText("   Plazas totales");
-        materialPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 130, -1, -1));
+        plazas.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 130, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel23.setText("                       Coches");
-        materialPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, -1, -1));
+        plazas.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel24.setText("Movilidad reducida");
-        materialPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, -1, -1));
+        plazas.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, -1, -1));
 
         jLabel25.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel25.setText("                 Familiares");
-        materialPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, -1, -1));
+        plazas.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel26.setText("      Localización");
-        materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 50, -1, -1));
+        plazas.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 50, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel27.setText("            Distancia");
-        materialPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, -1, -1));
+        plazas.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, -1, -1));
 
         jLabel28.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel28.setText("1300 m.");
-        materialPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 90, -1, -1));
+        plazas.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 90, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel29.setText("0,65 €/hora");
-        materialPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 380, -1, -1));
+        plazas.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 380, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel30.setText("24");
-        materialPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 260, -1, -1));
+        plazas.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 260, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel31.setText("72");
-        materialPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 170, -1, -1));
+        plazas.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 170, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel32.setText("12");
-        materialPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 230, -1, -1));
+        plazas.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 230, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel33.setText("132");
-        materialPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 130, -1, -1));
+        plazas.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 130, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel34.setText("SÍ");
-        materialPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 300, -1, -1));
+        plazas.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 300, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel35.setText("3");
-        materialPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 340, -1, -1));
+        plazas.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 340, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel36.setText("C/ de los Almendros, 8");
-        materialPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 50, 140, -1));
-        materialPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 270, 10));
+        plazas.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 50, 140, -1));
+        plazas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        materialPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 40, 20, 370));
-        materialPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 270, 10));
+        plazas.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 40, 20, 370));
+        plazas.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 270, 10));
 
         p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p3.setMnemonic(2);
@@ -268,7 +272,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 112, 53, 70));
+        plazas.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 112, 53, 70));
 
         p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p2.setMnemonic(2);
@@ -281,7 +285,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 112, 53, 70));
+        plazas.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 112, 53, 70));
 
         p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p1.setMnemonic(2);
@@ -294,7 +298,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 112, 53, 70));
+        plazas.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 112, 53, 70));
 
         p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p4.setMnemonic(0);
@@ -307,7 +311,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 112, 43, 70));
+        plazas.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 112, 43, 70));
 
         p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p5.setMnemonic(0);
@@ -320,7 +324,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 112, 43, 70));
+        plazas.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 112, 43, 70));
 
         p6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p6.setMnemonic(0);
@@ -333,7 +337,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p6, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 112, 43, 70));
+        plazas.add(p6, new org.netbeans.lib.awtextra.AbsoluteConstraints(364, 112, 43, 70));
 
         p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p7.setMnemonic(0);
@@ -346,7 +350,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 112, 43, 70));
+        plazas.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 112, 43, 70));
 
         p8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p8.setMnemonic(0);
@@ -359,7 +363,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p8, new org.netbeans.lib.awtextra.AbsoluteConstraints(448, 112, 43, 70));
+        plazas.add(p8, new org.netbeans.lib.awtextra.AbsoluteConstraints(448, 112, 43, 70));
 
         p9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p9.setMnemonic(0);
@@ -372,7 +376,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 112, 43, 70));
+        plazas.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 112, 43, 70));
 
         p10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
         p10.setMnemonic(1);
@@ -385,7 +389,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 112, 43, 35));
+        plazas.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 112, 43, 35));
 
         p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
         p11.setMnemonic(1);
@@ -398,7 +402,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 147, 43, 35));
+        plazas.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 147, 43, 35));
 
         p12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p12.setMnemonic(2);
@@ -411,7 +415,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p12, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 241, 53, 70));
+        plazas.add(p12, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 241, 53, 70));
 
         p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p13.setMnemonic(2);
@@ -424,7 +428,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 241, 53, 70));
+        plazas.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 241, 53, 70));
 
         p14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
         p14.setMnemonic(2);
@@ -437,7 +441,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p14, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 241, 53, 70));
+        plazas.add(p14, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 241, 53, 70));
 
         p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p15.setMnemonic(0);
@@ -450,7 +454,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 241, 43, 70));
+        plazas.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 241, 43, 70));
 
         p16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p16.setMnemonic(0);
@@ -463,7 +467,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p16, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 241, 43, 70));
+        plazas.add(p16, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 241, 43, 70));
 
         p17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p17.setMnemonic(0);
@@ -476,7 +480,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p17, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 241, 43, 70));
+        plazas.add(p17, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 241, 43, 70));
 
         p18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p18.setMnemonic(0);
@@ -489,7 +493,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p18, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 241, 43, 70));
+        plazas.add(p18, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 241, 43, 70));
 
         p19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p19.setMnemonic(0);
@@ -502,7 +506,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p19, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 241, 43, 70));
+        plazas.add(p19, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 241, 43, 70));
 
         p20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p20.setMnemonic(0);
@@ -515,7 +519,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(491, 241, 43, 70));
+        plazas.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(491, 241, 43, 70));
 
         p21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
         p21.setMnemonic(1);
@@ -528,7 +532,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p21, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 241, 43, 35));
+        plazas.add(p21, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 241, 43, 35));
 
         p22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
         p22.setMnemonic(1);
@@ -541,7 +545,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p22, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 276, 43, 35));
+        plazas.add(p22, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 276, 43, 35));
 
         p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p23.setMnemonic(2);
@@ -554,7 +558,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p23, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 373, 53, 70));
+        plazas.add(p23, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 373, 53, 70));
 
         p24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p24.setMnemonic(2);
@@ -567,7 +571,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p24, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 373, 53, 70));
+        plazas.add(p24, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 373, 53, 70));
 
         p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
         p25.setMnemonic(2);
@@ -580,7 +584,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p25, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 373, 53, 70));
+        plazas.add(p25, new org.netbeans.lib.awtextra.AbsoluteConstraints(211, 373, 53, 70));
 
         p26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p26.setMnemonic(0);
@@ -593,7 +597,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p26, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 373, 43, 70));
+        plazas.add(p26, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 373, 43, 70));
 
         p27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p27.setMnemonic(0);
@@ -606,7 +610,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p27, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 373, 43, 70));
+        plazas.add(p27, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 373, 43, 70));
 
         p28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p28.setMnemonic(0);
@@ -619,7 +623,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p28, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 373, 43, 70));
+        plazas.add(p28, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 373, 43, 70));
 
         p29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p29.setMnemonic(0);
@@ -632,7 +636,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p29, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 373, 43, 70));
+        plazas.add(p29, new org.netbeans.lib.awtextra.AbsoluteConstraints(407, 373, 43, 70));
 
         p30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p30.setMnemonic(0);
@@ -645,7 +649,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p30, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 373, 43, 70));
+        plazas.add(p30, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 373, 43, 70));
 
         p31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png"))); // NOI18N
         p31.setMnemonic(0);
@@ -658,7 +662,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p31, new org.netbeans.lib.awtextra.AbsoluteConstraints(491, 373, 43, 70));
+        plazas.add(p31, new org.netbeans.lib.awtextra.AbsoluteConstraints(491, 373, 43, 70));
 
         p32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
         p32.setMnemonic(1);
@@ -671,7 +675,7 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p32, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 373, 43, 35));
+        plazas.add(p32, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 373, 43, 35));
 
         p33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png"))); // NOI18N
         p33.setMnemonic(1);
@@ -684,13 +688,13 @@ public class Amma extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        materialPanel1.add(p33, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 408, 43, 35));
+        plazas.add(p33, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 408, 43, 35));
 
         parking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pmediano.png"))); // NOI18N
         parking.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        materialPanel1.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
+        plazas.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
 
-        getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
+        getContentPane().add(plazas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -698,7 +702,7 @@ public class Amma extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
         jLabel10.setText(" Gasolinera");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
@@ -716,7 +720,27 @@ public class Amma extends javax.swing.JFrame {
                 gasolineraButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(gasolineraButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
+        jPanel1.add(gasolineraButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 220, 100));
+
+        jLabel4.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/plaza.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel11.setText("de plazas");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 65, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel12.setText("Reserva");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, -1));
+
+        plazasButton.setBackground(new java.awt.Color(0, 160, 160));
+        plazasButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plazasButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(plazasButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -728,11 +752,12 @@ public class Amma extends javax.swing.JFrame {
     }//GEN-LAST:event_atrasActionPerformed
 
     private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
-        Gasolinera g = new Gasolinera();
-        getContentPane().remove(aux);
-        aux = g.getPanel();
-        getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
-        pack();
+        if (aux != gas) {
+            getContentPane().remove(aux);
+            aux = gas;
+            getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
+            revalidate(); repaint(); pack();
+        }
     }//GEN-LAST:event_gasolineraButtonActionPerformed
 
 
@@ -800,6 +825,15 @@ public class Amma extends javax.swing.JFrame {
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
     }//GEN-LAST:event_planta3ActionPerformed
 
+    private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed
+        if (aux != plazas) {
+            getContentPane().remove(aux);
+            aux = plazas;
+            getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
+            revalidate(); repaint(); pack();
+        }
+    }//GEN-LAST:event_plazasButtonActionPerformed
+
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
@@ -847,12 +881,14 @@ public class Amma extends javax.swing.JFrame {
 
     private boolean[] lib;
     private javax.swing.JButton sel;
-    private de.craften.ui.swingmaterial.MaterialPanel aux;
+    private de.craften.ui.swingmaterial.MaterialPanel aux, gas;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -876,12 +912,12 @@ public class Amma extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private de.craften.ui.swingmaterial.MaterialPanel materialPanel1;
     private javax.swing.JButton p1;
     private javax.swing.JButton p10;
     private javax.swing.JButton p11;
@@ -920,5 +956,7 @@ public class Amma extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton planta1;
     private de.craften.ui.swingmaterial.MaterialButton planta2;
     private de.craften.ui.swingmaterial.MaterialButton planta3;
+    private de.craften.ui.swingmaterial.MaterialPanel plazas;
+    private de.craften.ui.swingmaterial.MaterialButton plazasButton;
     // End of variables declaration//GEN-END:variables
 }
