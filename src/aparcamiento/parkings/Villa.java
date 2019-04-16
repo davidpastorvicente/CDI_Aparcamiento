@@ -263,7 +263,7 @@ public class Villa extends javax.swing.JFrame {
         p2.setName("2"); // NOI18N
         p2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p2accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 146, 67, 83));
@@ -276,7 +276,7 @@ public class Villa extends javax.swing.JFrame {
         p3.setName("3"); // NOI18N
         p3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p3accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 146, 67, 83));
@@ -289,7 +289,7 @@ public class Villa extends javax.swing.JFrame {
         p4.setName("4"); // NOI18N
         p4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p4accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 146, 54, 83));
@@ -302,7 +302,7 @@ public class Villa extends javax.swing.JFrame {
         p5.setName("5"); // NOI18N
         p5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p5accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(367, 146, 54, 83));
@@ -315,7 +315,7 @@ public class Villa extends javax.swing.JFrame {
         p6.setName("6"); // NOI18N
         p6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p6accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 146, 54, 83));
@@ -328,7 +328,7 @@ public class Villa extends javax.swing.JFrame {
         p7.setName("7"); // NOI18N
         p7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p7accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 146, 54, 83));
@@ -341,7 +341,7 @@ public class Villa extends javax.swing.JFrame {
         p8.setName("8"); // NOI18N
         p8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p8accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p8, new org.netbeans.lib.awtextra.AbsoluteConstraints(526, 146, 54, 83));
@@ -354,7 +354,7 @@ public class Villa extends javax.swing.JFrame {
         p9.setName("9"); // NOI18N
         p9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p9accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 145, 54, 44));
@@ -367,7 +367,7 @@ public class Villa extends javax.swing.JFrame {
         p10.setName("10"); // NOI18N
         p10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p10accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 186, 54, 44));
@@ -380,7 +380,7 @@ public class Villa extends javax.swing.JFrame {
         p11.setName("11"); // NOI18N
         p11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p11accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 295, 67, 83));
@@ -393,7 +393,7 @@ public class Villa extends javax.swing.JFrame {
         p12.setName("12"); // NOI18N
         p12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p12accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p12, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 295, 67, 83));
@@ -406,7 +406,7 @@ public class Villa extends javax.swing.JFrame {
         p13.setName("13"); // NOI18N
         p13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p13accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 295, 54, 83));
@@ -419,7 +419,7 @@ public class Villa extends javax.swing.JFrame {
         p14.setName("14"); // NOI18N
         p14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p14accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p14, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 295, 54, 83));
@@ -432,7 +432,7 @@ public class Villa extends javax.swing.JFrame {
         p15.setName("15"); // NOI18N
         p15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p15accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(367, 295, 54, 83));
@@ -445,7 +445,7 @@ public class Villa extends javax.swing.JFrame {
         p16.setName("16"); // NOI18N
         p16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p16accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p16, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 295, 54, 83));
@@ -458,7 +458,7 @@ public class Villa extends javax.swing.JFrame {
         p17.setName("17"); // NOI18N
         p17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p17accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p17, new org.netbeans.lib.awtextra.AbsoluteConstraints(473, 295, 54, 83));
@@ -471,7 +471,7 @@ public class Villa extends javax.swing.JFrame {
         p18.setName("18"); // NOI18N
         p18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p18accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p18, new org.netbeans.lib.awtextra.AbsoluteConstraints(526, 295, 54, 83));
@@ -484,7 +484,7 @@ public class Villa extends javax.swing.JFrame {
         p19.setName("19"); // NOI18N
         p19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p19accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p19, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 294, 54, 44));
@@ -497,7 +497,7 @@ public class Villa extends javax.swing.JFrame {
         p20.setName("20"); // NOI18N
         p20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p20accion(evt);
+                accion(evt);
             }
         });
         plazas.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 335, 54, 44));
@@ -650,386 +650,6 @@ public class Villa extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_accion
-
-    private void p2accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p2accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p2accion
-
-    private void p3accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p3accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p3accion
-
-    private void p4accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p4accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p4accion
-
-    private void p5accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p5accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p5accion
-
-    private void p6accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p6accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p6accion
-
-    private void p7accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p7accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p7accion
-
-    private void p8accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p8accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p8accion
-
-    private void p9accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p9accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p9accion
-
-    private void p10accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p10accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p10accion
-
-    private void p11accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p11accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p11accion
-
-    private void p12accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p12accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p12accion
-
-    private void p13accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p13accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p13accion
-
-    private void p14accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p14accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p14accion
-
-    private void p15accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p15accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p15accion
-
-    private void p16accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p16accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p16accion
-
-    private void p17accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p17accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p17accion
-
-    private void p18accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p18accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p18accion
-
-    private void p19accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p19accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p19accion
-
-    private void p20accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p20accion
-        javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
-        if (!aux.getToolTipText().equals("Ocupado")) {
-            int i = Integer.parseInt(aux.getName());
-            if (lib[i - 1]) {
-                if (sel != null) {
-                    libre(sel);
-                    lib[Integer.parseInt(sel.getName()) - 1] = true;
-                }
-                reservado(aux);
-                lib[i - 1] = false;
-                sel = aux;
-            } else {
-                libre(aux);
-                lib[i - 1] = true;
-                sel = null;
-            }
-        }
-    }//GEN-LAST:event_p20accion
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed
         if (aux != plazas) {
