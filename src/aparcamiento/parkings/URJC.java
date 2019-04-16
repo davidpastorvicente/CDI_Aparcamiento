@@ -890,6 +890,40 @@ public class URJC extends javax.swing.JFrame {
         planta4.setFont(new java.awt.Font("Roboto", 0, 14));
         planta5.setBackground(new java.awt.Color(204, 204, 204));
         planta5.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        ocupado(p3);
+        ocupado(p4);
+        libre(p5);
+        libre(p6);
+        ocupado(p7);
+        libre(p8);
+        ocupado(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        ocupado(p14);
+        ocupado(p15);
+        ocupado(p16);
+        libre(p17);
+        libre(p18);
+        ocupado(p19);
+        ocupado(p20);
+        libre(p21);
+        libre(p22);
+        libre(p23);
+        libre(p24);
+        libre(p25);
+        libre(p26);
+        ocupado(p27);
+        libre(p28);
+        ocupado(p29);
+        libre(p30);
+        ocupado(p31);
+        libre(p32);
+        libre(p33);
+        ocupado(p34);
     }//GEN-LAST:event_planta3ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -905,6 +939,40 @@ public class URJC extends javax.swing.JFrame {
         planta4.setFont(new java.awt.Font("Roboto", 0, 14));
         planta5.setBackground(new java.awt.Color(204, 204, 204));
         planta5.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        libre(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        ocupado(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        ocupado(p11);
+        libre(p12);
+        libre(p13);
+        ocupado(p14);
+        ocupado(p15);
+        ocupado(p16);
+        libre(p17);
+        libre(p18);
+        libre(p19);
+        ocupado(p20);
+        ocupado(p21);
+        ocupado(p22);
+        ocupado(p23);
+        libre(p24);
+        ocupado(p25);
+        libre(p26);
+        libre(p27);
+        libre(p28);
+        ocupado(p29);
+        libre(p30);
+        libre(p31);
+        libre(p32);
+        libre(p33);
+        libre(p34);
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -920,6 +988,40 @@ public class URJC extends javax.swing.JFrame {
         planta4.setFont(new java.awt.Font("Roboto", 0, 14));
         planta5.setBackground(new java.awt.Color(204, 204, 204));
         planta5.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        ocupado(p2);
+        libre(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        ocupado(p7);
+        ocupado(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        ocupado(p14);
+        ocupado(p15);
+        ocupado(p16);
+        libre(p17);
+        libre(p18);
+        libre(p19);
+        libre(p20);
+        libre(p21);
+        libre(p22);
+        libre(p23);
+        libre(p24);
+        libre(p25);
+        libre(p26);
+        libre(p27);
+        ocupado(p28);
+        libre(p29);
+        ocupado(p30);
+        libre(p31);
+        libre(p32);
+        ocupado(p33);
+        ocupado(p34);
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta0ActionPerformed
@@ -935,6 +1037,40 @@ public class URJC extends javax.swing.JFrame {
         planta4.setFont(new java.awt.Font("Roboto", 0, 14));
         planta5.setBackground(new java.awt.Color(204, 204, 204));
         planta5.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        libre(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        libre(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        libre(p14);
+        libre(p15);
+        libre(p16);
+        libre(p17);
+        libre(p18);
+        libre(p19);
+        libre(p20);
+        libre(p21);
+        libre(p22);
+        libre(p23);
+        libre(p24);
+        libre(p25);
+        libre(p26);
+        libre(p27);
+        libre(p28);
+        libre(p29);
+        libre(p30);
+        libre(p31);
+        libre(p32);
+        libre(p33);
+        libre(p34);
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta4ActionPerformed
@@ -950,6 +1086,40 @@ public class URJC extends javax.swing.JFrame {
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
         planta5.setBackground(new java.awt.Color(204, 204, 204));
         planta5.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        libre(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        libre(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        libre(p14);
+        libre(p15);
+        libre(p16);
+        libre(p17);
+        libre(p18);
+        libre(p19);
+        libre(p20);
+        libre(p21);
+        libre(p22);
+        libre(p23);
+        libre(p24);
+        libre(p25);
+        libre(p26);
+        libre(p27);
+        libre(p28);
+        libre(p29);
+        libre(p30);
+        libre(p31);
+        libre(p32);
+        libre(p33);
+        libre(p34);
     }//GEN-LAST:event_planta4ActionPerformed
 
     private void planta5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta5ActionPerformed
@@ -965,6 +1135,40 @@ public class URJC extends javax.swing.JFrame {
         planta4.setFont(new java.awt.Font("Roboto", 0, 14));
         planta0.setBackground(new java.awt.Color(204, 204, 204));
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
+        ocupado(p1);
+        ocupado(p2);
+        ocupado(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        ocupado(p7);
+        ocupado(p8);
+        ocupado(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        libre(p14);
+        ocupado(p15);
+        ocupado(p16);
+        libre(p17);
+        libre(p18);
+        libre(p19);
+        ocupado(p20);
+        ocupado(p21);
+        ocupado(p22);
+        libre(p23);
+        libre(p24);
+        libre(p25);
+        libre(p26);
+        libre(p27);
+        libre(p28);
+        libre(p29);
+        libre(p30);
+        libre(p31);
+        ocupado(p32);
+        ocupado(p33);
+        ocupado(p34);
     }//GEN-LAST:event_planta5ActionPerformed
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed

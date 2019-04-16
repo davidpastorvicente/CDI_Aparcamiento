@@ -790,6 +790,39 @@ public class Amma extends javax.swing.JFrame {
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        libre(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        libre(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        ocupado(p14);
+        libre(p15);
+        libre(p16);
+        libre(p17);
+        libre(p18);
+        libre(p19);
+        libre(p20);
+        libre(p21);
+        libre(p22);
+        libre(p23);
+        libre(p24);
+        libre(p25);
+        libre(p26);
+        libre(p27);
+        libre(p28);
+        libre(p29);
+        libre(p30);
+        libre(p31);
+        libre(p32);
+        libre(p33);
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -801,6 +834,39 @@ public class Amma extends javax.swing.JFrame {
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        libre(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        libre(p7);
+        libre(p8);
+        ocupado(p9);
+        libre(p10);
+        ocupado(p11);
+        libre(p12);
+        libre(p13);
+        libre(p14);
+        ocupado(p15);
+        libre(p16);
+        libre(p17);
+        ocupado(p18);
+        libre(p19);
+        libre(p20);
+        libre(p21);
+        libre(p22);
+        libre(p23);
+        ocupado(p24);
+        ocupado(p25);
+        ocupado(p26);
+        libre(p27);
+        libre(p28);
+        ocupado(p29);
+        libre(p30);
+        libre(p31);
+        ocupado(p32);
+        libre(p33);
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -812,6 +878,39 @@ public class Amma extends javax.swing.JFrame {
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
         planta3.setBackground(new java.awt.Color(204, 204, 204));
         planta3.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        ocupado(p3);
+        ocupado(p4);
+        libre(p5);
+        libre(p6);
+        libre(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        ocupado(p14);
+        libre(p15);
+        libre(p16);
+        libre(p17);
+        libre(p18);
+        libre(p19);
+        ocupado(p20);
+        libre(p21);
+        libre(p22);
+        libre(p23);
+        libre(p24);
+        libre(p25);
+        ocupado(p26);
+        ocupado(p27);
+        libre(p28);
+        libre(p29);
+        libre(p30);
+        libre(p31);
+        ocupado(p32);
+        ocupado(p33);
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void planta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta3ActionPerformed
@@ -823,6 +922,39 @@ public class Amma extends javax.swing.JFrame {
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
         planta0.setBackground(new java.awt.Color(204, 204, 204));
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
+        ocupado(p1);
+        ocupado(p2);
+        libre(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        libre(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        ocupado(p14);
+        libre(p15);
+        libre(p16);
+        ocupado(p17);
+        libre(p18);
+        libre(p19);
+        libre(p20);
+        ocupado(p21);
+        ocupado(p22);
+        libre(p23);
+        libre(p24);
+        libre(p25);
+        ocupado(p26);
+        ocupado(p27);
+        libre(p28);
+        libre(p29);
+        libre(p30);
+        libre(p31);
+        libre(p32);
+        libre(p33);
     }//GEN-LAST:event_planta3ActionPerformed
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed

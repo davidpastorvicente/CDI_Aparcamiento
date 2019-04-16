@@ -13,7 +13,6 @@ import javax.swing.JDialog;
  * @author david
  */
 public class Villa extends javax.swing.JFrame {
-
     /**
      * Creates new form Principal
      */
@@ -611,6 +610,26 @@ public class Villa extends javax.swing.JFrame {
         planta1.setFont(new java.awt.Font("Roboto", 0, 14));
         planta2.setBackground(new java.awt.Color(204, 204, 204));
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        libre(p3);
+        libre(p4);
+        libre(p5);
+        libre(p6);
+        libre(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        libre(p12);
+        libre(p13);
+        libre(p14);
+        libre(p15);
+        libre(p16);
+        libre(p17);
+        libre(p18);
+        libre(p19);
+        libre(p20);
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -620,6 +639,26 @@ public class Villa extends javax.swing.JFrame {
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
         planta2.setBackground(new java.awt.Color(204, 204, 204));
         planta2.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        ocupado(p2);
+        ocupado(p3);
+        ocupado(p4);
+        ocupado(p5);
+        ocupado(p6);
+        libre(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        ocupado(p12);
+        libre(p13);
+        ocupado(p14);
+        libre(p15);
+        libre(p16);
+        ocupado(p17);
+        ocupado(p18);
+        ocupado(p19);
+        ocupado(p20);
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -629,6 +668,26 @@ public class Villa extends javax.swing.JFrame {
         planta1.setFont(new java.awt.Font("Roboto", 0, 14));
         planta0.setBackground(new java.awt.Color(204, 204, 204));
         planta0.setFont(new java.awt.Font("Roboto", 0, 14));
+        libre(p1);
+        libre(p2);
+        libre(p3);
+        libre(p4);
+        ocupado(p5);
+        libre(p6);
+        libre(p7);
+        libre(p8);
+        libre(p9);
+        libre(p10);
+        libre(p11);
+        ocupado(p12);
+        ocupado(p13);
+        libre(p14);
+        libre(p15);
+        libre(p16);
+        libre(p17);
+        ocupado(p18);
+        libre(p19);
+        libre(p20);
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
@@ -704,7 +763,6 @@ public class Villa extends javax.swing.JFrame {
         }
         but.setToolTipText("Reservado");
     }
-
     private boolean[] lib;
     private javax.swing.JButton sel;
     private de.craften.ui.swingmaterial.MaterialPanel aux, gas, niv;
