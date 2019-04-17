@@ -13,6 +13,8 @@ public class Confirm extends javax.swing.JDialog {
 
     /**
      * Creates new form Confirm
+     * @param parent
+     * @param modal
      */
     public Confirm(java.awt.Frame parent, boolean modal) {
         super(parent, modal);

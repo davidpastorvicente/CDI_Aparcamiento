@@ -5,9 +5,6 @@
  */
 package aparcamiento;
 
-import java.awt.Dimension;
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author david
@@ -16,6 +13,8 @@ public class Registro extends javax.swing.JDialog {
 
     /**
      * Creates new form Registro
+     * @param parent
+     * @param modal
      */
     public Registro(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -100,11 +99,6 @@ public class Registro extends javax.swing.JDialog {
 
         email.setAccent(new java.awt.Color(0, 153, 153));
         email.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        email.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailActionPerformed(evt);
-            }
-        });
         jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 220, 69));
 
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -354,10 +348,6 @@ public class Registro extends javax.swing.JDialog {
     private void icon2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_icon2ActionPerformed
         paypalButtonActionPerformed(evt);
     }//GEN-LAST:event_icon2ActionPerformed
-
-    private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_emailActionPerformed
 
     private void CVCKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CVCKeyPressed
         if (CVC.getText().length() >= 3) {

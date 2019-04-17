@@ -354,163 +354,153 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void iAmmaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseEntered
-        Amma.setFont(new java.awt.Font("Roboto", 1, 18));// TODO add your handling code here:
+        Amma.setFont(new java.awt.Font("Roboto", 1, 18));
         p15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_iAmmaMouseEntered
 
     private void iAmmaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseExited
-        Amma.setFont(new java.awt.Font("Roboto", 0, 18));        // TODO add your handling code here:
+        Amma.setFont(new java.awt.Font("Roboto", 0, 18));        
         p15.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_iAmmaMouseExited
 
     private void iRosaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseEntered
-        Rosa.setFont(new java.awt.Font("Roboto", 1, 18));// TODO add your handling code here
+        Rosa.setFont(new java.awt.Font("Roboto", 1, 18));
         p13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_iRosaMouseEntered
 
     private void iRosaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseExited
-        Rosa.setFont(new java.awt.Font("Roboto", 0, 18));// TODO add your handling code here:
+        Rosa.setFont(new java.awt.Font("Roboto", 0, 18));
         p13.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_iRosaMouseExited
 
     private void iURJCMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseEntered
-        URJC.setFont(new java.awt.Font("Roboto", 1, 18));// TODO add your handling code here:
+        URJC.setFont(new java.awt.Font("Roboto", 1, 18));
         p9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_iURJCMouseEntered
 
     private void iURJCMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseExited
-        URJC.setFont(new java.awt.Font("Roboto", 0, 18));// TODO add your handling code here:
+        URJC.setFont(new java.awt.Font("Roboto", 0, 18));
         p9.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_iURJCMouseExited
 
     private void iVillaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseEntered
-        Villa.setFont(new java.awt.Font("Roboto", 1, 18));// TODO add your handling code here:
+        Villa.setFont(new java.awt.Font("Roboto", 1, 18));
         p11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_iVillaMouseEntered
 
     private void iVillaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseExited
-        Villa.setFont(new java.awt.Font("Roboto", 0, 18));// TODO add your handling code here:
+        Villa.setFont(new java.awt.Font("Roboto", 0, 18));
         p11.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_iVillaMouseExited
 
     private void iMinervaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseEntered
-        Minerva.setFont(new java.awt.Font("Roboto", 1, 18));// TODO add your handling code here:
+        Minerva.setFont(new java.awt.Font("Roboto", 1, 18));
         p7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_iMinervaMouseEntered
 
     private void iMinervaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseExited
-        Minerva.setFont(new java.awt.Font("Roboto", 0, 18));// TODO add your handling code here:
+        Minerva.setFont(new java.awt.Font("Roboto", 0, 18));
         p7.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_iMinervaMouseExited
 
     private void MinervaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinervaAreaMouseEntered
-        iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        // TODO add your handling code here:
+        iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
     }//GEN-LAST:event_MinervaAreaMouseEntered
 
     private void URJCAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_URJCAreaMouseEntered
-        iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        // TODO add your handling code here:
+        iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
     }//GEN-LAST:event_URJCAreaMouseEntered
 
     private void VilllaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VilllaAreaMouseEntered
-        iVilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        // TODO add your handling code here:
+        iVilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
     }//GEN-LAST:event_VilllaAreaMouseEntered
 
     private void RosaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RosaAreaMouseEntered
-        iRosa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        // TODO add your handling code here:
+        iRosa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
     }//GEN-LAST:event_RosaAreaMouseEntered
 
     private void AmmaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AmmaAreaMouseEntered
-        iAmma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        // TODO add your handling code here:
+        iAmma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
     }//GEN-LAST:event_AmmaAreaMouseEntered
 
     private void MinervaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinervaAreaMouseExited
-        iMinerva.setBorder(javax.swing.BorderFactory.createEmptyBorder());        // TODO add your handling code here:
+        iMinerva.setBorder(javax.swing.BorderFactory.createEmptyBorder());        
     }//GEN-LAST:event_MinervaAreaMouseExited
 
     private void URJCAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_URJCAreaMouseExited
-        iURJC.setBorder(javax.swing.BorderFactory.createEmptyBorder());// TODO add your handling code here:
+        iURJC.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_URJCAreaMouseExited
 
     private void VilllaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VilllaAreaMouseExited
-        iVilla.setBorder(javax.swing.BorderFactory.createEmptyBorder());        // TODO add your handling code here:
+        iVilla.setBorder(javax.swing.BorderFactory.createEmptyBorder());        
     }//GEN-LAST:event_VilllaAreaMouseExited
 
     private void RosaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RosaAreaMouseExited
-        iRosa.setBorder(javax.swing.BorderFactory.createEmptyBorder());        // TODO add your handling code here:
+        iRosa.setBorder(javax.swing.BorderFactory.createEmptyBorder());        
     }//GEN-LAST:event_RosaAreaMouseExited
 
     private void AmmaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AmmaAreaMouseExited
-        iAmma.setBorder(javax.swing.BorderFactory.createEmptyBorder());        // TODO add your handling code here:
+        iAmma.setBorder(javax.swing.BorderFactory.createEmptyBorder());        
     }//GEN-LAST:event_AmmaAreaMouseExited
 
     private void AmmaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AmmaAreaActionPerformed
-        JFrame min= new Amma();        // TODO add your handling code here:
+        JFrame min= new Amma();        
         min.setVisible(true);
-        //this.setVisible(false);
         min.setLocationRelativeTo(null);
     }//GEN-LAST:event_AmmaAreaActionPerformed
 
     private void MinervaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinervaAreaActionPerformed
-        JFrame min= new Minerva();        // TODO add your handling code here:
+        JFrame min= new Minerva();        
         min.setVisible(true);
-        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_MinervaAreaActionPerformed
 
     private void iMinervaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseClicked
-        //this.setVisible(false);
-        JFrame min= new Minerva();        // TODO add your handling code here:
+        JFrame min= new Minerva();        
         min.setVisible(true);
         min.setLocationRelativeTo(null);        
     }//GEN-LAST:event_iMinervaMouseClicked
 
     private void URJCAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_URJCAreaActionPerformed
-        JFrame min= new URJC();        // TODO add your handling code here:
+        JFrame min= new URJC();        
         min.setVisible(true);
-        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_URJCAreaActionPerformed
 
     private void iURJCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseClicked
-        JFrame min= new URJC();        // TODO add your handling code here:
+        JFrame min= new URJC();        
         min.setVisible(true);
-        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_iURJCMouseClicked
 
     private void VilllaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VilllaAreaActionPerformed
-        JFrame min= new Villa();        // TODO add your handling code here:
+        JFrame min= new Villa();        
         min.setVisible(true);
-        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_VilllaAreaActionPerformed
 
     private void iVillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseClicked
-        JFrame min= new Villa();        // TODO add your handling code here:
+        JFrame min= new Villa();        
         min.setVisible(true);
-        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_iVillaMouseClicked
 
     private void RosaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RosaAreaActionPerformed
-        JFrame min= new Rosa();        // TODO add your handling code here:
+        JFrame min= new Rosa();        
         min.setVisible(true);
-        //this.setVisible(false);
         min.setLocationRelativeTo(null);  
     }//GEN-LAST:event_RosaAreaActionPerformed
 
     private void iRosaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseClicked
-        JFrame min= new Rosa();        // TODO add your handling code here:
+        JFrame min= new Rosa();        
         min.setVisible(true);
-        //this.setVisible(false);
         min.setLocationRelativeTo(null);
     }//GEN-LAST:event_iRosaMouseClicked
 
     private void iAmmaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseClicked
-        JFrame min= new Amma();        // TODO add your handling code here:
+        JFrame min= new Amma();        
         min.setVisible(true);
-        //this.setVisible(false);
-        min.setLocationRelativeTo(null);        // TODO add your handling code here:
+        min.setLocationRelativeTo(null);        
     }//GEN-LAST:event_iAmmaMouseClicked
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed

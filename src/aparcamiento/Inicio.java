@@ -137,7 +137,7 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void pwdFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwdFieldActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_pwdFieldActionPerformed
 
     private void inicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicButtonActionPerformed
@@ -154,13 +154,13 @@ public class Inicio extends javax.swing.JFrame {
             prin.setLocationRelativeTo(null);
             prin.setVisible(true);
         }
-            // TODO add your handling code here:
+            
     }//GEN-LAST:event_inicButtonActionPerformed
 
     private void regButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regButtonActionPerformed
         JDialog reg= new Registro(this, true);
         reg.setLocationRelativeTo(null);        
-        reg.setVisible(true);        // TODO add your handling code here:
+        reg.setVisible(true);        
     }//GEN-LAST:event_regButtonActionPerformed
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
