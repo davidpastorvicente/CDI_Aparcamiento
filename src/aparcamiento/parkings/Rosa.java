@@ -342,7 +342,7 @@ public class Rosa extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        plazas.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 186, 54, 44));
+        plazas.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 187, 54, 44));
 
         p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
         p11.setMnemonic(2);
@@ -472,7 +472,7 @@ public class Rosa extends javax.swing.JFrame {
                 accion(evt);
             }
         });
-        plazas.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 335, 54, 44));
+        plazas.add(p20, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 336, 54, 44));
 
         parking.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ppequeño.png"))); // NOI18N
         parking.setBorder(javax.swing.BorderFactory.createEtchedBorder());
