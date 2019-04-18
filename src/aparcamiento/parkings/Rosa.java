@@ -5,6 +5,7 @@
  */
 package aparcamiento.parkings;
 
+import aparcamiento.Inicio;
 import aparcamiento.servicios.*;
 
 /**
@@ -17,6 +18,7 @@ public class Rosa extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Rosa() {
+        planta="0";
         niv = new Nivel().getPanel();
         lav = new Lavadero().getPanel();
         lib = new boolean[20];
@@ -88,6 +90,7 @@ public class Rosa extends javax.swing.JFrame {
         planta0 = new de.craften.ui.swingmaterial.MaterialButton();
         planta1 = new de.craften.ui.swingmaterial.MaterialButton();
         planta2 = new de.craften.ui.swingmaterial.MaterialButton();
+        reservarButton = new de.craften.ui.swingmaterial.MaterialButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -507,6 +510,16 @@ public class Rosa extends javax.swing.JFrame {
         });
         plazas.add(planta2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 120, 60));
 
+        reservarButton.setBackground(new java.awt.Color(0, 102, 0));
+        reservarButton.setText("Reservar");
+        reservarButton.setEnabled(false);
+        reservarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reservarButtonActionPerformed(evt);
+            }
+        });
+        plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
+
         getContentPane().add(plazas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
@@ -590,9 +603,7 @@ public class Rosa extends javax.swing.JFrame {
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
         this.setVisible(false);
-        /*JFrame prin= new Principal();
-         prin.setLocationRelativeTo(null);
-         prin.setVisible(true);*/
+        Inicio.prin.setVisible(true);
     }//GEN-LAST:event_atrasActionPerformed
 
     private void nivelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelButtonActionPerformed
@@ -639,10 +650,12 @@ public class Rosa extends javax.swing.JFrame {
                 reservado(aux);
                 lib[i - 1] = false;
                 sel = aux;
+                reservarButton.setEnabled(true);
             } else {
                 libre(aux);
                 lib[i - 1] = true;
                 sel = null;
+                reservarButton.setEnabled(false);
             }
         }
     }//GEN-LAST:event_accion
@@ -674,6 +687,7 @@ public class Rosa extends javax.swing.JFrame {
         libre(p18);
         libre(p19);
         libre(p20);
+        planta="0";
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -703,6 +717,7 @@ public class Rosa extends javax.swing.JFrame {
         ocupado(p18);
         libre(p19);
         libre(p20);
+        planta="1";
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -732,6 +747,7 @@ public class Rosa extends javax.swing.JFrame {
         ocupado(p18);
         ocupado(p19);
         ocupado(p20);
+        planta="2";
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed
@@ -748,6 +764,12 @@ public class Rosa extends javax.swing.JFrame {
             pack();
         }
     }//GEN-LAST:event_plazasButtonActionPerformed
+
+    private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
+        Reserva rev= new Reserva(this, true, sel, planta);
+        rev.setLocationRelativeTo(null);
+        rev.setVisible(true);
+    }//GEN-LAST:event_reservarButtonActionPerformed
 
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
@@ -794,6 +816,7 @@ public class Rosa extends javax.swing.JFrame {
         but.setToolTipText("Reservado");
     }
 
+    private String planta;
     private boolean[] lib;
     private javax.swing.JButton sel;
     private de.craften.ui.swingmaterial.MaterialPanel aux, lav, niv;
@@ -866,5 +889,6 @@ public class Rosa extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton planta2;
     private de.craften.ui.swingmaterial.MaterialPanel plazas;
     private de.craften.ui.swingmaterial.MaterialButton plazasButton;
+    private de.craften.ui.swingmaterial.MaterialButton reservarButton;
     // End of variables declaration//GEN-END:variables
 }

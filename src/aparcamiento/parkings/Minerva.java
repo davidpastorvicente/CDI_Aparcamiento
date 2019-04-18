@@ -5,6 +5,7 @@
  */
 package aparcamiento.parkings;
 
+import aparcamiento.Inicio;
 import aparcamiento.servicios.*;
 
 /**
@@ -102,6 +103,7 @@ public class Minerva extends javax.swing.JFrame {
         p32 = new javax.swing.JButton();
         p33 = new javax.swing.JButton();
         parking = new javax.swing.JLabel();
+        reservarButton = new de.craften.ui.swingmaterial.MaterialButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -697,6 +699,16 @@ public class Minerva extends javax.swing.JFrame {
         parking.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         plazas.add(parking, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, -1, -1));
 
+        reservarButton.setBackground(new java.awt.Color(0, 102, 0));
+        reservarButton.setText("Reservar");
+        reservarButton.setEnabled(false);
+        reservarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reservarButtonActionPerformed(evt);
+            }
+        });
+        plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
+
         getContentPane().add(plazas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
@@ -771,6 +783,7 @@ public class Minerva extends javax.swing.JFrame {
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
         this.setVisible(false);
+        Inicio.prin.setVisible(true);
     }//GEN-LAST:event_atrasActionPerformed
 
     private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
@@ -1014,6 +1027,12 @@ public class Minerva extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_plazasButtonActionPerformed
 
+    private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
+        Reserva rev= new Reserva(this, true, sel, planta);
+        rev.setLocationRelativeTo(null);
+        rev.setVisible(true);
+    }//GEN-LAST:event_reservarButtonActionPerformed
+
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
@@ -1142,5 +1161,6 @@ public class Minerva extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton planta3;
     private de.craften.ui.swingmaterial.MaterialPanel plazas;
     private de.craften.ui.swingmaterial.MaterialButton plazasButton;
+    private de.craften.ui.swingmaterial.MaterialButton reservarButton;
     // End of variables declaration//GEN-END:variables
 }

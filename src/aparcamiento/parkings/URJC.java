@@ -5,6 +5,7 @@
  */
 package aparcamiento.parkings;
 
+import aparcamiento.Inicio;
 import aparcamiento.servicios.*;
 
 /**
@@ -124,6 +125,7 @@ public class URJC extends javax.swing.JFrame {
         planta0 = new de.craften.ui.swingmaterial.MaterialButton();
         planta4 = new de.craften.ui.swingmaterial.MaterialButton();
         planta5 = new de.craften.ui.swingmaterial.MaterialButton();
+        reservarButton = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -828,6 +830,16 @@ public class URJC extends javax.swing.JFrame {
         });
         plazas.add(planta5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 50, 120, 60));
 
+        reservarButton.setBackground(new java.awt.Color(0, 102, 0));
+        reservarButton.setText("Reservar");
+        reservarButton.setEnabled(false);
+        reservarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reservarButtonActionPerformed(evt);
+            }
+        });
+        plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
+
         getContentPane().add(plazas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         pack();
@@ -835,6 +847,7 @@ public class URJC extends javax.swing.JFrame {
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
         this.setVisible(false);
+        Inicio.prin.setVisible(true);
     }//GEN-LAST:event_atrasActionPerformed
 
     private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
@@ -1211,6 +1224,12 @@ public class URJC extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_plazasButtonActionPerformed
 
+    private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
+        Reserva rev= new Reserva(this, true, sel, planta);
+        rev.setLocationRelativeTo(null);
+        rev.setVisible(true);
+    }//GEN-LAST:event_reservarButtonActionPerformed
+
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
@@ -1347,5 +1366,6 @@ public class URJC extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton planta5;
     private de.craften.ui.swingmaterial.MaterialPanel plazas;
     private de.craften.ui.swingmaterial.MaterialButton plazasButton;
+    private de.craften.ui.swingmaterial.MaterialButton reservarButton;
     // End of variables declaration//GEN-END:variables
 }

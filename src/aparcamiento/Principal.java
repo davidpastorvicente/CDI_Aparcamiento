@@ -447,60 +447,70 @@ public class Principal extends javax.swing.JFrame {
         JFrame min= new Amma();        
         min.setVisible(true);
         min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_AmmaAreaActionPerformed
 
     private void MinervaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinervaAreaActionPerformed
         JFrame min= new Minerva();        
         min.setVisible(true);
-        min.setLocationRelativeTo(null);  
+        min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_MinervaAreaActionPerformed
 
     private void iMinervaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseClicked
         JFrame min= new Minerva();        
         min.setVisible(true);
-        min.setLocationRelativeTo(null);        
+        min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_iMinervaMouseClicked
 
     private void URJCAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_URJCAreaActionPerformed
         JFrame min= new URJC();        
         min.setVisible(true);
-        min.setLocationRelativeTo(null);  
+        min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_URJCAreaActionPerformed
 
     private void iURJCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseClicked
         JFrame min= new URJC();        
         min.setVisible(true);
-        min.setLocationRelativeTo(null);  
+        min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_iURJCMouseClicked
 
     private void VilllaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VilllaAreaActionPerformed
         JFrame min= new Villa();        
         min.setVisible(true);
-        min.setLocationRelativeTo(null);  
+        min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_VilllaAreaActionPerformed
 
     private void iVillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseClicked
         JFrame min= new Villa();        
         min.setVisible(true);
-        min.setLocationRelativeTo(null);  
+        min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_iVillaMouseClicked
 
     private void RosaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RosaAreaActionPerformed
         JFrame min= new Rosa();        
         min.setVisible(true);
-        min.setLocationRelativeTo(null);  
+        min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_RosaAreaActionPerformed
 
     private void iRosaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseClicked
         JFrame min= new Rosa();        
         min.setVisible(true);
         min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_iRosaMouseClicked
 
     private void iAmmaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseClicked
         JFrame min= new Amma();        
         min.setVisible(true);
-        min.setLocationRelativeTo(null);        
+        min.setLocationRelativeTo(null);
+        this.setVisible(false);
     }//GEN-LAST:event_iAmmaMouseClicked
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed

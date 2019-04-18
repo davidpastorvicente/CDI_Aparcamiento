@@ -14,11 +14,12 @@ import javax.swing.JFrame;
  */
 public class Inicio extends javax.swing.JFrame {
     public static String usuario, passwd, name, email;
+    public static JFrame prin;
     /**
      * Creates new form inicio
      */
     public Inicio() {
-        this.setLocation(360, 140);
+        prin= new Principal();
         incorLabel = new javax.swing.JLabel();
         name="Administrador";
         email="admin@upm.es";
@@ -149,8 +150,7 @@ public class Inicio extends javax.swing.JFrame {
             this.pack();
         }
         else {
-            this.setVisible(false);
-            JFrame prin= new Principal();
+            this.setVisible(false);            
             prin.setLocationRelativeTo(null);
             prin.setVisible(true);
         }
