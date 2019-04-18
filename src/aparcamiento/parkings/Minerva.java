@@ -137,92 +137,92 @@ public class Minerva extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel13.setText("                 Precio");
-        plazas.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, -1));
+        plazas.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel17.setText("(3 adaptados)");
-        plazas.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, 80, 20));
+        plazas.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 320, 80, 20));
 
         jLabel18.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel18.setText("24");
-        plazas.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 200, -1, -1));
+        plazas.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 180, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel19.setText("                         Motos");
-        plazas.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, -1, -1));
+        plazas.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 240, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel20.setText("            Ascensor");
-        plazas.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, -1, -1));
+        plazas.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel21.setText("                 Baños");
-        plazas.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, -1, -1));
+        plazas.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel22.setText("   Plazas totales");
-        plazas.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 130, -1, -1));
+        plazas.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 110, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel23.setText("                       Coches");
-        plazas.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, -1, -1));
+        plazas.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel24.setText("Movilidad reducida");
-        plazas.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, -1, -1));
+        plazas.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 180, -1, -1));
 
         jLabel25.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel25.setText("                 Familiares");
-        plazas.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, -1, -1));
+        plazas.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 210, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel26.setText("      Localización");
-        plazas.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 50, -1, -1));
+        plazas.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 30, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel27.setText("            Distancia");
-        plazas.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 90, -1, -1));
+        plazas.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 70, -1, -1));
 
         jLabel28.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel28.setText("227 m.");
-        plazas.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 90, -1, -1));
+        plazas.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 70, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel29.setText("0,85 €/hora");
-        plazas.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 380, -1, -1));
+        plazas.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 360, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel30.setText("6");
-        plazas.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 260, -1, -1));
+        plazas.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 240, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel31.setText("72");
-        plazas.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 170, -1, -1));
+        plazas.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 150, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel32.setText("12");
-        plazas.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 230, -1, -1));
+        plazas.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel33.setText("60");
-        plazas.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 130, -1, -1));
+        plazas.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 110, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel34.setText("SÍ");
-        plazas.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 300, -1, -1));
+        plazas.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 280, -1, -1));
 
         jLabel35.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel35.setText("4");
-        plazas.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 340, -1, -1));
+        plazas.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 320, -1, -1));
 
         jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel36.setText("C/ Minerva, 27");
-        plazas.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 50, 100, -1));
-        plazas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 270, 10));
+        plazas.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, 100, -1));
+        plazas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 270, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        plazas.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 40, 20, 370));
-        plazas.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 160, 270, 10));
+        plazas.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 20, 20, 370));
+        plazas.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 140, 270, 10));
 
         planta0.setBackground(new java.awt.Color(102, 102, 102));
         planta0.setText("Planta 0");
