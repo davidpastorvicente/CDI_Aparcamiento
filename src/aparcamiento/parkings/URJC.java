@@ -6,7 +6,6 @@
 package aparcamiento.parkings;
 
 import aparcamiento.servicios.*;
-import javax.swing.JDialog;
 
 /**
  *
@@ -56,6 +55,8 @@ public class URJC extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         plazasButton = new de.craften.ui.swingmaterial.MaterialButton();
+        ind2 = new javax.swing.JLabel();
+        ind1 = new javax.swing.JLabel();
         plazas = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -217,6 +218,12 @@ public class URJC extends javax.swing.JFrame {
             }
         });
         jPanel1.add(plazasButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
+
+        ind2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/indicador.png"))); // NOI18N
+        jPanel1.add(ind2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 10, -1));
+
+        ind1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/indicador.png"))); // NOI18N
+        jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -835,7 +842,13 @@ public class URJC extends javax.swing.JFrame {
             getContentPane().remove(aux);
             aux = gas;
             getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
-            revalidate(); repaint(); pack();
+            jPanel1.remove(ind1);
+            jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
+            jPanel1.remove(ind2);
+            jPanel1.add(ind2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 10, -1));
+            revalidate();
+            repaint();
+            pack();
         }
     }//GEN-LAST:event_gasolineraButtonActionPerformed
 
@@ -844,7 +857,13 @@ public class URJC extends javax.swing.JFrame {
             getContentPane().remove(aux);
             aux = lav;
             getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
-            revalidate(); repaint(); pack();
+            jPanel1.remove(ind1);
+            jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, -1, -1));
+            jPanel1.remove(ind2);
+            jPanel1.add(ind2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 10, -1));
+            revalidate();
+            repaint();
+            pack();
         }
     }//GEN-LAST:event_lavaderoButtonActionPerformed
 
@@ -853,7 +872,13 @@ public class URJC extends javax.swing.JFrame {
             getContentPane().remove(aux);
             aux = niv;
             getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
-            revalidate(); repaint(); pack();
+            jPanel1.remove(ind1);
+            jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 315, -1, -1));
+            jPanel1.remove(ind2);
+            jPanel1.add(ind2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 315, 10, -1));
+            revalidate();
+            repaint();
+            pack();
         }
     }//GEN-LAST:event_nivelButtonActionPerformed
 
@@ -1176,7 +1201,13 @@ public class URJC extends javax.swing.JFrame {
             getContentPane().remove(aux);
             aux = plazas;
             getContentPane().add(aux, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
-            revalidate(); repaint(); pack();
+            jPanel1.remove(ind1);
+            jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
+            jPanel1.remove(ind2);
+            jPanel1.add(ind2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 10, -1));
+            revalidate();
+            repaint();
+            pack();
         }
     }//GEN-LAST:event_plazasButtonActionPerformed
 
@@ -1231,6 +1262,8 @@ public class URJC extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
+    private javax.swing.JLabel ind1;
+    private javax.swing.JLabel ind2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
