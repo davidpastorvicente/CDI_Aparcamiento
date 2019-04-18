@@ -18,6 +18,7 @@ public class Amma extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Amma() {
+        planta="0";
         gas = new Gasolinera().getPanel();
         lib = new boolean[33];
         for (int i = 0; i < 33; i++) {
@@ -849,6 +850,7 @@ public class Amma extends javax.swing.JFrame {
         libre(p31);
         libre(p32);
         libre(p33);
+        planta="0";
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -893,6 +895,7 @@ public class Amma extends javax.swing.JFrame {
         libre(p31);
         ocupado(p32);
         libre(p33);
+        planta="1";
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -937,6 +940,7 @@ public class Amma extends javax.swing.JFrame {
         libre(p31);
         ocupado(p32);
         ocupado(p33);
+        planta="2";
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void planta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta3ActionPerformed
@@ -981,6 +985,7 @@ public class Amma extends javax.swing.JFrame {
         libre(p31);
         libre(p32);
         libre(p33);
+        planta="3";
     }//GEN-LAST:event_planta3ActionPerformed
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed
@@ -1048,7 +1053,8 @@ public class Amma extends javax.swing.JFrame {
         }
         but.setToolTipText("Reservado");
     }
-
+    
+    private String planta;
     private boolean[] lib;
     private javax.swing.JButton sel;
     private de.craften.ui.swingmaterial.MaterialPanel aux, gas;

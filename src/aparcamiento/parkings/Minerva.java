@@ -18,6 +18,7 @@ public class Minerva extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Minerva() {
+        planta="0";
         gas = new Gasolinera().getPanel();
         lav = new Lavadero().getPanel();
         lib = new boolean[33];
@@ -858,6 +859,7 @@ public class Minerva extends javax.swing.JFrame {
         libre(p31);
         ocupado(p32);
         ocupado(p33);
+        planta="0";
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -902,6 +904,7 @@ public class Minerva extends javax.swing.JFrame {
         libre(p31);
         ocupado(p32);
         ocupado(p33);
+        planta="1";
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -946,6 +949,7 @@ public class Minerva extends javax.swing.JFrame {
         libre(p31);
         libre(p32);
         libre(p33);
+        planta="2";
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void planta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta3ActionPerformed
@@ -990,6 +994,7 @@ public class Minerva extends javax.swing.JFrame {
         libre(p31);
         ocupado(p32);
         libre(p33);
+        planta="3";
     }//GEN-LAST:event_planta3ActionPerformed
 
     private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
@@ -1077,7 +1082,7 @@ public class Minerva extends javax.swing.JFrame {
         }
         but.setToolTipText("Reservado");
     }
-
+    private String planta;
     private boolean[] lib;
     private javax.swing.JButton sel;
     private de.craften.ui.swingmaterial.MaterialPanel aux, gas, lav;

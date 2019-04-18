@@ -18,6 +18,7 @@ public class URJC extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public URJC() {
+        planta="0";
         gas = new Gasolinera().getPanel();
         lav = new Lavadero().getPanel();
         niv = new Nivel().getPanel();
@@ -962,6 +963,7 @@ public class URJC extends javax.swing.JFrame {
         libre(p32);
         libre(p33);
         ocupado(p34);
+        planta="3";
     }//GEN-LAST:event_planta3ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -1011,6 +1013,7 @@ public class URJC extends javax.swing.JFrame {
         libre(p32);
         libre(p33);
         libre(p34);
+        planta="2";
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -1060,6 +1063,7 @@ public class URJC extends javax.swing.JFrame {
         libre(p32);
         ocupado(p33);
         ocupado(p34);
+        planta="1";
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta0ActionPerformed
@@ -1109,6 +1113,7 @@ public class URJC extends javax.swing.JFrame {
         libre(p32);
         libre(p33);
         libre(p34);
+        planta="0";
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta4ActionPerformed
@@ -1158,6 +1163,7 @@ public class URJC extends javax.swing.JFrame {
         ocupado(p32);
         libre(p33);
         ocupado(p34);
+        planta="4";
     }//GEN-LAST:event_planta4ActionPerformed
 
     private void planta5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta5ActionPerformed
@@ -1207,6 +1213,7 @@ public class URJC extends javax.swing.JFrame {
         ocupado(p32);
         ocupado(p33);
         ocupado(p34);
+        planta="5";
     }//GEN-LAST:event_planta5ActionPerformed
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed
@@ -1275,6 +1282,7 @@ public class URJC extends javax.swing.JFrame {
         but.setToolTipText("Reservado");
     }
 
+    private String planta;
     private boolean[] lib;
     private javax.swing.JButton sel;
     private de.craften.ui.swingmaterial.MaterialPanel aux, gas, lav, niv;

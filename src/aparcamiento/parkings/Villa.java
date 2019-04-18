@@ -18,6 +18,7 @@ public class Villa extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Villa() {
+        planta="0";
         gas = new Gasolinera().getPanel();
         niv = new Nivel().getPanel();
         lib = new boolean[20];
@@ -663,6 +664,7 @@ public class Villa extends javax.swing.JFrame {
         libre(p18);
         libre(p19);
         libre(p20);
+        planta="0";
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -692,6 +694,7 @@ public class Villa extends javax.swing.JFrame {
         ocupado(p18);
         ocupado(p19);
         ocupado(p20);
+        planta="1";
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -721,6 +724,7 @@ public class Villa extends javax.swing.JFrame {
         ocupado(p18);
         libre(p19);
         libre(p20);
+        planta="2";
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
@@ -808,6 +812,8 @@ public class Villa extends javax.swing.JFrame {
         }
         but.setToolTipText("Reservado");
     }
+    
+    private String planta;
     private boolean[] lib;
     private javax.swing.JButton sel;
     private de.craften.ui.swingmaterial.MaterialPanel aux, gas, niv;
