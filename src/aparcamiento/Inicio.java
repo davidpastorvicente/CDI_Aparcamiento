@@ -19,7 +19,6 @@ public class Inicio extends javax.swing.JFrame {
      * Creates new form inicio
      */
     public Inicio() {
-        prin= new Principal();
         incorLabel = new javax.swing.JLabel();
         name="Administrador";
         email="admin@upm.es";
@@ -150,6 +149,7 @@ public class Inicio extends javax.swing.JFrame {
             this.pack();
         }
         else {
+            prin= new Principal();
             this.setVisible(false);            
             prin.setLocationRelativeTo(null);
             prin.setVisible(true);
@@ -160,7 +160,8 @@ public class Inicio extends javax.swing.JFrame {
     private void regButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regButtonActionPerformed
         JDialog reg= new Registro(this, true);
         reg.setLocationRelativeTo(null);        
-        reg.setVisible(true);        
+        reg.setVisible(true);
+        prin= new Principal();
     }//GEN-LAST:event_regButtonActionPerformed
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed

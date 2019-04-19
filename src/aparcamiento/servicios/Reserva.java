@@ -29,9 +29,9 @@ public class Reserva extends javax.swing.JDialog {
         super(parent, modal);
         this.sel = sel;
         this.planta = planta;
-        this.dir=dir;
-        this.precio=precio;
-        this.name=name;
+        this.dir = dir;
+        this.precio = precio;
+        this.name = name;
         initComponents();
         jPanel1.remove(jPanel3);
     }
@@ -64,9 +64,9 @@ public class Reserva extends javax.swing.JDialog {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        apell = new de.craften.ui.swingmaterial.MaterialTextField();
+        mat = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel3 = new javax.swing.JLabel();
-        email = new de.craften.ui.swingmaterial.MaterialTextField();
+        hor = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel13 = new javax.swing.JLabel();
         cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
@@ -105,17 +105,27 @@ public class Reserva extends javax.swing.JDialog {
         jLabel2.setText("Matrícula:");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, 20));
 
-        apell.setAccent(new java.awt.Color(0, 153, 153));
-        apell.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(apell, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 70, 60));
+        mat.setAccent(new java.awt.Color(0, 153, 153));
+        mat.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        mat.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                matKeyTyped(evt);
+            }
+        });
+        jPanel2.add(mat, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 70, 60));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel3.setText("Número de horas:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 120, 20));
+        jLabel3.setText("Número de horas de estacionamiento:");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 240, 20));
 
-        email.setAccent(new java.awt.Color(0, 153, 153));
-        email.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 30, 60));
+        hor.setAccent(new java.awt.Color(0, 153, 153));
+        hor.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        hor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                horKeyTyped(evt);
+            }
+        });
+        jPanel2.add(hor, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, 30, 60));
 
         jLabel13.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel13.setText("Compruebe los detalles de la reserva:");
@@ -195,13 +205,13 @@ public class Reserva extends javax.swing.JDialog {
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 250, 33));
 
         jLabel16.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
-        jLabel16.setText("Parking " + name);
+        jLabel16.setText("Parking \"" + name + "\"");
         jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 310, 33));
 
         jLabel9.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel9.setText("  Tiene una hora para estacionar el vehículo");
         jLabel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 235, 295, 35));
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 235, 280, 35));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
 
@@ -236,15 +246,26 @@ public class Reserva extends javax.swing.JDialog {
         this.getParent().setVisible(true);
     }//GEN-LAST:event_aceptarButton1ActionPerformed
 
+    private void matKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_matKeyTyped
+        if (mat.getText().length() > 7) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_matKeyTyped
+
+    private void horKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_horKeyTyped
+        if (hor.getText().length() > 3) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_horKeyTyped
+
     /**
      * @param args the command line arguments
      */
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton1;
-    private de.craften.ui.swingmaterial.MaterialTextField apell;
     private de.craften.ui.swingmaterial.MaterialButton cancelarButton;
-    private de.craften.ui.swingmaterial.MaterialTextField email;
+    private de.craften.ui.swingmaterial.MaterialTextField hor;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -262,6 +283,7 @@ public class Reserva extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator1;
+    private de.craften.ui.swingmaterial.MaterialTextField mat;
     private javax.swing.ButtonGroup pagoOpc;
     private de.craften.ui.swingmaterial.MaterialButton volverButton;
     // End of variables declaration//GEN-END:variables
