@@ -55,14 +55,14 @@ public class Villa extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        precio = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
+        direccion = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
@@ -179,9 +179,9 @@ public class Villa extends javax.swing.JFrame {
         jLabel28.setText("978 m.");
         plazas.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 70, -1, -1));
 
-        jLabel29.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel29.setText("0,59 €/hora");
-        plazas.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, -1, -1));
+        precio.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        precio.setText("0,59 €/hora");
+        plazas.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel30.setText("12");
@@ -207,9 +207,9 @@ public class Villa extends javax.swing.JFrame {
         jLabel35.setText("2");
         plazas.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 320, -1, -1));
 
-        jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel36.setText("C/ de la Raya, 3");
-        plazas.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, 100, -1));
+        direccion.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        direccion.setText("C/ de la Raya, 3");
+        plazas.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, 100, -1));
         plazas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -377,7 +377,7 @@ public class Villa extends javax.swing.JFrame {
         plazas.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 187, 54, 44));
 
         p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
-        p11.setMnemonic(2);
+        p11.setMnemonic(3);
         p11.setToolTipText("Libre");
         p11.setBorderPainted(false);
         p11.setContentAreaFilled(false);
@@ -390,7 +390,7 @@ public class Villa extends javax.swing.JFrame {
         plazas.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 295, 67, 83));
 
         p12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png"))); // NOI18N
-        p12.setMnemonic(2);
+        p12.setMnemonic(3);
         p12.setToolTipText("Libre");
         p12.setBorderPainted(false);
         p12.setContentAreaFilled(false);
@@ -739,10 +739,12 @@ public class Villa extends javax.swing.JFrame {
                 reservado(aux);
                 lib[i - 1] = false;
                 sel = aux;
+                reservarButton.setEnabled(true);
             } else {
                 libre(aux);
                 lib[i - 1] = true;
                 sel = null;
+                reservarButton.setEnabled(false);
             }
         }
     }//GEN-LAST:event_accion
@@ -763,7 +765,7 @@ public class Villa extends javax.swing.JFrame {
     }//GEN-LAST:event_plazasButtonActionPerformed
 
     private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
-        Reserva rev= new Reserva(this, true, sel, planta);
+        Reserva rev= new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Villablanca");
         rev.setLocationRelativeTo(null);
         rev.setVisible(true);
     }//GEN-LAST:event_reservarButtonActionPerformed
@@ -771,13 +773,16 @@ public class Villa extends javax.swing.JFrame {
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png")));
                 break;
             case 1:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png")));
                 break;
             case 2:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+                break;
+            case 3:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
                 break;
         }
         but.setToolTipText("Libre");
@@ -786,13 +791,16 @@ public class Villa extends javax.swing.JFrame {
     private void ocupado(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png")));
                 break;
             case 1:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png")));
                 break;
             case 2:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
+                break;
+            case 3:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
                 break;
         }
         but.setToolTipText("Ocupado");
@@ -801,13 +809,16 @@ public class Villa extends javax.swing.JFrame {
     private void reservado(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png")));
                 break;
             case 1:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png")));
                 break;
             case 2:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus2.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
+                break;
+            case 3:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
                 break;
         }
         but.setToolTipText("Reservado");
@@ -819,6 +830,7 @@ public class Villa extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialPanel aux, gas, niv;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
+    private static javax.swing.JLabel direccion;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
     private javax.swing.JLabel ind1;
     private javax.swing.JLabel ind2;
@@ -839,7 +851,6 @@ public class Villa extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -847,7 +858,6 @@ public class Villa extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -886,6 +896,7 @@ public class Villa extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton planta2;
     private de.craften.ui.swingmaterial.MaterialPanel plazas;
     private de.craften.ui.swingmaterial.MaterialButton plazasButton;
+    private static javax.swing.JLabel precio;
     private de.craften.ui.swingmaterial.MaterialButton reservarButton;
     // End of variables declaration//GEN-END:variables
 }

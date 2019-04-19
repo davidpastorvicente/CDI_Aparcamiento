@@ -74,14 +74,14 @@ public class URJC extends javax.swing.JFrame {
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
+        precio = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
+        direccion = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
@@ -288,9 +288,9 @@ public class URJC extends javax.swing.JFrame {
         jLabel29.setText("745 m.");
         plazas.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 70, -1, -1));
 
-        jLabel30.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel30.setText("0,86 €/hora");
-        plazas.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, -1, -1));
+        precio.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        precio.setText("0,86 €/hora");
+        plazas.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel31.setText("24");
@@ -316,9 +316,9 @@ public class URJC extends javax.swing.JFrame {
         jLabel36.setText("5");
         plazas.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 320, -1, -1));
 
-        jLabel37.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel37.setText("C/ San Cipriano, 10");
-        plazas.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, 120, -1));
+        direccion.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        direccion.setText("C/ San Cipriano, 10");
+        plazas.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, 120, -1));
         plazas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -456,7 +456,7 @@ public class URJC extends javax.swing.JFrame {
         plazas.add(p10, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 112, 43, 70));
 
         p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
-        p11.setMnemonic(2);
+        p11.setMnemonic(3);
         p11.setToolTipText("Ocupado");
         p11.setBorderPainted(false);
         p11.setContentAreaFilled(false);
@@ -612,7 +612,7 @@ public class URJC extends javax.swing.JFrame {
         plazas.add(p22, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 276, 43, 35));
 
         p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png"))); // NOI18N
-        p23.setMnemonic(2);
+        p23.setMnemonic(3);
         p23.setToolTipText("Libre");
         p23.setBorderPainted(false);
         p23.setContentAreaFilled(false);
@@ -908,10 +908,12 @@ public class URJC extends javax.swing.JFrame {
                 reservado(aux);
                 lib[i - 1] = false;
                 sel = aux;
+                reservarButton.setEnabled(true);
             } else {
                 libre(aux);
                 lib[i - 1] = true;
                 sel = null;
+                reservarButton.setEnabled(false);
             }
         }
     }//GEN-LAST:event_accion
@@ -1232,7 +1234,7 @@ public class URJC extends javax.swing.JFrame {
     }//GEN-LAST:event_plazasButtonActionPerformed
 
     private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
-        Reserva rev= new Reserva(this, true, sel, planta);
+        Reserva rev= new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Universidad Rey Juan Carlos");
         rev.setLocationRelativeTo(null);
         rev.setVisible(true);
     }//GEN-LAST:event_reservarButtonActionPerformed
@@ -1246,6 +1248,9 @@ public class URJC extends javax.swing.JFrame {
                 but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png")));
                 break;
             case 2:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+                break;
+            case 3:
                 but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
                 break;
         }
@@ -1263,6 +1268,9 @@ public class URJC extends javax.swing.JFrame {
             case 2:
                 but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
                 break;
+            case 3:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
+                break;
         }
         but.setToolTipText("Ocupado");
     }
@@ -1278,6 +1286,9 @@ public class URJC extends javax.swing.JFrame {
             case 2:
                 but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
                 break;
+            case 3:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
+                break;
         }
         but.setToolTipText("Reservado");
     }
@@ -1288,6 +1299,7 @@ public class URJC extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialPanel aux, gas, lav, niv;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
+    private static javax.swing.JLabel direccion;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
     private javax.swing.JLabel ind1;
     private javax.swing.JLabel ind2;
@@ -1310,14 +1322,12 @@ public class URJC extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1374,6 +1384,7 @@ public class URJC extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton planta5;
     private de.craften.ui.swingmaterial.MaterialPanel plazas;
     private de.craften.ui.swingmaterial.MaterialButton plazasButton;
+    private static javax.swing.JLabel precio;
     private de.craften.ui.swingmaterial.MaterialButton reservarButton;
     // End of variables declaration//GEN-END:variables
 }

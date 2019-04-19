@@ -11,7 +11,7 @@ package aparcamiento.servicios;
  */
 public class Reserva extends javax.swing.JDialog {
 
-    private String planta;
+    private String planta, dir, precio, name;
     private javax.swing.JButton sel;
 
     /**
@@ -22,11 +22,15 @@ public class Reserva extends javax.swing.JDialog {
      * @param sel
      * @param planta
      */
-    public Reserva(java.awt.Frame parent, boolean modal, javax.swing.JButton sel, String planta) {
+    public Reserva(java.awt.Frame parent, boolean modal, javax.swing.JButton sel, String planta, String dir, String precio, String name) {
         super(parent, modal);
         this.sel = sel;
         this.planta = planta;
+        this.dir=dir;
+        this.precio=precio;
+        this.name=name;
         initComponents();
+        jPanel1.remove(jPanel3);
     }
 
     public String getTipoPlaza(javax.swing.JButton sel) {
@@ -61,9 +65,21 @@ public class Reserva extends javax.swing.JDialog {
         jLabel3 = new javax.swing.JLabel();
         email = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel13 = new javax.swing.JLabel();
-        CancelarButton1 = new de.craften.ui.swingmaterial.MaterialButton();
-        aceptarButton1 = new de.craften.ui.swingmaterial.MaterialButton();
+        cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel4 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        volverButton = new de.craften.ui.swingmaterial.MaterialButton();
+        aceptarButton1 = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 153));
@@ -78,38 +94,88 @@ public class Reserva extends javax.swing.JDialog {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel1.setText("Plaza: " + sel.getName() + "     Planta: " + planta);
+        jLabel1.setText("Plaza: " + sel.getName() + "  ·  Planta: " + planta);
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 250, 33));
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel2.setText("Matrícula:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 163, -1, 20));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, 20));
 
         apell.setAccent(new java.awt.Color(0, 153, 153));
         apell.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(apell, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 70, 69));
+        jPanel2.add(apell, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 70, 60));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel3.setText("Número de horas:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 203, 120, 20));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 120, 20));
 
         email.setAccent(new java.awt.Color(0, 153, 153));
         email.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 30, 69));
+        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 30, 60));
 
         jLabel13.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel13.setText("Compruebe los detalles de la reserva:");
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 290, 33));
 
-        CancelarButton1.setBackground(new java.awt.Color(255, 51, 51));
-        CancelarButton1.setText("Cancelar");
-        CancelarButton1.addActionListener(new java.awt.event.ActionListener() {
+        cancelarButton.setBackground(new java.awt.Color(255, 51, 51));
+        cancelarButton.setText("Cancelar");
+        cancelarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CancelarButton1ActionPerformed(evt);
+                cancelarButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(CancelarButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 140, 70));
+        jPanel2.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 140, 70));
+
+        aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
+        aceptarButton.setText("Aceptar");
+        aceptarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aceptarButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
+
+        jLabel4.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel4.setText("Tipo: " + getTipoPlaza(sel));
+        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 250, 33));
+
+        jLabel14.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel14.setText("Rellene los siguientes datos para finalizar:");
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 310, 33));
+        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 220, 10));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
+
+        jPanel3.setMinimumSize(new java.awt.Dimension(340, 290));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel5.setText("Plaza: " + sel.getName() + "  ·  Planta: " + planta);
+        jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 250, 33));
+
+        jLabel6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel6.setText("Dirección: " + dir);
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 290, 20));
+
+        jLabel7.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        jLabel7.setText("Precio: " + precio);
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 270, 20));
+
+        jLabel15.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel15.setText("¡Tu reserva se ha realizado con éxito!");
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 290, 33));
+
+        volverButton.setBackground(new java.awt.Color(255, 51, 51));
+        volverButton.setText("Volver");
+        volverButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                volverButtonActionPerformed(evt);
+            }
+        });
+        jPanel3.add(volverButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 140, 70));
 
         aceptarButton1.setBackground(new java.awt.Color(0, 102, 0));
         aceptarButton1.setText("Aceptar");
@@ -118,43 +184,80 @@ public class Reserva extends javax.swing.JDialog {
                 aceptarButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(aceptarButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 140, 70));
+        jPanel3.add(aceptarButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
 
-        jLabel4.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel4.setText("Tipo: " + getTipoPlaza(sel));
-        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 250, 33));
+        jLabel8.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel8.setText("Tipo: " + getTipoPlaza(sel));
+        jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 250, 33));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 310));
+        jLabel16.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
+        jLabel16.setText("Parking " + name);
+        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 310, 33));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 350));
+        jLabel9.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel9.setText("  Tiene una hora para estacionar el vehículo");
+        jLabel9.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 235, 295, 35));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 380));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CancelarButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CancelarButton1ActionPerformed
+    private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_cancelarButtonActionPerformed
+
+    private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
+        jPanel1.remove(jPanel2);
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
+        revalidate();
+        repaint();
+        pack();
+    }//GEN-LAST:event_aceptarButtonActionPerformed
+
+    private void volverButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverButtonActionPerformed
+        jPanel1.remove(jPanel3);
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
+        revalidate();
+        repaint();
+        pack();
+    }//GEN-LAST:event_volverButtonActionPerformed
 
     private void aceptarButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButton1ActionPerformed
-        // TODO add your handling code here:
+        this.setVisible(false);
     }//GEN-LAST:event_aceptarButton1ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private de.craften.ui.swingmaterial.MaterialButton CancelarButton1;
+    private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton1;
     private de.craften.ui.swingmaterial.MaterialTextField apell;
+    private de.craften.ui.swingmaterial.MaterialButton cancelarButton;
     private de.craften.ui.swingmaterial.MaterialTextField email;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.ButtonGroup pagoOpc;
+    private de.craften.ui.swingmaterial.MaterialButton volverButton;
     // End of variables declaration//GEN-END:variables
 }

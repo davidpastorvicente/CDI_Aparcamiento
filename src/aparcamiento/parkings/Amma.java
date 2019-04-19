@@ -18,7 +18,7 @@ public class Amma extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Amma() {
-        planta="0";
+        planta = "0";
         gas = new Gasolinera().getPanel();
         lib = new boolean[33];
         for (int i = 0; i < 33; i++) {
@@ -58,14 +58,14 @@ public class Amma extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        precio = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
+        direccion = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
@@ -228,9 +228,9 @@ public class Amma extends javax.swing.JFrame {
         jLabel28.setText("1300 m.");
         plazas.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 70, -1, -1));
 
-        jLabel29.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel29.setText("0,65 €/hora");
-        plazas.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 360, -1, -1));
+        precio.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        precio.setText("0,65 €/hora");
+        plazas.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 360, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel30.setText("24");
@@ -256,9 +256,9 @@ public class Amma extends javax.swing.JFrame {
         jLabel35.setText("3");
         plazas.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 320, -1, -1));
 
-        jLabel36.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel36.setText("C/ de los Almendros, 8");
-        plazas.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, 140, -1));
+        direccion.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        direccion.setText("C/ de los Almendros, 8");
+        plazas.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 30, 140, -1));
         plazas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 270, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -552,7 +552,7 @@ public class Amma extends javax.swing.JFrame {
         plazas.add(p22, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 276, 43, 35));
 
         p23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
-        p23.setMnemonic(2);
+        p23.setMnemonic(3);
         p23.setToolTipText("Ocupado");
         p23.setBorderPainted(false);
         p23.setContentAreaFilled(false);
@@ -565,7 +565,7 @@ public class Amma extends javax.swing.JFrame {
         plazas.add(p23, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 373, 53, 70));
 
         p24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
-        p24.setMnemonic(2);
+        p24.setMnemonic(3);
         p24.setToolTipText("Ocupado");
         p24.setBorderPainted(false);
         p24.setContentAreaFilled(false);
@@ -578,7 +578,7 @@ public class Amma extends javax.swing.JFrame {
         plazas.add(p24, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 373, 53, 70));
 
         p25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png"))); // NOI18N
-        p25.setMnemonic(2);
+        p25.setMnemonic(3);
         p25.setToolTipText("Ocupado");
         p25.setBorderPainted(false);
         p25.setContentAreaFilled(false);
@@ -800,10 +800,12 @@ public class Amma extends javax.swing.JFrame {
                 reservado(aux);
                 lib[i - 1] = false;
                 sel = aux;
+                reservarButton.setEnabled(true);
             } else {
                 libre(aux);
                 lib[i - 1] = true;
                 sel = null;
+                reservarButton.setEnabled(false);
             }
         }
     }//GEN-LAST:event_accion
@@ -850,7 +852,7 @@ public class Amma extends javax.swing.JFrame {
         libre(p31);
         libre(p32);
         libre(p33);
-        planta="0";
+        planta = "0";
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -895,7 +897,7 @@ public class Amma extends javax.swing.JFrame {
         libre(p31);
         ocupado(p32);
         libre(p33);
-        planta="1";
+        planta = "1";
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -940,7 +942,7 @@ public class Amma extends javax.swing.JFrame {
         libre(p31);
         ocupado(p32);
         ocupado(p33);
-        planta="2";
+        planta = "2";
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void planta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta3ActionPerformed
@@ -985,7 +987,7 @@ public class Amma extends javax.swing.JFrame {
         libre(p31);
         libre(p32);
         libre(p33);
-        planta="3";
+        planta = "3";
     }//GEN-LAST:event_planta3ActionPerformed
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed
@@ -1004,7 +1006,7 @@ public class Amma extends javax.swing.JFrame {
     }//GEN-LAST:event_plazasButtonActionPerformed
 
     private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
-        Reserva rev= new Reserva(this, true, sel, planta);
+        Reserva rev = new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Amma");
         rev.setLocationRelativeTo(null);
         rev.setVisible(true);
     }//GEN-LAST:event_reservarButtonActionPerformed
@@ -1018,6 +1020,9 @@ public class Amma extends javax.swing.JFrame {
                 but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png")));
                 break;
             case 2:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+                break;
+            case 3:
                 but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
                 break;
         }
@@ -1035,6 +1040,9 @@ public class Amma extends javax.swing.JFrame {
             case 2:
                 but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
                 break;
+            case 3:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
+                break;
         }
         but.setToolTipText("Ocupado");
     }
@@ -1050,16 +1058,20 @@ public class Amma extends javax.swing.JFrame {
             case 2:
                 but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
                 break;
+            case 3:
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
+                break;
         }
         but.setToolTipText("Reservado");
     }
-    
+
     private String planta;
     private boolean[] lib;
     private javax.swing.JButton sel;
     private de.craften.ui.swingmaterial.MaterialPanel aux, gas;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
+    private static javax.swing.JLabel direccion;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
     private javax.swing.JLabel ind1;
     private javax.swing.JLabel ind2;
@@ -1081,7 +1093,6 @@ public class Amma extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -1089,7 +1100,6 @@ public class Amma extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -1136,6 +1146,7 @@ public class Amma extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton planta3;
     private de.craften.ui.swingmaterial.MaterialPanel plazas;
     private de.craften.ui.swingmaterial.MaterialButton plazasButton;
+    private static javax.swing.JLabel precio;
     private de.craften.ui.swingmaterial.MaterialButton reservarButton;
     // End of variables declaration//GEN-END:variables
 }
