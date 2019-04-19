@@ -1008,6 +1008,7 @@ public class Amma extends javax.swing.JFrame {
     private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
         Reserva rev = new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Amma");
         rev.setLocationRelativeTo(null);
+        this.setVisible(false);
         rev.setVisible(true);
     }//GEN-LAST:event_reservarButtonActionPerformed
 

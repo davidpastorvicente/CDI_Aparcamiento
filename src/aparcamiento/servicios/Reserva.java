@@ -21,6 +21,9 @@ public class Reserva extends javax.swing.JDialog {
      * @param modal
      * @param sel
      * @param planta
+     * @param dir
+     * @param precio
+     * @param name
      */
     public Reserva(java.awt.Frame parent, boolean modal, javax.swing.JButton sel, String planta, String dir, String precio, String name) {
         super(parent, modal);
@@ -209,6 +212,7 @@ public class Reserva extends javax.swing.JDialog {
 
     private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
         this.setVisible(false);
+        this.getParent().setVisible(true);
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
@@ -229,6 +233,7 @@ public class Reserva extends javax.swing.JDialog {
 
     private void aceptarButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButton1ActionPerformed
         this.setVisible(false);
+        this.getParent().setVisible(true);
     }//GEN-LAST:event_aceptarButton1ActionPerformed
 
     /**
