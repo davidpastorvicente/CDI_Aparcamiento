@@ -774,16 +774,16 @@ public class Villa extends javax.swing.JFrame {
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreCoche2.png")));
                 break;
             case 1:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMotos2.png")));
                 break;
             case 2:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png")));
                 break;
             case 3:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/libreMinus2.png")));
                 break;
         }
         but.setToolTipText("Libre");
@@ -792,16 +792,16 @@ public class Villa extends javax.swing.JFrame {
     private void ocupado(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoCoche2.png")));
                 break;
             case 1:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMotos2.png")));
                 break;
             case 2:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus2.png")));
                 break;
             case 3:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/ocupadoMinus2.png")));
                 break;
         }
         but.setToolTipText("Ocupado");
@@ -810,16 +810,16 @@ public class Villa extends javax.swing.JFrame {
     private void reservado(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoCoche2.png")));
                 break;
             case 1:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMotos2.png")));
                 break;
             case 2:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus2.png")));
                 break;
             case 3:
-                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus.png")));
+                but.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/reservadoMinus2.png")));
                 break;
         }
         but.setToolTipText("Reservado");
