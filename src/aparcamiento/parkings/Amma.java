@@ -787,7 +787,6 @@ public class Amma extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_gasolineraButtonActionPerformed
 
-
     private void accion(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accion
         javax.swing.JButton aux = (javax.swing.JButton) evt.getSource();
         if (!aux.getToolTipText().equals("Ocupado")) {

@@ -13,17 +13,19 @@ import javax.swing.JFrame;
  * @author david
  */
 public class Inicio extends javax.swing.JFrame {
+
     public static String usuario, passwd, name, email;
     public static JFrame prin;
+
     /**
      * Creates new form inicio
      */
     public Inicio() {
         incorLabel = new javax.swing.JLabel();
-        name="Administrador";
-        email="admin@upm.es";
-        usuario="admin";
-        passwd="1234";
+        name = "Administrador";
+        email = "admin@upm.es";
+        usuario = "admin";
+        passwd = "1234";
         initComponents();
     }
 
@@ -137,37 +139,36 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void pwdFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwdFieldActionPerformed
-        
+
     }//GEN-LAST:event_pwdFieldActionPerformed
 
     private void inicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicButtonActionPerformed
-        if(!(userField.getText().equals(usuario) && pwdField.getText().equals(passwd))) {
+        if (!(userField.getText().equals(usuario) && pwdField.getText().equals(passwd))) {
             incorLabel.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
             incorLabel.setForeground(new java.awt.Color(153, 0, 0));
             incorLabel.setText("¡Usuario incorrecto! Vuelva a intentarlo.");
             jPanel2.add(incorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
             this.pack();
-        }
-        else {
-            prin= new Principal();
-            this.setVisible(false);            
+        } else {
+            prin = new Principal();
+            this.setVisible(false);
             prin.setLocationRelativeTo(null);
             prin.setVisible(true);
         }
-            
+
     }//GEN-LAST:event_inicButtonActionPerformed
 
     private void regButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regButtonActionPerformed
-        JDialog reg= new Registro(this, true);
-        reg.setLocationRelativeTo(null);        
+        JDialog reg = new Registro(this, true);
+        reg.setLocationRelativeTo(null);
         reg.setVisible(true);
-        prin= new Principal();
+        prin = new Principal();
     }//GEN-LAST:event_regButtonActionPerformed
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
         System.exit(0);
     }//GEN-LAST:event_atrasActionPerformed
-    
+
     private javax.swing.JLabel incorLabel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel UserLabel;

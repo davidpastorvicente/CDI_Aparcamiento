@@ -359,7 +359,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_iAmmaMouseEntered
 
     private void iAmmaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseExited
-        Amma.setFont(new java.awt.Font("Roboto", 0, 18));        
+        Amma.setFont(new java.awt.Font("Roboto", 0, 18));
         p15.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_iAmmaMouseExited
 
@@ -404,27 +404,27 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_iMinervaMouseExited
 
     private void MinervaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinervaAreaMouseEntered
-        iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
+        iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_MinervaAreaMouseEntered
 
     private void URJCAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_URJCAreaMouseEntered
-        iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
+        iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_URJCAreaMouseEntered
 
     private void VilllaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VilllaAreaMouseEntered
-        iVilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
+        iVilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_VilllaAreaMouseEntered
 
     private void RosaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RosaAreaMouseEntered
-        iRosa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
+        iRosa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_RosaAreaMouseEntered
 
     private void AmmaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AmmaAreaMouseEntered
-        iAmma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));        
+        iAmma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
     }//GEN-LAST:event_AmmaAreaMouseEntered
 
     private void MinervaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinervaAreaMouseExited
-        iMinerva.setBorder(javax.swing.BorderFactory.createEmptyBorder());        
+        iMinerva.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_MinervaAreaMouseExited
 
     private void URJCAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_URJCAreaMouseExited
@@ -432,82 +432,82 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_URJCAreaMouseExited
 
     private void VilllaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VilllaAreaMouseExited
-        iVilla.setBorder(javax.swing.BorderFactory.createEmptyBorder());        
+        iVilla.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_VilllaAreaMouseExited
 
     private void RosaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RosaAreaMouseExited
-        iRosa.setBorder(javax.swing.BorderFactory.createEmptyBorder());        
+        iRosa.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_RosaAreaMouseExited
 
     private void AmmaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AmmaAreaMouseExited
-        iAmma.setBorder(javax.swing.BorderFactory.createEmptyBorder());        
+        iAmma.setBorder(javax.swing.BorderFactory.createEmptyBorder());
     }//GEN-LAST:event_AmmaAreaMouseExited
 
     private void AmmaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AmmaAreaActionPerformed
-        JFrame min= new Amma();        
+        JFrame min = new Amma();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_AmmaAreaActionPerformed
 
     private void MinervaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinervaAreaActionPerformed
-        JFrame min= new Minerva();        
+        JFrame min = new Minerva();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_MinervaAreaActionPerformed
 
     private void iMinervaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseClicked
-        JFrame min= new Minerva();        
+        JFrame min = new Minerva();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_iMinervaMouseClicked
 
     private void URJCAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_URJCAreaActionPerformed
-        JFrame min= new URJC();        
+        JFrame min = new URJC();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_URJCAreaActionPerformed
 
     private void iURJCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseClicked
-        JFrame min= new URJC();        
+        JFrame min = new URJC();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_iURJCMouseClicked
 
     private void VilllaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VilllaAreaActionPerformed
-        JFrame min= new Villa();        
+        JFrame min = new Villa();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_VilllaAreaActionPerformed
 
     private void iVillaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseClicked
-        JFrame min= new Villa();        
+        JFrame min = new Villa();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_iVillaMouseClicked
 
     private void RosaAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RosaAreaActionPerformed
-        JFrame min= new Rosa();        
+        JFrame min = new Rosa();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_RosaAreaActionPerformed
 
     private void iRosaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseClicked
-        JFrame min= new Rosa();        
+        JFrame min = new Rosa();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_iRosaMouseClicked
 
     private void iAmmaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseClicked
-        JFrame min= new Amma();        
+        JFrame min = new Amma();
         min.setVisible(true);
         min.setLocationRelativeTo(null);
         this.setVisible(false);

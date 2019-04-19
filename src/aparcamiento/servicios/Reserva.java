@@ -59,7 +59,6 @@ public class Reserva extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        pagoOpc = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -247,13 +246,13 @@ public class Reserva extends javax.swing.JDialog {
     }//GEN-LAST:event_aceptarButton1ActionPerformed
 
     private void matKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_matKeyTyped
-        if (mat.getText().length() > 7) {
+        if (mat.getText().length() >= 7) {
             evt.consume();
         }
     }//GEN-LAST:event_matKeyTyped
 
     private void horKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_horKeyTyped
-        if (hor.getText().length() > 3) {
+        if (hor.getText().length() >= 3) {
             evt.consume();
         }
     }//GEN-LAST:event_horKeyTyped
@@ -284,7 +283,6 @@ public class Reserva extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator1;
     private de.craften.ui.swingmaterial.MaterialTextField mat;
-    private javax.swing.ButtonGroup pagoOpc;
     private de.craften.ui.swingmaterial.MaterialButton volverButton;
     // End of variables declaration//GEN-END:variables
 }

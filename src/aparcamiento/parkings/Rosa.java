@@ -18,7 +18,7 @@ public class Rosa extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Rosa() {
-        planta="0";
+        planta = "0";
         niv = new Nivel().getPanel();
         lav = new Lavadero().getPanel();
         lib = new boolean[20];
@@ -687,7 +687,7 @@ public class Rosa extends javax.swing.JFrame {
         libre(p18);
         libre(p19);
         libre(p20);
-        planta="0";
+        planta = "0";
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -717,7 +717,7 @@ public class Rosa extends javax.swing.JFrame {
         ocupado(p18);
         libre(p19);
         libre(p20);
-        planta="1";
+        planta = "1";
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -747,7 +747,7 @@ public class Rosa extends javax.swing.JFrame {
         ocupado(p18);
         ocupado(p19);
         ocupado(p20);
-        planta="2";
+        planta = "2";
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed
@@ -766,7 +766,7 @@ public class Rosa extends javax.swing.JFrame {
     }//GEN-LAST:event_plazasButtonActionPerformed
 
     private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
-        Reserva rev= new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Rosa Chacel");
+        Reserva rev = new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Rosa Chacel");
         rev.setLocationRelativeTo(null);
         this.setVisible(false);
         rev.setVisible(true);

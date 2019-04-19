@@ -44,11 +44,11 @@ public class Main {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JFrame i= new Inicio();
+                JFrame i = new Inicio();
                 i.setLocationRelativeTo(null);
                 i.setVisible(true);
             }
         });
     }
-    
+
 }

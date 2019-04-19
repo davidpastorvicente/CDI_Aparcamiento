@@ -18,7 +18,7 @@ public class URJC extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public URJC() {
-        planta="0";
+        planta = "0";
         gas = new Gasolinera().getPanel();
         lav = new Lavadero().getPanel();
         niv = new Nivel().getPanel();
@@ -965,7 +965,7 @@ public class URJC extends javax.swing.JFrame {
         libre(p32);
         libre(p33);
         ocupado(p34);
-        planta="3";
+        planta = "3";
     }//GEN-LAST:event_planta3ActionPerformed
 
     private void planta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta2ActionPerformed
@@ -1015,7 +1015,7 @@ public class URJC extends javax.swing.JFrame {
         libre(p32);
         libre(p33);
         libre(p34);
-        planta="2";
+        planta = "2";
     }//GEN-LAST:event_planta2ActionPerformed
 
     private void planta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta1ActionPerformed
@@ -1065,7 +1065,7 @@ public class URJC extends javax.swing.JFrame {
         libre(p32);
         ocupado(p33);
         ocupado(p34);
-        planta="1";
+        planta = "1";
     }//GEN-LAST:event_planta1ActionPerformed
 
     private void planta0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta0ActionPerformed
@@ -1115,7 +1115,7 @@ public class URJC extends javax.swing.JFrame {
         libre(p32);
         libre(p33);
         libre(p34);
-        planta="0";
+        planta = "0";
     }//GEN-LAST:event_planta0ActionPerformed
 
     private void planta4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta4ActionPerformed
@@ -1165,7 +1165,7 @@ public class URJC extends javax.swing.JFrame {
         ocupado(p32);
         libre(p33);
         ocupado(p34);
-        planta="4";
+        planta = "4";
     }//GEN-LAST:event_planta4ActionPerformed
 
     private void planta5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planta5ActionPerformed
@@ -1215,7 +1215,7 @@ public class URJC extends javax.swing.JFrame {
         ocupado(p32);
         ocupado(p33);
         ocupado(p34);
-        planta="5";
+        planta = "5";
     }//GEN-LAST:event_planta5ActionPerformed
 
     private void plazasButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plazasButtonActionPerformed
@@ -1234,7 +1234,7 @@ public class URJC extends javax.swing.JFrame {
     }//GEN-LAST:event_plazasButtonActionPerformed
 
     private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
-        Reserva rev= new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Universidad Rey Juan Carlos");
+        Reserva rev = new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Universidad Rey Juan Carlos");
         rev.setLocationRelativeTo(null);
         this.setVisible(false);
         rev.setVisible(true);

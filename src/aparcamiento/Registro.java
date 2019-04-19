@@ -13,6 +13,7 @@ public class Registro extends javax.swing.JDialog {
 
     /**
      * Creates new form Registro
+     *
      * @param parent
      * @param modal
      */
@@ -252,11 +253,11 @@ public class Registro extends javax.swing.JDialog {
     }//GEN-LAST:event_CancelarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        Inicio.usuario= nombre.getText() + "-UPM";
-        Inicio.passwd= "cdi2019";
-        Inicio.name= nombre.getText();
-        Inicio.email= email.getText();
-        Confirm c= new Confirm(null, true);
+        Inicio.usuario = nombre.getText() + "-UPM";
+        Inicio.passwd = "cdi2019";
+        Inicio.name = nombre.getText();
+        Inicio.email = email.getText();
+        Confirm c = new Confirm(null, true);
         c.setLocationRelativeTo(null);
         c.setVisible(true);
         this.setVisible(false);
@@ -267,7 +268,7 @@ public class Registro extends javax.swing.JDialog {
         paypalButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         paypalButton.setBackground(new java.awt.Color(204, 204, 204));
         tarjetaButton.setBackground(new java.awt.Color(102, 102, 102));
-        
+
         cadAnio.setAccent(new java.awt.Color(0, 153, 153));
         cadAnio.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jPanel3.add(cadAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 20, 70));
@@ -283,7 +284,7 @@ public class Registro extends javax.swing.JDialog {
         cadMes.setAccent(new java.awt.Color(0, 153, 153));
         cadMes.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jPanel3.add(cadMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 20, 70));
-        
+
         jLabel5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel5.setText("caducidad:");
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 70, 30));
@@ -307,7 +308,7 @@ public class Registro extends javax.swing.JDialog {
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel10.setText("Número de tarjeta:");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 130, 33));
-        
+
         jPanel3.revalidate();
         jPanel3.repaint();
         pack();
@@ -318,7 +319,7 @@ public class Registro extends javax.swing.JDialog {
         paypalButton.setFont(new java.awt.Font("Roboto Medium", 1, 14)); // NOI18N
         tarjetaButton.setBackground(new java.awt.Color(204, 204, 204));
         paypalButton.setBackground(new java.awt.Color(102, 102, 102));
-        
+
         jPanel3.remove(jLabel5);
         jPanel3.remove(jLabel7);
         jPanel3.remove(jLabel8);
