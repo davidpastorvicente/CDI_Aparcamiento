@@ -6,6 +6,7 @@
 package aparcamiento.servicios;
 
 import java.awt.Color;
+import java.util.Date;
 
 /**
  *
@@ -17,6 +18,8 @@ public class Gasolinera extends javax.swing.JFrame {
      * Creates new form NewJFrame
      */
     public Gasolinera() {
+        totalCombustible=null;
+        gasDate=null;
         initComponents();
     }
 
@@ -46,7 +49,6 @@ public class Gasolinera extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         efitecButton = new de.craften.ui.swingmaterial.MaterialButton();
         aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
-        CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         precio = new javax.swing.JLabel();
         precio1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -170,15 +172,6 @@ public class Gasolinera extends javax.swing.JFrame {
         });
         materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
 
-        CancelarButton.setBackground(new java.awt.Color(255, 51, 51));
-        CancelarButton.setText("Cancelar");
-        CancelarButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CancelarButtonActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(CancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 390, 140, 70));
-
         precio.setFont(new java.awt.Font("Roboto", 0, 20)); // NOI18N
         precio.setText("-");
         materialPanel1.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 210, 50, -1));
@@ -193,7 +186,7 @@ public class Gasolinera extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel14.setText("El total a pagar es:");
-        materialPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, 150, -1));
+        materialPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 300, 150, -1));
 
         euros.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         euros.setText(" 00,00 € (00,00 litros)");
@@ -247,13 +240,8 @@ public class Gasolinera extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
-        this.setVisible(false);
-        totalCombustible = null;
-    }//GEN-LAST:event_CancelarButtonActionPerformed
-
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        this.setVisible(false);
+        gasDate = new Date(System.currentTimeMillis());
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void efitecButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_efitecButtonActionPerformed
@@ -338,9 +326,11 @@ public class Gasolinera extends javax.swing.JFrame {
         if (!cantidad.getText().equals("")) {
             if (opc == 0) {
                 totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
+                price2=Double.parseDouble(cantidad.getText()) * price;
                 euros.setText(" " + totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText())) + " litros)");
             } else if (opc == 1) {
                 totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
+                price2=Double.parseDouble(cantidad.getText());
                 euros.setText(" " + totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText()) / price) + " litros)");
             }
             aceptarButton.setEnabled(true);
@@ -352,10 +342,10 @@ public class Gasolinera extends javax.swing.JFrame {
     }
 
     public static String totalCombustible;
-    private double price;
+    public static double price, price2;
     private int opc;
+    public static Date gasDate;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton calcular;
     private de.craften.ui.swingmaterial.MaterialTextField cantidad;

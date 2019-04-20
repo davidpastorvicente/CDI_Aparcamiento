@@ -40,6 +40,7 @@ public class Villa extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        finalizarButton = new de.craften.ui.swingmaterial.MaterialButton();
         plazas = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -118,6 +119,15 @@ public class Villa extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Parking \"Villablanca\"");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 400, -1));
+
+        finalizarButton.setText("Finalizar y pagar");
+        finalizarButton.setEnabled(false);
+        finalizarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                finalizarButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(finalizarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 20, 190, 70));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 100));
 
@@ -769,7 +779,15 @@ public class Villa extends javax.swing.JFrame {
         rev.setLocationRelativeTo(null);
         this.setVisible(false);
         rev.setVisible(true);
+        finalizarButton.setEnabled(true);
     }//GEN-LAST:event_reservarButtonActionPerformed
+
+    private void finalizarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarButtonActionPerformed
+        Ticket tik= new Ticket(this, true, 0.59);
+        tik.setLocationRelativeTo(null);
+        this.setVisible(false);
+        tik.setVisible(true);
+    }//GEN-LAST:event_finalizarButtonActionPerformed
 
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
@@ -832,6 +850,7 @@ public class Villa extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private static javax.swing.JLabel direccion;
+    private de.craften.ui.swingmaterial.MaterialButton finalizarButton;
     private de.craften.ui.swingmaterial.MaterialButton gasolineraButton;
     private javax.swing.JLabel ind1;
     private javax.swing.JLabel ind2;

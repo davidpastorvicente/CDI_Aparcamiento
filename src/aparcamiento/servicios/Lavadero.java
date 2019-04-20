@@ -6,6 +6,7 @@
 package aparcamiento.servicios;
 
 import java.awt.Color;
+import java.util.Date;
 
 /**
  *
@@ -17,6 +18,8 @@ public class Lavadero extends javax.swing.JFrame {
      * Creates new form NewJFrame
      */
     public Lavadero() {
+        totalLavadero=null;
+        lavDate=null;
         initComponents();
     }
 
@@ -43,7 +46,6 @@ public class Lavadero extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         ambosButton = new de.craften.ui.swingmaterial.MaterialButton();
         aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
-        CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         precio = new javax.swing.JLabel();
         precio1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -150,15 +152,6 @@ public class Lavadero extends javax.swing.JFrame {
         });
         materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
 
-        CancelarButton.setBackground(new java.awt.Color(255, 51, 51));
-        CancelarButton.setText("Cancelar");
-        CancelarButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CancelarButtonActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(CancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 390, 140, 70));
-
         precio.setFont(new java.awt.Font("Roboto", 0, 20)); // NOI18N
         precio.setText("-");
         materialPanel1.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 210, 40, -1));
@@ -174,7 +167,7 @@ public class Lavadero extends javax.swing.JFrame {
         euros.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         euros.setText(" 0,00 €");
         euros.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        materialPanel1.add(euros, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 80, 50));
+        materialPanel1.add(euros, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 330, 80, 50));
 
         jLabel9.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel9.setText("2. Escoja los servicios adicionales que desee:");
@@ -214,7 +207,7 @@ public class Lavadero extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel14.setText("El total a pagar es:");
-        materialPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 300, 150, -1));
+        materialPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 300, 150, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -348,12 +341,8 @@ public class Lavadero extends javax.swing.JFrame {
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
         totalLavadero = euros.getText();
-        this.setVisible(false);
+        lavDate= new Date(System.currentTimeMillis());
     }//GEN-LAST:event_aceptarButtonActionPerformed
-
-    private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
-        this.setVisible(false);
-    }//GEN-LAST:event_CancelarButtonActionPerformed
 
     private void emberButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emberButtonActionPerformed
         if (aux3) {
@@ -376,10 +365,10 @@ public class Lavadero extends javax.swing.JFrame {
     }
 
     public static String totalLavadero;
-    private double price;
+    public static double price;
     private boolean aux1, aux2, aux3;
+    public static Date lavDate;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton abrillButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton ambosButton;

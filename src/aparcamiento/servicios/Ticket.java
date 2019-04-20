@@ -5,6 +5,12 @@
  */
 package aparcamiento.servicios;
 
+import aparcamiento.Inicio;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
+import javax.swing.Timer;
+
 /**
  *
  * @author david
@@ -17,9 +23,30 @@ public class Ticket extends javax.swing.JDialog {
      * @param parent
      * @param modal
      */
-    public Ticket(java.awt.Frame parent, boolean modal) {
+    public Ticket(java.awt.Frame parent, boolean modal, double pz) {
         super(parent, modal);
         initComponents();
+        jPanel1.remove(jPanel4);
+        price = 0;
+        SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        park.setText("·  Estacionamiento ............... " + Integer.toString(Reserva.getHoras()) + " h · " + String.format("%.2f", pz) + " €/h");
+        fPark.setText(date.format(Reserva.resDate));
+        price += pz * Reserva.getHoras();
+        if (Gasolinera.gasDate != null) {
+            gas.setText("·  Gasolinera ...................................... " + Gasolinera.totalCombustible);
+            fGas.setText(date.format(Gasolinera.gasDate));
+            price += Gasolinera.price2;
+            if (Lavadero.lavDate != null) {
+                lav.setText("·  Lavadero .........................................." + Lavadero.totalLavadero);
+                fLav.setText(date.format(Lavadero.lavDate));
+                price += Lavadero.price;
+            }
+        } else if (Lavadero.lavDate != null) {
+            gas.setText("·  Lavadero .........................................." + Lavadero.totalLavadero);
+            fGas.setText(date.format(Lavadero.lavDate));
+            price += Lavadero.price;
+        }
+        total.setText("Total ............. " + String.format("%.2f", price) + " €");
     }
 
     /**
@@ -39,6 +66,14 @@ public class Ticket extends javax.swing.JDialog {
         jLabel1 = new javax.swing.JLabel();
         cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        park = new javax.swing.JLabel();
+        fPark = new javax.swing.JLabel();
+        fGas = new javax.swing.JLabel();
+        fLav = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        pago = new javax.swing.JLabel();
+        salirButton = new de.craften.ui.swingmaterial.MaterialButton();
+        progress = new de.craften.ui.swingmaterial.MaterialProgressSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 153));
@@ -52,20 +87,17 @@ public class Ticket extends javax.swing.JDialog {
         jPanel3.setMinimumSize(new java.awt.Dimension(340, 290));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        gas.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        gas.setText("Gasolinera ........................... 45,75 €");
+        gas.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         gas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel3.add(gas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 290, 33));
+        jPanel3.add(gas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 300, 33));
 
-        lav.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lav.setText("Lavadero ............................... 1,90 €");
+        lav.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         lav.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel3.add(lav, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 290, 33));
+        jPanel3.add(lav, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 310, 33));
 
         total.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        total.setText("Total ............. 48,65 €");
         total.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel3.add(total, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 180, 33));
+        jPanel3.add(total, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 180, 33));
 
         jLabel1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel1.setText("Factura de los servicios utilizados:");
@@ -81,7 +113,7 @@ public class Ticket extends javax.swing.JDialog {
         jPanel3.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 140, 70));
 
         aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
-        aceptarButton.setText("Aceptar");
+        aceptarButton.setText("Pagar");
         aceptarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aceptarButtonActionPerformed(evt);
@@ -89,7 +121,45 @@ public class Ticket extends javax.swing.JDialog {
         });
         jPanel3.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
 
+        park.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        park.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel3.add(park, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 300, 33));
+
+        fPark.setFont(new java.awt.Font("Roboto", 2, 14)); // NOI18N
+        fPark.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel3.add(fPark, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 180, 20));
+
+        fGas.setFont(new java.awt.Font("Roboto", 2, 14)); // NOI18N
+        fGas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel3.add(fGas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 180, 20));
+
+        fLav.setFont(new java.awt.Font("Roboto", 2, 14)); // NOI18N
+        fLav.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel3.add(fLav, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 180, 20));
+
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
+
+        jPanel4.setMinimumSize(new java.awt.Dimension(340, 290));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pago.setFont(new java.awt.Font("Roboto", 1, 20)); // NOI18N
+        pago.setText("         Pagando...");
+        jPanel4.add(pago, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 240, 33));
+
+        salirButton.setBackground(new java.awt.Color(255, 51, 51));
+        salirButton.setText("Salir");
+        salirButton.setEnabled(false);
+        salirButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirButtonActionPerformed(evt);
+            }
+        });
+        jPanel4.add(salirButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
+
+        progress.setForeground(new java.awt.Color(0, 153, 153));
+        jPanel4.add(progress, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 64, 64));
+
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 380));
 
@@ -102,21 +172,55 @@ public class Ticket extends javax.swing.JDialog {
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        this.setVisible(false);
-        this.getParent().setVisible(true);
+        jPanel1.remove(jPanel3);
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
+        revalidate();
+        repaint();
+        pack();
+
+        Timer timer = new Timer(3000, new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                salirButton.setEnabled(true);
+                jPanel4.remove(progress);
+                tick = new javax.swing.JLabel();
+                tick.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/checked.png"))); // NOI18N
+                jPanel4.add(tick, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, -1, -1));
+                pago.setText("   ¡Pago completado!");
+                revalidate();
+                repaint();
+                pack();
+            }
+        });
+
+        timer.start();
     }//GEN-LAST:event_aceptarButtonActionPerformed
+
+    private void salirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirButtonActionPerformed
+        this.setVisible(false);
+        Inicio.prin.setVisible(true);
+    }//GEN-LAST:event_salirButtonActionPerformed
 
     /**
      * @param args the command line arguments
      */
+    private double price;
+    private javax.swing.JLabel tick;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton cancelarButton;
+    private javax.swing.JLabel fGas;
+    private javax.swing.JLabel fLav;
+    private javax.swing.JLabel fPark;
     private javax.swing.JLabel gas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel lav;
+    private javax.swing.JLabel pago;
+    private javax.swing.JLabel park;
+    private de.craften.ui.swingmaterial.MaterialProgressSpinner progress;
+    private de.craften.ui.swingmaterial.MaterialButton salirButton;
     private javax.swing.JLabel total;
     // End of variables declaration//GEN-END:variables
 }

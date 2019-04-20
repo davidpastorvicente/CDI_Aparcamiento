@@ -30,8 +30,6 @@ public class Nivel extends javax.swing.JFrame {
     private void initComponents() {
 
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
-        aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
-        CancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         euros = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -59,29 +57,10 @@ public class Nivel extends javax.swing.JFrame {
 
         materialPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
-        aceptarButton.setText("Aceptar");
-        aceptarButton.setEnabled(false);
-        aceptarButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                aceptarButtonActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
-
-        CancelarButton.setBackground(new java.awt.Color(255, 51, 51));
-        CancelarButton.setText("Cancelar");
-        CancelarButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CancelarButtonActionPerformed(evt);
-            }
-        });
-        materialPanel1.add(CancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 390, 140, 70));
-
         euros.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         euros.setText(" Servicio gratuito");
         euros.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        materialPanel1.add(euros, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, 190, 50));
+        materialPanel1.add(euros, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 390, 190, 50));
 
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         jLabel10.setText(" Medidor de aceite y aire");
@@ -207,14 +186,6 @@ public class Nivel extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        this.setVisible(false);
-    }//GEN-LAST:event_aceptarButtonActionPerformed
-
-    private void CancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarButtonActionPerformed
-        this.setVisible(false);
-    }//GEN-LAST:event_CancelarButtonActionPerformed
-
     private void barKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_barKeyTyped
         if (bar.getText().length() >= 3) {
             evt.consume();
@@ -248,7 +219,6 @@ public class Nivel extends javax.swing.JFrame {
         } else {
             cambioAceite.setText("");
         }
-        aceptarButton.setEnabled(true);
     }//GEN-LAST:event_materialButton1ActionPerformed
 
     public de.craften.ui.swingmaterial.MaterialPanel getPanel() {
@@ -256,9 +226,7 @@ public class Nivel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceiteButton;
-    private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialTextField bar;
     private javax.swing.JLabel cambioAceite;
     private javax.swing.JLabel euros;

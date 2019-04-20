@@ -5,6 +5,8 @@
  */
 package aparcamiento.servicios;
 
+import java.util.Date;
+
 /**
  *
  * @author david
@@ -241,6 +243,7 @@ public class Reserva extends javax.swing.JDialog {
     }//GEN-LAST:event_volverButtonActionPerformed
 
     private void aceptarButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButton1ActionPerformed
+        resDate= new Date(System.currentTimeMillis());
         this.setVisible(false);
         this.getParent().setVisible(true);
     }//GEN-LAST:event_aceptarButton1ActionPerformed
@@ -257,14 +260,16 @@ public class Reserva extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_horKeyTyped
 
+    public static int getHoras() {return Integer.parseInt(hor.getText());}
     /**
      * @param args the command line arguments
      */
+    public static Date resDate;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton1;
     private de.craften.ui.swingmaterial.MaterialButton cancelarButton;
-    private de.craften.ui.swingmaterial.MaterialTextField hor;
+    private static de.craften.ui.swingmaterial.MaterialTextField hor;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
