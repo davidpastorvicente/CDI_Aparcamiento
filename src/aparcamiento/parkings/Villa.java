@@ -7,6 +7,9 @@ package aparcamiento.parkings;
 
 import aparcamiento.Inicio;
 import aparcamiento.servicios.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 /**
  *
@@ -18,6 +21,13 @@ public class Villa extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Villa() {
+        getRootPane().setGlassPane(new JComponent(){
+            public void paintComponent(Graphics g){
+                g.setColor(new Color(0,0,0,100));
+                g.fillRect(0, 0, getWidth(), getHeight());
+                super.paintComponent(g);
+            }
+        });
         planta = "0";
         gas = new Gasolinera().getPanel();
         niv = new Nivel().getPanel();
@@ -28,7 +38,6 @@ public class Villa extends javax.swing.JFrame {
         initComponents();
         aux = plazas;
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -777,16 +786,18 @@ public class Villa extends javax.swing.JFrame {
     private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
         Reserva rev = new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Villablanca");
         rev.setLocationRelativeTo(null);
-        this.setVisible(false);
+        getRootPane().getGlassPane().setVisible(true);
         rev.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
         finalizarButton.setEnabled(true);
     }//GEN-LAST:event_reservarButtonActionPerformed
 
     private void finalizarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarButtonActionPerformed
         Ticket tik= new Ticket(this, true, 0.59);
         tik.setLocationRelativeTo(null);
-        this.setVisible(false);
+        getRootPane().getGlassPane().setVisible(true);
         tik.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
     }//GEN-LAST:event_finalizarButtonActionPerformed
 
     private void libre(javax.swing.JButton but) {
