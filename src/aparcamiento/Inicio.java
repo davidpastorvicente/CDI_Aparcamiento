@@ -144,7 +144,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void inicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicButtonActionPerformed
         if (!(userField.getText().equals(usuario) && pwdField.getText().equals(passwd))) {
-            incorLabel.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+            incorLabel.setFont(new java.awt.Font("Roboto Regular", 1, 14)); // NOI18N
             incorLabel.setForeground(new java.awt.Color(153, 0, 0));
             incorLabel.setText("¡Usuario incorrecto! Vuelva a intentarlo.");
             jPanel2.add(incorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
