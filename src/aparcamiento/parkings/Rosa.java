@@ -622,8 +622,11 @@ public class Rosa extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
-        this.setVisible(false);
-        Inicio.prin.setVisible(true);
+        Confirmacion2 conf = new Confirmacion2(this, true);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
     }//GEN-LAST:event_atrasActionPerformed
 
     private void nivelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelButtonActionPerformed
@@ -791,7 +794,7 @@ public class Rosa extends javax.swing.JFrame {
         getRootPane().getGlassPane().setVisible(true);
         rev.setVisible(true);
         getRootPane().getGlassPane().setVisible(false);
-        finalizarButton.setEnabled(true);
+        if(rev.getSi()) finalizarButton.setEnabled(true);
     }//GEN-LAST:event_reservarButtonActionPerformed
 
     private void finalizarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarButtonActionPerformed
@@ -863,7 +866,7 @@ public class Rosa extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
     private static javax.swing.JLabel direccion;
-    private de.craften.ui.swingmaterial.MaterialButton finalizarButton;
+    public static de.craften.ui.swingmaterial.MaterialButton finalizarButton;
     private javax.swing.JLabel ind1;
     private javax.swing.JLabel ind2;
     private javax.swing.JLabel jLabel1;

@@ -5,6 +5,7 @@
  */
 package aparcamiento.servicios;
 
+import aparcamiento.parkings.Confirmacion1;
 import java.awt.Color;
 import java.util.Date;
 
@@ -18,8 +19,8 @@ public class Gasolinera extends javax.swing.JFrame {
      * Creates new form NewJFrame
      */
     public Gasolinera() {
-        totalCombustible=null;
-        gasDate=null;
+        totalCombustible = null;
+        gasDate = null;
         initComponents();
     }
 
@@ -241,7 +242,16 @@ public class Gasolinera extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        gasDate = new Date(System.currentTimeMillis());
+        if (opc == 0) {
+            totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
+        } else {
+            totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
+        }
+        Confirmacion1 conf = new Confirmacion1(this, true, true);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void efitecButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_efitecButtonActionPerformed
@@ -326,11 +336,11 @@ public class Gasolinera extends javax.swing.JFrame {
         if (!cantidad.getText().equals("")) {
             if (opc == 0) {
                 totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
-                price2=Double.parseDouble(cantidad.getText()) * price;
+                price2 = Double.parseDouble(cantidad.getText()) * price;
                 euros.setText(" " + totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText())) + " litros)");
             } else if (opc == 1) {
                 totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
-                price2=Double.parseDouble(cantidad.getText());
+                price2 = Double.parseDouble(cantidad.getText());
                 euros.setText(" " + totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText()) / price) + " litros)");
             }
             aceptarButton.setEnabled(true);
@@ -339,6 +349,11 @@ public class Gasolinera extends javax.swing.JFrame {
 
     public de.craften.ui.swingmaterial.MaterialPanel getPanel() {
         return materialPanel1;
+    }
+
+    public static void reset() {
+        totalCombustible = null;
+        gasDate = null;
     }
 
     public static String totalCombustible;

@@ -166,7 +166,7 @@
             <Component class="javax.swing.JLabel" name="fPark">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Roboto" size="14" style="2"/>
+                  <Font name="Roboto" size="14" style="0"/>
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -179,7 +179,7 @@
             <Component class="javax.swing.JLabel" name="fGas">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Roboto" size="14" style="2"/>
+                  <Font name="Roboto" size="14" style="0"/>
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -192,7 +192,7 @@
             <Component class="javax.swing.JLabel" name="fLav">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Roboto" size="14" style="2"/>
+                  <Font name="Roboto" size="14" style="0"/>
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>

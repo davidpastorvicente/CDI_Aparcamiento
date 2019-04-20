@@ -5,6 +5,7 @@
  */
 package aparcamiento.servicios;
 
+import aparcamiento.parkings.Confirmacion1;
 import java.awt.Color;
 import java.util.Date;
 
@@ -341,7 +342,11 @@ public class Lavadero extends javax.swing.JFrame {
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
         totalLavadero = euros.getText();
-        lavDate= new Date(System.currentTimeMillis());
+        Confirmacion1 conf = new Confirmacion1(this, true, false);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void emberButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emberButtonActionPerformed
@@ -364,6 +369,8 @@ public class Lavadero extends javax.swing.JFrame {
         return materialPanel1;
     }
 
+    public static void reset() {totalLavadero=null; lavDate=null;}
+    
     public static String totalLavadero;
     public static double price;
     private boolean aux1, aux2, aux3;

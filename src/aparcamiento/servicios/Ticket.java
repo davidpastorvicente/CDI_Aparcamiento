@@ -29,9 +29,11 @@ public class Ticket extends javax.swing.JDialog {
         jPanel1.remove(jPanel4);
         price = 0;
         SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        park.setText("·  Estacionamiento ............... " + Integer.toString(Reserva.getHoras()) + " h · " + String.format("%.2f", pz) + " €/h");
-        fPark.setText(date.format(Reserva.resDate));
-        price += pz * Reserva.getHoras();
+        if (Reserva.getSi()) {
+            park.setText("·  Estacionamiento ............... " + Integer.toString(Reserva.getHoras()) + " h · " + String.format("%.2f", pz) + " €/h");
+            fPark.setText(date.format(Reserva.resDate));
+            price += pz * Reserva.getHoras();
+        }
         if (Gasolinera.gasDate != null) {
             gas.setText("·  Gasolinera ...................................... " + Gasolinera.totalCombustible);
             fGas.setText(date.format(Gasolinera.gasDate));
@@ -125,15 +127,15 @@ public class Ticket extends javax.swing.JDialog {
         park.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel3.add(park, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 300, 33));
 
-        fPark.setFont(new java.awt.Font("Roboto", 2, 14)); // NOI18N
+        fPark.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         fPark.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel3.add(fPark, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 180, 20));
 
-        fGas.setFont(new java.awt.Font("Roboto", 2, 14)); // NOI18N
+        fGas.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         fGas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel3.add(fGas, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 180, 20));
 
-        fLav.setFont(new java.awt.Font("Roboto", 2, 14)); // NOI18N
+        fLav.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         fLav.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel3.add(fLav, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 180, 20));
 
@@ -168,7 +170,6 @@ public class Ticket extends javax.swing.JDialog {
 
     private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
         this.setVisible(false);
-        this.getParent().setVisible(true);
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
@@ -185,7 +186,7 @@ public class Ticket extends javax.swing.JDialog {
                 tick = new javax.swing.JLabel();
                 tick.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/checked.png"))); // NOI18N
                 jPanel4.add(tick, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, -1, -1));
-                pago.setText("   ¡Pago completado!");
+                pago.setText("  ¡Pago completado!");
                 revalidate();
                 repaint();
                 pack();
@@ -197,6 +198,9 @@ public class Ticket extends javax.swing.JDialog {
 
     private void salirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirButtonActionPerformed
         this.setVisible(false);
+        Gasolinera.reset();
+        Lavadero.reset();
+        Reserva.reset();
         Inicio.prin.setVisible(true);
     }//GEN-LAST:event_salirButtonActionPerformed
 

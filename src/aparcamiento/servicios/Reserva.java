@@ -34,6 +34,7 @@ public class Reserva extends javax.swing.JDialog {
         this.dir = dir;
         this.precio = precio;
         this.name = name;
+        si=false;
         initComponents();
         jPanel1.remove(jPanel3);
     }
@@ -143,6 +144,7 @@ public class Reserva extends javax.swing.JDialog {
 
         aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
         aceptarButton.setText("Aceptar");
+        aceptarButton.setEnabled(false);
         aceptarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aceptarButtonActionPerformed(evt);
@@ -244,27 +246,34 @@ public class Reserva extends javax.swing.JDialog {
 
     private void aceptarButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButton1ActionPerformed
         resDate= new Date(System.currentTimeMillis());
+        si=true;
         this.setVisible(false);
-        this.getParent().setVisible(true);
     }//GEN-LAST:event_aceptarButton1ActionPerformed
 
+    public static boolean getSi() {return si;}
+    
     private void matKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_matKeyTyped
         if (mat.getText().length() >= 7) {
             evt.consume();
         }
+        if(!hor.getText().equals("")) aceptarButton.setEnabled(true);
     }//GEN-LAST:event_matKeyTyped
 
     private void horKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_horKeyTyped
         if (hor.getText().length() >= 3) {
             evt.consume();
         }
+        if(!mat.getText().equals("")) aceptarButton.setEnabled(true);
     }//GEN-LAST:event_horKeyTyped
 
     public static int getHoras() {return Integer.parseInt(hor.getText());}
+    
+    public static void reset() {si=false;}
     /**
      * @param args the command line arguments
      */
     public static Date resDate;
+    public static boolean si;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton1;
