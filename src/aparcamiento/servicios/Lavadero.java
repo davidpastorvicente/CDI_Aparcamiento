@@ -6,6 +6,7 @@
 package aparcamiento.servicios;
 
 import aparcamiento.parkings.Confirmacion1;
+import aparcamiento.parkings.Parking;
 import java.awt.Color;
 import java.util.Date;
 
@@ -14,13 +15,15 @@ import java.util.Date;
  * @author david
  */
 public class Lavadero extends javax.swing.JFrame {
-
+    Parking p;
     /**
      * Creates new form NewJFrame
+     * @param p
      */
-    public Lavadero() {
+    public Lavadero(Parking p) {
         totalLavadero=null;
         lavDate=null;
+        this.p=p;
         initComponents();
     }
 
@@ -342,11 +345,8 @@ public class Lavadero extends javax.swing.JFrame {
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
         totalLavadero = euros.getText();
-        Confirmacion1 conf = new Confirmacion1(this, true, false);
-        conf.setLocationRelativeTo(null);
-        getRootPane().getGlassPane().setVisible(true);
-        conf.setVisible(true);
-        getRootPane().getGlassPane().setVisible(false);
+        Confirmacion1 conf = new Confirmacion1(this, true, false, p);
+        p.activarSombra(conf);
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void emberButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emberButtonActionPerformed

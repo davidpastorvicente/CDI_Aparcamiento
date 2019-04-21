@@ -5,6 +5,14 @@
  */
 package aparcamiento;
 
+import java.awt.Font;
+import java.awt.FontFormatException;
+import java.awt.GraphicsEnvironment;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 
 /**
@@ -44,6 +52,16 @@ public class Main {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                GraphicsEnvironment ge= GraphicsEnvironment.getLocalGraphicsEnvironment();
+                try {
+                    InputStream is= Main.class.getResourceAsStream("../resources/Roboto-Regular.ttf");
+                    Font f = Font.createFont(Font.TRUETYPE_FONT, is);
+                    ge.registerFont(f);
+                } catch (FontFormatException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                }
                 JFrame i = new Inicio();
                 i.setLocationRelativeTo(null);
                 i.setVisible(true);

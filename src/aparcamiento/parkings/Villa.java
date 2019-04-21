@@ -5,17 +5,15 @@
  */
 package aparcamiento.parkings;
 
-import aparcamiento.Inicio;
 import aparcamiento.servicios.*;
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 
 /**
  *
  * @author david
  */
-public class Villa extends javax.swing.JFrame {
+public class Villa extends javax.swing.JFrame implements Parking {
 
     /**
      * Creates new form Principal
@@ -29,7 +27,7 @@ public class Villa extends javax.swing.JFrame {
             }
         });
         planta = "0";
-        gas = new Gasolinera().getPanel();
+        gas = new Gasolinera(this).getPanel();
         niv = new Nivel().getPanel();
         lib = new boolean[20];
         for (int i = 0; i < 20; i++) {
@@ -49,6 +47,7 @@ public class Villa extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         finalizarButton = new de.craften.ui.swingmaterial.MaterialButton();
         plazas = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -101,6 +100,8 @@ public class Villa extends javax.swing.JFrame {
         p20 = new javax.swing.JButton();
         parking = new javax.swing.JLabel();
         reservarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel12 = new javax.swing.JLabel();
+        leyenda = new de.craften.ui.swingmaterial.MaterialButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -129,14 +130,17 @@ public class Villa extends javax.swing.JFrame {
         jLabel1.setText("Parking \"Villablanca\"");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 400, -1));
 
-        finalizarButton.setText("Finalizar y pagar");
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pay.png"))); // NOI18N
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(985, 35, -1, -1));
+
+        finalizarButton.setText("          Finalizar y pagar");
         finalizarButton.setEnabled(false);
         finalizarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 finalizarButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(finalizarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 20, 190, 70));
+        jPanel2.add(finalizarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 20, 220, 70));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 100));
 
@@ -540,6 +544,18 @@ public class Villa extends javax.swing.JFrame {
         });
         plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
 
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/question.png"))); // NOI18N
+        plazas.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 414, -1, -1));
+
+        leyenda.setBackground(new java.awt.Color(204, 204, 204));
+        leyenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/question.png"))); // NOI18N
+        leyenda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                leyendaActionPerformed(evt);
+            }
+        });
+        plazas.add(leyenda, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 80, 70));
+
         getContentPane().add(plazas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
@@ -803,6 +819,14 @@ public class Villa extends javax.swing.JFrame {
         getRootPane().getGlassPane().setVisible(false);
     }//GEN-LAST:event_finalizarButtonActionPerformed
 
+    private void leyendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leyendaActionPerformed
+        Leyenda ley= new Leyenda(this, true);
+        ley.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        ley.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
+    }//GEN-LAST:event_leyendaActionPerformed
+
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
@@ -871,6 +895,8 @@ public class Villa extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -903,6 +929,7 @@ public class Villa extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private de.craften.ui.swingmaterial.MaterialButton leyenda;
     private de.craften.ui.swingmaterial.MaterialButton nivelButton;
     private javax.swing.JButton p1;
     private javax.swing.JButton p10;
@@ -933,4 +960,17 @@ public class Villa extends javax.swing.JFrame {
     private static javax.swing.JLabel precio;
     private de.craften.ui.swingmaterial.MaterialButton reservarButton;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void activarBoton() {
+        finalizarButton.setEnabled(true);
+    }
+
+    @Override
+    public void activarSombra(JDialog j) {
+        j.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        j.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
+    }
 }

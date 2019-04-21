@@ -15,16 +15,20 @@ import java.util.Date;
 public class Confirmacion1 extends javax.swing.JDialog {
 
     private boolean opc;
+    private Parking p;
 
     /**
      * Creates new form Registro
      *
      * @param parent
      * @param modal
+     * @param opc
+     * @param p
      */
-    public Confirmacion1(java.awt.Frame parent, boolean modal, boolean opc) {
+    public Confirmacion1(java.awt.Frame parent, boolean modal, boolean opc, Parking p) {
         super(parent, modal);
         initComponents();
+        this.p=p;
         this.opc = opc;
     }
 
@@ -103,13 +107,12 @@ public class Confirmacion1 extends javax.swing.JDialog {
             Gasolinera.gasDate = new Date(System.currentTimeMillis());
         else
             Lavadero.lavDate = new Date(System.currentTimeMillis());
+        p.activarBoton();
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    private double price;
-    private javax.swing.JLabel tick;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton cancelarButton;

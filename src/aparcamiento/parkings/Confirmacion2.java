@@ -101,8 +101,6 @@ public class Confirmacion2 extends javax.swing.JDialog {
     /**
      * @param args the command line arguments
      */
-    private double price;
-    private javax.swing.JLabel tick;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton cancelarButton;

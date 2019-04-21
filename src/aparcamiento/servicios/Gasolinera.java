@@ -6,6 +6,7 @@
 package aparcamiento.servicios;
 
 import aparcamiento.parkings.Confirmacion1;
+import aparcamiento.parkings.Parking;
 import java.awt.Color;
 import java.util.Date;
 
@@ -14,13 +15,15 @@ import java.util.Date;
  * @author david
  */
 public class Gasolinera extends javax.swing.JFrame {
-
+    Parking p;
     /**
      * Creates new form NewJFrame
+     * @param p
      */
-    public Gasolinera() {
+    public Gasolinera(Parking p) {
         totalCombustible = null;
         gasDate = null;
+        this.p=p;
         initComponents();
     }
 
@@ -247,11 +250,8 @@ public class Gasolinera extends javax.swing.JFrame {
         } else {
             totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
         }
-        Confirmacion1 conf = new Confirmacion1(this, true, true);
-        conf.setLocationRelativeTo(null);
-        getRootPane().getGlassPane().setVisible(true);
-        conf.setVisible(true);
-        getRootPane().getGlassPane().setVisible(false);
+        Confirmacion1 conf = new Confirmacion1(this, true, true, p);
+        p.activarSombra(conf);
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void efitecButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_efitecButtonActionPerformed

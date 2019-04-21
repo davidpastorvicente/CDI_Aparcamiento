@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/home/paqui/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/parkings/Amma.java</file>
-            <file>file:/home/paqui/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/parkings/Villa.java</file>
-            <file>file:/home/paqui/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/servicios/Ticket.java</file>
-            <file>file:/home/paqui/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/servicios/Reserva.java</file>
-            <file>file:/home/paqui/NetBeansProjects/CDI_Aparcamiento/src/aparcamiento/servicios/NotificacionTiempo.java</file>
-        </group>
-    </open-files>
-</project-private>
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
@@ -20,8 +5,11 @@
         <group>
             <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/parkings/Amma.java</file>
             <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/parkings/URJC.java</file>
+            <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/servicios/Lavadero.java</file>
             <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/parkings/Rosa.java</file>
+            <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/parkings/Confirmacion2.java</file>
             <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/servicios/Ticket.java</file>
+            <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/parkings/Confirmacion1.java</file>
             <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/parkings/Minerva.java</file>
             <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/servicios/Gasolinera.java</file>
             <file>file:/D:/Documentos/NetBeansProjects/Aparcamiento/src/aparcamiento/servicios/Reserva.java</file>
@@ -29,4 +17,3 @@
         </group>
     </open-files>
 </project-private>
->>>>>>> 322ebbd32638b1eb2582188de7c7e253ada8ec51
