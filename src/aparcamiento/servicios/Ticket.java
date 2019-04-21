@@ -124,6 +124,7 @@ public class Ticket extends javax.swing.JDialog {
         jPanel3.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
 
         park.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
+        park.setText("Sin reserva de plaza");
         park.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel3.add(park, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 300, 33));
 

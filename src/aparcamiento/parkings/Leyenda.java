@@ -68,7 +68,7 @@ public class Leyenda extends javax.swing.JDialog {
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 350, 33));
 
         cancelarButton.setBackground(new java.awt.Color(255, 51, 51));
-        cancelarButton.setText("Cancelar");
+        cancelarButton.setText("Atrás");
         cancelarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelarButtonActionPerformed(evt);
@@ -78,7 +78,7 @@ public class Leyenda extends javax.swing.JDialog {
 
         motos.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         motos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/lMotos.png"))); // NOI18N
-        motos.setText(" Motos");
+        motos.setText(" Moto");
         jPanel2.add(motos, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 85, -1, -1));
 
         minus.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
