@@ -8,6 +8,8 @@ package aparcamiento.parkings;
 import aparcamiento.servicios.*;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.util.Timer;
+import java.util.TimerTask;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 
@@ -37,6 +39,7 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         }
         initComponents();
         aux = plazas;
+        plazas.remove(cancelarButton);
     }
 
     /**
@@ -52,6 +55,10 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         jLabel1 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         finalizarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        tiempo = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
         plazas = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -105,6 +112,7 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -134,16 +142,32 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 400, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pay.png"))); // NOI18N
-        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(985, 35, -1, -1));
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(965, 35, -1, -1));
 
-        finalizarButton.setText("          Finalizar y pagar");
+        finalizarButton.setText("          Ver factura y pagar");
         finalizarButton.setEnabled(false);
         finalizarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 finalizarButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(finalizarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 20, 220, 70));
+        jPanel2.add(finalizarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 20, 240, 70));
+
+        jLabel46.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel2.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 30, 50, 20));
+
+        jLabel47.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel2.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, 190, 20));
+
+        tiempo.setFont(new java.awt.Font("Roboto", 1, 20)); // NOI18N
+        tiempo.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel2.add(tiempo, new org.netbeans.lib.awtextra.AbsoluteConstraints(804, 28, 90, 20));
+
+        jLabel48.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel2.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(897, 30, 40, 20));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 100));
 
@@ -568,6 +592,15 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         jLabel3.setText("Precio");
         plazas.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 362, 120, -1));
 
+        cancelarButton.setBackground(new java.awt.Color(255, 51, 51));
+        cancelarButton.setText("Cancelar reserva");
+        cancelarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelarButtonActionPerformed(evt);
+            }
+        });
+        plazas.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 390, 200, 70));
+
         getContentPane().add(plazas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
@@ -822,7 +855,72 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         getRootPane().getGlassPane().setVisible(true);
         rev.setVisible(true);
         getRootPane().getGlassPane().setVisible(false);
-        if(rev.getSi()) finalizarButton.setEnabled(true);
+        if (Reserva.getSi()) {
+            finalizarButton.setEnabled(true);
+            hora = 0;
+            min = 01;
+            seg = 01;
+            plazas.remove(reservarButton);
+            activarBotones(false);
+            sel.setEnabled(true);
+            plazas.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 390, 200, 70));
+            revalidate();
+            repaint();
+            pack();
+            jLabel46.setText("Queda");
+            jLabel47.setText("que estacione su vehículo");
+            jLabel48.setText("para");
+            timer = new Timer();
+            task = new TimerTask() {
+                @Override
+                public void run() {
+                    corriendo = true;
+                    if (seg > 0) {
+                        seg--;
+                    } else {
+                        seg = 59;
+                        if (min > 0) {
+                            min--;
+                        } else {
+                            min = 59;
+                            if (hora > 0) {
+                                hora--;
+                            } // si segundo = 0, minuto = 0 y hora = 0,
+                            // cancelamos el timer
+                            else {
+                                corriendo = false;
+                                timer.cancel();
+                                tiempo.setText("");
+                                jLabel46.setText("");
+                                jLabel47.setText("");
+                                jLabel48.setText("");
+                                reservarButton.setEnabled(false);
+                                confirmacion3();
+                                activarBotones(true);
+                                Reserva.reset();
+                                libre(sel);
+                                sel=null;
+                                plazas.remove(cancelarButton);
+                                plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
+                                repaint();
+                                revalidate();
+                                pack();
+                                if (Gasolinera.gasDate == null && Lavadero.lavDate == null) {
+                                    finalizarButton.setEnabled(false);
+                                }
+                                hora = 0;
+                                min = 01;
+                                seg = 01;
+                            }
+                        }
+                    }
+                    if (corriendo) {
+                        tiempo.setText(String.format("%02d", hora) + ":" + String.format("%02d", min) + ":" + String.format("%02d", seg));
+                    }
+                }
+            };
+            timer.schedule(task, 0, 1000);
+        }
     }//GEN-LAST:event_reservarButtonActionPerformed
 
     private void leyendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leyendaActionPerformed
@@ -840,6 +938,31 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         tik.setVisible(true);
         getRootPane().getGlassPane().setVisible(false);
     }//GEN-LAST:event_finalizarButtonActionPerformed
+
+    private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
+        corriendo = false;
+        timer.cancel();
+        tiempo.setText("");
+        jLabel46.setText("");
+        jLabel47.setText("");
+        jLabel48.setText("");
+        reservarButton.setEnabled(false);
+        activarBotones(true);
+        Reserva.reset();
+        libre(sel);
+        sel=null;
+        plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
+        repaint();
+        revalidate();
+        pack();
+        if (Gasolinera.gasDate == null && Lavadero.lavDate == null) {
+            finalizarButton.setEnabled(false);
+        }
+        hora = 0;
+        min = 01;
+        seg = 01;
+        plazas.remove(cancelarButton);
+    }//GEN-LAST:event_cancelarButtonActionPerformed
 
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
@@ -895,12 +1018,48 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         but.setToolTipText("Reservado");
     }
 
+    public void confirmacion3() {
+        Confirmacion3 conf= new Confirmacion3(this, true);
+        activarSombra(conf);
+    }
+
+    public void activarBotones(boolean i) {
+        p1.setEnabled(i);
+        p2.setEnabled(i);
+        p3.setEnabled(i);
+        p4.setEnabled(i);
+        p5.setEnabled(i);
+        p6.setEnabled(i);
+        p7.setEnabled(i);
+        p8.setEnabled(i);
+        p9.setEnabled(i);
+        p10.setEnabled(i);
+        p11.setEnabled(i);
+        p12.setEnabled(i);
+        p13.setEnabled(i);
+        p14.setEnabled(i);
+        p15.setEnabled(i);
+        p16.setEnabled(i);
+        p17.setEnabled(i);
+        p18.setEnabled(i);
+        p19.setEnabled(i);
+        p20.setEnabled(i);
+        planta0.setEnabled(i);
+        planta1.setEnabled(i);
+        planta2.setEnabled(i);
+    }
+    
     private String planta;
     private boolean[] lib;
     private javax.swing.JButton sel;
     private de.craften.ui.swingmaterial.MaterialPanel aux, lav, niv;
+    private boolean corriendo;
+    private int hora, min, seg;
+    private Timer timer;
+    private TimerTask task;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton atras;
+    private de.craften.ui.swingmaterial.MaterialButton cancelarButton;
     private static javax.swing.JLabel direccion;
     public static de.craften.ui.swingmaterial.MaterialButton finalizarButton;
     private javax.swing.JLabel ind1;
@@ -932,6 +1091,9 @@ public class Rosa extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
+    private static javax.swing.JLabel jLabel46;
+    private static javax.swing.JLabel jLabel47;
+    private static javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -973,6 +1135,7 @@ public class Rosa extends javax.swing.JFrame implements Parking {
     private de.craften.ui.swingmaterial.MaterialButton plazasButton;
     private static javax.swing.JLabel precio;
     private de.craften.ui.swingmaterial.MaterialButton reservarButton;
+    private static javax.swing.JLabel tiempo;
     // End of variables declaration//GEN-END:variables
 
     @Override

@@ -71,7 +71,7 @@ public class Reserva extends javax.swing.JDialog {
         hor = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel13 = new javax.swing.JLabel();
         cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
-        aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        confirmarButton = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -80,8 +80,7 @@ public class Reserva extends javax.swing.JDialog {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        volverButton = new de.craften.ui.swingmaterial.MaterialButton();
-        aceptarButton1 = new de.craften.ui.swingmaterial.MaterialButton();
+        aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -104,7 +103,7 @@ public class Reserva extends javax.swing.JDialog {
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 250, 33));
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel2.setText("Matrícula:");
+        jLabel2.setText("Matrícula del vehículo:");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, 20));
 
         mat.setAccent(new java.awt.Color(0, 153, 153));
@@ -114,11 +113,11 @@ public class Reserva extends javax.swing.JDialog {
                 matKeyTyped(evt);
             }
         });
-        jPanel2.add(mat, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 70, 60));
+        jPanel2.add(mat, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 70, 60));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel3.setText("Número de horas de estacionamiento:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 240, 20));
+        jLabel3.setText("Nº de horas de estacionamiento:");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 210, 20));
 
         hor.setAccent(new java.awt.Color(0, 153, 153));
         hor.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -127,7 +126,7 @@ public class Reserva extends javax.swing.JDialog {
                 horKeyTyped(evt);
             }
         });
-        jPanel2.add(hor, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, 30, 60));
+        jPanel2.add(hor, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 200, 30, 60));
 
         jLabel13.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel13.setText("Compruebe los detalles de la reserva:");
@@ -142,15 +141,15 @@ public class Reserva extends javax.swing.JDialog {
         });
         jPanel2.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 140, 70));
 
-        aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
-        aceptarButton.setText("Aceptar");
-        aceptarButton.setEnabled(false);
-        aceptarButton.addActionListener(new java.awt.event.ActionListener() {
+        confirmarButton.setBackground(new java.awt.Color(0, 102, 0));
+        confirmarButton.setText("Confirmar");
+        confirmarButton.setEnabled(false);
+        confirmarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                aceptarButtonActionPerformed(evt);
+                confirmarButtonActionPerformed(evt);
             }
         });
-        jPanel2.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
+        jPanel2.add(confirmarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
 
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel4.setText("Tipo: " + getTipoPlaza(sel));
@@ -180,27 +179,18 @@ public class Reserva extends javax.swing.JDialog {
         jLabel7.setText("Precio: " + precio);
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 270, 20));
 
-        jLabel15.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         jLabel15.setText("¡Tu reserva se ha realizado con éxito!");
-        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 290, 33));
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 10, 340, 33));
 
-        volverButton.setBackground(new java.awt.Color(255, 51, 51));
-        volverButton.setText("Volver");
-        volverButton.addActionListener(new java.awt.event.ActionListener() {
+        aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
+        aceptarButton.setText("Aceptar");
+        aceptarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                volverButtonActionPerformed(evt);
+                aceptarButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(volverButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 140, 70));
-
-        aceptarButton1.setBackground(new java.awt.Color(0, 102, 0));
-        aceptarButton1.setText("Aceptar");
-        aceptarButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                aceptarButton1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(aceptarButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
+        jPanel3.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 140, 70));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel8.setText("Tipo: " + getTipoPlaza(sel));
@@ -228,27 +218,19 @@ public class Reserva extends javax.swing.JDialog {
         this.getParent().setVisible(true);
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
-    private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
+    private void confirmarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmarButtonActionPerformed
         jPanel1.remove(jPanel2);
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
         revalidate();
         repaint();
         pack();
-    }//GEN-LAST:event_aceptarButtonActionPerformed
+    }//GEN-LAST:event_confirmarButtonActionPerformed
 
-    private void volverButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_volverButtonActionPerformed
-        jPanel1.remove(jPanel3);
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 340));
-        revalidate();
-        repaint();
-        pack();
-    }//GEN-LAST:event_volverButtonActionPerformed
-
-    private void aceptarButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButton1ActionPerformed
+    private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
         resDate= new Date(System.currentTimeMillis());
         si=true;
         this.setVisible(false);
-    }//GEN-LAST:event_aceptarButton1ActionPerformed
+    }//GEN-LAST:event_aceptarButtonActionPerformed
 
     public static boolean getSi() {return si;}
     
@@ -256,14 +238,14 @@ public class Reserva extends javax.swing.JDialog {
         if (mat.getText().length() >= 7) {
             evt.consume();
         }
-        if(!hor.getText().equals("")) aceptarButton.setEnabled(true);
+        if(!hor.getText().equals("")) confirmarButton.setEnabled(true);
     }//GEN-LAST:event_matKeyTyped
 
     private void horKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_horKeyTyped
         if (hor.getText().length() >= 3) {
             evt.consume();
         }
-        if(!mat.getText().equals("")) aceptarButton.setEnabled(true);
+        if(!mat.getText().equals("")) confirmarButton.setEnabled(true);
     }//GEN-LAST:event_horKeyTyped
 
     public static int getHoras() {return Integer.parseInt(hor.getText());}
@@ -276,8 +258,8 @@ public class Reserva extends javax.swing.JDialog {
     public static boolean si;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
-    private de.craften.ui.swingmaterial.MaterialButton aceptarButton1;
     private de.craften.ui.swingmaterial.MaterialButton cancelarButton;
+    private de.craften.ui.swingmaterial.MaterialButton confirmarButton;
     private static de.craften.ui.swingmaterial.MaterialTextField hor;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
@@ -297,6 +279,5 @@ public class Reserva extends javax.swing.JDialog {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator1;
     private de.craften.ui.swingmaterial.MaterialTextField mat;
-    private de.craften.ui.swingmaterial.MaterialButton volverButton;
     // End of variables declaration//GEN-END:variables
 }
