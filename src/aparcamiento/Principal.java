@@ -6,6 +6,9 @@
 package aparcamiento;
 
 import aparcamiento.parkings.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 /**
@@ -18,6 +21,13 @@ public class Principal extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Principal() {
+        getRootPane().setGlassPane(new JComponent() {
+            public void paintComponent(Graphics g) {
+                g.setColor(new Color(0, 0, 0, 100));
+                g.fillRect(0, 0, getWidth(), getHeight());
+                super.paintComponent(g);
+            }
+        });
         initComponents();
 
     }
@@ -36,10 +46,15 @@ public class Principal extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        atras = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        sesion = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        salir = new de.craften.ui.swingmaterial.MaterialButton();
         materialPanel1 = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel3 = new javax.swing.JLabel();
         iMinerva = new javax.swing.JLabel();
@@ -95,14 +110,22 @@ public class Principal extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, -1));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/logout.png"))); // NOI18N
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, -1, -1));
 
-        atras.addActionListener(new java.awt.event.ActionListener() {
+        jLabel14.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel14.setText("CERRAR");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 378, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel15.setText("SESIÓN");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(135, 397, -1, -1));
+
+        sesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                atrasActionPerformed(evt);
+                sesionActionPerformed(evt);
             }
         });
-        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
+        jPanel1.add(sesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 150, 80));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/avatar (2).png"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
@@ -116,6 +139,20 @@ public class Principal extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText(Inicio.name);
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
+
+        jLabel18.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel18.setText("SALIR");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 447, -1, -1));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/cancel.png"))); // NOI18N
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
+
+        salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirActionPerformed(evt);
+            }
+        });
+        jPanel1.add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 150, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
@@ -518,9 +555,21 @@ public class Principal extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_iAmmaMouseClicked
 
-    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_atrasActionPerformed
+    private void sesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sesionActionPerformed
+        CerrarSesion conf= new CerrarSesion(this, true);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
+    }//GEN-LAST:event_sesionActionPerformed
+
+    private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
+        Salida conf= new Salida(this, true);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
+    }//GEN-LAST:event_salirActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Amma;
@@ -533,7 +582,6 @@ public class Principal extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton URJCArea;
     private javax.swing.JLabel Villa;
     private de.craften.ui.swingmaterial.MaterialButton VilllaArea;
-    private de.craften.ui.swingmaterial.MaterialButton atras;
     private javax.swing.JLabel iAmma;
     private javax.swing.JLabel iMinerva;
     private javax.swing.JLabel iRosa;
@@ -544,8 +592,12 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel26;
@@ -565,5 +617,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel p15;
     private javax.swing.JLabel p7;
     private javax.swing.JLabel p9;
+    private de.craften.ui.swingmaterial.MaterialButton salir;
+    private de.craften.ui.swingmaterial.MaterialButton sesion;
     // End of variables declaration//GEN-END:variables
 }

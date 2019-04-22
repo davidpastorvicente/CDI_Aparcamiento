@@ -5,6 +5,9 @@
  */
 package aparcamiento;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 
@@ -21,6 +24,13 @@ public class Inicio extends javax.swing.JFrame {
      * Creates new form inicio
      */
     public Inicio() {
+        getRootPane().setGlassPane(new JComponent() {
+            public void paintComponent(Graphics g) {
+                g.setColor(new Color(0, 0, 0, 100));
+                g.fillRect(0, 0, getWidth(), getHeight());
+                super.paintComponent(g);
+            }
+        });
         incorLabel = new javax.swing.JLabel();
         name = "Administrador";
         email = "admin@upm.es";
@@ -108,11 +118,6 @@ public class Inicio extends javax.swing.JFrame {
         pwdField.setForeground(new java.awt.Color(255, 255, 255));
         pwdField.setAccent(new java.awt.Color(0, 153, 153));
         pwdField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        pwdField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pwdFieldActionPerformed(evt);
-            }
-        });
         jPanel2.add(pwdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 170, 60));
 
         noCButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -138,22 +143,24 @@ public class Inicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void pwdFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwdFieldActionPerformed
-
-    }//GEN-LAST:event_pwdFieldActionPerformed
-
     private void inicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicButtonActionPerformed
-        if (!(userField.getText().equals(usuario) && pwdField.getText().equals(passwd))) {
+        if (userField.getText().equals(usuario) && pwdField.getText().equals(passwd)) {
+            prin = new Principal();
+            this.setVisible(false);
+            prin.setLocationRelativeTo(null);
+            prin.setVisible(true);
+        } else if (userField.getText().equals("admin") && pwdField.getText().equals("1234")) {
+            prin = new Principal();
+            this.setVisible(false);
+            prin.setLocationRelativeTo(null);
+            prin.setVisible(true);
+        }
+        else {
             incorLabel.setFont(new java.awt.Font("Roboto Regular", 1, 14)); // NOI18N
             incorLabel.setForeground(new java.awt.Color(153, 0, 0));
             incorLabel.setText("¡Usuario incorrecto! Vuelva a intentarlo.");
             jPanel2.add(incorLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
             this.pack();
-        } else {
-            prin = new Principal();
-            this.setVisible(false);
-            prin.setLocationRelativeTo(null);
-            prin.setVisible(true);
         }
 
     }//GEN-LAST:event_inicButtonActionPerformed
@@ -166,7 +173,11 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_regButtonActionPerformed
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
-        System.exit(0);
+        Salida conf= new Salida(this, true);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
     }//GEN-LAST:event_atrasActionPerformed
 
     private javax.swing.JLabel incorLabel;

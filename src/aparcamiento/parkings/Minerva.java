@@ -1443,5 +1443,10 @@ public class Minerva extends javax.swing.JFrame implements Parking {
         getRootPane().getGlassPane().setVisible(true);
         j.setVisible(true);
         getRootPane().getGlassPane().setVisible(false);
+    }   
+    
+    @Override
+    public void parar() {
+        timer.cancel();
     }
 }

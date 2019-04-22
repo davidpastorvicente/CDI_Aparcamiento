@@ -1412,4 +1412,9 @@ public class Amma extends javax.swing.JFrame implements Parking {
         j.setVisible(true);
         getRootPane().getGlassPane().setVisible(false);
     }
+
+    @Override
+    public void parar() {
+        timer.cancel();
+    }
 }

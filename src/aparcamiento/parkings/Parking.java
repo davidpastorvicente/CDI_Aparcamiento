@@ -14,4 +14,5 @@ import javax.swing.JDialog;
 public interface Parking {
     public abstract void activarBoton();
     public abstract void activarSombra(JDialog j);
+    public abstract void parar();
 }

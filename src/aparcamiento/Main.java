@@ -8,7 +8,6 @@ package aparcamiento;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.logging.Level;
@@ -20,7 +19,7 @@ import javax.swing.JFrame;
  * @author david
  */
 public class Main {
-
+    public static JFrame inic;
     /**
      * @param args the command line arguments
      */
@@ -62,9 +61,9 @@ public class Main {
                 } catch (IOException ex) {
                     Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                JFrame i = new Inicio();
-                i.setLocationRelativeTo(null);
-                i.setVisible(true);
+                inic = new Inicio();
+                inic.setLocationRelativeTo(null);
+                inic.setVisible(true);
             }
         });
     }

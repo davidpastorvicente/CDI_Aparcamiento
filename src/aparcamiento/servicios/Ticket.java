@@ -6,6 +6,7 @@
 package aparcamiento.servicios;
 
 import aparcamiento.Inicio;
+import aparcamiento.parkings.Parking;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
@@ -16,17 +17,19 @@ import javax.swing.Timer;
  * @author david
  */
 public class Ticket extends javax.swing.JDialog {
-
+    Parking p;
     /**
      * Creates new form Registro
      *
      * @param parent
      * @param modal
+     * @param pz
      */
     public Ticket(java.awt.Frame parent, boolean modal, double pz) {
         super(parent, modal);
         initComponents();
         jPanel1.remove(jPanel4);
+        this.p=(Parking) parent;
         price = 0;
         SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
         if (Reserva.getSi()) {
@@ -199,6 +202,8 @@ public class Ticket extends javax.swing.JDialog {
 
     private void salirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirButtonActionPerformed
         this.setVisible(false);
+        this.getParent().setVisible(false);
+        p.parar();
         Gasolinera.reset();
         Lavadero.reset();
         Reserva.reset();
