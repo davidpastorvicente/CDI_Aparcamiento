@@ -60,24 +60,6 @@ public class URJC extends javax.swing.JFrame implements Parking {
         jLabel47 = new javax.swing.JLabel();
         tiempo = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        atras = new de.craften.ui.swingmaterial.MaterialButton();
-        gasolineraButton = new de.craften.ui.swingmaterial.MaterialButton();
-        lavaderoButton = new de.craften.ui.swingmaterial.MaterialButton();
-        nivelButton = new de.craften.ui.swingmaterial.MaterialButton();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        plazasButton = new de.craften.ui.swingmaterial.MaterialButton();
-        ind2 = new javax.swing.JLabel();
-        ind1 = new javax.swing.JLabel();
         plazas = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -149,6 +131,25 @@ public class URJC extends javax.swing.JFrame implements Parking {
         jLabel15 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        gasolineraButton = new de.craften.ui.swingmaterial.MaterialButton();
+        lavaderoButton = new de.craften.ui.swingmaterial.MaterialButton();
+        nivelButton = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        plazasButton = new de.craften.ui.swingmaterial.MaterialButton();
+        ind2 = new javax.swing.JLabel();
+        ind1 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -190,95 +191,6 @@ public class URJC extends javax.swing.JFrame implements Parking {
         jPanel2.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(897, 30, 40, 20));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1190, 100));
-
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel3.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
-        jLabel3.setText(" Gasolinera");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/lavadero-de-coches (1).png"))); // NOI18N
-        jLabel4.setText(" Lavadero");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/presion (1).png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 310, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/aceite (1) (1).png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 335, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
-        jLabel7.setText("Nivel de aire");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 310, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
-        jLabel8.setText("y aceite");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 340, -1, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
-
-        atras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                atrasActionPerformed(evt);
-            }
-        });
-        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
-
-        gasolineraButton.setBackground(new java.awt.Color(0, 160, 160));
-        gasolineraButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gasolineraButtonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(gasolineraButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 220, 100));
-
-        lavaderoButton.setBackground(new java.awt.Color(0, 160, 160));
-        lavaderoButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lavaderoButtonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(lavaderoButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 220, 100));
-
-        nivelButton.setBackground(new java.awt.Color(0, 160, 160));
-        nivelButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nivelButtonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(nivelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 220, 110));
-
-        jLabel10.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/plaza.png"))); // NOI18N
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
-
-        jLabel11.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
-        jLabel11.setText("de plazas");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 65, -1, -1));
-
-        jLabel12.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
-        jLabel12.setText("Reserva");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, -1));
-
-        plazasButton.setBackground(new java.awt.Color(0, 160, 160));
-        plazasButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                plazasButtonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(plazasButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
-
-        ind2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/indicador.png"))); // NOI18N
-        jPanel1.add(ind2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 10, -1));
-
-        ind1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/indicador.png"))); // NOI18N
-        jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         plazas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -924,16 +836,101 @@ public class URJC extends javax.swing.JFrame implements Parking {
 
         getContentPane().add(plazas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
+        jLabel3.setText(" Gasolinera");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/lavadero-de-coches (1).png"))); // NOI18N
+        jLabel4.setText(" Lavadero");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/presion (1).png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 310, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/aceite (1) (1).png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 335, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel7.setText("Nivel de aire");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 310, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel8.setText("y aceite");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 340, -1, -1));
+
+        gasolineraButton.setBackground(new java.awt.Color(0, 160, 160));
+        gasolineraButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gasolineraButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(gasolineraButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 220, 100));
+
+        lavaderoButton.setBackground(new java.awt.Color(0, 160, 160));
+        lavaderoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lavaderoButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(lavaderoButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 220, 100));
+
+        nivelButton.setBackground(new java.awt.Color(0, 160, 160));
+        nivelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nivelButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(nivelButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 220, 110));
+
+        jLabel10.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/plaza.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel11.setText("de plazas");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 65, -1, -1));
+
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
+        jLabel12.setText("Reserva");
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, -1));
+
+        plazasButton.setBackground(new java.awt.Color(0, 160, 160));
+        plazasButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plazasButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(plazasButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 220, 100));
+
+        ind2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/indicador.png"))); // NOI18N
+        jPanel1.add(ind2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 10, -1));
+
+        ind1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/indicador.png"))); // NOI18N
+        jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 439, -1, -1));
+
+        jLabel37.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
+        jLabel37.setText("ATRÁS");
+        jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 447, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 150, 80));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
-        Confirmacion2 conf = new Confirmacion2(this, true);
-        conf.setLocationRelativeTo(null);
-        getRootPane().getGlassPane().setVisible(true);
-        conf.setVisible(true);
-        getRootPane().getGlassPane().setVisible(false);
-    }//GEN-LAST:event_atrasActionPerformed
 
     private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
         if (aux != gas) {
@@ -1432,6 +1429,14 @@ public class URJC extends javax.swing.JFrame implements Parking {
         plazas.remove(cancelarButton);
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        Confirmacion2 conf = new Confirmacion2(this, true);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
+    }//GEN-LAST:event_atrasActionPerformed
+
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
@@ -1557,6 +1562,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
@@ -1577,6 +1583,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private static javax.swing.JLabel jLabel46;
     private static javax.swing.JLabel jLabel47;
@@ -1585,7 +1592,6 @@ public class URJC extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;

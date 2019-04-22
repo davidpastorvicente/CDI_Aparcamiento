@@ -119,8 +119,6 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        atras = new de.craften.ui.swingmaterial.MaterialButton();
         nivelButton = new de.craften.ui.swingmaterial.MaterialButton();
         lavaderoButton = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel10 = new javax.swing.JLabel();
@@ -129,6 +127,9 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         plazasButton = new de.craften.ui.swingmaterial.MaterialButton();
         ind2 = new javax.swing.JLabel();
         ind1 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -625,16 +626,6 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         jLabel8.setText("y aceite");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
-
-        atras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                atrasActionPerformed(evt);
-            }
-        });
-        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
-
         nivelButton.setBackground(new java.awt.Color(0, 160, 160));
         nivelButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -677,18 +668,24 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         ind1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/indicador.png"))); // NOI18N
         jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
 
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 439, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
+        jLabel29.setText("ATRÁS");
+        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 447, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 150, 80));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
-        Confirmacion2 conf = new Confirmacion2(this, true);
-        conf.setLocationRelativeTo(null);
-        getRootPane().getGlassPane().setVisible(true);
-        conf.setVisible(true);
-        getRootPane().getGlassPane().setVisible(false);
-    }//GEN-LAST:event_atrasActionPerformed
 
     private void nivelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelButtonActionPerformed
         if (aux != niv) {
@@ -964,6 +961,14 @@ public class Rosa extends javax.swing.JFrame implements Parking {
         plazas.remove(cancelarButton);
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        Confirmacion2 conf = new Confirmacion2(this, true);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
+    }//GEN-LAST:event_atrasActionPerformed
+
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
@@ -1070,6 +1075,7 @@ public class Rosa extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -1083,6 +1089,7 @@ public class Rosa extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -1098,7 +1105,6 @@ public class Rosa extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;

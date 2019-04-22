@@ -20,9 +20,7 @@ public class Registro extends javax.swing.JDialog {
     public Registro(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        pagoOpc.add(paypalButton);
-        pagoOpc.add(tarjetaButton);
-        tarjetaButton.setSelected(true);
+        opc = true;
     }
 
     /**
@@ -34,7 +32,6 @@ public class Registro extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        pagoOpc = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         nombre = new de.craften.ui.swingmaterial.MaterialTextField();
@@ -85,15 +82,17 @@ public class Registro extends javax.swing.JDialog {
                 nombreKeyTyped(evt);
             }
         });
-        jPanel2.add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 110, 69));
+        jPanel2.add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 110, 60));
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Nombre:");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 60, 33));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 70, 20));
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Apellidos:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 33));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 20));
 
         apell.setAccent(new java.awt.Color(0, 153, 153));
         apell.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -102,19 +101,21 @@ public class Registro extends javax.swing.JDialog {
                 apellKeyTyped(evt);
             }
         });
-        jPanel2.add(apell, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 140, 69));
+        jPanel2.add(apell, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 140, 60));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel3.setText("Correo:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 50, 33));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Email:");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 50, 20));
 
         email.setAccent(new java.awt.Color(0, 153, 153));
         email.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 220, 69));
+        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 220, 60));
 
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Móvil:");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 40, 33));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 40, 20));
 
         movil.setAccent(new java.awt.Color(0, 153, 153));
         movil.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -123,7 +124,7 @@ public class Registro extends javax.swing.JDialog {
                 movilKeyTyped(evt);
             }
         });
-        jPanel2.add(movil, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 80, 69));
+        jPanel2.add(movil, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 80, 60));
 
         jLabel13.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel13.setText("Rellene los siguientes campos de texto:");
@@ -141,7 +142,7 @@ public class Registro extends javax.swing.JDialog {
                 cadAnioKeyTyped(evt);
             }
         });
-        jPanel3.add(cadAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 20, 70));
+        jPanel3.add(cadAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 153, 20, 60));
 
         numTarjeta.setAccent(new java.awt.Color(0, 153, 153));
         numTarjeta.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -150,7 +151,7 @@ public class Registro extends javax.swing.JDialog {
                 numTarjetaKeyTyped(evt);
             }
         });
-        jPanel3.add(numTarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 170, 60));
+        jPanel3.add(numTarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 92, 170, 60));
 
         CVC.setAccent(new java.awt.Color(0, 153, 153));
         CVC.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -158,11 +159,8 @@ public class Registro extends javax.swing.JDialog {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 CVCKeyTyped(evt);
             }
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                CVCKeyPressed(evt);
-            }
         });
-        jPanel3.add(CVC, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 30, 70));
+        jPanel3.add(CVC, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 153, 30, 60));
 
         cadMes.setAccent(new java.awt.Color(0, 153, 153));
         cadMes.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -171,7 +169,7 @@ public class Registro extends javax.swing.JDialog {
                 cadMesKeyTyped(evt);
             }
         });
-        jPanel3.add(cadMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 20, 70));
+        jPanel3.add(cadMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 153, 20, 60));
 
         CancelarButton.setBackground(new java.awt.Color(255, 51, 51));
         CancelarButton.setText("Cancelar");
@@ -201,11 +199,12 @@ public class Registro extends javax.swing.JDialog {
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel7.setText("CVV/CVC:");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 70, 33));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 183, 70, 20));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("/");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 10, 30));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 30, 30));
 
         jLabel9.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel9.setText("Fecha de");
@@ -213,7 +212,7 @@ public class Registro extends javax.swing.JDialog {
 
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel10.setText("Número de tarjeta:");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 130, 33));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 130, 20));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/credit card.png"))); // NOI18N
         jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
@@ -282,6 +281,7 @@ public class Registro extends javax.swing.JDialog {
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void tarjetaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tarjetaButtonActionPerformed
+        opc = true;
         tarjetaButton.setFont(new java.awt.Font("Roboto Medium", 1, 14)); // NOI18N
         paypalButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         paypalButton.setBackground(new java.awt.Color(204, 204, 204));
@@ -326,18 +326,19 @@ public class Registro extends javax.swing.JDialog {
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel10.setText("Número de tarjeta:");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 130, 33));
-
+        numTarjeta.setText("");
         jPanel3.revalidate();
         jPanel3.repaint();
         pack();
     }//GEN-LAST:event_tarjetaButtonActionPerformed
 
     private void paypalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paypalButtonActionPerformed
+        opc = false;
         tarjetaButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         paypalButton.setFont(new java.awt.Font("Roboto Medium", 1, 14)); // NOI18N
         tarjetaButton.setBackground(new java.awt.Color(204, 204, 204));
         paypalButton.setBackground(new java.awt.Color(102, 102, 102));
-
+        numTarjeta.setText("");
         jPanel3.remove(jLabel5);
         jPanel3.remove(jLabel7);
         jPanel3.remove(jLabel8);
@@ -347,7 +348,6 @@ public class Registro extends javax.swing.JDialog {
         jPanel3.remove(jLabel9);
 
         jLabel10.setText("Número de cuenta:");
-        numTarjeta.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
 
         jPanel3.revalidate();
         jPanel3.repaint();
@@ -355,10 +355,13 @@ public class Registro extends javax.swing.JDialog {
     }//GEN-LAST:event_paypalButtonActionPerformed
 
     private void movilKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_movilKeyTyped
-        char c=evt.getKeyChar();
-        if (movil.getText().length() >= 9 || !Character.isDigit(c)) {
-            evt.consume();
+        char c = evt.getKeyChar();
+        if (opc) {
+            if (movil.getText().length() >= 9 || !Character.isDigit(c)) {
+                evt.consume();
+            }
         }
+
     }//GEN-LAST:event_movilKeyTyped
 
     private void icon1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_icon1ActionPerformed
@@ -369,49 +372,52 @@ public class Registro extends javax.swing.JDialog {
         paypalButtonActionPerformed(evt);
     }//GEN-LAST:event_icon2ActionPerformed
 
-    private void CVCKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CVCKeyPressed
-        if (CVC.getText().length() >= 3) {
-            evt.consume();
-        }
-    }//GEN-LAST:event_CVCKeyPressed
-
     private void cadMesKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cadMesKeyTyped
-        char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (cadMes.getText().length() >= 2 || !Character.isDigit(c)) {
             evt.consume();
         }
     }//GEN-LAST:event_cadMesKeyTyped
 
     private void cadAnioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cadAnioKeyTyped
-        char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (cadAnio.getText().length() >= 2 || !Character.isDigit(c)) {
             evt.consume();
         }
     }//GEN-LAST:event_cadAnioKeyTyped
 
     private void nombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nombreKeyTyped
-        char c=evt.getKeyChar();
-        if(Character.isDigit(c))evt.consume();
+        char c = evt.getKeyChar();
+        if (Character.isDigit(c))
+            evt.consume();
     }//GEN-LAST:event_nombreKeyTyped
 
     private void apellKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_apellKeyTyped
-        char c=evt.getKeyChar();
-        if(Character.isDigit(c))evt.consume();
+        char c = evt.getKeyChar();
+        if (Character.isDigit(c))
+            evt.consume();
     }//GEN-LAST:event_apellKeyTyped
 
     private void numTarjetaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_numTarjetaKeyTyped
-        char c=evt.getKeyChar();
-        if(!Character.isDigit(c) || numTarjeta.getText().length()>=16)evt.consume();
+        char c = evt.getKeyChar();
+        if (opc) {
+            if (!Character.isDigit(c) || numTarjeta.getText().length() >= 16) {
+                evt.consume();
+            }
+        } else if (numTarjeta.getText().length() >= 30)
+            evt.consume();
     }//GEN-LAST:event_numTarjetaKeyTyped
 
     private void CVCKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CVCKeyTyped
-        char c=evt.getKeyChar();
-        if(!Character.isDigit(c))evt.consume();
+        char c = evt.getKeyChar();
+        if (!Character.isDigit(c) || CVC.getText().length() >= 3)
+            evt.consume();
     }//GEN-LAST:event_CVCKeyTyped
 
     /**
      * @param args the command line arguments
      */
+    boolean opc;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialTextField CVC;
     private de.craften.ui.swingmaterial.MaterialButton CancelarButton;
@@ -441,7 +447,6 @@ public class Registro extends javax.swing.JDialog {
     private de.craften.ui.swingmaterial.MaterialTextField movil;
     private de.craften.ui.swingmaterial.MaterialTextField nombre;
     private de.craften.ui.swingmaterial.MaterialTextField numTarjeta;
-    private javax.swing.ButtonGroup pagoOpc;
     private de.craften.ui.swingmaterial.MaterialButton paypalButton;
     private de.craften.ui.swingmaterial.MaterialButton tarjetaButton;
     // End of variables declaration//GEN-END:variables

@@ -130,8 +130,6 @@ public class Minerva extends javax.swing.JFrame implements Parking {
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        atras = new de.craften.ui.swingmaterial.MaterialButton();
         gasolineraButton = new de.craften.ui.swingmaterial.MaterialButton();
         lavaderoButton = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel5 = new javax.swing.JLabel();
@@ -140,6 +138,9 @@ public class Minerva extends javax.swing.JFrame implements Parking {
         plazasButton = new de.craften.ui.swingmaterial.MaterialButton();
         ind2 = new javax.swing.JLabel();
         ind1 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        atras = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -806,16 +807,6 @@ public class Minerva extends javax.swing.JFrame implements Parking {
         jLabel4.setText(" Lavadero");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
-
-        atras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                atrasActionPerformed(evt);
-            }
-        });
-        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
-
         gasolineraButton.setBackground(new java.awt.Color(0, 160, 160));
         gasolineraButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -858,18 +849,24 @@ public class Minerva extends javax.swing.JFrame implements Parking {
         ind1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/indicador.png"))); // NOI18N
         jPanel1.add(ind1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, -1, -1));
 
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 439, -1, -1));
+
+        jLabel29.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
+        jLabel29.setText("ATRÁS");
+        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 447, -1, -1));
+
+        atras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atrasActionPerformed(evt);
+            }
+        });
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 150, 80));
+
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 92, 220, 500));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
-        Confirmacion2 conf = new Confirmacion2(this, true);
-        conf.setLocationRelativeTo(null);
-        getRootPane().getGlassPane().setVisible(true);
-        conf.setVisible(true);
-        getRootPane().getGlassPane().setVisible(false);
-    }//GEN-LAST:event_atrasActionPerformed
 
     private void gasolineraButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gasolineraButtonActionPerformed
         if (aux != gas) {
@@ -1233,6 +1230,14 @@ public class Minerva extends javax.swing.JFrame implements Parking {
         plazas.remove(cancelarButton);
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
+    private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
+        Confirmacion2 conf = new Confirmacion2(this, true);
+        conf.setLocationRelativeTo(null);
+        getRootPane().getGlassPane().setVisible(true);
+        conf.setVisible(true);
+        getRootPane().getGlassPane().setVisible(false);
+    }//GEN-LAST:event_atrasActionPerformed
+
     private void libre(javax.swing.JButton but) {
         switch (but.getMnemonic()) {
             case 0:
@@ -1352,6 +1357,7 @@ public class Minerva extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -1365,6 +1371,7 @@ public class Minerva extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -1379,7 +1386,6 @@ public class Minerva extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;

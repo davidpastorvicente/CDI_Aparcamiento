@@ -140,12 +140,12 @@ public class Principal extends javax.swing.JFrame {
         jLabel10.setText(Inicio.name);
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         jLabel18.setText("SALIR");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 447, -1, -1));
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/cancel.png"))); // NOI18N
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, -1, -1));
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 439, -1, -1));
 
         salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -127,6 +127,7 @@ public class Amma extends javax.swing.JFrame implements Parking {
         reservarButton = new de.craften.ui.swingmaterial.MaterialButton();
         cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         jPanel1 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         atras = new de.craften.ui.swingmaterial.MaterialButton();
@@ -794,20 +795,24 @@ public class Amma extends javax.swing.JFrame implements Parking {
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel29.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
+        jLabel29.setText("ATRÁS");
+        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 447, -1, -1));
+
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 22)); // NOI18N
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
         jLabel10.setText(" Gasolinera");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/left-arrow.png"))); // NOI18N
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, -1, -1));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 439, -1, -1));
 
         atras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 atrasActionPerformed(evt);
             }
         });
-        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, 90, 80));
+        jPanel1.add(atras, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 150, 80));
 
         gasolineraButton.setBackground(new java.awt.Color(0, 160, 160));
         gasolineraButton.addActionListener(new java.awt.event.ActionListener() {
@@ -1337,6 +1342,7 @@ public class Amma extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
