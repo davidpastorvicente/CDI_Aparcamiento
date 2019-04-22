@@ -37,6 +37,7 @@ public class Reserva extends javax.swing.JDialog {
         si=false;
         initComponents();
         jPanel1.remove(jPanel3);
+        
     }
 
     public String getTipoPlaza(javax.swing.JButton sel) {
@@ -121,6 +122,11 @@ public class Reserva extends javax.swing.JDialog {
 
         hor.setAccent(new java.awt.Color(0, 153, 153));
         hor.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        hor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                horActionPerformed(evt);
+            }
+        });
         hor.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 horKeyTyped(evt);
@@ -242,11 +248,16 @@ public class Reserva extends javax.swing.JDialog {
     }//GEN-LAST:event_matKeyTyped
 
     private void horKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_horKeyTyped
-        if (hor.getText().length() >= 3) {
+        char c=evt.getKeyChar();
+        if (hor.getText().length() >= 3 || !(Character.isDigit(c))) {
             evt.consume();
         }
         if(!mat.getText().equals("")) confirmarButton.setEnabled(true);
     }//GEN-LAST:event_horKeyTyped
+
+    private void horActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_horActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_horActionPerformed
 
     public static int getHoras() {return Integer.parseInt(hor.getText());}
     

@@ -307,7 +307,8 @@ public class Gasolinera extends javax.swing.JFrame {
     }//GEN-LAST:event_gasolina95buttonActionPerformed
 
     private void cantidadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cantidadKeyTyped
-        if (cantidad.getText().length() >= 2) {
+        char c=evt.getKeyChar();
+        if (cantidad.getText().length() >= 2 || !Character.isDigit(c)) {
             evt.consume();
         }
     }//GEN-LAST:event_cantidadKeyTyped

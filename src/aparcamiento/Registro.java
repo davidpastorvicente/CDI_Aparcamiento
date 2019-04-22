@@ -80,6 +80,11 @@ public class Registro extends javax.swing.JDialog {
 
         nombre.setAccent(new java.awt.Color(0, 153, 153));
         nombre.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        nombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                nombreKeyTyped(evt);
+            }
+        });
         jPanel2.add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 110, 69));
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -92,6 +97,11 @@ public class Registro extends javax.swing.JDialog {
 
         apell.setAccent(new java.awt.Color(0, 153, 153));
         apell.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        apell.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                apellKeyTyped(evt);
+            }
+        });
         jPanel2.add(apell, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 140, 69));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -135,11 +145,19 @@ public class Registro extends javax.swing.JDialog {
 
         numTarjeta.setAccent(new java.awt.Color(0, 153, 153));
         numTarjeta.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        numTarjeta.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                numTarjetaKeyTyped(evt);
+            }
+        });
         jPanel3.add(numTarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 170, 60));
 
         CVC.setAccent(new java.awt.Color(0, 153, 153));
         CVC.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         CVC.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CVCKeyTyped(evt);
+            }
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 CVCKeyPressed(evt);
             }
@@ -337,7 +355,8 @@ public class Registro extends javax.swing.JDialog {
     }//GEN-LAST:event_paypalButtonActionPerformed
 
     private void movilKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_movilKeyTyped
-        if (movil.getText().length() >= 9) {
+        char c=evt.getKeyChar();
+        if (movil.getText().length() >= 9 || !Character.isDigit(c)) {
             evt.consume();
         }
     }//GEN-LAST:event_movilKeyTyped
@@ -357,16 +376,38 @@ public class Registro extends javax.swing.JDialog {
     }//GEN-LAST:event_CVCKeyPressed
 
     private void cadMesKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cadMesKeyTyped
-        if (movil.getText().length() >= 2) {
+        char c=evt.getKeyChar();
+        if (cadMes.getText().length() >= 2 || !Character.isDigit(c)) {
             evt.consume();
         }
     }//GEN-LAST:event_cadMesKeyTyped
 
     private void cadAnioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cadAnioKeyTyped
-        if (movil.getText().length() >= 9) {
+        char c=evt.getKeyChar();
+        if (cadAnio.getText().length() >= 2 || !Character.isDigit(c)) {
             evt.consume();
         }
     }//GEN-LAST:event_cadAnioKeyTyped
+
+    private void nombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nombreKeyTyped
+        char c=evt.getKeyChar();
+        if(Character.isDigit(c))evt.consume();
+    }//GEN-LAST:event_nombreKeyTyped
+
+    private void apellKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_apellKeyTyped
+        char c=evt.getKeyChar();
+        if(Character.isDigit(c))evt.consume();
+    }//GEN-LAST:event_apellKeyTyped
+
+    private void numTarjetaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_numTarjetaKeyTyped
+        char c=evt.getKeyChar();
+        if(!Character.isDigit(c) || numTarjeta.getText().length()>=16)evt.consume();
+    }//GEN-LAST:event_numTarjetaKeyTyped
+
+    private void CVCKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CVCKeyTyped
+        char c=evt.getKeyChar();
+        if(!Character.isDigit(c))evt.consume();
+    }//GEN-LAST:event_CVCKeyTyped
 
     /**
      * @param args the command line arguments
