@@ -215,8 +215,9 @@ public class Amma extends javax.swing.JFrame implements Parking {
         plazas.add(planta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 50, 120, 60));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel3.setText("                 Precio");
-        plazas.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, -1, -1));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Precio");
+        plazas.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 362, 120, -1));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel17.setText("(2 adaptados)");
@@ -227,40 +228,49 @@ public class Amma extends javax.swing.JFrame implements Parking {
         plazas.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 180, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel19.setText("                         Motos");
-        plazas.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 240, -1, -1));
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel19.setText("Motos");
+        plazas.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 240, 120, -1));
 
         jLabel20.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel20.setText("            Ascensor");
-        plazas.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, -1, -1));
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel20.setText("Ascensor");
+        plazas.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 282, 120, -1));
 
         jLabel21.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel21.setText("                 Baños");
-        plazas.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, -1, -1));
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel21.setText("Baños");
+        plazas.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 322, 120, -1));
 
         jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel22.setText("   Plazas totales");
-        plazas.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 110, -1, -1));
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel22.setText("Plazas totales");
+        plazas.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 112, 120, -1));
 
         jLabel23.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel23.setText("                       Coches");
-        plazas.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, -1, -1));
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel23.setText("Coches");
+        plazas.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 150, 120, -1));
 
         jLabel24.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel24.setText("Movilidad reducida");
-        plazas.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 180, -1, -1));
+        plazas.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 180, 120, -1));
 
         jLabel25.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel25.setText("                 Familiares");
-        plazas.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 210, -1, -1));
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel25.setText("Familiares");
+        plazas.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 210, 120, -1));
 
         jLabel26.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel26.setText("      Localización");
-        plazas.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 30, -1, -1));
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel26.setText("Localización");
+        plazas.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 32, 120, -1));
 
         jLabel27.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel27.setText("            Distancia");
-        plazas.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 70, -1, -1));
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel27.setText("Distancia");
+        plazas.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 72, 120, -1));
 
         jLabel28.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel28.setText("1300 m.");

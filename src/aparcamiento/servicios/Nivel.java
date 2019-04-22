@@ -200,25 +200,33 @@ public class Nivel extends javax.swing.JFrame {
     }//GEN-LAST:event_kmsKeyTyped
 
     private void materialButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materialButton1ActionPerformed
-        if (!bar.getText().equals("")) {
-            cambioAceite.setText("");
-            if (Double.parseDouble(bar.getText()) > 2.1d || Double.parseDouble(bar.getText()) < 1.8d) {
-                hinchaRuedas.setText("- Es preciso hinchar los neumáticos");
-            } else {
-                hinchaRuedas.setText("- No es preciso hinchar los neumáticos");
-            }
-        } else {
-            hinchaRuedas.setText("");
-        }
-
         if (!kms.getText().equals("")) {
             if (Double.parseDouble(kms.getText()) > 5000) {
                 cambioAceite.setText("- Es preciso cambiar el aceite");
             } else {
                 cambioAceite.setText("- No es preciso cambiar el aceite");
             }
+            if (!bar.getText().equals("")) {
+                if (Double.parseDouble(bar.getText()) > 2.1d || Double.parseDouble(bar.getText()) < 1.8d) {
+                    hinchaRuedas.setText("- Es preciso hinchar los neumáticos");
+                } else {
+                    hinchaRuedas.setText("- No es preciso hinchar los neumáticos");
+                }
+            } else {
+                hinchaRuedas.setText("");
+            }
         } else {
-            cambioAceite.setText("");
+            if (!bar.getText().equals("")) {
+                if (Double.parseDouble(bar.getText()) > 2.1d || Double.parseDouble(bar.getText()) < 1.8d) {
+                    cambioAceite.setText("- Es preciso hinchar los neumáticos");
+                } else {
+                    cambioAceite.setText("- No es preciso hinchar los neumáticos");
+                }
+                hinchaRuedas.setText("");
+            } else {
+                cambioAceite.setText("      ____");
+                hinchaRuedas.setText("");
+            }
         }
     }//GEN-LAST:event_materialButton1ActionPerformed
 

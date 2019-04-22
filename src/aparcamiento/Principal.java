@@ -72,6 +72,7 @@ public class Principal extends javax.swing.JFrame {
         Amma = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         AmmaArea = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -204,18 +205,18 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel2.setText("_____________________________");
-        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 90, 220, -1));
+        materialPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 110, 220, -1));
 
         p7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
-        materialPanel1.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, -1, -1));
+        materialPanel1.add(p7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, -1, -1));
 
         Minerva.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         Minerva.setText("Parking \"Minerva\"");
-        materialPanel1.add(Minerva, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, -1, -1));
+        materialPanel1.add(Minerva, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 70, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel6.setText("C/ Minerva, 27  -  (227 m)");
-        materialPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 70, -1, -1));
+        materialPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 90, -1, -1));
 
         MinervaArea.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -230,22 +231,22 @@ public class Principal extends javax.swing.JFrame {
                 MinervaAreaActionPerformed(evt);
             }
         });
-        materialPanel1.add(MinervaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 20, 290, 100));
+        materialPanel1.add(MinervaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 40, 290, 100));
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel7.setText("_____________________________");
-        materialPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 170, -1, -1));
+        materialPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 190, -1, -1));
 
         URJC.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         URJC.setText("Parking \"URJC\"");
-        materialPanel1.add(URJC, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 130, -1, -1));
+        materialPanel1.add(URJC, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 150, -1, -1));
 
         p9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
-        materialPanel1.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 130, -1, -1));
+        materialPanel1.add(p9, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel11.setText("C/ San Cipriano, 10  -  (745 m)");
-        materialPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 150, -1, -1));
+        materialPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 170, -1, -1));
 
         URJCArea.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -260,22 +261,22 @@ public class Principal extends javax.swing.JFrame {
                 URJCAreaActionPerformed(evt);
             }
         });
-        materialPanel1.add(URJCArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 100, 290, 100));
+        materialPanel1.add(URJCArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, 290, 100));
 
         jLabel12.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel12.setText("_____________________________");
-        materialPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 250, -1, -1));
+        materialPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 270, -1, -1));
 
         p11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
-        materialPanel1.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 210, -1, -1));
+        materialPanel1.add(p11, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, -1, -1));
 
         Villa.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         Villa.setText("Parking \"Villajimena\"");
-        materialPanel1.add(Villa, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 210, -1, -1));
+        materialPanel1.add(Villa, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel16.setText("C/ Villablanca, 30  -  (978 m)");
-        materialPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, -1, -1));
+        materialPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 250, -1, -1));
 
         VilllaArea.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -290,22 +291,22 @@ public class Principal extends javax.swing.JFrame {
                 VilllaAreaActionPerformed(evt);
             }
         });
-        materialPanel1.add(VilllaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 180, 290, 100));
+        materialPanel1.add(VilllaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, 290, 100));
 
         jLabel17.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel17.setText("_____________________________");
-        materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 330, -1, -1));
+        materialPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, -1, -1));
 
         p13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
-        materialPanel1.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 290, -1, -1));
+        materialPanel1.add(p13, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, -1, -1));
 
         Rosa.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         Rosa.setText("Parking \"Rosa Chacel\"");
-        materialPanel1.add(Rosa, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 290, -1, -1));
+        materialPanel1.add(Rosa, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel21.setText("C/ de la Raya, 3  -  (1,2 km)");
-        materialPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, -1, -1));
+        materialPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, -1, -1));
 
         RosaArea.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -320,18 +321,18 @@ public class Principal extends javax.swing.JFrame {
                 RosaAreaActionPerformed(evt);
             }
         });
-        materialPanel1.add(RosaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, 290, 100));
+        materialPanel1.add(RosaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, 290, 100));
 
         p15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/parking.png"))); // NOI18N
-        materialPanel1.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 370, -1, -1));
+        materialPanel1.add(p15, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, -1, -1));
 
         Amma.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         Amma.setText("Parking \"Amma\"");
-        materialPanel1.add(Amma, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 370, -1, -1));
+        materialPanel1.add(Amma, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 390, -1, -1));
 
         jLabel26.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel26.setText("C/ de los Almendros, 8  -  (1,3 km)");
-        materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 390, -1, -1));
+        materialPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 410, -1, -1));
 
         AmmaArea.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -346,7 +347,11 @@ public class Principal extends javax.swing.JFrame {
                 AmmaAreaActionPerformed(evt);
             }
         });
-        materialPanel1.add(AmmaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, 290, 100));
+        materialPanel1.add(AmmaArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, 290, 100));
+
+        jLabel13.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel13.setText("Escoja un aparcamiento de los siguientes:");
+        materialPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, -1, -1));
 
         getContentPane().add(materialPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 102, 960, 490));
 
@@ -355,7 +360,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iAmmaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseEntered
         Amma.setFont(new java.awt.Font("Roboto", 1, 18));
-        p15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        p15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_iAmmaMouseEntered
 
     private void iAmmaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseExited
@@ -365,7 +370,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iRosaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseEntered
         Rosa.setFont(new java.awt.Font("Roboto", 1, 18));
-        p13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        p13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_iRosaMouseEntered
 
     private void iRosaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseExited
@@ -375,7 +380,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iURJCMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseEntered
         URJC.setFont(new java.awt.Font("Roboto", 1, 18));
-        p9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        p9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_iURJCMouseEntered
 
     private void iURJCMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseExited
@@ -385,7 +390,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iVillaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseEntered
         Villa.setFont(new java.awt.Font("Roboto", 1, 18));
-        p11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        p11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_iVillaMouseEntered
 
     private void iVillaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseExited
@@ -395,7 +400,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iMinervaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseEntered
         Minerva.setFont(new java.awt.Font("Roboto", 1, 18));
-        p7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        p7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_iMinervaMouseEntered
 
     private void iMinervaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseExited
@@ -404,23 +409,23 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_iMinervaMouseExited
 
     private void MinervaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinervaAreaMouseEntered
-        iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_MinervaAreaMouseEntered
 
     private void URJCAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_URJCAreaMouseEntered
-        iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_URJCAreaMouseEntered
 
     private void VilllaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VilllaAreaMouseEntered
-        iVilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        iVilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_VilllaAreaMouseEntered
 
     private void RosaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RosaAreaMouseEntered
-        iRosa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        iRosa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_RosaAreaMouseEntered
 
     private void AmmaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AmmaAreaMouseEntered
-        iAmma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 0), 3));
+        iAmma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
     }//GEN-LAST:event_AmmaAreaMouseEntered
 
     private void MinervaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinervaAreaMouseExited
@@ -538,6 +543,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;

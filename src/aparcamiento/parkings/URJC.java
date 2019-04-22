@@ -73,18 +73,8 @@ public class URJC extends javax.swing.JFrame implements Parking {
         ind1 = new javax.swing.JLabel();
         plazas = new de.craften.ui.swingmaterial.MaterialPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         precio = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
@@ -141,6 +131,16 @@ public class URJC extends javax.swing.JFrame implements Parking {
         reservarButton = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel13 = new javax.swing.JLabel();
         leyenda = new de.craften.ui.swingmaterial.MaterialButton();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -262,10 +262,6 @@ public class URJC extends javax.swing.JFrame implements Parking {
         jLabel2.setText("Seleccione la planta :");
         plazas.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
 
-        jLabel17.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel17.setText("                 Precio");
-        plazas.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 360, -1, -1));
-
         jLabel18.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         jLabel18.setText("(4 adaptados)");
         plazas.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 320, 80, 20));
@@ -273,42 +269,6 @@ public class URJC extends javax.swing.JFrame implements Parking {
         jLabel19.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
         jLabel19.setText("18");
         plazas.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 180, -1, -1));
-
-        jLabel20.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel20.setText("                         Motos");
-        plazas.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, -1, -1));
-
-        jLabel21.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel21.setText("            Ascensor");
-        plazas.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 280, -1, -1));
-
-        jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel22.setText("                 Baños");
-        plazas.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 320, -1, -1));
-
-        jLabel23.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel23.setText("   Plazas totales");
-        plazas.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 110, -1, -1));
-
-        jLabel24.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel24.setText("                       Coches");
-        plazas.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, -1, -1));
-
-        jLabel25.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel25.setText("Movilidad reducida");
-        plazas.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 180, -1, -1));
-
-        jLabel26.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel26.setText("                 Familiares");
-        plazas.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 210, -1, -1));
-
-        jLabel27.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel27.setText("      Localización");
-        plazas.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 30, -1, -1));
-
-        jLabel28.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel28.setText("            Distancia");
-        plazas.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, -1, -1));
 
         jLabel29.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel29.setText("745 m.");
@@ -879,6 +839,56 @@ public class URJC extends javax.swing.JFrame implements Parking {
         });
         plazas.add(leyenda, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 80, 70));
 
+        jLabel30.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel30.setText("Motos");
+        plazas.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 240, 120, -1));
+
+        jLabel22.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel22.setText("Plazas totales");
+        plazas.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 112, 120, -1));
+
+        jLabel23.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel23.setText("Coches");
+        plazas.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 150, 120, -1));
+
+        jLabel24.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel24.setText("Movilidad reducida");
+        plazas.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 180, 120, -1));
+
+        jLabel21.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel21.setText("Baños");
+        plazas.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 322, 120, -1));
+
+        jLabel25.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel25.setText("Familiares");
+        plazas.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 210, 120, -1));
+
+        jLabel20.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel20.setText("Ascensor");
+        plazas.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 282, 120, -1));
+
+        jLabel26.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel26.setText("Localización");
+        plazas.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 32, 120, -1));
+
+        jLabel15.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel15.setText("Precio");
+        plazas.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 362, 120, -1));
+
+        jLabel27.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel27.setText("Distancia");
+        plazas.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 72, 120, -1));
+
         getContentPane().add(plazas, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 960, 490));
 
         pack();
@@ -1370,7 +1380,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
@@ -1382,9 +1392,9 @@ public class URJC extends javax.swing.JFrame implements Parking {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
