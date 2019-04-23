@@ -5,8 +5,7 @@
  */
 package aparcamiento.servicios;
 
-import aparcamiento.parkings.Confirmacion1;
-import aparcamiento.parkings.Parking;
+import aparcamiento.parkings.*;
 import java.awt.Color;
 import java.util.Date;
 
@@ -15,16 +14,20 @@ import java.util.Date;
  * @author david
  */
 public class Lavadero extends javax.swing.JFrame {
+
     Parking p;
+
     /**
      * Creates new form NewJFrame
+     *
      * @param p
      */
     public Lavadero(Parking p) {
-        totalLavadero=null;
-        lavDate=null;
-        this.p=p;
+        totalLavadero = null;
+        lavDate = null;
+        this.p = p;
         initComponents();
+        materialPanel1.remove(cancelarButton);
     }
 
     /**
@@ -50,6 +53,7 @@ public class Lavadero extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         ambosButton = new de.craften.ui.swingmaterial.MaterialButton();
         aceptarButton = new de.craften.ui.swingmaterial.MaterialButton();
+        cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
         precio = new javax.swing.JLabel();
         precio1 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -147,14 +151,23 @@ public class Lavadero extends javax.swing.JFrame {
         materialPanel1.add(ambosButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 140, 170, 70));
 
         aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
-        aceptarButton.setText("Aceptar");
+        aceptarButton.setText("Añadir servicio");
         aceptarButton.setEnabled(false);
         aceptarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aceptarButtonActionPerformed(evt);
             }
         });
-        materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
+        materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 190, 70));
+
+        cancelarButton.setBackground(new java.awt.Color(255, 51, 51));
+        cancelarButton.setText("Cancelar servicio");
+        cancelarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelarButtonActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 190, 70));
 
         precio.setFont(new java.awt.Font("Roboto", 0, 20)); // NOI18N
         precio.setText("-");
@@ -347,6 +360,13 @@ public class Lavadero extends javax.swing.JFrame {
         totalLavadero = euros.getText();
         Confirmacion1 conf = new Confirmacion1(this, true, false, p);
         p.activarSombra(conf);
+        if (conf.getSi()) {
+            materialPanel1.remove(aceptarButton);
+            materialPanel1.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 190, 70));
+            revalidate();
+            repaint();
+            pack();
+        }
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void emberButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emberButtonActionPerformed
@@ -365,12 +385,25 @@ public class Lavadero extends javax.swing.JFrame {
         aux3 = !aux3;
     }//GEN-LAST:event_emberButtonActionPerformed
 
+    private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
+        Confirmacion4 conf = new Confirmacion4(this, true, false, p);
+        p.activarSombra(conf);
+        if (conf.getSi()) {
+            materialPanel1.remove(cancelarButton);
+            materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 190, 70));
+            Lavadero.reset();
+        }
+    }//GEN-LAST:event_cancelarButtonActionPerformed
+
     public de.craften.ui.swingmaterial.MaterialPanel getPanel() {
         return materialPanel1;
     }
 
-    public static void reset() {totalLavadero=null; lavDate=null;}
-    
+    public static void reset() {
+        totalLavadero = null;
+        lavDate = null;
+    }
+
     public static String totalLavadero;
     public static double price;
     private boolean aux1, aux2, aux3;
@@ -379,6 +412,7 @@ public class Lavadero extends javax.swing.JFrame {
     private de.craften.ui.swingmaterial.MaterialButton abrillButton;
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton ambosButton;
+    private de.craften.ui.swingmaterial.MaterialButton cancelarButton;
     private de.craften.ui.swingmaterial.MaterialButton emberButton;
     private de.craften.ui.swingmaterial.MaterialButton encerButton;
     private javax.swing.JLabel euros;

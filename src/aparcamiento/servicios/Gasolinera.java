@@ -5,8 +5,7 @@
  */
 package aparcamiento.servicios;
 
-import aparcamiento.parkings.Confirmacion1;
-import aparcamiento.parkings.Parking;
+import aparcamiento.parkings.*;
 import java.awt.Color;
 import java.util.Date;
 
@@ -15,16 +14,20 @@ import java.util.Date;
  * @author david
  */
 public class Gasolinera extends javax.swing.JFrame {
+
     Parking p;
+
     /**
      * Creates new form NewJFrame
+     *
      * @param p
      */
     public Gasolinera(Parking p) {
         totalCombustible = null;
         gasDate = null;
-        this.p=p;
+        this.p = p;
         initComponents();
+        materialPanel1.remove(cancelarButton);
     }
 
     /**
@@ -62,6 +65,7 @@ public class Gasolinera extends javax.swing.JFrame {
         calcular = new de.craften.ui.swingmaterial.MaterialButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        cancelarButton = new de.craften.ui.swingmaterial.MaterialButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(960, 490));
@@ -167,14 +171,14 @@ public class Gasolinera extends javax.swing.JFrame {
         materialPanel1.add(efitecButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 140, 220, 70));
 
         aceptarButton.setBackground(new java.awt.Color(0, 102, 0));
-        aceptarButton.setText("Aceptar");
+        aceptarButton.setText("Añadir servicio");
         aceptarButton.setEnabled(false);
         aceptarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aceptarButtonActionPerformed(evt);
             }
         });
-        materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
+        materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 190, 70));
 
         precio.setFont(new java.awt.Font("Roboto", 0, 20)); // NOI18N
         precio.setText("-");
@@ -220,6 +224,15 @@ public class Gasolinera extends javax.swing.JFrame {
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/gasolinera (1).png"))); // NOI18N
         materialPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 30, -1, 70));
 
+        cancelarButton.setBackground(new java.awt.Color(255, 51, 51));
+        cancelarButton.setText("Cancelar servicio");
+        cancelarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelarButtonActionPerformed(evt);
+            }
+        });
+        materialPanel1.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 190, 70));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -252,6 +265,13 @@ public class Gasolinera extends javax.swing.JFrame {
         }
         Confirmacion1 conf = new Confirmacion1(this, true, true, p);
         p.activarSombra(conf);
+        if (conf.getSi()) {
+            materialPanel1.remove(aceptarButton);
+            materialPanel1.add(cancelarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 190, 70));
+            revalidate();
+            repaint();
+            pack();
+        }
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
     private void efitecButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_efitecButtonActionPerformed
@@ -307,7 +327,7 @@ public class Gasolinera extends javax.swing.JFrame {
     }//GEN-LAST:event_gasolina95buttonActionPerformed
 
     private void cantidadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cantidadKeyTyped
-        char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (cantidad.getText().length() >= 2 || !Character.isDigit(c)) {
             evt.consume();
         }
@@ -348,6 +368,16 @@ public class Gasolinera extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_calcularActionPerformed
 
+    private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
+        Confirmacion4 conf = new Confirmacion4(this, true, false, p);
+        p.activarSombra(conf);
+        if (conf.getSi()) {
+            materialPanel1.remove(cancelarButton);
+            materialPanel1.add(aceptarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 190, 70));
+            Gasolinera.reset();
+        }
+    }//GEN-LAST:event_cancelarButtonActionPerformed
+
     public de.craften.ui.swingmaterial.MaterialPanel getPanel() {
         return materialPanel1;
     }
@@ -364,6 +394,7 @@ public class Gasolinera extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private de.craften.ui.swingmaterial.MaterialButton aceptarButton;
     private de.craften.ui.swingmaterial.MaterialButton calcular;
+    private de.craften.ui.swingmaterial.MaterialButton cancelarButton;
     private de.craften.ui.swingmaterial.MaterialTextField cantidad;
     private de.craften.ui.swingmaterial.MaterialButton dieselButton;
     private de.craften.ui.swingmaterial.MaterialButton efitecButton;

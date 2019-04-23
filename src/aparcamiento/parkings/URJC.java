@@ -1649,8 +1649,8 @@ public class URJC extends javax.swing.JFrame implements Parking {
     // End of variables declaration//GEN-END:variables
 
     @Override
-    public void activarBoton() {
-        finalizarButton.setEnabled(true);
+    public void activarBoton(boolean p) {
+        finalizarButton.setEnabled(p);
     }
 
     @Override

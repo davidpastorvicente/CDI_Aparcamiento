@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author david
  */
-public class Confirmacion1 extends javax.swing.JDialog {
+public class Confirmacion4 extends javax.swing.JDialog {
 
     private boolean opc, si;
     private Parking p;
@@ -25,7 +25,7 @@ public class Confirmacion1 extends javax.swing.JDialog {
      * @param opc
      * @param p
      */
-    public Confirmacion1(java.awt.Frame parent, boolean modal, boolean opc, Parking p) {
+    public Confirmacion4(java.awt.Frame parent, boolean modal, boolean opc, Parking p) {
         super(parent, modal);
         initComponents();
         this.p=p;
@@ -61,11 +61,11 @@ public class Confirmacion1 extends javax.swing.JDialog {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel1.setText("¿Está seguro de usar este servicio?");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 320, 33));
+        jLabel1.setText("¿Está seguro de eliminar este servicio?");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 360, 33));
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel2.setText("El importe del servicio será añadido a su factura final.");
+        jLabel2.setText("El importe del servicio será eliminado de su factura final.");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 350, 33));
 
         cancelarButton.setBackground(new java.awt.Color(255, 51, 51));
@@ -95,20 +95,17 @@ public class Confirmacion1 extends javax.swing.JDialog {
 
     private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
         this.setVisible(false);
-        if (opc)
-            Gasolinera.reset();
-        else
-            Lavadero.reset();
         si=false;
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
         this.setVisible(false);
-        if (opc)
-            Gasolinera.gasDate = new Date(System.currentTimeMillis());
-        else
-            Lavadero.lavDate = new Date(System.currentTimeMillis());
-        p.activarBoton(true);
+        if (opc) {
+            if(Lavadero.lavDate==null && Reserva.si==false)
+                p.activarBoton(false);
+        }
+        else if(Gasolinera.gasDate==null && Reserva.si==false)
+            p.activarBoton(false);
         si=true;
     }//GEN-LAST:event_aceptarButtonActionPerformed
 

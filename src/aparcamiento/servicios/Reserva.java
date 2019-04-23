@@ -122,11 +122,6 @@ public class Reserva extends javax.swing.JDialog {
 
         hor.setAccent(new java.awt.Color(0, 153, 153));
         hor.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        hor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                horActionPerformed(evt);
-            }
-        });
         hor.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 horKeyTyped(evt);
@@ -254,10 +249,6 @@ public class Reserva extends javax.swing.JDialog {
         }
         if(!mat.getText().equals("")) confirmarButton.setEnabled(true);
     }//GEN-LAST:event_horKeyTyped
-
-    private void horActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_horActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_horActionPerformed
 
     public static int getHoras() {return Integer.parseInt(hor.getText());}
     
