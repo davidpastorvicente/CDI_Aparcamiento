@@ -137,7 +137,7 @@ public class Villa extends javax.swing.JFrame implements Parking {
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Parking \"Villablanca\"");
+        jLabel1.setText("Parking \"Villajimena\"");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 400, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/pay.png"))); // NOI18N
@@ -217,8 +217,8 @@ public class Villa extends javax.swing.JFrame implements Parking {
         plazas.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 320, -1, -1));
 
         direccion.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        direccion.setText("C/ de la Raya, 3");
-        plazas.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 32, 100, -1));
+        direccion.setText("C/ Villablanca, 30");
+        plazas.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 32, 120, -1));
         plazas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -844,7 +844,7 @@ public class Villa extends javax.swing.JFrame implements Parking {
     }//GEN-LAST:event_plazasButtonActionPerformed
 
     private void reservarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reservarButtonActionPerformed
-        Reserva rev = new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Villablanca");
+        Reserva rev = new Reserva(this, true, sel, planta, direccion.getText(), precio.getText(), "Villajimena");
         rev.setLocationRelativeTo(null);
         getRootPane().getGlassPane().setVisible(true);
         rev.setVisible(true);
@@ -1156,6 +1156,12 @@ public class Villa extends javax.swing.JFrame implements Parking {
 
     @Override
     public void parar() {
-        timer.cancel();
+        if (timer != null) {
+            timer.cancel();
+            tiempo.setText("");
+            jLabel46.setText("");
+            jLabel47.setText("");
+            jLabel48.setText("");
+        }
     }
 }

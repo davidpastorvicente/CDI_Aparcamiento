@@ -193,6 +193,7 @@ public class Ticket extends javax.swing.JDialog {
                 tick.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/checked.png"))); // NOI18N
                 jPanel4.add(tick, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, -1, -1));
                 pago.setText("  ¡Pago completado!");
+                p.parar();
                 revalidate();
                 repaint();
                 pack();
@@ -205,7 +206,6 @@ public class Ticket extends javax.swing.JDialog {
     private void salirButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirButtonActionPerformed
         this.setVisible(false);
         this.getParent().setVisible(false);
-        p.parar();
         Gasolinera.reset();
         Lavadero.reset();
         Reserva.reset();

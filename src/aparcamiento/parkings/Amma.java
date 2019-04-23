@@ -1421,6 +1421,12 @@ public class Amma extends javax.swing.JFrame implements Parking {
 
     @Override
     public void parar() {
-        timer.cancel();
+        if (timer != null) {
+            timer.cancel();
+            tiempo.setText("");
+            jLabel46.setText("");
+            jLabel47.setText("");
+            jLabel48.setText("");
+        }
     }
 }

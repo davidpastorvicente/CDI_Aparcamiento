@@ -206,7 +206,7 @@ public class Minerva extends javax.swing.JFrame implements Parking {
         plazas.add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 360, -1, -1));
 
         jLabel30.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jLabel30.setText("6");
+        jLabel30.setText("24");
         plazas.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 240, -1, -1));
 
         jLabel31.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
@@ -218,7 +218,7 @@ public class Minerva extends javax.swing.JFrame implements Parking {
         plazas.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 210, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        jLabel33.setText("60");
+        jLabel33.setText("132");
         plazas.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 110, -1, -1));
 
         jLabel34.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
@@ -1453,6 +1453,12 @@ public class Minerva extends javax.swing.JFrame implements Parking {
 
     @Override
     public void parar() {
-        timer.cancel();
+        if (timer != null) {
+            timer.cancel();
+            tiempo.setText("");
+            jLabel46.setText("");
+            jLabel47.setText("");
+            jLabel48.setText("");
+        }
     }
 }
