@@ -258,7 +258,7 @@ public class Gasolinera extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        totalCombustible=total2;
+        totalCombustible = total2;
         Confirmacion1 conf = new Confirmacion1(this, true, true, p);
         p.activarSombra(conf);
         if (conf.getSi()) {

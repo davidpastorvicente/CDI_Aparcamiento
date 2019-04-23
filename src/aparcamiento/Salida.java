@@ -10,6 +10,7 @@ package aparcamiento;
  * @author david
  */
 public class Salida extends javax.swing.JDialog {
+
     /**
      * Creates new form Registro
      *

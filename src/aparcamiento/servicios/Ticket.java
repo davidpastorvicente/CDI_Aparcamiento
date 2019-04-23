@@ -17,7 +17,9 @@ import javax.swing.Timer;
  * @author david
  */
 public class Ticket extends javax.swing.JDialog {
+
     Parking p;
+
     /**
      * Creates new form Registro
      *
@@ -29,7 +31,7 @@ public class Ticket extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         jPanel1.remove(jPanel4);
-        this.p=(Parking) parent;
+        this.p = (Parking) parent;
         price = 0;
         SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss");
         if (Reserva.getSi()) {

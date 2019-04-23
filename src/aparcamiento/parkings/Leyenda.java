@@ -5,13 +5,11 @@
  */
 package aparcamiento.parkings;
 
-
 /**
  *
  * @author david
  */
 public class Leyenda extends javax.swing.JDialog {
-
 
     /**
      * Creates new form Registro

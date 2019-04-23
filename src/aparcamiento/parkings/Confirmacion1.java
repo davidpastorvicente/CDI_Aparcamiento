@@ -28,7 +28,7 @@ public class Confirmacion1 extends javax.swing.JDialog {
     public Confirmacion1(java.awt.Frame parent, boolean modal, boolean opc, Parking p) {
         super(parent, modal);
         initComponents();
-        this.p=p;
+        this.p = p;
         this.opc = opc;
     }
 
@@ -95,24 +95,28 @@ public class Confirmacion1 extends javax.swing.JDialog {
 
     private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
         this.setVisible(false);
-        if (opc)
+        if (opc) {
             Gasolinera.reset();
-        else
+        } else {
             Lavadero.reset();
-        si=false;
+        }
+        si = false;
     }//GEN-LAST:event_cancelarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
         this.setVisible(false);
-        if (opc)
+        if (opc) {
             Gasolinera.gasDate = new Date(System.currentTimeMillis());
-        else
+        } else {
             Lavadero.lavDate = new Date(System.currentTimeMillis());
+        }
         p.activarBoton(true);
-        si=true;
+        si = true;
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
-    public boolean getSi() {return si;}
+    public boolean getSi() {
+        return si;
+    }
     /**
      * @param args the command line arguments
      */

@@ -34,10 +34,10 @@ public class Reserva extends javax.swing.JDialog {
         this.dir = dir;
         this.precio = precio;
         this.name = name;
-        si=false;
+        si = false;
         initComponents();
         jPanel1.remove(jPanel3);
-        
+
     }
 
     public String getTipoPlaza(javax.swing.JButton sel) {
@@ -228,31 +228,41 @@ public class Reserva extends javax.swing.JDialog {
     }//GEN-LAST:event_confirmarButtonActionPerformed
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        resDate= new Date(System.currentTimeMillis());
-        si=true;
+        resDate = new Date(System.currentTimeMillis());
+        si = true;
         this.setVisible(false);
     }//GEN-LAST:event_aceptarButtonActionPerformed
 
-    public static boolean getSi() {return si;}
-    
+    public static boolean getSi() {
+        return si;
+    }
+
     private void matKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_matKeyTyped
         if (mat.getText().length() >= 7) {
             evt.consume();
         }
-        if(!hor.getText().equals("")) confirmarButton.setEnabled(true);
+        if (!hor.getText().equals("")) {
+            confirmarButton.setEnabled(true);
+        }
     }//GEN-LAST:event_matKeyTyped
 
     private void horKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_horKeyTyped
-        char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (hor.getText().length() >= 3 || !(Character.isDigit(c))) {
             evt.consume();
         }
-        if(!mat.getText().equals("")) confirmarButton.setEnabled(true);
+        if (!mat.getText().equals("")) {
+            confirmarButton.setEnabled(true);
+        }
     }//GEN-LAST:event_horKeyTyped
 
-    public static int getHoras() {return Integer.parseInt(hor.getText());}
-    
-    public static void reset() {si=false;}
+    public static int getHoras() {
+        return Integer.parseInt(hor.getText());
+    }
+
+    public static void reset() {
+        si = false;
+    }
     /**
      * @param args the command line arguments
      */

@@ -93,8 +93,9 @@ public class Inicio extends javax.swing.JFrame {
 
         UserLabel.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         UserLabel.setForeground(new java.awt.Color(255, 255, 255));
+        UserLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         UserLabel.setText("Usuario:");
-        jPanel2.add(UserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+        jPanel2.add(UserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 60, 100, -1));
 
         inicButton.setText("Iniciar sesión");
         inicButton.addActionListener(new java.awt.event.ActionListener() {
@@ -119,8 +120,9 @@ public class Inicio extends javax.swing.JFrame {
 
         pwdLabel.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         pwdLabel.setForeground(new java.awt.Color(255, 255, 255));
+        pwdLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         pwdLabel.setText("Contraseña:");
-        jPanel2.add(pwdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+        jPanel2.add(pwdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 130, 100, -1));
 
         pwdField.setForeground(new java.awt.Color(255, 255, 255));
         pwdField.setAccent(new java.awt.Color(0, 153, 153));
@@ -163,8 +165,7 @@ public class Inicio extends javax.swing.JFrame {
             this.setVisible(false);
             prin.setLocationRelativeTo(null);
             prin.setVisible(true);
-        }
-        else {
+        } else {
             incorLabel.setFont(new java.awt.Font("Roboto Regular", 1, 14)); // NOI18N
             incorLabel.setForeground(new java.awt.Color(153, 0, 0));
             incorLabel.setText("¡Usuario incorrecto! Vuelva a intentarlo.");
@@ -182,7 +183,7 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_regButtonActionPerformed
 
     private void atrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atrasActionPerformed
-        Salida conf= new Salida(this, true);
+        Salida conf = new Salida(this, true);
         conf.setLocationRelativeTo(null);
         getRootPane().getGlassPane().setVisible(true);
         conf.setVisible(true);

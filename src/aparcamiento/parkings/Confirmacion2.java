@@ -13,7 +13,9 @@ import aparcamiento.servicios.*;
  * @author david
  */
 public class Confirmacion2 extends javax.swing.JDialog {
+
     Parking p;
+
     /**
      * Creates new form Registro
      *
@@ -22,7 +24,7 @@ public class Confirmacion2 extends javax.swing.JDialog {
      */
     public Confirmacion2(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
-        p= (Parking)parent;
+        p = (Parking) parent;
         initComponents();
     }
 

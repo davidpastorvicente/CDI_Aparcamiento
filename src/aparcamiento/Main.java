@@ -19,7 +19,9 @@ import javax.swing.JFrame;
  * @author david
  */
 public class Main {
+
     public static JFrame inic;
+
     /**
      * @param args the command line arguments
      */
@@ -51,9 +53,9 @@ public class Main {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                GraphicsEnvironment ge= GraphicsEnvironment.getLocalGraphicsEnvironment();
+                GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
                 try {
-                    InputStream is= Main.class.getResourceAsStream("../resources/Roboto-Regular.ttf");
+                    InputStream is = Main.class.getResourceAsStream("../resources/Roboto-Regular.ttf");
                     Font f = Font.createFont(Font.TRUETYPE_FONT, is);
                     ge.registerFont(f);
                 } catch (FontFormatException ex) {

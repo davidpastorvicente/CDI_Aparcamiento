@@ -287,7 +287,6 @@ public class Registro extends javax.swing.JDialog {
         paypalButton.setBackground(new java.awt.Color(204, 204, 204));
         tarjetaButton.setBackground(new java.awt.Color(102, 102, 102));
 
-        
         cadAnio.setAccent(new java.awt.Color(0, 153, 153));
         cadAnio.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jPanel3.add(cadAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 153, 20, 60));
@@ -302,7 +301,7 @@ public class Registro extends javax.swing.JDialog {
 
         cadMes.setAccent(new java.awt.Color(0, 153, 153));
         cadMes.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel3.add(cadMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 153, 20, 60));      
+        jPanel3.add(cadMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 153, 20, 60));
 
         jLabel5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel5.setText("caducidad:");
@@ -328,7 +327,7 @@ public class Registro extends javax.swing.JDialog {
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel10.setText("Número de tarjeta:");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 130, 20));
-        
+
         numTarjeta.setText("");
         jPanel3.revalidate();
         jPanel3.repaint();
@@ -391,14 +390,16 @@ public class Registro extends javax.swing.JDialog {
 
     private void nombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_nombreKeyTyped
         char c = evt.getKeyChar();
-        if (Character.isDigit(c))
+        if (Character.isDigit(c)) {
             evt.consume();
+        }
     }//GEN-LAST:event_nombreKeyTyped
 
     private void apellKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_apellKeyTyped
         char c = evt.getKeyChar();
-        if (Character.isDigit(c))
+        if (Character.isDigit(c)) {
             evt.consume();
+        }
     }//GEN-LAST:event_apellKeyTyped
 
     private void numTarjetaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_numTarjetaKeyTyped
@@ -407,14 +408,16 @@ public class Registro extends javax.swing.JDialog {
             if (!Character.isDigit(c) || numTarjeta.getText().length() >= 16) {
                 evt.consume();
             }
-        } else if (numTarjeta.getText().length() >= 30)
+        } else if (numTarjeta.getText().length() >= 30) {
             evt.consume();
+        }
     }//GEN-LAST:event_numTarjetaKeyTyped
 
     private void CVCKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CVCKeyTyped
         char c = evt.getKeyChar();
-        if (!Character.isDigit(c) || CVC.getText().length() >= 3)
+        if (!Character.isDigit(c) || CVC.getText().length() >= 3) {
             evt.consume();
+        }
     }//GEN-LAST:event_CVCKeyTyped
 
     /**

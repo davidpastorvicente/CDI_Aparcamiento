@@ -5,9 +5,6 @@
  */
 package aparcamiento.servicios;
 
-import java.awt.Color;
-import java.awt.event.MouseEvent;
-
 /**
  *
  * @author david
@@ -188,14 +185,14 @@ public class Nivel extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void barKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_barKeyTyped
-        char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (bar.getText().length() >= 3 || !Character.isDigit(c)) {
             evt.consume();
         }
     }//GEN-LAST:event_barKeyTyped
 
     private void kmsKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kmsKeyTyped
-        char c=evt.getKeyChar();
+        char c = evt.getKeyChar();
         if (kms.getText().length() >= 6 || !Character.isDigit(c)) {
             evt.consume();
         }

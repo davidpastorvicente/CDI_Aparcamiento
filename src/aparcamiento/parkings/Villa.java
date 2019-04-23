@@ -893,7 +893,7 @@ public class Villa extends javax.swing.JFrame implements Parking {
                                 activarBotones(true);
                                 Reserva.reset();
                                 libre(sel);
-                                sel=null;
+                                sel = null;
                                 plazas.remove(cancelarButton);
                                 plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
                                 repaint();
@@ -949,7 +949,7 @@ public class Villa extends javax.swing.JFrame implements Parking {
         activarBotones(true);
         Reserva.reset();
         libre(sel);
-        sel=null;
+        sel = null;
         plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
         repaint();
         revalidate();
@@ -1153,7 +1153,7 @@ public class Villa extends javax.swing.JFrame implements Parking {
         j.setVisible(true);
         getRootPane().getGlassPane().setVisible(false);
     }
-    
+
     @Override
     public void parar() {
         timer.cancel();

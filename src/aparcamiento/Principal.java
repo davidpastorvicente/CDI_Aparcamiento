@@ -556,7 +556,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_iAmmaMouseClicked
 
     private void sesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sesionActionPerformed
-        CerrarSesion conf= new CerrarSesion(this, true);
+        CerrarSesion conf = new CerrarSesion(this, true);
         conf.setLocationRelativeTo(null);
         getRootPane().getGlassPane().setVisible(true);
         conf.setVisible(true);
@@ -564,7 +564,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_sesionActionPerformed
 
     private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
-        Salida conf= new Salida(this, true);
+        Salida conf = new Salida(this, true);
         conf.setLocationRelativeTo(null);
         getRootPane().getGlassPane().setVisible(true);
         conf.setVisible(true);

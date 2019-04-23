@@ -23,9 +23,9 @@ public class URJC extends javax.swing.JFrame implements Parking {
      * Creates new form Principal
      */
     public URJC() {
-        getRootPane().setGlassPane(new JComponent(){
-            public void paintComponent(Graphics g){
-                g.setColor(new Color(0,0,0,100));
+        getRootPane().setGlassPane(new JComponent() {
+            public void paintComponent(Graphics g) {
+                g.setColor(new Color(0, 0, 0, 100));
                 g.fillRect(0, 0, getWidth(), getHeight());
                 super.paintComponent(g);
             }
@@ -1364,7 +1364,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
                                 activarBotones(true);
                                 Reserva.reset();
                                 libre(sel);
-                                sel=null;
+                                sel = null;
                                 plazas.remove(cancelarButton);
                                 plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
                                 repaint();
@@ -1389,7 +1389,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
     }//GEN-LAST:event_reservarButtonActionPerformed
 
     private void leyendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leyendaActionPerformed
-        Leyenda ley= new Leyenda(this, true);
+        Leyenda ley = new Leyenda(this, true);
         ley.setLocationRelativeTo(null);
         getRootPane().getGlassPane().setVisible(true);
         ley.setVisible(true);
@@ -1397,7 +1397,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
     }//GEN-LAST:event_leyendaActionPerformed
 
     private void finalizarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finalizarButtonActionPerformed
-        Ticket tik= new Ticket(this, true, 0.86);
+        Ticket tik = new Ticket(this, true, 0.86);
         tik.setLocationRelativeTo(null);
         getRootPane().getGlassPane().setVisible(true);
         tik.setVisible(true);
@@ -1415,7 +1415,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
         activarBotones(true);
         Reserva.reset();
         libre(sel);
-        sel=null;
+        sel = null;
         plazas.add(reservarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 390, 140, 70));
         repaint();
         revalidate();
@@ -1492,10 +1492,10 @@ public class URJC extends javax.swing.JFrame implements Parking {
     }
 
     public void confirmacion3() {
-        Confirmacion3 conf= new Confirmacion3(this, true);
+        Confirmacion3 conf = new Confirmacion3(this, true);
         activarSombra(conf);
     }
-    
+
     public void activarBotones(boolean i) {
         p1.setEnabled(i);
         p2.setEnabled(i);
@@ -1538,7 +1538,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
         planta4.setEnabled(i);
         planta5.setEnabled(i);
     }
-    
+
     private String planta;
     private boolean[] lib;
     private javax.swing.JButton sel;
@@ -1660,7 +1660,7 @@ public class URJC extends javax.swing.JFrame implements Parking {
         j.setVisible(true);
         getRootPane().getGlassPane().setVisible(false);
     }
-    
+
     @Override
     public void parar() {
         timer.cancel();
