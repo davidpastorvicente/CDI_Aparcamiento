@@ -92,7 +92,7 @@ public class Principal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel2.setBackground(new java.awt.Color(0, 160, 160));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 36)); // NOI18N
@@ -142,7 +142,7 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel18.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         jLabel18.setText("SALIR");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 447, -1, -1));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 446, -1, -1));
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/cancel.png"))); // NOI18N
         jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 439, -1, -1));
@@ -397,7 +397,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iAmmaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseEntered
         Amma.setFont(new java.awt.Font("Roboto", 1, 18));
-        p15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        p15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_iAmmaMouseEntered
 
     private void iAmmaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iAmmaMouseExited
@@ -407,7 +407,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iRosaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseEntered
         Rosa.setFont(new java.awt.Font("Roboto", 1, 18));
-        p13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        p13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_iRosaMouseEntered
 
     private void iRosaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iRosaMouseExited
@@ -417,7 +417,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iURJCMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseEntered
         URJC.setFont(new java.awt.Font("Roboto", 1, 18));
-        p9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        p9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_iURJCMouseEntered
 
     private void iURJCMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iURJCMouseExited
@@ -427,7 +427,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iVillaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseEntered
         Villa.setFont(new java.awt.Font("Roboto", 1, 18));
-        p11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        p11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_iVillaMouseEntered
 
     private void iVillaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iVillaMouseExited
@@ -437,7 +437,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void iMinervaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseEntered
         Minerva.setFont(new java.awt.Font("Roboto", 1, 18));
-        p7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        p7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_iMinervaMouseEntered
 
     private void iMinervaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_iMinervaMouseExited
@@ -446,23 +446,23 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_iMinervaMouseExited
 
     private void MinervaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinervaAreaMouseEntered
-        iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        iMinerva.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_MinervaAreaMouseEntered
 
     private void URJCAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_URJCAreaMouseEntered
-        iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        iURJC.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_URJCAreaMouseEntered
 
     private void VilllaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VilllaAreaMouseEntered
-        iVilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        iVilla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_VilllaAreaMouseEntered
 
     private void RosaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RosaAreaMouseEntered
-        iRosa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        iRosa.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_RosaAreaMouseEntered
 
     private void AmmaAreaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AmmaAreaMouseEntered
-        iAmma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(32, 74, 135), 3));
+        iAmma.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
     }//GEN-LAST:event_AmmaAreaMouseEntered
 
     private void MinervaAreaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinervaAreaMouseExited

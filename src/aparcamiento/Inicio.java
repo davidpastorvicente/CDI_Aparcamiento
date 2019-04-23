@@ -157,6 +157,8 @@ public class Inicio extends javax.swing.JFrame {
             prin.setLocationRelativeTo(null);
             prin.setVisible(true);
         } else if (userField.getText().equals("admin") && pwdField.getText().equals("1234")) {
+            name = "Administrador";
+            email = "admin@upm.es";
             prin = new Principal();
             this.setVisible(false);
             prin.setLocationRelativeTo(null);

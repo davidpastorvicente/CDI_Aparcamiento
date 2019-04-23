@@ -287,21 +287,22 @@ public class Registro extends javax.swing.JDialog {
         paypalButton.setBackground(new java.awt.Color(204, 204, 204));
         tarjetaButton.setBackground(new java.awt.Color(102, 102, 102));
 
+        
         cadAnio.setAccent(new java.awt.Color(0, 153, 153));
         cadAnio.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel3.add(cadAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, 20, 70));
+        jPanel3.add(cadAnio, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 153, 20, 60));
 
         numTarjeta.setAccent(new java.awt.Color(0, 153, 153));
         numTarjeta.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel3.add(numTarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 170, 60));
+        jPanel3.add(numTarjeta, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 92, 170, 60));
 
         CVC.setAccent(new java.awt.Color(0, 153, 153));
         CVC.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel3.add(CVC, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 40, 70));
+        jPanel3.add(CVC, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 153, 30, 60));
 
         cadMes.setAccent(new java.awt.Color(0, 153, 153));
         cadMes.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel3.add(cadMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 20, 70));
+        jPanel3.add(cadMes, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 153, 20, 60));      
 
         jLabel5.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel5.setText("caducidad:");
@@ -313,11 +314,12 @@ public class Registro extends javax.swing.JDialog {
 
         jLabel7.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel7.setText("CVV/CVC:");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 70, 33));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 183, 70, 20));
 
         jLabel8.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("/");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 10, 30));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 180, 30, 30));
 
         jLabel9.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel9.setText("Fecha de");
@@ -325,7 +327,8 @@ public class Registro extends javax.swing.JDialog {
 
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel10.setText("Número de tarjeta:");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 130, 33));
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 130, 20));
+        
         numTarjeta.setText("");
         jPanel3.revalidate();
         jPanel3.repaint();

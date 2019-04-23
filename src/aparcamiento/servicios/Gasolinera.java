@@ -258,11 +258,7 @@ public class Gasolinera extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void aceptarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aceptarButtonActionPerformed
-        if (opc == 0) {
-            totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
-        } else {
-            totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
-        }
+        totalCombustible=total2;
         Confirmacion1 conf = new Confirmacion1(this, true, true, p);
         p.activarSombra(conf);
         if (conf.getSi()) {
@@ -356,20 +352,20 @@ public class Gasolinera extends javax.swing.JFrame {
     private void calcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcularActionPerformed
         if (!cantidad.getText().equals("")) {
             if (opc == 0) {
-                totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
+                total2 = String.format("%.2f", Double.parseDouble(cantidad.getText()) * price) + " €";
                 price2 = Double.parseDouble(cantidad.getText()) * price;
-                euros.setText(" " + totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText())) + " litros)");
+                euros.setText(" " + total2 + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText())) + " litros)");
             } else if (opc == 1) {
-                totalCombustible = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
+                total2 = String.format("%.2f", Double.parseDouble(cantidad.getText())) + " €";
                 price2 = Double.parseDouble(cantidad.getText());
-                euros.setText(" " + totalCombustible + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText()) / price) + " litros)");
+                euros.setText(" " + total2 + " (" + String.format("%.2f", Double.parseDouble(cantidad.getText()) / price) + " litros)");
             }
             aceptarButton.setEnabled(true);
         }
     }//GEN-LAST:event_calcularActionPerformed
 
     private void cancelarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarButtonActionPerformed
-        Confirmacion4 conf = new Confirmacion4(this, true, false, p);
+        Confirmacion4 conf = new Confirmacion4(this, true, true, p);
         p.activarSombra(conf);
         if (conf.getSi()) {
             materialPanel1.remove(cancelarButton);
@@ -387,7 +383,7 @@ public class Gasolinera extends javax.swing.JFrame {
         gasDate = null;
     }
 
-    public static String totalCombustible;
+    public static String totalCombustible, total2;
     public static double price, price2;
     private int opc;
     public static Date gasDate;

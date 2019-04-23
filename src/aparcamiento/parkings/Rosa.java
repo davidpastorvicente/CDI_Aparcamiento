@@ -174,7 +174,7 @@ public class Rosa extends javax.swing.JFrame implements Parking {
 
         plazas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel2.setText("Seleccione la planta :");
         plazas.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 180, 30));
 
@@ -220,7 +220,7 @@ public class Rosa extends javax.swing.JFrame implements Parking {
 
         direccion.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         direccion.setText("C/ de la Raya, 3");
-        plazas.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, 100, -1));
+        plazas.add(direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 32, 100, -1));
         plazas.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 270, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -673,7 +673,7 @@ public class Rosa extends javax.swing.JFrame implements Parking {
 
         jLabel29.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         jLabel29.setText("ATRÁS");
-        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 447, -1, -1));
+        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 446, -1, -1));
 
         atras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
