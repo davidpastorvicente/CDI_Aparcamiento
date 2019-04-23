@@ -29,7 +29,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         initComponents();
-
+        if(Inicio.email.length()>25) jPanel1.remove(jLabel4);
     }
 
     /**

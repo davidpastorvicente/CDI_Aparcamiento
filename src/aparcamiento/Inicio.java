@@ -94,8 +94,8 @@ public class Inicio extends javax.swing.JFrame {
         UserLabel.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         UserLabel.setForeground(new java.awt.Color(255, 255, 255));
         UserLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        UserLabel.setText("Usuario:");
-        jPanel2.add(UserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 60, 100, -1));
+        UserLabel.setText("Nombre de usuario:");
+        jPanel2.add(UserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 60, 160, -1));
 
         inicButton.setText("Iniciar sesión");
         inicButton.addActionListener(new java.awt.event.ActionListener() {
@@ -116,18 +116,18 @@ public class Inicio extends javax.swing.JFrame {
         userField.setForeground(new java.awt.Color(255, 255, 255));
         userField.setAccent(new java.awt.Color(0, 153, 153));
         userField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jPanel2.add(userField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 170, 60));
+        jPanel2.add(userField, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, 130, 60));
 
         pwdLabel.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
         pwdLabel.setForeground(new java.awt.Color(255, 255, 255));
         pwdLabel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         pwdLabel.setText("Contraseña:");
-        jPanel2.add(pwdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 130, 100, -1));
+        jPanel2.add(pwdLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 130, 160, -1));
 
         pwdField.setForeground(new java.awt.Color(255, 255, 255));
         pwdField.setAccent(new java.awt.Color(0, 153, 153));
         pwdField.setFont(new java.awt.Font("Roboto", 0, 16)); // NOI18N
-        jPanel2.add(pwdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 170, 60));
+        jPanel2.add(pwdField, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 130, 60));
 
         noCButton.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         noCButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -153,16 +153,24 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void inicButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicButtonActionPerformed
-        if (userField.getText().equals(usuario) && pwdField.getText().equals(passwd)) {
-            prin = new Principal();
-            this.setVisible(false);
-            prin.setLocationRelativeTo(null);
-            prin.setVisible(true);
-        } else if (userField.getText().equals("admin") && pwdField.getText().equals("1234")) {
+        if (userField.getText().equals("admin") && pwdField.getText().equals("1234")) {
             name = "Administrador";
             email = "admin@upm.es";
             prin = new Principal();
             this.setVisible(false);
+            userField.setText("");
+            pwdField.setText("");
+            prin.setLocationRelativeTo(null);
+            prin.setVisible(true);
+        } else if (userField.getText().equals(usuario) && pwdField.getText().equals(passwd)) {
+            if (name.equals("Administrador") && email.equals("admin@upm.es")) {
+                name = "";
+                email = "";
+            }
+            prin = new Principal();
+            this.setVisible(false);
+            userField.setText("");
+            pwdField.setText("");
             prin.setLocationRelativeTo(null);
             prin.setVisible(true);
         } else {

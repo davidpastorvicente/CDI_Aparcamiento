@@ -43,6 +43,7 @@ public class Registro extends javax.swing.JDialog {
         jLabel4 = new javax.swing.JLabel();
         movil = new de.craften.ui.swingmaterial.MaterialTextField();
         jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         cadAnio = new de.craften.ui.swingmaterial.MaterialTextField();
         numTarjeta = new de.craften.ui.swingmaterial.MaterialTextField();
@@ -105,17 +106,17 @@ public class Registro extends javax.swing.JDialog {
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("Email:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 50, 20));
+        jLabel3.setText("electrónico:");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 80, 20));
 
         email.setAccent(new java.awt.Color(0, 153, 153));
         email.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 220, 60));
+        jPanel2.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 220, 60));
 
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Móvil:");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 40, 20));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 40, 20));
 
         movil.setAccent(new java.awt.Color(0, 153, 153));
         movil.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
@@ -124,11 +125,16 @@ public class Registro extends javax.swing.JDialog {
                 movilKeyTyped(evt);
             }
         });
-        jPanel2.add(movil, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 80, 60));
+        jPanel2.add(movil, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 80, 60));
 
         jLabel13.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         jLabel13.setText("Rellene los siguientes campos de texto:");
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 290, 33));
+
+        jLabel14.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel14.setText("Correo");
+        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 180, 80, 20));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 360, 310));
 
@@ -439,6 +445,7 @@ public class Registro extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
