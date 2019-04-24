@@ -244,13 +244,13 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Roboto" size="14" style="0"/>
+              <Font name="Roboto" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Gesti&#xf3;n de parking p&#xfa;blicos de la Comunidad de Madrid"/>
+            <Property name="text" type="java.lang.String" value="Gesti&#xf3;n de parkings p&#xfa;blicos de la Comunidad de Madrid"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="20" y="80" width="-1" height="-1"/>
+              <AbsoluteConstraints x="20" y="75" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
